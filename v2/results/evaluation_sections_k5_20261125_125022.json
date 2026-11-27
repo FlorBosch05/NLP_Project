@@ -1,0 +1,57 @@
+{
+  "strategy": "sections",
+  "top_k": 5,
+  "cases": [
+    {
+      "id": "Q01",
+      "question": "What are the ingredients for tomato pasta?",
+      "expected_route": "retrieve",
+      "reference": "Tomato pasta contains 200 g pasta, 300 g tomatoes, and 15 ml olive oil.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The ingredients for the **Tomato pasta** recipe are:\n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Pasta | 200 | g |\n| Tomatoes | 300 | g |\n| Olive oil | 15 | ml |\n\nThese amounts are taken directly from the retrieved recipe information. The source is a synthetic teaching example and has not been independently tested.",
+      "contexts": [
+        "Recipe: Tomato pasta\ninstructions: Boil pasta. Simmer tomatoes in oil and mix.",
+        "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Chicken tomato skillet\ninstructions: Cook onion and chicken thoroughly, add tomatoes and simmer.",
+        "Recipe: Chicken tomato skillet\ningredients: [{\"name\": \"chicken breast\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}]"
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 198,
+          "output_tokens": 45,
+          "seconds": 0.324
+        },
+        {
+          "step": "answer",
+          "input_tokens": 649,
+          "output_tokens": 179,
+          "seconds": 0.58
+        }
+      ],
+      "seconds": 0.923
+    }
+  ],
+  "ragas": [
+    {
+      "user_input": "What are the ingredients for tomato pasta?",
+      "retrieved_contexts": [
+        "Recipe: Tomato pasta\ninstructions: Boil pasta. Simmer tomatoes in oil and mix.",
+        "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Chicken tomato skillet\ninstructions: Cook onion and chicken thoroughly, add tomatoes and simmer.",
+        "Recipe: Chicken tomato skillet\ningredients: [{\"name\": \"chicken breast\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}]"
+      ],
+      "response": "The ingredients for the **Tomato pasta** recipe are:\n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Pasta | 200 | g |\n| Tomatoes | 300 | g |\n| Olive oil | 15 | ml |\n\nThese amounts are taken directly from the retrieved recipe information. The source is a synthetic teaching example and has not been independently tested.",
+      "reference": "Tomato pasta contains 200 g pasta, 300 g tomatoes, and 15 ml olive oil.",
+      "llm_context_precision_with_reference": 0.3333333333,
+      "context_recall": 1.0,
+      "faithfulness": 0.25
+    }
+  ]
+}

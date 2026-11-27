@@ -1,0 +1,18 @@
+{
+  "strategy": "sections",
+  "top_k": 5,
+  "offset": 10,
+  "cases": [
+    {
+      "id": "Q11",
+      "question": "What can replace chickpeas in chickpea salad according to the recipe?",
+      "expected_route": "retrieve",
+      "reference": "The recipe suggests replacing cooked chickpeas with the same weight of fully cooked white beans.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199458, Requested 942. Please try again in 2m52.8s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    }
+  ],
+  "ragas": null,
+  "stopped_reason": "Groq daily token quota reached; remaining cases were not attempted."
+}

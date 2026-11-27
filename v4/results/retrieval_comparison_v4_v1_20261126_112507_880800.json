@@ -1,0 +1,942 @@
+{
+  "note": "13 project-labelled, mostly named-recipe cases. Recipe chunks contain all sections; characters are a context-size proxy, not model tokens. Single-run timing, not Ragas or independent reference verification.",
+  "top_k": 5,
+  "cases": [
+    {
+      "strategy": "sections",
+      "id": "Q01",
+      "expected_recipe": "Ratatouille",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "context_characters": 2569,
+      "retrieval_seconds": 0.0195,
+      "hits": [
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "score": 0.5384467272929524
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "score": 0.4624216494713142
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "score": 0.40445724628033386
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "instructions",
+          "score": 0.380849957622517
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredients",
+          "score": 0.3028208405806353
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q02",
+      "expected_recipe": "Guacamole",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "context_characters": 2087,
+      "retrieval_seconds": 0.00671,
+      "hits": [
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes",
+          "score": 0.5752200271268252
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "score": 0.4843241243884606
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "overview",
+          "score": 0.4419823167895282
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "instructions",
+          "score": 0.4049863425172965
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredients",
+          "score": 0.3776937656387968
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q03",
+      "expected_recipe": "Miso soup",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "context_characters": 2097,
+      "retrieval_seconds": 0.00597,
+      "hits": [
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "score": 0.5712810417735339
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "score": 0.506503159875971
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "instructions",
+          "score": 0.48809270109703135
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "overview",
+          "score": 0.4874377139579776
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients",
+          "score": 0.4452113667512409
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q04",
+      "expected_recipe": "Dal tadka",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "context_characters": 2516,
+      "retrieval_seconds": 0.00525,
+      "hits": [
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredient_notes",
+          "score": 0.5403260819946916
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "dietary",
+          "score": 0.5310484778231802
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "instructions",
+          "score": 0.49945711685545013
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "overview",
+          "score": 0.46562642310054614
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredients",
+          "score": 0.35799556765857077
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q05",
+      "expected_recipe": "Borscht",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "context_characters": 2681,
+      "retrieval_seconds": 0.0049,
+      "hits": [
+        {
+          "recipe": "Borscht",
+          "section": "ingredient_notes",
+          "score": 0.4930911512104164
+        },
+        {
+          "recipe": "Borscht",
+          "section": "dietary",
+          "score": 0.4928931870071388
+        },
+        {
+          "recipe": "Borscht",
+          "section": "overview",
+          "score": 0.4189430320692291
+        },
+        {
+          "recipe": "Borscht",
+          "section": "instructions",
+          "score": 0.414620762559778
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredients",
+          "score": 0.3354230320700162
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q06",
+      "expected_recipe": "Ratatouille",
+      "expected_section": "dietary",
+      "rank": 1,
+      "context_characters": 985,
+      "retrieval_seconds": 0.00612,
+      "hits": [
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "score": 0.6560318218080433
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "score": 0.3839915073662815
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "score": 0.37575419520586467
+        },
+        {
+          "recipe": "Menemen",
+          "section": "dietary",
+          "score": 0.35483114087468737
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "score": 0.3545118413055804
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q07",
+      "expected_recipe": "Guacamole",
+      "expected_section": "dietary",
+      "rank": 1,
+      "context_characters": 953,
+      "retrieval_seconds": 0.00623,
+      "hits": [
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "score": 0.654664815420191
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes",
+          "score": 0.43636043362245297
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "dietary",
+          "score": 0.42172728995696523
+        },
+        {
+          "recipe": "Butter chicken",
+          "section": "dietary",
+          "score": 0.37602058629774654
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "dietary",
+          "score": 0.3698950645088569
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q08",
+      "expected_recipe": "Miso soup",
+      "expected_section": "dietary",
+      "rank": 1,
+      "context_characters": 865,
+      "retrieval_seconds": 0.00508,
+      "hits": [
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "score": 0.6619270922772563
+        },
+        {
+          "recipe": "Tom yum goong",
+          "section": "dietary",
+          "score": 0.42971724463368427
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "score": 0.38564139818714094
+        },
+        {
+          "recipe": "French onion soup",
+          "section": "dietary",
+          "score": 0.3662861537425183
+        },
+        {
+          "recipe": "Risotto alla milanese",
+          "section": "dietary",
+          "score": 0.35992592836675713
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q09",
+      "expected_recipe": "Ratatouille",
+      "expected_section": "overview",
+      "rank": 1,
+      "context_characters": 2591,
+      "retrieval_seconds": 0.00619,
+      "hits": [
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "score": 0.5780518493276903
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "score": 0.44726972985042174
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "instructions",
+          "score": 0.43356377947462577
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "score": 0.3904189251535575
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "instructions",
+          "score": 0.34097358606092
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q10",
+      "expected_recipe": "Miso soup",
+      "expected_section": "overview",
+      "rank": 1,
+      "context_characters": 2097,
+      "retrieval_seconds": 0.00618,
+      "hits": [
+        {
+          "recipe": "Miso soup",
+          "section": "overview",
+          "score": 0.6207403481462616
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "instructions",
+          "score": 0.4799793835584049
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "score": 0.46690906590457887
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "score": 0.43259229022355894
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients",
+          "score": 0.38586346106470315
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q11",
+      "expected_recipe": "Borscht",
+      "expected_section": "overview",
+      "rank": 1,
+      "context_characters": 1799,
+      "retrieval_seconds": 0.0066,
+      "hits": [
+        {
+          "recipe": "Borscht",
+          "section": "overview",
+          "score": 0.49387126311042834
+        },
+        {
+          "recipe": "Borscht",
+          "section": "instructions",
+          "score": 0.4379278198187588
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredient_notes",
+          "score": 0.41041150197680537
+        },
+        {
+          "recipe": "Borscht",
+          "section": "dietary",
+          "score": 0.40001055081575015
+        },
+        {
+          "recipe": "Phở bò",
+          "section": "overview",
+          "score": 0.3323807776290498
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q12",
+      "expected_recipe": "Spanish tortilla",
+      "expected_section": "instructions",
+      "rank": 4,
+      "context_characters": 2122,
+      "retrieval_seconds": 0.00527,
+      "hits": [
+        {
+          "recipe": "Spanish tortilla",
+          "section": "ingredient_notes",
+          "score": 0.5459905449966775
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "overview",
+          "score": 0.5381232856094951
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "dietary",
+          "score": 0.5272678546197516
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "instructions",
+          "score": 0.5245785613722215
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "ingredients",
+          "score": 0.3902308029532091
+        }
+      ]
+    },
+    {
+      "strategy": "sections",
+      "id": "Q13",
+      "expected_recipe": "Paella valenciana",
+      "expected_section": "ingredient_notes",
+      "rank": 1,
+      "context_characters": 3060,
+      "retrieval_seconds": 0.00598,
+      "hits": [
+        {
+          "recipe": "Paella valenciana",
+          "section": "ingredient_notes",
+          "score": 0.4977868439630032
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "instructions",
+          "score": 0.41923716821950774
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "overview",
+          "score": 0.34445626460674955
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "dietary",
+          "score": 0.3278891252391428
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "ingredients",
+          "score": 0.2842791976832628
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q01",
+      "expected_recipe": "Ratatouille",
+      "expected_section": "ingredients",
+      "rank": 1,
+      "context_characters": 11487,
+      "retrieval_seconds": 0.01481,
+      "hits": [
+        {
+          "recipe": "Ratatouille",
+          "section": "recipe",
+          "score": 0.3636492601649915
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "recipe",
+          "score": 0.27937961440001885
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "recipe",
+          "score": 0.2722369391996894
+        },
+        {
+          "recipe": "French onion soup",
+          "section": "recipe",
+          "score": 0.262726699103987
+        },
+        {
+          "recipe": "Menemen",
+          "section": "recipe",
+          "score": 0.2597516296575222
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q02",
+      "expected_recipe": "Guacamole",
+      "expected_section": "ingredients",
+      "rank": 1,
+      "context_characters": 10957,
+      "retrieval_seconds": 0.00729,
+      "hits": [
+        {
+          "recipe": "Guacamole",
+          "section": "recipe",
+          "score": 0.48590882024164506
+        },
+        {
+          "recipe": "Tacos al pastor",
+          "section": "recipe",
+          "score": 0.32119062286355454
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "recipe",
+          "score": 0.3175476510358671
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "recipe",
+          "score": 0.29635163395755976
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "recipe",
+          "score": 0.29550191213423754
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q03",
+      "expected_recipe": "Miso soup",
+      "expected_section": "ingredients",
+      "rank": 1,
+      "context_characters": 10694,
+      "retrieval_seconds": 0.00635,
+      "hits": [
+        {
+          "recipe": "Miso soup",
+          "section": "recipe",
+          "score": 0.5381208800163257
+        },
+        {
+          "recipe": "French onion soup",
+          "section": "recipe",
+          "score": 0.33417592799073004
+        },
+        {
+          "recipe": "Mapo tofu",
+          "section": "recipe",
+          "score": 0.32878854662024304
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "recipe",
+          "score": 0.32624342772443177
+        },
+        {
+          "recipe": "Mercimek çorbası",
+          "section": "recipe",
+          "score": 0.31700350323335336
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q04",
+      "expected_recipe": "Dal tadka",
+      "expected_section": "ingredients",
+      "rank": 1,
+      "context_characters": 12299,
+      "retrieval_seconds": 0.00617,
+      "hits": [
+        {
+          "recipe": "Dal tadka",
+          "section": "recipe",
+          "score": 0.43232393096509075
+        },
+        {
+          "recipe": "Risotto alla milanese",
+          "section": "recipe",
+          "score": 0.3085325664267504
+        },
+        {
+          "recipe": "Pad thai",
+          "section": "recipe",
+          "score": 0.30735938898745474
+        },
+        {
+          "recipe": "Tom yum goong",
+          "section": "recipe",
+          "score": 0.2854093905647961
+        },
+        {
+          "recipe": "Bibimbap",
+          "section": "recipe",
+          "score": 0.2847432414964289
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q05",
+      "expected_recipe": "Borscht",
+      "expected_section": "ingredients",
+      "rank": 1,
+      "context_characters": 12187,
+      "retrieval_seconds": 0.00728,
+      "hits": [
+        {
+          "recipe": "Borscht",
+          "section": "recipe",
+          "score": 0.3961408474790615
+        },
+        {
+          "recipe": "Käsespätzle",
+          "section": "recipe",
+          "score": 0.3315827814204811
+        },
+        {
+          "recipe": "Moussaka",
+          "section": "recipe",
+          "score": 0.2945217415193075
+        },
+        {
+          "recipe": "Syrniki",
+          "section": "recipe",
+          "score": 0.2942394893138867
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "recipe",
+          "score": 0.28835430739065615
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q06",
+      "expected_recipe": "Ratatouille",
+      "expected_section": "dietary",
+      "rank": 1,
+      "context_characters": 11707,
+      "retrieval_seconds": 0.00664,
+      "hits": [
+        {
+          "recipe": "Ratatouille",
+          "section": "recipe",
+          "score": 0.3029735419817257
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "recipe",
+          "score": 0.2429708898354395
+        },
+        {
+          "recipe": "Borscht",
+          "section": "recipe",
+          "score": 0.2345009390275834
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "recipe",
+          "score": 0.22525820424413925
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "recipe",
+          "score": 0.22383938188059332
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q07",
+      "expected_recipe": "Guacamole",
+      "expected_section": "dietary",
+      "rank": 1,
+      "context_characters": 10884,
+      "retrieval_seconds": 0.00914,
+      "hits": [
+        {
+          "recipe": "Guacamole",
+          "section": "recipe",
+          "score": 0.3913334891975919
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "recipe",
+          "score": 0.27767636586195676
+        },
+        {
+          "recipe": "Tacos al pastor",
+          "section": "recipe",
+          "score": 0.25502330111899435
+        },
+        {
+          "recipe": "Bibimbap",
+          "section": "recipe",
+          "score": 0.23536689300455416
+        },
+        {
+          "recipe": "Käsespätzle",
+          "section": "recipe",
+          "score": 0.2320136767204552
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q08",
+      "expected_recipe": "Miso soup",
+      "expected_section": "dietary",
+      "rank": 1,
+      "context_characters": 10379,
+      "retrieval_seconds": 0.00659,
+      "hits": [
+        {
+          "recipe": "Miso soup",
+          "section": "recipe",
+          "score": 0.3653078011846147
+        },
+        {
+          "recipe": "Tom yum goong",
+          "section": "recipe",
+          "score": 0.29777536457693665
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "recipe",
+          "score": 0.28722902479057444
+        },
+        {
+          "recipe": "Horiatiki salad",
+          "section": "recipe",
+          "score": 0.2850562416693222
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "recipe",
+          "score": 0.2676741706171424
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q09",
+      "expected_recipe": "Ratatouille",
+      "expected_section": "overview",
+      "rank": 1,
+      "context_characters": 11900,
+      "retrieval_seconds": 0.00635,
+      "hits": [
+        {
+          "recipe": "Ratatouille",
+          "section": "recipe",
+          "score": 0.4397892993904271
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "recipe",
+          "score": 0.3283123240998763
+        },
+        {
+          "recipe": "French onion soup",
+          "section": "recipe",
+          "score": 0.32013115874690606
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "recipe",
+          "score": 0.3130564641969193
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "recipe",
+          "score": 0.30491362595592714
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q10",
+      "expected_recipe": "Miso soup",
+      "expected_section": "overview",
+      "rank": 1,
+      "context_characters": 11242,
+      "retrieval_seconds": 0.0066,
+      "hits": [
+        {
+          "recipe": "Miso soup",
+          "section": "recipe",
+          "score": 0.5743782761573628
+        },
+        {
+          "recipe": "French onion soup",
+          "section": "recipe",
+          "score": 0.3550690265043186
+        },
+        {
+          "recipe": "Borscht",
+          "section": "recipe",
+          "score": 0.3358369776960788
+        },
+        {
+          "recipe": "Mapo tofu",
+          "section": "recipe",
+          "score": 0.33257788061148635
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "recipe",
+          "score": 0.3301598403301465
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q11",
+      "expected_recipe": "Borscht",
+      "expected_section": "overview",
+      "rank": 1,
+      "context_characters": 12771,
+      "retrieval_seconds": 0.00722,
+      "hits": [
+        {
+          "recipe": "Borscht",
+          "section": "recipe",
+          "score": 0.39373838552784257
+        },
+        {
+          "recipe": "Käsespätzle",
+          "section": "recipe",
+          "score": 0.3315376042826481
+        },
+        {
+          "recipe": "Moussaka",
+          "section": "recipe",
+          "score": 0.31812481449412605
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "recipe",
+          "score": 0.3136963959211683
+        },
+        {
+          "recipe": "Ham croquetas",
+          "section": "recipe",
+          "score": 0.30671168928737585
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q12",
+      "expected_recipe": "Spanish tortilla",
+      "expected_section": "instructions",
+      "rank": 1,
+      "context_characters": 12083,
+      "retrieval_seconds": 0.00685,
+      "hits": [
+        {
+          "recipe": "Spanish tortilla",
+          "section": "recipe",
+          "score": 0.4832902550763193
+        },
+        {
+          "recipe": "Tacos al pastor",
+          "section": "recipe",
+          "score": 0.3812407187874968
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "recipe",
+          "score": 0.3486226486395899
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "recipe",
+          "score": 0.3219533230606305
+        },
+        {
+          "recipe": "Ham croquetas",
+          "section": "recipe",
+          "score": 0.31570066490767
+        }
+      ]
+    },
+    {
+      "strategy": "recipe",
+      "id": "Q13",
+      "expected_recipe": "Paella valenciana",
+      "expected_section": "ingredient_notes",
+      "rank": 1,
+      "context_characters": 13618,
+      "retrieval_seconds": 0.00675,
+      "hits": [
+        {
+          "recipe": "Paella valenciana",
+          "section": "recipe",
+          "score": 0.35308174404608006
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "recipe",
+          "score": 0.22488716182223142
+        },
+        {
+          "recipe": "Tacos al pastor",
+          "section": "recipe",
+          "score": 0.2219724915867753
+        },
+        {
+          "recipe": "Gong bao chicken",
+          "section": "recipe",
+          "score": 0.22027470587780854
+        },
+        {
+          "recipe": "Chicken biryani",
+          "section": "recipe",
+          "score": 0.21367220471485276
+        }
+      ]
+    }
+  ]
+}

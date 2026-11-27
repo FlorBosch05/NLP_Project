@@ -1,0 +1,767 @@
+{
+  "strategy": "sections",
+  "top_k": 5,
+  "cases": [
+    {
+      "id": "Q01",
+      "question": "What are the ingredients for tomato pasta?",
+      "expected_route": "retrieve",
+      "reference": "Tomato pasta contains 200 g pasta, 300 g tomatoes, and 15 ml olive oil.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "**Ingredients for Tomato Pasta (serves 2)**  \n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Pasta | 200 | g |\n| Tomatoes | 300 | g |\n| Olive oil | 15 | ml |\n\nThese amounts come directly from the retrieved recipe data:\n\n- “Recipe: Tomato pasta … ingredients: [{\\\"name\\\": \\\"pasta\\\", \\\"quantity\\\": 200, \\\"unit\\\": \\\"g\\\"}, {\\\"name\\\": \\\"tomatoes\\\", \\\"quantity\\\": 300, \\\"unit\\\": \\\"g\\\"}, {\\\"name\\\": \\\"olive oil\\\", \\\"quantity\\\": 15, \\\"unit\\\": \\\"ml\\\"}]”【3】.\n\nNo additional ingredients are listed in the provided context.",
+      "contexts": [
+        "Recipe: Tomato pasta\ninstructions: Boil pasta. Simmer tomatoes in oil and mix.",
+        "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Chicken tomato skillet\ninstructions: Cook onion and chicken thoroughly, add tomatoes and simmer.",
+        "Recipe: Chicken tomato skillet\ningredients: [{\"name\": \"chicken breast\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}]"
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 253,
+          "output_tokens": 132,
+          "seconds": 0.552
+        },
+        {
+          "step": "answer",
+          "input_tokens": 649,
+          "output_tokens": 256,
+          "seconds": 0.578
+        }
+      ],
+      "seconds": 1.153
+    },
+    {
+      "id": "Q02",
+      "question": "What ingredients are in mushroom pasta?",
+      "expected_route": "retrieve",
+      "reference": "Mushroom pasta contains 200 g pasta, 250 g mushrooms, and 15 ml olive oil.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The mushroom pasta recipe contains the following ingredients:\n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Pasta | 200 | g |\n| Mushrooms | 250 | g |\n| Olive oil | 15 | ml |\n\nThese ingredients are listed in the retrieved recipe text【1†text】.",
+      "contexts": [
+        "Recipe: Mushroom pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"mushrooms\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Mushroom pasta\noverview: Mushroom pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Mushroom pasta\ninstructions: Boil pasta. Sauté mushrooms in oil and combine.",
+        "Recipe: Mushroom pasta\ndietary: Tags: vegetarian. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+        "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]"
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 252,
+          "output_tokens": 79,
+          "seconds": 0.177
+        },
+        {
+          "step": "answer",
+          "input_tokens": 661,
+          "output_tokens": 156,
+          "seconds": 0.455
+        }
+      ],
+      "seconds": 0.644
+    },
+    {
+      "id": "Q03",
+      "question": "How do I prepare lentil soup?",
+      "expected_route": "retrieve",
+      "reference": "Simmer lentils and chopped carrots in water until tender.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "**Lentil soup (simple two‑serving recipe)**  \n\n*Estimated total preparation time:* **40 minutes** (actual time may vary).  \n*Serves:* 2  \n\n---\n\n### Ingredients  \n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Lentils | 150 | g |\n| Carrots | 150 | g |\n| Water | 700 | ml |\n\n*(All ingredients are taken directly from the retrieved recipe data.)*\n\n---\n\n### Instructions  \n1. **Prepare the vegetables** – Chop the carrots into bite‑sized pieces.  \n2. **Combine** – In a saucepan, add the lentils, chopped carrots, and water.  \n3. **Simmer** – Bring the mixture to a gentle boil, then reduce heat and let it simmer until the lentils and carrots are tender.  \n4. **Serve** – Once cooked, ladle the soup into bowls and enjoy.\n\n---\n\n**Notes**\n\n- The recipe is described as a “simple two‑serving recipe” with an estimated total prep time of 40 minutes (source: retrieved context).  \n- No additional ingredients or seasonings are listed in the provided data, so they are not included.  \n- The recipe is a synthetic teaching example and has not been independently tested.",
+      "contexts": [
+        "Recipe: Lentil soup\noverview: Lentil soup is a simple two-serving recipe. Estimated total preparation time: 40 minutes; actual time varies. Serves 2.",
+        "Recipe: Lentil soup\ninstructions: Simmer lentils and chopped carrots in water until tender.",
+        "Recipe: Lentil soup\ningredients: [{\"name\": \"lentils\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"carrots\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 700, \"unit\": \"ml\"}]",
+        "Recipe: Lentil tomato stew\ninstructions: Simmer lentils, tomatoes and onion with water until tender.",
+        "Recipe: Lentil tomato stew\noverview: Lentil tomato stew is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies. Serves 2."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 253,
+          "output_tokens": 133,
+          "seconds": 0.507
+        },
+        {
+          "step": "answer",
+          "input_tokens": 626,
+          "output_tokens": 1421,
+          "seconds": 1.957
+        }
+      ],
+      "seconds": 2.473
+    },
+    {
+      "id": "Q04",
+      "question": "What ingredients are in chickpea salad?",
+      "expected_route": "retrieve",
+      "reference": "Chickpea salad contains 240 g chickpeas, 150 g cucumber and 150 g tomatoes.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "**Ingredients in the Chickpea Salad**\n\n- Chickpeas – 240 g  \n- Cucumber – 150 g  \n- Tomatoes – 150 g  \n\nThese ingredients are listed in the retrieved recipe section:\n\n> “Recipe: Chickpea salad  \n>  ingredients: [{\\\"name\\\": \\\"chickpeas\\\", \\\"quantity\\\": 240, \\\"unit\\\": \\\"g\\\"}, {\\\"name\\\": \\\"cucumber\\\", \\\"quantity\\\": 150, \\\"unit\\\": \\\"g\\\"}, {\\\"name\\\": \\\"tomatoes\\\", \\\"quantity\\\": 150, \\\"unit\\\": \\\"g\\\"}]”【2】",
+      "contexts": [
+        "Recipe: Chickpea salad\noverview: Chickpea salad is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies. Serves 2.",
+        "Recipe: Chickpea salad\ningredients: [{\"name\": \"chickpeas\", \"quantity\": 240, \"unit\": \"g\"}, {\"name\": \"cucumber\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 150, \"unit\": \"g\"}]",
+        "Recipe: Chickpea salad\ninstructions: Drain chickpeas, chop vegetables and combine.",
+        "Recipe: Chickpea salad\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+        "Recipe: Chickpea curry\ningredients: [{\"name\": \"chickpeas\", \"quantity\": 240, \"unit\": \"g\"}, {\"name\": \"coconut milk\", \"quantity\": 200, \"unit\": \"ml\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}]"
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 253,
+          "output_tokens": 133,
+          "seconds": 0.364
+        },
+        {
+          "step": "answer",
+          "input_tokens": 668,
+          "output_tokens": 206,
+          "seconds": 0.369
+        }
+      ],
+      "seconds": 0.743
+    },
+    {
+      "id": "Q05",
+      "question": "What are the ingredients for carrot soup?",
+      "expected_route": "retrieve",
+      "reference": "Carrot soup contains 400 g carrots, 100 g onion and 500 ml water.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "**Ingredients for Carrot Soup**  \n(According to the retrieved recipe information)\n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Carrots | 400 | g |\n| Onion | 100 | g |\n| Water | 500 | ml |\n\nThese ingredients are listed in the “ingredients” section of the Carrot soup recipe that was retrieved.",
+      "contexts": [
+        "Recipe: Carrot soup\ninstructions: Simmer vegetables until tender and blend.",
+        "Recipe: Carrot soup\noverview: Carrot soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+        "Recipe: Carrot soup\ningredients: [{\"name\": \"carrots\", \"quantity\": 400, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 500, \"unit\": \"ml\"}]",
+        "Recipe: Carrot soup\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+        "Recipe: Lentil soup\ninstructions: Simmer lentils and chopped carrots in water until tender."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 253,
+          "output_tokens": 77,
+          "seconds": 0.43
+        },
+        {
+          "step": "answer",
+          "input_tokens": 604,
+          "output_tokens": 185,
+          "seconds": 6.494
+        }
+      ],
+      "seconds": 6.937
+    },
+    {
+      "id": "Q06",
+      "question": "How many servings does tofu stir fry make?",
+      "expected_route": "retrieve",
+      "reference": "Tofu stir fry serves two.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The tofu stir‑fry recipe is written for **2 servings**【1†text】.",
+      "contexts": [
+        "Recipe: Tofu stir fry\noverview: Tofu stir fry is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+        "Recipe: Tofu stir fry\ningredients: [{\"name\": \"tofu\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"broccoli\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}]",
+        "Recipe: Tofu stir fry\ninstructions: Cook rice. Sauté tofu and broccoli until cooked.",
+        "Recipe: Tofu tomato rice\noverview: Tofu tomato rice is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+        "Recipe: Tofu stir fry\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 254,
+          "output_tokens": 87,
+          "seconds": 4.54
+        },
+        {
+          "step": "answer",
+          "input_tokens": 636,
+          "output_tokens": 67,
+          "seconds": 4.607
+        }
+      ],
+      "seconds": 9.158
+    },
+    {
+      "id": "Q07",
+      "question": "What is the estimated preparation time for baked potatoes?",
+      "expected_route": "retrieve",
+      "reference": "The estimated preparation time for baked potatoes is 45 minutes.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The recipe for baked potatoes lists an **estimated total preparation time of 45 minutes** (actual time may vary).  \n\n*Source: “Estimated total preparation time: 45 minutes” from the baked‑potatoes overview.*",
+      "contexts": [
+        "Recipe: Baked potatoes\noverview: Baked potatoes is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies. Serves 2.",
+        "Recipe: Potato omelette\noverview: Potato omelette is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies. Serves 2.",
+        "Recipe: Baked potatoes\ninstructions: Cut potatoes, coat with oil and rosemary, and bake until tender.",
+        "Recipe: Sweet potato beans\noverview: Sweet potato beans is a simple two-serving recipe. Estimated total preparation time: 50 minutes; actual time varies. Serves 2.",
+        "Recipe: Potato omelette\ninstructions: Cook potatoes until tender. Add beaten eggs and cook until set."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 255,
+          "output_tokens": 142,
+          "seconds": 3.409
+        },
+        {
+          "step": "answer",
+          "input_tokens": 585,
+          "output_tokens": 114,
+          "seconds": 5.859
+        }
+      ],
+      "seconds": 9.28
+    },
+    {
+      "id": "Q08",
+      "question": "How is pea soup prepared?",
+      "expected_route": "retrieve",
+      "reference": "Simmer peas and onion in water until tender and blend.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "**Pea soup – how it’s prepared**\n\n1. **Gather the ingredients**  \n   * 350 g peas  \n   * 100 g onion  \n   * 500 ml water  \n\n   *(These amounts are taken directly from the recipe’s ingredient list.)*  \n\n2. **Cook the base**  \n   * Place the peas, onion, and water in a saucepan.  \n   * Bring to a simmer and cook until the peas are tender.  \n   * The recipe states that the peas and onion should be “simmer[ed] … until tender.”  \n\n3. **Blend**  \n   * Once the peas are soft, blend the mixture until smooth.  \n   * The instructions say to “blend” after simmering.  \n\n4. **Serve**  \n   * The recipe is for two servings.  \n\n**Estimated time**  \n* The overview notes an estimated total preparation time of **30 minutes**.  \n  * This is an estimate; actual time may vary depending on stove and equipment.  \n\n**Dietary note**  \n* The recipe is tagged **vegan**.  \n  * This tag is based solely on the listed ingredients (peas, onion, water) and does not account for cross‑contact or ingredient labeling beyond what is provided.  \n\n---\n\n**Sources**\n\n* Overview: “Estimated total preparation time: 30 minutes; actual time varies. Serves 2.”  \n* Instructions: “Simmer peas and onion in water until tender and blend.”  \n* Ingredients: 350 g peas, 100 g onion, 500 ml water.  \n* Dietary: “Tags: vegan.”  \n\nAll information is taken from the retrieved context; no additional ingredients or steps have been invented.",
+      "contexts": [
+        "Recipe: Pea soup\noverview: Pea soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+        "Recipe: Pea soup\ninstructions: Simmer peas and onion in water until tender and blend.",
+        "Recipe: Pea soup\ningredients: [{\"name\": \"peas\", \"quantity\": 350, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 500, \"unit\": \"ml\"}]",
+        "Recipe: Tomato soup\ninstructions: Cook chopped vegetables in water until soft and blend.",
+        "Recipe: Pea soup\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 251,
+          "output_tokens": 87,
+          "seconds": 0.468
+        },
+        {
+          "step": "answer",
+          "input_tokens": 601,
+          "output_tokens": 480,
+          "seconds": 0.733
+        }
+      ],
+      "seconds": 1.213
+    },
+    {
+      "id": "Q09",
+      "question": "What ingredients are used in chicken rice bowl?",
+      "expected_route": "retrieve",
+      "reference": "Chicken rice bowl contains 250 g chicken breast, 150 g rice and 150 g carrots.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The recipe lists the following ingredients for a chicken rice bowl:\n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Chicken breast | 250 | g |\n| Rice | 150 | g |\n| Carrots | 150 | g |\n\nThese items are taken directly from the retrieved recipe text.",
+      "contexts": [
+        "Recipe: Chicken rice bowl\ningredients: [{\"name\": \"chicken breast\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"carrots\", \"quantity\": 150, \"unit\": \"g\"}]",
+        "Recipe: Chicken rice bowl\noverview: Chicken rice bowl is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies. Serves 2.",
+        "Recipe: Chicken rice bowl\ndietary: Tags: contains meat. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+        "Recipe: Salmon rice bowl\ningredients: [{\"name\": \"salmon\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"broccoli\", \"quantity\": 200, \"unit\": \"g\"}]",
+        "Recipe: Chicken rice bowl\ninstructions: Cook rice and carrots. Cook chicken thoroughly and serve together."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 254,
+          "output_tokens": 97,
+          "seconds": 10.672
+        },
+        {
+          "step": "answer",
+          "input_tokens": 665,
+          "output_tokens": 164,
+          "seconds": 5.755
+        }
+      ],
+      "seconds": 16.439
+    },
+    {
+      "id": "Q10",
+      "question": "Is lentil soup tagged vegan?",
+      "expected_route": "retrieve",
+      "reference": "Lentil soup is tagged vegan based on its listed ingredients.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "Yes.  \nThe retrieved context lists the dietary tags for **Lentil soup** as:\n\n> “Recipe: Lentil soup … dietary: Tags: vegan.”  \n\nThis indicates that the recipe is marked as vegan.  \n(As noted in the context, dietary tags describe the listed ingredients only; you should verify ingredient labels and cross‑contact if you need confirmation for allergy or dietary restrictions.)",
+      "contexts": [
+        "Recipe: Lentil soup\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+        "Recipe: Lentil soup\ningredients: [{\"name\": \"lentils\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"carrots\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 700, \"unit\": \"ml\"}]",
+        "Recipe: Lentil tomato stew\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+        "Recipe: Lentil soup\ninstructions: Simmer lentils and chopped carrots in water until tender.",
+        "Recipe: Lentil soup\noverview: Lentil soup is a simple two-serving recipe. Estimated total preparation time: 40 minutes; actual time varies. Serves 2."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 252,
+          "output_tokens": 95,
+          "seconds": 4.521
+        },
+        {
+          "step": "answer",
+          "input_tokens": 624,
+          "output_tokens": 204,
+          "seconds": 4.535
+        }
+      ],
+      "seconds": 9.068
+    },
+    {
+      "id": "Q11",
+      "question": "What can replace chickpeas in chickpea salad according to the recipe?",
+      "expected_route": "retrieve",
+      "reference": "The provided recipe does not specify a chickpea substitution.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The recipe you provided lists chickpeas as a required ingredient, but it does not mention any alternative or substitute for them. The ingredients section reads:\n\n> “Ingredients: [{\\\"name\\\": \\\"chickpeas\\\", \\\"quantity\\\": 240, \\\"unit\\\": \\\"g\\\"}, …]”\n\nSince no replacement is specified in the recipe text, there is no documented substitute to use in place of chickpeas.",
+      "contexts": [
+        "Recipe: Chickpea salad\noverview: Chickpea salad is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies. Serves 2.",
+        "Recipe: Chickpea salad\ninstructions: Drain chickpeas, chop vegetables and combine.",
+        "Recipe: Chickpea salad\ningredients: [{\"name\": \"chickpeas\", \"quantity\": 240, \"unit\": \"g\"}, {\"name\": \"cucumber\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 150, \"unit\": \"g\"}]",
+        "Recipe: Chickpea salad\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+        "Recipe: Chickpea curry\ninstructions: Simmer chickpeas, coconut milk and tomatoes until heated through."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 259,
+          "output_tokens": 122,
+          "seconds": 0.493
+        },
+        {
+          "step": "answer",
+          "input_tokens": 618,
+          "output_tokens": 213,
+          "seconds": 9.82
+        }
+      ],
+      "seconds": 10.326
+    },
+    {
+      "id": "Q12",
+      "question": "Does the tomato pasta recipe specify a substitute for pasta?",
+      "expected_route": "retrieve",
+      "reference": "The provided tomato pasta recipe does not specify a pasta substitute.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "No.  \nThe recipe text and ingredient list for **Tomato pasta** do not mention any alternative to the listed pasta. The instructions simply say “Boil pasta,” and the ingredients list contains only pasta, tomatoes, and olive oil. No substitute is provided in the retrieved information.",
+      "contexts": [
+        "Recipe: Tomato pasta\ninstructions: Boil pasta. Simmer tomatoes in oil and mix.",
+        "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Chicken tomato skillet\ninstructions: Cook onion and chicken thoroughly, add tomatoes and simmer.",
+        "Recipe: Tomato pasta\ndietary: Tags: vegetarian. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 256,
+          "output_tokens": 164,
+          "seconds": 0.456
+        },
+        {
+          "step": "answer",
+          "input_tokens": 606,
+          "output_tokens": 145,
+          "seconds": 8.789
+        }
+      ],
+      "seconds": 9.257
+    },
+    {
+      "id": "Q13",
+      "question": "What can I substitute for milk in oat porridge according to the recipe?",
+      "expected_route": "retrieve",
+      "reference": "The provided oat porridge recipe does not specify a substitute for milk.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The recipe you provided lists only **milk** as the liquid for simmering the oats. It does not mention any alternative or substitute for milk. Therefore, based on the information in the recipe, there is no specified substitute for milk.",
+      "contexts": [
+        "Recipe: Oat porridge\ninstructions: Simmer oats in milk until thick. Slice banana on top.",
+        "Recipe: Oat porridge\ningredients: [{\"name\": \"oats\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"milk\", \"quantity\": 400, \"unit\": \"ml\"}, {\"name\": \"banana\", \"quantity\": 1, \"unit\": \"piece\"}]",
+        "Recipe: Apple porridge\ninstructions: Simmer oats in water until thick. Add chopped apple.",
+        "Recipe: Oat porridge\noverview: Oat porridge is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies. Serves 2.",
+        "Recipe: Oat porridge\ndietary: Tags: vegetarian. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 260,
+          "output_tokens": 110,
+          "seconds": 2.668
+        },
+        {
+          "step": "answer",
+          "input_tokens": 624,
+          "output_tokens": 153,
+          "seconds": 5.761
+        }
+      ],
+      "seconds": 8.441
+    },
+    {
+      "id": "Q14",
+      "question": "How much is 2 kilograms in grams?",
+      "expected_route": "convert",
+      "reference": "2 kg equals 2000 g.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "2 kilograms equals **2000 grams**.",
+      "contexts": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 2.0,
+          "from_unit": "kg",
+          "to_unit": "g"
+        }
+      },
+      "tool_result": "{\"amount\": 2000.0, \"unit\": \"g\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 254,
+          "output_tokens": 116,
+          "seconds": 2.628
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 292,
+          "output_tokens": 218,
+          "seconds": 0.463
+        },
+        {
+          "step": "answer",
+          "input_tokens": 180,
+          "output_tokens": 110,
+          "seconds": 3.535
+        }
+      ],
+      "seconds": 7.987
+    },
+    {
+      "id": "Q15",
+      "question": "Convert 500 ml into litres.",
+      "expected_route": "convert",
+      "reference": "500 ml equals 0.5 l.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "500 ml is equal to **0.5 litres**.",
+      "contexts": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 500.0,
+          "from_unit": "ml",
+          "to_unit": "l"
+        }
+      },
+      "tool_result": "{\"amount\": 0.5, \"unit\": \"l\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 252,
+          "output_tokens": 87,
+          "seconds": 0.288
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 290,
+          "output_tokens": 155,
+          "seconds": 5.66
+        },
+        {
+          "step": "answer",
+          "input_tokens": 177,
+          "output_tokens": 77,
+          "seconds": 0.352
+        }
+      ],
+      "seconds": 7.583
+    },
+    {
+      "id": "Q16",
+      "question": "How many millilitres are 3 tablespoons?",
+      "expected_route": "convert",
+      "reference": "3 tablespoons equal 45 ml.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "According to the tool result, 3 tablespoons equal **45 ml**.",
+      "contexts": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 3.0,
+          "from_unit": "tablespoons",
+          "to_unit": "ml"
+        }
+      },
+      "tool_result": "{\"amount\": 45.0, \"unit\": \"ml\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 255,
+          "output_tokens": 69,
+          "seconds": 2.483
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 293,
+          "output_tokens": 216,
+          "seconds": 3.46
+        },
+        {
+          "step": "answer",
+          "input_tokens": 180,
+          "output_tokens": 151,
+          "seconds": 0.635
+        }
+      ],
+      "seconds": 7.845
+    },
+    {
+      "id": "Q17",
+      "question": "Convert 250 g to kg.",
+      "expected_route": "convert",
+      "reference": "250 g equals 0.25 kg.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "250 g is equal to **0.25 kg**.  \n(Conversion based on the tool result: `{\"amount\": 0.25, \"unit\": \"kg\"}`.)",
+      "contexts": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 250.0,
+          "from_unit": "g",
+          "to_unit": "kg"
+        }
+      },
+      "tool_result": "{\"amount\": 0.25, \"unit\": \"kg\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 252,
+          "output_tokens": 84,
+          "seconds": 0.198
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 290,
+          "output_tokens": 168,
+          "seconds": 6.501
+        },
+        {
+          "step": "answer",
+          "input_tokens": 177,
+          "output_tokens": 94,
+          "seconds": 0.379
+        }
+      ],
+      "seconds": 8.41
+    },
+    {
+      "id": "Q18",
+      "question": "Scale tomato pasta from 2 to 5 servings.",
+      "expected_route": "scale",
+      "reference": "For five servings use 500 g pasta, 750 g tomatoes and 37.5 ml olive oil.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "scale",
+      "route_correct": true,
+      "answer": "**Scaled Tomato Pasta (5 servings)**  \n\n| Ingredient | Original (2 servings) | New (5 servings) |\n|------------|-----------------------|------------------|\n| Pasta | 200 g | **500 g** |\n| Tomatoes | 300 g | **750 g** |\n| Olive oil | 15 ml | **37.5 ml** |\n\n*The amounts were calculated by multiplying each original quantity by the scaling factor \\(5 ÷ 2 = 2.5\\). The total preparation time may increase slightly, but the recipe’s estimated 25 minutes for 2 servings is a reference point.*",
+      "contexts": [
+        "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Tomato pasta\ninstructions: Boil pasta. Simmer tomatoes in oil and mix.",
+        "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Chicken tomato skillet\noverview: Chicken tomato skillet is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+        "Recipe: Chicken tomato skillet\ninstructions: Cook onion and chicken thoroughly, add tomatoes and simmer."
+      ],
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g"
+            },
+            {
+              "name": "tomatoes",
+              "quantity": 300,
+              "unit": "g"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml"
+            }
+          ],
+          "from_servings": 2,
+          "to_servings": 5.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"pasta\", \"quantity\": 500.0, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 750.0, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 37.5, \"unit\": \"ml\"}]}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 256,
+          "output_tokens": 105,
+          "seconds": 0.446
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 740,
+          "output_tokens": 273,
+          "seconds": 10.297
+        },
+        {
+          "step": "answer",
+          "input_tokens": 685,
+          "output_tokens": 281,
+          "seconds": 4.865
+        }
+      ],
+      "seconds": 16.921
+    },
+    {
+      "id": "Q19",
+      "question": "Scale mushroom pasta from 2 to 4 servings.",
+      "expected_route": "scale",
+      "reference": "For four servings use 400 g pasta, 500 g mushrooms and 30 ml olive oil.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "scale",
+      "route_correct": true,
+      "answer": "**Scaled Mushroom Pasta (4 servings)**  \n\n| Ingredient | Original (2 servings) | Scaled (4 servings) |\n|------------|-----------------------|---------------------|\n| Pasta | 200 g | 400 g |\n| Mushrooms | 250 g | 500 g |\n| Olive oil | 15 ml | 30 ml |\n\n*The scaling is a simple 2× increase, as the recipe originally serves 2. The tool result confirms these doubled quantities.*\n\n**Estimated cooking time**  \nThe original recipe lists an estimated total preparation time of **25 minutes** for 2 servings. Doubling the quantity does not typically double the cooking time; the same 25‑minute estimate should still apply, though you may need a slightly larger pot or more stirring to keep everything evenly cooked.\n\n**Notes**  \n- The recipe is vegetarian (no animal products).  \n- No allergy safety claims are made; you should verify ingredient labels and cross‑contact if needed.",
+      "contexts": [
+        "Recipe: Mushroom pasta\noverview: Mushroom pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Mushroom pasta\ninstructions: Boil pasta. Sauté mushrooms in oil and combine.",
+        "Recipe: Mushroom pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"mushrooms\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Mushroom pasta\ndietary: Tags: vegetarian. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+      ],
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g"
+            },
+            {
+              "name": "mushrooms",
+              "quantity": 250,
+              "unit": "g"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml"
+            }
+          ],
+          "from_servings": 2,
+          "to_servings": 4.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"pasta\", \"quantity\": 400.0, \"unit\": \"g\"}, {\"name\": \"mushrooms\", \"quantity\": 500.0, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 30.0, \"unit\": \"ml\"}]}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 256,
+          "output_tokens": 85,
+          "seconds": 3.579
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 754,
+          "output_tokens": 438,
+          "seconds": 6.987
+        },
+        {
+          "step": "answer",
+          "input_tokens": 700,
+          "output_tokens": 365,
+          "seconds": 0.665
+        }
+      ],
+      "seconds": 12.528
+    },
+    {
+      "id": "Q20",
+      "question": "Hello!",
+      "expected_route": "chat",
+      "reference": "A brief greeting.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "chat",
+      "route_correct": true,
+      "answer": "Hello! How can I help you today?",
+      "contexts": [],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 247,
+          "output_tokens": 130,
+          "seconds": 10.655
+        },
+        {
+          "step": "answer",
+          "input_tokens": 158,
+          "output_tokens": 32,
+          "seconds": 0.132
+        }
+      ],
+      "seconds": 10.789
+    }
+  ],
+  "ragas": null
+}

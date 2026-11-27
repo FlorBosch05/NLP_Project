@@ -1,0 +1,42 @@
+{
+  "strategy": "sections",
+  "top_k": 5,
+  "offset": 10,
+  "cases": [
+    {
+      "id": "Q11",
+      "question": "What can replace chickpeas in chickpea salad according to the recipe?",
+      "expected_route": "retrieve",
+      "reference": "The recipe suggests replacing cooked chickpeas with the same weight of fully cooked white beans.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "According to the provided recipe context, an optional, untested suggestion is to replace cooked chickpeas with the same weight of fully cooked white beans. The text notes that you should check packaging and individual dietary needs.",
+      "contexts": [
+        "Recipe: Chickpea salad\nsubstitutions: Optional untested suggestion: replace cooked chickpeas with the same weight of fully cooked white beans; check packaging and individual dietary needs.",
+        "Recipe: Chickpea curry\nsubstitutions: No substitution is specified in this teaching recipe.",
+        "Recipe: Chickpea salad\ningredients: [{\"name\": \"chickpeas\", \"quantity\": 240, \"unit\": \"g\"}, {\"name\": \"cucumber\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 150, \"unit\": \"g\"}]",
+        "Recipe: Chickpea salad\ninstructions: Use canned or fully cooked chickpeas. Drain them, chop the cucumber and tomatoes, and combine.",
+        "Recipe: Bean salad\nsubstitutions: No substitution is specified in this teaching recipe."
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 75,
+          "output_tokens": 24,
+          "seconds": 0.438
+        },
+        {
+          "step": "answer",
+          "input_tokens": 701,
+          "output_tokens": 44,
+          "seconds": 0.211
+        }
+      ],
+      "seconds": 0.674
+    }
+  ],
+  "ragas": null
+}

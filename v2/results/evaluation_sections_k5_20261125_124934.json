@@ -1,0 +1,75 @@
+{
+  "strategy": "sections",
+  "top_k": 5,
+  "cases": [
+    {
+      "id": "Q01",
+      "question": "What are the ingredients for tomato pasta?",
+      "expected_route": "retrieve",
+      "reference": "Tomato pasta contains 200 g pasta, 300 g tomatoes, and 15 ml olive oil.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "**Ingredients for Tomato Pasta (serves 2)**  \n- 200 g pasta  \n- 300 g tomatoes  \n- 15 ml olive oil  \n\nThese amounts come directly from the recipe’s ingredients section in the retrieved context.",
+      "contexts": [
+        "Recipe: Tomato pasta\ninstructions: Boil pasta. Simmer tomatoes in oil and mix.",
+        "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Chicken tomato skillet\ninstructions: Cook onion and chicken thoroughly, add tomatoes and simmer.",
+        "Recipe: Chicken tomato skillet\ningredients: [{\"name\": \"chicken breast\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}]"
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 198,
+          "output_tokens": 45,
+          "seconds": 0.391
+        },
+        {
+          "step": "answer",
+          "input_tokens": 649,
+          "output_tokens": 159,
+          "seconds": 0.422
+        }
+      ],
+      "seconds": 0.831
+    },
+    {
+      "id": "Q02",
+      "question": "What ingredients are in mushroom pasta?",
+      "expected_route": "retrieve",
+      "reference": "Mushroom pasta contains 200 g pasta, 250 g mushrooms, and 15 ml olive oil.",
+      "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The recipe lists the following ingredients for Mushroom pasta:\n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Pasta | 200 | g |\n| Mushrooms | 250 | g |\n| Olive oil | 15 | ml |\n\nThese items are taken directly from the “ingredients” section of the retrieved recipe text.",
+      "contexts": [
+        "Recipe: Mushroom pasta\noverview: Mushroom pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Mushroom pasta\ninstructions: Boil pasta. Sauté mushrooms in oil and combine.",
+        "Recipe: Mushroom pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"mushrooms\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Mushroom pasta\ndietary: Tags: vegetarian. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+        "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]"
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 197,
+          "output_tokens": 106,
+          "seconds": 0.451
+        },
+        {
+          "step": "answer",
+          "input_tokens": 661,
+          "output_tokens": 152,
+          "seconds": 0.372
+        }
+      ],
+      "seconds": 0.835
+    }
+  ],
+  "ragas": null
+}

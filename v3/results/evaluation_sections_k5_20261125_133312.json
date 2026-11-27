@@ -1,0 +1,241 @@
+{
+  "strategy": "sections",
+  "top_k": 5,
+  "cases": [
+    {
+      "id": "Q01",
+      "question": "What are the ingredients for tomato pasta?",
+      "expected_route": "retrieve",
+      "reference": "Tomato pasta contains 200 g pasta, 300 g tomatoes, and 15 ml olive oil.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199561, Requested 928. Please try again in 3m31.248s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q02",
+      "question": "What ingredients are in mushroom pasta?",
+      "expected_route": "retrieve",
+      "reference": "Mushroom pasta contains 200 g pasta, 250 g mushrooms, and 15 ml olive oil.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199892, Requested 879. Please try again in 5m33.072s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q03",
+      "question": "How do I prepare lentil soup?",
+      "expected_route": "retrieve",
+      "reference": "Simmer lentils and chopped carrots in water until tender.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199892, Requested 429. Please try again in 2m18.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q04",
+      "question": "What ingredients are in chickpea salad?",
+      "expected_route": "retrieve",
+      "reference": "Chickpea salad contains 240 g chickpeas, 150 g cucumber and 150 g tomatoes.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199892, Requested 429. Please try again in 2m18.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q05",
+      "question": "What are the ingredients for carrot soup?",
+      "expected_route": "retrieve",
+      "reference": "Carrot soup contains 400 g carrots, 100 g onion and 500 ml water.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199892, Requested 429. Please try again in 2m18.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q06",
+      "question": "How many servings does tofu stir fry make?",
+      "expected_route": "retrieve",
+      "reference": "Tofu stir fry serves two.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199891, Requested 430. Please try again in 2m18.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q07",
+      "question": "What is the estimated preparation time for baked potatoes?",
+      "expected_route": "retrieve",
+      "reference": "The estimated preparation time for baked potatoes is 45 minutes.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199891, Requested 431. Please try again in 2m19.104s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q08",
+      "question": "How is pea soup prepared?",
+      "expected_route": "retrieve",
+      "reference": "Simmer peas and onion in water until tender and blend.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199891, Requested 356. Please try again in 1m46.704s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q09",
+      "question": "What ingredients are used in chicken rice bowl?",
+      "expected_route": "retrieve",
+      "reference": "Chicken rice bowl contains 250 g chicken breast, 150 g rice and 150 g carrots.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199891, Requested 359. Please try again in 1m48s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q10",
+      "question": "Is lentil soup tagged vegan?",
+      "expected_route": "retrieve",
+      "reference": "Lentil soup is tagged vegan based on its listed ingredients.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199891, Requested 357. Please try again in 1m47.136s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q11",
+      "question": "What can replace chickpeas in chickpea salad according to the recipe?",
+      "expected_route": "retrieve",
+      "reference": "The recipe suggests replacing cooked chickpeas with the same weight of fully cooked white beans.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199890, Requested 286. Please try again in 1m16.032s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q12",
+      "question": "Does the tomato pasta recipe specify a substitute for pasta?",
+      "expected_route": "retrieve",
+      "reference": "The recipe suggests replacing the pasta with the same weight of another pasta and following its package directions.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199890, Requested 361. Please try again in 1m48.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q13",
+      "question": "What can I substitute for milk in oat porridge according to the recipe?",
+      "expected_route": "retrieve",
+      "reference": "The recipe suggests replacing dairy milk with the same volume of an unsweetened plant-based drink.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199890, Requested 436. Please try again in 2m20.832s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q14",
+      "question": "How much is 2 kilograms in grams?",
+      "expected_route": "convert",
+      "reference": "2 kg equals 2000 g.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "amount": 2000,
+        "unit": "g"
+      },
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199890, Requested 359. Please try again in 1m47.568s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q15",
+      "question": "Convert 500 ml into litres.",
+      "expected_route": "convert",
+      "reference": "500 ml equals 0.5 l.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "amount": 0.5,
+        "unit": "l"
+      },
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199890, Requested 357. Please try again in 1m46.704s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q16",
+      "question": "How many millilitres are 3 tablespoons?",
+      "expected_route": "convert",
+      "reference": "3 tablespoons equal 45 ml.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "amount": 45,
+        "unit": "ml"
+      },
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199890, Requested 431. Please try again in 2m18.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q17",
+      "question": "Convert 250 g to kg.",
+      "expected_route": "convert",
+      "reference": "250 g equals 0.25 kg.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "amount": 0.25,
+        "unit": "kg"
+      },
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199889, Requested 357. Please try again in 1m46.271999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q18",
+      "question": "Scale tomato pasta from 2 to 5 servings.",
+      "expected_route": "scale",
+      "reference": "For five servings use 500 g pasta, 750 g tomatoes and 37.5 ml olive oil.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "result": [
+          {
+            "name": "pasta",
+            "quantity": 500,
+            "unit": "g"
+          },
+          {
+            "name": "tomatoes",
+            "quantity": 750,
+            "unit": "g"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 37.5,
+            "unit": "ml"
+          }
+        ]
+      },
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199889, Requested 432. Please try again in 2m18.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q19",
+      "question": "Scale mushroom pasta from 2 to 4 servings.",
+      "expected_route": "scale",
+      "reference": "For four servings use 400 g pasta, 500 g mushrooms and 30 ml olive oil.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "result": [
+          {
+            "name": "pasta",
+            "quantity": 400,
+            "unit": "g"
+          },
+          {
+            "name": "mushrooms",
+            "quantity": 500,
+            "unit": "g"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 30,
+            "unit": "ml"
+          }
+        ]
+      },
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199889, Requested 361. Please try again in 1m48s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    },
+    {
+      "id": "Q20",
+      "question": "Hello!",
+      "expected_route": "chat",
+      "reference": "A brief greeting.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m61h254nemp8fkkf2nchec3w` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199889, Requested 423. Please try again in 2m14.783999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "route_correct": false
+    }
+  ],
+  "ragas": null
+}

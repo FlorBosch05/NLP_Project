@@ -1,0 +1,272 @@
+[
+  {
+    "id": "Q01",
+    "question": "What are the ingredients for Ratatouille?",
+    "expected_route": "retrieve",
+    "reference": "Ingredients: 1 piece Aubergine, 2 piece Courgette, 2 piece Bell pepper, 600 g Tomatoes, 1 piece Onion, 3 clove Garlic, 6 tbsp Olive oil, 3 sprig Thyme, 1 pinch Basil, to taste: Salt and pepper.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q02",
+    "question": "What are the ingredients for Guacamole?",
+    "expected_route": "retrieve",
+    "reference": "Ingredients: 3 piece Avocado, 1 piece Lime, 0.5 piece Red onion, 1 piece Jalapeño, 3 sprig Coriander, 1 piece Tomato, to taste: Salt.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q03",
+    "question": "What are the ingredients for Miso soup?",
+    "expected_route": "retrieve",
+    "reference": "Ingredients: 800 ml Water, 10 g Kombu, 15 g Bonito flakes, 4 tbsp Miso paste, 200 g Tofu, 1 tbsp Dried wakame, 2 piece Spring onion.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q04",
+    "question": "What are the ingredients for Dal tadka?",
+    "expected_route": "retrieve",
+    "reference": "Ingredients: 200 g Toor dal, 0.5 tsp Turmeric, 3 tbsp Ghee, 1 tsp Cumin seeds, 0.5 tsp Mustard seeds, 4 clove Garlic, 1 piece Onion, 2 piece Tomato, 2 piece Dried red chillies, 1 pinch Asafoetida, to taste: Salt.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q05",
+    "question": "What are the ingredients for Borscht?",
+    "expected_route": "retrieve",
+    "reference": "Ingredients: 700 g Beef on the bone, 2 piece Beetroot, 300 g Cabbage, 4 piece Potatoes, 1 piece Carrot, 1 piece Onion, 2 tbsp Tomato paste, 1 tbsp Vinegar, 9%, 3 clove Garlic, 2 piece Bay leaf, to taste: Sour cream, to taste: Salt and pepper.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q06",
+    "question": "Is Ratatouille tagged vegan in the source?",
+    "expected_route": "retrieve",
+    "reference": "Ratatouille is tagged vegan by the source; verify ingredients and cross-contact independently.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q07",
+    "question": "Is Guacamole tagged gluten-free in the source?",
+    "expected_route": "retrieve",
+    "reference": "Guacamole is tagged gluten-free by the source; verify ingredients and cross-contact independently.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q08",
+    "question": "Is Miso soup tagged pescatarian in the source?",
+    "expected_route": "retrieve",
+    "reference": "Miso soup is tagged pescatarian by the source; verify ingredients and cross-contact independently.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q09",
+    "question": "What are the source preparation and cooking times for Ratatouille?",
+    "expected_route": "retrieve",
+    "reference": "The source lists 20 minutes preparation and 45 minutes cooking for Ratatouille.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q10",
+    "question": "What are the source preparation and cooking times for Miso soup?",
+    "expected_route": "retrieve",
+    "reference": "The source lists 5 minutes preparation and 15 minutes cooking for Miso soup.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q11",
+    "question": "What are the source preparation and cooking times for Borscht?",
+    "expected_route": "retrieve",
+    "reference": "The source lists 30 minutes preparation and 120 minutes cooking for Borscht.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q12",
+    "question": "How does the source say to prepare Spanish tortilla?",
+    "expected_route": "retrieve",
+    "reference": "1. Heat the oil in a deep pan until it is warm rather than hot — a slice of potato dropped in should sigh, not crackle. Add the potato and onion and salt them. [Source step duration: 3 min]\n2. Poach for twenty minutes, turning gently now and then. It is ready when a slice breaks easily against the side of the pan. Drain through a colander, keeping the potato. [Source step duration: 20 min]\n3. Beat the eggs with a pinch of salt and fold the warm potato through them. Let it sit for ten minutes: the potato gives up starch and the tortilla holds together for it. [Source step duration: 10 min]\n4. In a 24 cm pan with a spoon of oil, pour the mixture in and cook over medium heat for four minutes, easing the edges towards the middle with a spatula. [Source step duration: 4 min]\n5. Cover with a plate, flip in one movement and slide it back raw side down. Three minutes more leaves the centre slightly loose, which is how it should be. [Source step duration: 3 min]",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q13",
+    "question": "What substitute does the source suggest for rabbit in Paella valenciana?",
+    "expected_route": "retrieve",
+    "reference": "The ingredient note says chicken can be used instead of rabbit.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  },
+  {
+    "id": "Q14",
+    "question": "How much is 2 kilograms in grams?",
+    "expected_route": "convert",
+    "reference": "2 kg equals 2000 g.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+    "expected_tool_result": {
+      "amount": 2000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "Q15",
+    "question": "Convert 500 ml into litres.",
+    "expected_route": "convert",
+    "reference": "500 ml equals 0.5 l.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+    "expected_tool_result": {
+      "amount": 0.5,
+      "unit": "l"
+    }
+  },
+  {
+    "id": "Q16",
+    "question": "How many millilitres are 3 tablespoons?",
+    "expected_route": "convert",
+    "reference": "3 tablespoons equal 45 ml.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+    "expected_tool_result": {
+      "amount": 45,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "Q17",
+    "question": "Convert 250 g to kg.",
+    "expected_route": "convert",
+    "reference": "250 g equals 0.25 kg.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+    "expected_tool_result": {
+      "amount": 0.25,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "Q18",
+    "question": "Scale Ratatouille from 4 to 8 servings.",
+    "expected_route": "scale",
+    "reference": "Scale linear quantities from 4 to 8 servings; fixed quantities remain fixed and damped or unspecified amounts require manual adjustment.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+    "expected_tool_result": {
+      "result": [
+        {
+          "name": "Aubergine",
+          "quantity": 2.0,
+          "unit": "piece",
+          "status": "linear"
+        },
+        {
+          "name": "Courgette",
+          "quantity": 4.0,
+          "unit": "piece",
+          "status": "linear"
+        },
+        {
+          "name": "Bell pepper",
+          "quantity": 4.0,
+          "unit": "piece",
+          "status": "linear"
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 1200.0,
+          "unit": "g",
+          "status": "linear"
+        },
+        {
+          "name": "Onion",
+          "quantity": 2.0,
+          "unit": "piece",
+          "status": "linear"
+        },
+        {
+          "name": "Garlic",
+          "quantity": 6.0,
+          "unit": "clove",
+          "status": "linear"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 12.0,
+          "unit": "tbsp",
+          "status": "linear"
+        },
+        {
+          "name": "Thyme",
+          "quantity": null,
+          "unit": "sprig",
+          "original_quantity": 3.0,
+          "status": "Source requests damped scaling but provides no formula; adjust manually."
+        },
+        {
+          "name": "Basil",
+          "quantity": null,
+          "unit": "pinch",
+          "original_quantity": 1.0,
+          "status": "Source requests damped scaling but provides no formula; adjust manually."
+        },
+        {
+          "name": "Salt and pepper",
+          "quantity": null,
+          "unit": "toTaste",
+          "status": "No numeric source quantity; adjust to taste or follow the recipe."
+        }
+      ]
+    }
+  },
+  {
+    "id": "Q19",
+    "question": "Scale Guacamole from 4 to 2 servings.",
+    "expected_route": "scale",
+    "reference": "Scale linear quantities from 4 to 2 servings; fixed quantities remain fixed and damped or unspecified amounts require manual adjustment.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+    "expected_tool_result": {
+      "result": [
+        {
+          "name": "Avocado",
+          "quantity": 1.5,
+          "unit": "piece",
+          "status": "linear"
+        },
+        {
+          "name": "Lime",
+          "quantity": 0.5,
+          "unit": "piece",
+          "status": "linear"
+        },
+        {
+          "name": "Red onion",
+          "quantity": 0.25,
+          "unit": "piece",
+          "status": "linear"
+        },
+        {
+          "name": "Jalapeño",
+          "quantity": null,
+          "unit": "piece",
+          "original_quantity": 1.0,
+          "status": "Source requests damped scaling but provides no formula; adjust manually."
+        },
+        {
+          "name": "Coriander",
+          "quantity": null,
+          "unit": "sprig",
+          "original_quantity": 3.0,
+          "status": "Source requests damped scaling but provides no formula; adjust manually."
+        },
+        {
+          "name": "Tomato",
+          "quantity": 0.5,
+          "unit": "piece",
+          "status": "linear"
+        },
+        {
+          "name": "Salt",
+          "quantity": null,
+          "unit": "toTaste",
+          "status": "No numeric source quantity; adjust to taste or follow the recipe."
+        }
+      ]
+    }
+  },
+  {
+    "id": "Q20",
+    "question": "Hello!",
+    "expected_route": "chat",
+    "reference": "A brief greeting.",
+    "reference_status": "Derived from UniTools source record by code; not independently reviewed."
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "model": "qwen/qwen3.8-27b",
+  "app": "app_scale_v3.py",
+  "turns": [
+    {
+      "scenario": "ingredients_and_followup",
+      "question": "What are the ingredients for Guacamole?",
+      "expected_route": "retrieve",
+      "answer": "What are the ingredients for Guacamole?",
+      "details": {},
+      "problems": [
+        "UI error or exception",
+        "no assistant answer",
+        "unexpected route"
+      ],
+      "ui_errors": [
+        "Request failed: APIConnectionError: Connection error."
+      ],
+      "exceptions": []
+    },
+    {
+      "scenario": "recipe_steps",
+      "question": "How does the source say to prepare Spanish tortilla?",
+      "expected_route": "retrieve",
+      "answer": "How does the source say to prepare Spanish tortilla?",
+      "details": {},
+      "problems": [
+        "UI error or exception",
+        "no assistant answer",
+        "unexpected route"
+      ],
+      "ui_errors": [
+        "Request failed: APIConnectionError: Connection error."
+      ],
+      "exceptions": []
+    },
+    {
+      "scenario": "dietary_tag",
+      "question": "Is Ratatouille tagged vegan in the source?",
+      "expected_route": "retrieve",
+      "answer": "Is Ratatouille tagged vegan in the source?",
+      "details": {},
+      "problems": [
+        "UI error or exception",
+        "no assistant answer",
+        "unexpected route"
+      ],
+      "ui_errors": [
+        "Request failed: APIConnectionError: Connection error."
+      ],
+      "exceptions": []
+    },
+    {
+      "scenario": "conversion",
+      "question": "How much is 2 kilograms in grams?",
+      "expected_route": "convert",
+      "answer": "How much is 2 kilograms in grams?",
+      "details": {},
+      "problems": [
+        "UI error or exception",
+        "no assistant answer",
+        "unexpected route"
+      ],
+      "ui_errors": [
+        "Request failed: APIConnectionError: Connection error."
+      ],
+      "exceptions": []
+    },
+    {
+      "scenario": "missing_servings",
+      "question": "Scale Ratatouille please.",
+      "expected_route": "scale",
+      "answer": "Scale Ratatouille please.",
+      "details": {},
+      "problems": [
+        "UI error or exception",
+        "no assistant answer",
+        "unexpected route"
+      ],
+      "ui_errors": [
+        "Request failed: APIConnectionError: Connection error."
+      ],
+      "exceptions": []
+    },
+    {
+      "scenario": "scaled_recipe",
+      "question": "Scale Ratatouille from 4 to 8 servings.",
+      "expected_route": "scale",
+      "answer": "Scale Ratatouille from 4 to 8 servings.",
+      "details": {},
+      "problems": [
+        "UI error or exception",
+        "no assistant answer",
+        "unexpected route"
+      ],
+      "ui_errors": [
+        "Request failed: APIConnectionError: Connection error."
+      ],
+      "exceptions": []
+    }
+  ]
+}

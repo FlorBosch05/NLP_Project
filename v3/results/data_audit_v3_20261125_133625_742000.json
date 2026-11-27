@@ -1,0 +1,25 @@
+{
+  "recipe_count": 30,
+  "evaluation_count": 20,
+  "reference_checks": {
+    "Q01": true,
+    "Q02": true,
+    "Q03": true,
+    "Q04": true,
+    "Q05": true,
+    "Q06": true,
+    "Q07": true,
+    "Q08": true,
+    "Q09": true,
+    "Q10": true,
+    "Q11": true,
+    "Q12": true,
+    "Q13": true
+  },
+  "errors": [],
+  "limitations": [
+    "Automated consistency checks do not validate taste, cooking time, dietary safety, substitutions, completeness of all instructions or human ground truth.",
+    "Q20 is a greeting without a single exact ground-truth response.",
+    "Temperatures follow the cited FoodSafety.gov chart; local guidance may differ."
+  ]
+}

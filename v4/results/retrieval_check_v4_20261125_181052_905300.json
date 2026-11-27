@@ -1,0 +1,448 @@
+{
+  "top_k": 5,
+  "note": "AI-authored labels and mostly named-recipe questions; this is not Ragas or independent verification.",
+  "cases": [
+    {
+      "id": "Q01",
+      "question": "What are the ingredients for Ratatouille?",
+      "expected_recipe": "Ratatouille",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "retrieved": [
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "score": 0.5384467272929524
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "score": 0.4624216494713142
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "score": 0.40445724628033386
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "instructions",
+          "score": 0.380849957622517
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredients",
+          "score": 0.3028208405806353
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "question": "What are the ingredients for Guacamole?",
+      "expected_recipe": "Guacamole",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "retrieved": [
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes",
+          "score": 0.5752200271268252
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "score": 0.4843241243884606
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "overview",
+          "score": 0.4419823167895282
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "instructions",
+          "score": 0.4049863425172965
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredients",
+          "score": 0.3776937656387968
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "question": "What are the ingredients for Miso soup?",
+      "expected_recipe": "Miso soup",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "retrieved": [
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "score": 0.5712810417735339
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "score": 0.506503159875971
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "instructions",
+          "score": 0.48809270109703135
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "overview",
+          "score": 0.4874377139579776
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients",
+          "score": 0.4452113667512409
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "question": "What are the ingredients for Dal tadka?",
+      "expected_recipe": "Dal tadka",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "retrieved": [
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredient_notes",
+          "score": 0.5403260819946916
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "dietary",
+          "score": 0.5310484778231802
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "instructions",
+          "score": 0.49945711685545013
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "overview",
+          "score": 0.46562642310054614
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredients",
+          "score": 0.35799556765857077
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "question": "What are the ingredients for Borscht?",
+      "expected_recipe": "Borscht",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "retrieved": [
+        {
+          "recipe": "Borscht",
+          "section": "ingredient_notes",
+          "score": 0.4930911512104164
+        },
+        {
+          "recipe": "Borscht",
+          "section": "dietary",
+          "score": 0.4928931870071388
+        },
+        {
+          "recipe": "Borscht",
+          "section": "overview",
+          "score": 0.4189430320692291
+        },
+        {
+          "recipe": "Borscht",
+          "section": "instructions",
+          "score": 0.414620762559778
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredients",
+          "score": 0.3354230320700162
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "question": "Is Ratatouille tagged vegan in the source?",
+      "expected_recipe": "Ratatouille",
+      "expected_section": "dietary",
+      "rank": 1,
+      "retrieved": [
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "score": 0.6560318218080433
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "score": 0.3839915073662815
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "score": 0.37575419520586467
+        },
+        {
+          "recipe": "Menemen",
+          "section": "dietary",
+          "score": 0.35483114087468737
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "score": 0.3545118413055804
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "question": "Is Guacamole tagged gluten-free in the source?",
+      "expected_recipe": "Guacamole",
+      "expected_section": "dietary",
+      "rank": 1,
+      "retrieved": [
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "score": 0.654664815420191
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes",
+          "score": 0.43636043362245297
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "dietary",
+          "score": 0.42172728995696523
+        },
+        {
+          "recipe": "Butter chicken",
+          "section": "dietary",
+          "score": 0.37602058629774654
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "dietary",
+          "score": 0.3698950645088569
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "question": "Is Miso soup tagged pescatarian in the source?",
+      "expected_recipe": "Miso soup",
+      "expected_section": "dietary",
+      "rank": 1,
+      "retrieved": [
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "score": 0.6619270922772563
+        },
+        {
+          "recipe": "Tom yum goong",
+          "section": "dietary",
+          "score": 0.42971724463368427
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "score": 0.38564139818714094
+        },
+        {
+          "recipe": "French onion soup",
+          "section": "dietary",
+          "score": 0.3662861537425183
+        },
+        {
+          "recipe": "Risotto alla milanese",
+          "section": "dietary",
+          "score": 0.35992592836675713
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "question": "What are the source preparation and cooking times for Ratatouille?",
+      "expected_recipe": "Ratatouille",
+      "expected_section": "overview",
+      "rank": 1,
+      "retrieved": [
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "score": 0.5780518493276903
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "score": 0.44726972985042174
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "instructions",
+          "score": 0.43356377947462577
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "score": 0.3904189251535575
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "instructions",
+          "score": 0.34097358606092
+        }
+      ]
+    },
+    {
+      "id": "Q10",
+      "question": "What are the source preparation and cooking times for Miso soup?",
+      "expected_recipe": "Miso soup",
+      "expected_section": "overview",
+      "rank": 1,
+      "retrieved": [
+        {
+          "recipe": "Miso soup",
+          "section": "overview",
+          "score": 0.6207403481462616
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "instructions",
+          "score": 0.4799793835584049
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "score": 0.46690906590457887
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "score": 0.43259229022355894
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients",
+          "score": 0.38586346106470315
+        }
+      ]
+    },
+    {
+      "id": "Q11",
+      "question": "What are the source preparation and cooking times for Borscht?",
+      "expected_recipe": "Borscht",
+      "expected_section": "overview",
+      "rank": 1,
+      "retrieved": [
+        {
+          "recipe": "Borscht",
+          "section": "overview",
+          "score": 0.49387126311042834
+        },
+        {
+          "recipe": "Borscht",
+          "section": "instructions",
+          "score": 0.4379278198187588
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredient_notes",
+          "score": 0.41041150197680537
+        },
+        {
+          "recipe": "Borscht",
+          "section": "dietary",
+          "score": 0.40001055081575015
+        },
+        {
+          "recipe": "Phở bò",
+          "section": "overview",
+          "score": 0.3323807776290498
+        }
+      ]
+    },
+    {
+      "id": "Q12",
+      "question": "How does the source say to prepare Spanish tortilla?",
+      "expected_recipe": "Spanish tortilla",
+      "expected_section": "instructions",
+      "rank": 4,
+      "retrieved": [
+        {
+          "recipe": "Spanish tortilla",
+          "section": "ingredient_notes",
+          "score": 0.5459905449966775
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "overview",
+          "score": 0.5381232856094951
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "dietary",
+          "score": 0.5272678546197516
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "instructions",
+          "score": 0.5245785613722215
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "ingredients",
+          "score": 0.3902308029532091
+        }
+      ]
+    },
+    {
+      "id": "Q13",
+      "question": "What substitute does the source suggest for rabbit in Paella valenciana?",
+      "expected_recipe": "Paella valenciana",
+      "expected_section": "ingredient_notes",
+      "rank": 1,
+      "retrieved": [
+        {
+          "recipe": "Paella valenciana",
+          "section": "ingredient_notes",
+          "score": 0.4977868439630032
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "instructions",
+          "score": 0.41923716821950774
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "overview",
+          "score": 0.34445626460674955
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "dietary",
+          "score": 0.3278891252391428
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "ingredients",
+          "score": 0.2842791976832628
+        }
+      ]
+    }
+  ]
+}

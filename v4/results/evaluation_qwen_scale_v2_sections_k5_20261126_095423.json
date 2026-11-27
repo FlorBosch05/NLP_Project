@@ -1,0 +1,328 @@
+{
+  "generation_model": "qwen/qwen3.8-27b",
+  "strategy": "sections",
+  "top_k": 5,
+  "offset": 17,
+  "cases": [
+    {
+      "id": "Q18",
+      "question": "Scale Ratatouille from 4 to 8 servings.",
+      "expected_route": "scale",
+      "reference": "Scale linear quantities from 4 to 8 servings; fixed quantities remain fixed and damped or unspecified amounts require manual adjustment.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "expected_tool_result": {
+        "result": [
+          {
+            "name": "Aubergine",
+            "quantity": 2.0,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Courgette",
+            "quantity": 4.0,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Bell pepper",
+            "quantity": 4.0,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Tomatoes",
+            "quantity": 1200.0,
+            "unit": "g",
+            "status": "linear"
+          },
+          {
+            "name": "Onion",
+            "quantity": 2.0,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Garlic",
+            "quantity": 6.0,
+            "unit": "clove",
+            "status": "linear"
+          },
+          {
+            "name": "Olive oil",
+            "quantity": 12.0,
+            "unit": "tbsp",
+            "status": "linear"
+          },
+          {
+            "name": "Thyme",
+            "quantity": null,
+            "unit": "sprig",
+            "original_quantity": 3.0,
+            "status": "Source requests damped scaling but provides no formula; adjust manually."
+          },
+          {
+            "name": "Basil",
+            "quantity": null,
+            "unit": "pinch",
+            "original_quantity": 1.0,
+            "status": "Source requests damped scaling but provides no formula; adjust manually."
+          },
+          {
+            "name": "Salt and pepper",
+            "quantity": null,
+            "unit": "toTaste",
+            "status": "No numeric source quantity; adjust to taste or follow the recipe."
+          }
+        ]
+      },
+      "actual_route": "scale",
+      "route_correct": true,
+      "answer": "Scaled ingredients for 8 servings:\n- Aubergine: 2 piece (linear)\n- Courgette: 4 piece (linear)\n- Bell pepper: 4 piece (linear)\n- Tomatoes: 1200 g (linear)\n- Onion: 2 piece (linear)\n- Garlic: 6 clove (linear)\n- Olive oil: 12 tbsp (linear)\n- Thyme: adjust manually; source amount was 3 sprig.\n- Basil: adjust manually; source amount was 1 pinch.\n- Salt and pepper: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "contexts": [
+        "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+        "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+        "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+        "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+      ],
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Aubergine",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "in 2 cm cubes"
+            },
+            {
+              "name": "Courgette",
+              "quantity": 2,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "in cubes"
+            },
+            {
+              "name": "Bell pepper",
+              "quantity": 2,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Tomatoes",
+              "quantity": 600,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "ripe, peeled"
+            },
+            {
+              "name": "Onion",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Garlic",
+              "quantity": 3,
+              "unit": "clove",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Olive oil",
+              "quantity": 6,
+              "unit": "tbsp",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Thyme",
+              "quantity": 3,
+              "unit": "sprig",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Basil",
+              "quantity": 1,
+              "unit": "pinch",
+              "scaling": "damped",
+              "note": "at the end"
+            },
+            {
+              "name": "Salt and pepper",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 8.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"Aubergine\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Courgette\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Bell pepper\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Tomatoes\", \"quantity\": 1200.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Onion\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Garlic\", \"quantity\": 6.0, \"unit\": \"clove\", \"status\": \"linear\"}, {\"name\": \"Olive oil\", \"quantity\": 12.0, \"unit\": \"tbsp\", \"status\": \"linear\"}, {\"name\": \"Thyme\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Basil\", \"quantity\": null, \"unit\": \"pinch\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 72,
+          "output_tokens": 19,
+          "seconds": 0.362
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 1277,
+          "output_tokens": 9,
+          "seconds": 0.188
+        }
+      ],
+      "seconds": 1.814,
+      "tool_correct": true
+    },
+    {
+      "id": "Q19",
+      "question": "Scale Guacamole from 4 to 2 servings.",
+      "expected_route": "scale",
+      "reference": "Scale linear quantities from 4 to 2 servings; fixed quantities remain fixed and damped or unspecified amounts require manual adjustment.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "expected_tool_result": {
+        "result": [
+          {
+            "name": "Avocado",
+            "quantity": 1.5,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Lime",
+            "quantity": 0.5,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Red onion",
+            "quantity": 0.25,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Jalapeño",
+            "quantity": null,
+            "unit": "piece",
+            "original_quantity": 1.0,
+            "status": "Source requests damped scaling but provides no formula; adjust manually."
+          },
+          {
+            "name": "Coriander",
+            "quantity": null,
+            "unit": "sprig",
+            "original_quantity": 3.0,
+            "status": "Source requests damped scaling but provides no formula; adjust manually."
+          },
+          {
+            "name": "Tomato",
+            "quantity": 0.5,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Salt",
+            "quantity": null,
+            "unit": "toTaste",
+            "status": "No numeric source quantity; adjust to taste or follow the recipe."
+          }
+        ]
+      },
+      "actual_route": "scale",
+      "route_correct": true,
+      "answer": "Scaled ingredients for 2 servings:\n- Avocado: 1.5 piece (linear)\n- Lime: 0.5 piece (linear)\n- Red onion: 0.25 piece (linear)\n- Jalapeño: adjust manually; source amount was 1 piece.\n- Coriander: adjust manually; source amount was 3 sprig.\n- Tomato: 0.5 piece (linear)\n- Salt: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "contexts": [
+        "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+        "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+        "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+        "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+      ],
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Avocado",
+              "quantity": 3,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "ripe"
+            },
+            {
+              "name": "Lime",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "juiced"
+            },
+            {
+              "name": "Red onion",
+              "quantity": 0.5,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "finely chopped"
+            },
+            {
+              "name": "Jalapeño",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "damped",
+              "note": "seeds removed"
+            },
+            {
+              "name": "Coriander",
+              "quantity": 3,
+              "unit": "sprig",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Tomato",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "seeded and diced"
+            },
+            {
+              "name": "Salt",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 2.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"Avocado\", \"quantity\": 1.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Lime\", \"quantity\": 0.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Red onion\", \"quantity\": 0.25, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Jalapeño\", \"quantity\": null, \"unit\": \"piece\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Coriander\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Tomato\", \"quantity\": 0.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 71,
+          "output_tokens": 17,
+          "seconds": 0.14
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 1109,
+          "output_tokens": 9,
+          "seconds": 0.233
+        }
+      ],
+      "seconds": 1.626,
+      "tool_correct": true
+    }
+  ],
+  "ragas": null
+}

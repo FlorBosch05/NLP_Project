@@ -1,0 +1,10 @@
+{
+  "question": "How does the source say to prepare Spanish tortilla?",
+  "draft": "To prepare the Spanish tortilla according to the source:\n\n1. Heat oil in a deep pan until it is warm, not hot. A slice of potato should sigh, not crackle. Add sliced potatoes and onions, and season with salt. Cook for 3 minutes.\n2. Poach the mixture for 20 minutes, turning gently. It is ready when a slice breaks easily against the side of the pan. Drain through a colander and keep the potato.\n3. Beat 6 eggs with a pinch of salt. Fold the warm potato through the eggs and let it sit for 10 minutes.\n4. In a 24 cm pan with a spoon of oil, pour the mixture and cook over medium heat for 4 minutes, easing the edges towards the middle with a spatula.\n5. Cover with a plate, flip in one movement, and slide it back raw side down. Cook for 3 more minutes, leaving the center slightly loose.\n\nThis preparation yields a vegetarian, gluten-free dish that serves 4 people.",
+  "classifier": {
+    "category": "allow",
+    "parsing_error": null,
+    "raw": "{ \"category\": \"allow\" }"
+  },
+  "note": "Private diagnostic draft; do not display as validated safe advice."
+}

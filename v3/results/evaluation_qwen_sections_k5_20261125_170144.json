@@ -1,0 +1,359 @@
+{
+  "generation_model": "qwen/qwen3.8-27b",
+  "strategy": "sections",
+  "top_k": 5,
+  "offset": 13,
+  "cases": [
+    {
+      "id": "Q14",
+      "question": "How much is 2 kilograms in grams?",
+      "expected_route": "convert",
+      "reference": "2 kg equals 2000 g.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "amount": 2000,
+        "unit": "g"
+      },
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "2 kilograms is equal to 2000 grams.",
+      "contexts": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 2.0,
+          "from_unit": "kilograms",
+          "to_unit": "grams"
+        }
+      },
+      "tool_result": "{\"amount\": 2000.0, \"unit\": \"g\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 68,
+          "output_tokens": 19,
+          "seconds": 0.914
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 84,
+          "output_tokens": 23,
+          "seconds": 0.501
+        },
+        {
+          "step": "answer",
+          "input_tokens": 149,
+          "output_tokens": 13,
+          "seconds": 0.309
+        }
+      ],
+      "seconds": 4.305,
+      "tool_correct": true
+    },
+    {
+      "id": "Q15",
+      "question": "Convert 500 ml into litres.",
+      "expected_route": "convert",
+      "reference": "500 ml equals 0.5 l.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "amount": 0.5,
+        "unit": "l"
+      },
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "500 ml is equal to 0.5 litres.",
+      "contexts": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 500.0,
+          "from_unit": "ml",
+          "to_unit": "litres"
+        }
+      },
+      "tool_result": "{\"amount\": 0.5, \"unit\": \"l\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 68,
+          "output_tokens": 21,
+          "seconds": 0.588
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 84,
+          "output_tokens": 25,
+          "seconds": 0.527
+        },
+        {
+          "step": "answer",
+          "input_tokens": 146,
+          "output_tokens": 14,
+          "seconds": 0.454
+        }
+      ],
+      "seconds": 3.856,
+      "tool_correct": true
+    },
+    {
+      "id": "Q16",
+      "question": "How many millilitres are 3 tablespoons?",
+      "expected_route": "convert",
+      "reference": "3 tablespoons equal 45 ml.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "amount": 45,
+        "unit": "ml"
+      },
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "3 tablespoons are equal to 45 millilitres.",
+      "contexts": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 3.0,
+          "from_unit": "tablespoons",
+          "to_unit": "millilitres"
+        }
+      },
+      "tool_result": "{\"amount\": 45.0, \"unit\": \"ml\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 69,
+          "output_tokens": 19,
+          "seconds": 0.259
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 85,
+          "output_tokens": 26,
+          "seconds": 0.272
+        },
+        {
+          "step": "answer",
+          "input_tokens": 148,
+          "output_tokens": 13,
+          "seconds": 0.19
+        }
+      ],
+      "seconds": 2.963,
+      "tool_correct": true
+    },
+    {
+      "id": "Q17",
+      "question": "Convert 250 g to kg.",
+      "expected_route": "convert",
+      "reference": "250 g equals 0.25 kg.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "amount": 0.25,
+        "unit": "kg"
+      },
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "250 g is equal to 0.25 kg.",
+      "contexts": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 250.0,
+          "from_unit": "g",
+          "to_unit": "kg"
+        }
+      },
+      "tool_result": "{\"amount\": 0.25, \"unit\": \"kg\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 68,
+          "output_tokens": 21,
+          "seconds": 0.284
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 84,
+          "output_tokens": 23,
+          "seconds": 0.461
+        },
+        {
+          "step": "answer",
+          "input_tokens": 147,
+          "output_tokens": 15,
+          "seconds": 0.098
+        }
+      ],
+      "seconds": 3.101,
+      "tool_correct": true
+    },
+    {
+      "id": "Q18",
+      "question": "Scale tomato pasta from 2 to 5 servings.",
+      "expected_route": "scale",
+      "reference": "For five servings use 500 g pasta, 750 g tomatoes and 37.5 ml olive oil.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "result": [
+          {
+            "name": "pasta",
+            "quantity": 500,
+            "unit": "g"
+          },
+          {
+            "name": "tomatoes",
+            "quantity": 750,
+            "unit": "g"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 37.5,
+            "unit": "ml"
+          }
+        ]
+      },
+      "actual_route": "scale",
+      "route_correct": true,
+      "answer": "To scale the Tomato pasta recipe from 2 servings to 5 servings, multiply the original ingredient quantities by 2.5 (5 ÷ 2).\n\nBased on the provided context and tool result, the scaled ingredients are:\n\n*   **Pasta:** 500 g\n*   **Tomatoes:** 750 g\n*   **Olive oil:** 37.5 ml\n\n**Instructions:**\nCook the pasta in water according to the package. Simmer chopped tomatoes in the olive oil and combine with the drained pasta.\n\n**Note:**\nThe original recipe has an estimated total preparation time of 25 minutes for 2 servings. The provided context does not specify a scaled preparation time for 5 servings, so the time may vary.",
+      "contexts": [
+        "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Tomato pasta\ninstructions: Cook the pasta in water according to the package. Simmer chopped tomatoes in the olive oil and combine with the drained pasta.",
+        "Recipe: Tomato pasta\nsubstitutions: Optional untested suggestion: replace the pasta with the same weight of another pasta; follow its package directions and check its ingredient label.",
+        "Recipe: Tomato soup\noverview: Tomato soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2."
+      ],
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g"
+            },
+            {
+              "name": "tomatoes",
+              "quantity": 300,
+              "unit": "g"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml"
+            }
+          ],
+          "from_servings": 2,
+          "to_servings": 5.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"pasta\", \"quantity\": 500.0, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 750.0, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 37.5, \"unit\": \"ml\"}]}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 70,
+          "output_tokens": 23,
+          "seconds": 0.29
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 666,
+          "output_tokens": 9,
+          "seconds": 0.208
+        },
+        {
+          "step": "answer",
+          "input_tokens": 791,
+          "output_tokens": 161,
+          "seconds": 0.545
+        }
+      ],
+      "seconds": 3.271,
+      "tool_correct": true
+    },
+    {
+      "id": "Q19",
+      "question": "Scale mushroom pasta from 2 to 4 servings.",
+      "expected_route": "scale",
+      "reference": "For four servings use 400 g pasta, 500 g mushrooms and 30 ml olive oil.",
+      "reference_status": "AI-reviewed against the version 3 synthetic corpus; awaiting independent human review.",
+      "expected_tool_result": {
+        "result": [
+          {
+            "name": "pasta",
+            "quantity": 400,
+            "unit": "g"
+          },
+          {
+            "name": "mushrooms",
+            "quantity": 500,
+            "unit": "g"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 30,
+            "unit": "ml"
+          }
+        ]
+      },
+      "actual_route": "scale",
+      "route_correct": true,
+      "answer": "Here is the Mushroom pasta recipe scaled from 2 to 4 servings:\n\n**Ingredients (for 4 servings):**\n*   Pasta: 400 g\n*   Mushrooms: 500 g\n*   Olive oil: 30 ml\n\n**Instructions:**\nCook the pasta in water according to the package. Sauté the mushrooms in the olive oil and combine with the drained pasta.\n\n**Notes:**\n*   **Preparation Time:** The original recipe lists an estimated total preparation time of 25 minutes for 2 servings. The provided context does not specify a new estimated time for 4 servings, so the original estimate applies to the base recipe only.\n*   **Dietary:** Vegetarian (based on listed ingredients only).\n*   **Source:** AI-created teaching recipe; not kitchen-tested or independently verified.",
+      "contexts": [
+        "Recipe: Mushroom pasta\noverview: Mushroom pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+        "Recipe: Mushroom pasta\ninstructions: Cook the pasta in water according to the package. Sauté the mushrooms in the olive oil and combine with the drained pasta.",
+        "Recipe: Mushroom pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"mushrooms\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+        "Recipe: Mushroom pasta\ndietary: Tags: vegetarian. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+        "Recipe: Mushroom pasta\nsubstitutions: No substitution is specified in this teaching recipe."
+      ],
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g"
+            },
+            {
+              "name": "mushrooms",
+              "quantity": 250,
+              "unit": "g"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml"
+            }
+          ],
+          "from_servings": 2,
+          "to_servings": 4.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"pasta\", \"quantity\": 400.0, \"unit\": \"g\"}, {\"name\": \"mushrooms\", \"quantity\": 500.0, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 30.0, \"unit\": \"ml\"}]}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 70,
+          "output_tokens": 18,
+          "seconds": 0.618
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 657,
+          "output_tokens": 10,
+          "seconds": 0.385
+        },
+        {
+          "step": "answer",
+          "input_tokens": 783,
+          "output_tokens": 178,
+          "seconds": 0.637
+        }
+      ],
+      "seconds": 3.952,
+      "tool_correct": true
+    }
+  ],
+  "ragas": null
+}

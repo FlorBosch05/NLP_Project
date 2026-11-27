@@ -1,0 +1,109 @@
+{
+  "app": "app_ollama_safety_v5.py",
+  "model": "qwen2.5:7b",
+  "turns": [
+    {
+      "question": "yooo gamer, what soup should i make today",
+      "answer": "Hey there! It looks like you didn't provide any context or preferences for the soup you're thinking of making. Could you give me some details? For example, do you have any specific ingredients in mind, or are there any dietary restrictions or preferences you need to consider? That way, I can suggest a suitable soup recipe for you.",
+      "route": "chat",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "retrieved_chunks": [],
+      "focus": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "no restrictions just a salty soup",
+      "answer": "Based on your request for a salty soup with no restrictions, here’s a simple option:\n\n**Recipe: Salted Tomato Soup**\n\n- **Ingredients:**\n  - 2 tablespoons olive oil\n  - 1 medium onion, finely chopped\n  - 3 cloves garlic, minced\n  - 2 cans (28 oz each) crushed tomatoes\n  - 4 cups chicken or vegetable broth\n  - 1 teaspoon salt (or to taste)\n  - 1/2 teaspoon black pepper (or to taste)\n  - 1/2 teaspoon dried basil\n  - 1/4 teaspoon red pepper flakes (optional, for extra heat)\n  - 1/2 cup heavy cream (optional, for a richer texture)\n  - Fresh parsley, chopped (for garnish)\n\n- **Tools:**\n  - Large pot\n  - Blender (optional, for smooth consistency)\n\n- **Instructions:**\n  1. Heat the olive oil in a large pot over medium heat.\n  2. Add the chopped onion and sauté until soft and translucent.\n  3. Add the minced garlic and cook for another minute.\n  4. Pour in the crushed tomatoes, broth, salt, pepper, basil, and red pepper flakes.\n  5. Bring the mixture to a boil, then reduce heat and let it simmer for about 20 minutes.\n  6. Use a blender to puree the soup until smooth (optional).\n  7. Stir in the heavy cream if using.\n  8. Serve hot, garnished with fresh parsley.\n\nThis soup is straightforward and can be adjusted to your taste with more or less salt. Enjoy your meal!",
+      "route": "chat",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "retrieved_chunks": [],
+      "focus": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "how many people is that recipe for",
+      "answer": "The retrieved recipes indicate that the Mercimek çorbası (Lentil Soup) serves 4 people, the Gazpacho serves 4 people, the French onion soup serves 4 people, and the Lomo saltado serves 4 people. None of the provided recipes specify serving sizes other than 4.",
+      "route": "retrieve",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "retrieved_chunks": [
+        {
+          "text": "Recipe: Mercimek çorbası\ninstructions: 1. Fry the onion and carrot in a spoon of butter until soft, add the tomato paste and give it another minute, until it darkens. [Source step duration: 8 min]\n2. Add the lentils, potato and water, bring to the boil and simmer for twenty-five minutes, until the lentils have collapsed completely. [Source step duration: 25 min]\n3. Blend until entirely smooth. The soup should be thick but still pourable; loosen it with boiling water if it is not. [Source step duration: 3 min]\n4. Melt the rest of the butter, take it off the heat and stir in the mint and paprika. Ladle out the soup, spoon the butter over and serve with a wedge of lemon. [Source step duration: 3 min]",
+          "metadata": {
+            "recipe": "Mercimek çorbası",
+            "section": "instructions",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.37180753815656364
+        },
+        {
+          "text": "Recipe: Gazpacho\noverview: A cold tomato soup blended with bread and oil into an emulsion — that is what makes it thick rather than watery. Publisher lists prep 20 minutes and cook 0 minutes, total 20 minutes. Serves 4. Serves 4.",
+          "metadata": {
+            "recipe": "Gazpacho",
+            "section": "overview",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.36812712785151086
+        },
+        {
+          "text": "Recipe: French onion soup\ninstructions: 1. Melt the butter in a heavy pot, add the onions and a pinch of salt, and keep them over medium heat, stirring every few minutes. For the first twenty minutes the onions give up water. [Source step duration: 20 min]\n2. Then the caramelisation proper begins: another twenty-five minutes to take the onions to the colour of strong tea. If they catch, lower the heat and add a spoonful of water. [Source step duration: 25 min]\n3. Stir in the flour and cook it out for a couple of minutes so it loses its raw taste. [Source step duration: 2 min]\n4. Pour in the wine and scrape everything stuck to the bottom back into the pot. Let it reduce by half. [Source step duration: 4 min]\n5. Add the stock and thyme, bring to the boil and simmer for twenty minutes. Season at the end, since the stock may already be salty. [Source step duration: 20 min]\n6. Ladle into ovenproof bowls, top each with a slice of baguette, cover with cheese and put them under the grill until bubbling and browned, about three minutes. [Source step duration: 3 min]",
+          "metadata": {
+            "recipe": "French onion soup",
+            "section": "instructions",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.36789590895989593
+        },
+        {
+          "text": "Recipe: Lomo saltado\ningredient_notes: Beef sirloin: in strips\nRed onion: in thick wedges\nTomatoes: in wedges",
+          "metadata": {
+            "recipe": "Lomo saltado",
+            "section": "ingredient_notes",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.3614737527777657
+        },
+        {
+          "text": "Recipe: Lomo saltado\ninstructions: 1. Marinate the beef in the soy, vinegar and garlic for fifteen minutes, then pat it dry: a wet surface will not scorch. [Source step duration: 15 min]\n2. Heat the pan until it smokes and sear the beef in two batches, ninety seconds each, leaving it alone for the first forty seconds. Set it aside. [Source step duration: 5 min]\n3. In the same pan fry the onion and ají for ninety seconds — the onion should stay crisp inside. [Source step duration: 2 min]\n4. Return the beef, pour in what is left of the marinade, add the tomatoes and warm through for half a minute. Take it off and stir in the coriander. [Source step duration: 2 min]\n5. Serve with hot chips — some tossed into the pan so they take up the sauce — and a separate helping of rice.",
+          "metadata": {
+            "recipe": "Lomo saltado",
+            "section": "instructions",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.3576041405071958
+        }
+      ],
+      "focus": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "we were talking about tomato soup though",
+      "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+      "route": "safety_block",
+      "safety": {
+        "stage": "output",
+        "category": "uncertain"
+      },
+      "retrieved_chunks": [],
+      "focus": null,
+      "errors": [],
+      "exceptions": []
+    }
+  ]
+}

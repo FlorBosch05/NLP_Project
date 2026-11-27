@@ -1,0 +1,872 @@
+[
+  {
+    "name": "Tomato pasta",
+    "servings": 2,
+    "overview": "Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Boil pasta. Simmer tomatoes in oil and mix.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Mushroom pasta",
+    "servings": 2,
+    "overview": "Mushroom pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "mushrooms",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Boil pasta. Sauté mushrooms in oil and combine.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Lentil soup",
+    "servings": 2,
+    "overview": "Lentil soup is a simple two-serving recipe. Estimated total preparation time: 40 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "lentils",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrots",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 700,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Simmer lentils and chopped carrots in water until tender.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 40,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Tomato soup",
+    "servings": 2,
+    "overview": "Tomato soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "tomatoes",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 300,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Cook chopped vegetables in water until soft and blend.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Carrot soup",
+    "servings": 2,
+    "overview": "Carrot soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "carrots",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 500,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Simmer vegetables until tender and blend.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Chickpea salad",
+    "servings": 2,
+    "overview": "Chickpea salad is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Drain chickpeas, chop vegetables and combine.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 15,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Bean salad",
+    "servings": 2,
+    "overview": "Bean salad is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "kidney beans",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "corn",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Drain beans and corn, chop tomatoes and combine.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 15,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Rice and vegetables",
+    "servings": 2,
+    "overview": "Rice and vegetables is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrots",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice. Steam vegetables and serve together.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Tofu stir fry",
+    "servings": 2,
+    "overview": "Tofu stir fry is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "tofu",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "broccoli",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice. Sauté tofu and broccoli until cooked.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Chicken rice bowl",
+    "servings": 2,
+    "overview": "Chicken rice bowl is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrots",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice and carrots. Cook chicken thoroughly and serve together.",
+    "dietary_tags": [
+      "contains meat"
+    ],
+    "cooking_time_minutes_estimate": 35,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Salmon rice bowl",
+    "servings": 2,
+    "overview": "Salmon rice bowl is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "salmon",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "broccoli",
+        "quantity": 200,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice and broccoli. Cook salmon thoroughly and serve together.",
+    "dietary_tags": [
+      "contains fish"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Potato omelette",
+    "servings": 2,
+    "overview": "Potato omelette is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "quantity": 4,
+        "unit": "pieces"
+      },
+      {
+        "name": "potatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Cook potatoes until tender. Add beaten eggs and cook until set.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 35,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Vegetable omelette",
+    "servings": 2,
+    "overview": "Vegetable omelette is a simple two-serving recipe. Estimated total preparation time: 20 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "quantity": 4,
+        "unit": "pieces"
+      },
+      {
+        "name": "bell pepper",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook chopped vegetables, add beaten eggs and cook until set.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 20,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Oat porridge",
+    "servings": 2,
+    "overview": "Oat porridge is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "oats",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "quantity": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "piece"
+      }
+    ],
+    "instructions": "Simmer oats in milk until thick. Slice banana on top.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 15,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Apple porridge",
+    "servings": 2,
+    "overview": "Apple porridge is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "oats",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "apple",
+        "quantity": 1,
+        "unit": "piece"
+      }
+    ],
+    "instructions": "Simmer oats in water until thick. Add chopped apple.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 15,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Couscous vegetables",
+    "servings": 2,
+    "overview": "Couscous vegetables is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "couscous",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "zucchini",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 200,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Prepare couscous according to package. Cook vegetables and combine.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Quinoa salad",
+    "servings": 2,
+    "overview": "Quinoa salad is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook quinoa. Cool and mix with chopped vegetables.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Baked potatoes",
+    "servings": 2,
+    "overview": "Baked potatoes is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "potatoes",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      },
+      {
+        "name": "rosemary",
+        "quantity": 2,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cut potatoes, coat with oil and rosemary, and bake until tender.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 45,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Sweet potato beans",
+    "servings": 2,
+    "overview": "Sweet potato beans is a simple two-serving recipe. Estimated total preparation time: 50 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "sweet potato",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "black beans",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Bake sweet potatoes until tender. Warm beans and tomatoes and serve.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 50,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Lentil tomato stew",
+    "servings": 2,
+    "overview": "Lentil tomato stew is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "lentils",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Simmer lentils, tomatoes and onion with water until tender.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 45,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Chickpea curry",
+    "servings": 2,
+    "overview": "Chickpea curry is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "coconut milk",
+        "quantity": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Simmer chickpeas, coconut milk and tomatoes until heated through.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Tofu tomato rice",
+    "servings": 2,
+    "overview": "Tofu tomato rice is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "tofu",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice. Sauté tofu and simmer with tomatoes.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Egg fried rice",
+    "servings": 2,
+    "overview": "Egg fried rice is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "quantity": 2,
+        "unit": "pieces"
+      },
+      {
+        "name": "peas",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice. Cook eggs and peas thoroughly and mix with rice.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Yogurt fruit bowl",
+    "servings": 2,
+    "overview": "Yogurt fruit bowl is a simple two-serving recipe. Estimated total preparation time: 10 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "plain yogurt",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "piece"
+      },
+      {
+        "name": "apple",
+        "quantity": 1,
+        "unit": "piece"
+      }
+    ],
+    "instructions": "Chop fruit and serve over yogurt.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 10,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Cucumber yogurt salad",
+    "servings": 2,
+    "overview": "Cucumber yogurt salad is a simple two-serving recipe. Estimated total preparation time: 10 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "plain yogurt",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "lemon juice",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Chop cucumber and mix with yogurt and lemon juice.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 10,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Roasted cauliflower",
+    "servings": 2,
+    "overview": "Roasted cauliflower is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "cauliflower",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      },
+      {
+        "name": "paprika",
+        "quantity": 2,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cut cauliflower, coat with oil and paprika, and roast until tender.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 35,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Zucchini rice",
+    "servings": 2,
+    "overview": "Zucchini rice is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "zucchini",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Cook rice. Sauté zucchini in oil and serve with rice.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Pea soup",
+    "servings": 2,
+    "overview": "Pea soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "peas",
+        "quantity": 350,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 500,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Simmer peas and onion in water until tender and blend.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "Chicken tomato skillet",
+    "servings": 2,
+    "overview": "Chicken tomato skillet is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook onion and chicken thoroughly, add tomatoes and simmer.",
+    "dietary_tags": [
+      "contains meat"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  },
+  {
+    "name": "White bean tomato stew",
+    "servings": 2,
+    "overview": "White bean tomato stew is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "white beans",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook onion, add drained beans and tomatoes, and simmer.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "Synthetic teaching example; not independently tested",
+    "dietary_note": "Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+  }
+]

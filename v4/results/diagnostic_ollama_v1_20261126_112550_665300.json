@@ -1,0 +1,1513 @@
+{
+  "model": "qwen2.5:7b",
+  "safety_module": "chef.safety_rails_v3",
+  "agent": "chef.agent_ollama_v4",
+  "strategy": "sections",
+  "top_k": 5,
+  "note": "Source-derived reference answers have not been independently reviewed. One fresh conversation per case.",
+  "cases": [
+    {
+      "id": "Q01",
+      "question": "What are the ingredients for Ratatouille?",
+      "expected_route": "retrieve",
+      "reference": "Ingredients: 1 piece Aubergine, 2 piece Courgette, 2 piece Bell pepper, 600 g Tomatoes, 1 piece Onion, 3 clove Garlic, 6 tbsp Olive oil, 3 sprig Thyme, 1 pinch Basil, to taste: Salt and pepper.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The ingredients for Ratatouille are:\n- 1 piece of aubergine, cut into 2 cm cubes\n- 2 pieces of courgette, cut into cubes\n- 2 pieces of bell pepper\n- 600 grams of ripe, peeled tomatoes\n- 1 piece of onion\n- 3 cloves of garlic\n- 6 tablespoons of olive oil\n- 3 sprigs of thyme\n- 1 pinch of basil, added at the end\n- Salt and pepper, to taste",
+      "contexts": [
+        "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+        "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+        "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+        "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 115,
+          "output_tokens": 18,
+          "seconds": 0.299
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1367,
+          "output_tokens": 110,
+          "seconds": 1.461
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "seconds": 2.269
+    },
+    {
+      "id": "Q02",
+      "question": "What are the ingredients for Guacamole?",
+      "expected_route": "retrieve",
+      "reference": "Ingredients: 3 piece Avocado, 1 piece Lime, 0.5 piece Red onion, 1 piece Jalapeño, 3 sprig Coriander, 1 piece Tomato, to taste: Salt.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The ingredients for Guacamole are:\n- 3 ripe avocados\n- 1 lime (juiced)\n- 0.5 piece of red onion (finely chopped)\n- 1 jalapeño (seeds removed)\n- 3 sprigs of coriander\n- 1 tomato (seeded and diced)\n- Salt (to taste)\n\nNo quantity for salt is provided, so it should be adjusted according to taste.",
+      "contexts": [
+        "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+        "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+        "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+        "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 114,
+          "output_tokens": 17,
+          "seconds": 0.286
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1198,
+          "output_tokens": 92,
+          "seconds": 1.261
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "seconds": 1.882
+    },
+    {
+      "id": "Q03",
+      "question": "What are the ingredients for Miso soup?",
+      "expected_route": "retrieve",
+      "reference": "Ingredients: 800 ml Water, 10 g Kombu, 15 g Bonito flakes, 4 tbsp Miso paste, 200 g Tofu, 1 tbsp Dried wakame, 2 piece Spring onion.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The ingredients for Miso soup are:\n- 800 ml of water\n- 10 g of kombu, wiped, not washed\n- 15 g of bonito flakes\n- 4 tablespoons of miso paste\n- 200 g of cubed tofu\n- 1 tablespoon of dried wakame\n- 2 pieces of spring onion\n\nNo tool result was provided for measuring tools or quantities, so the ingredients are reported as given.",
+      "contexts": [
+        "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+        "Recipe: Miso soup\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Miso soup\ninstructions: 1. Cover the kombu with cold water and set it over low heat. Bring it to the edge of a boil over about ten minutes and lift the seaweed out before bubbles appear. [Source step duration: 10 min]\n2. Bring the water to the boil, add the bonito flakes, take it off the heat at once and let it stand for two minutes until the flakes sink. [Source step duration: 2 min]\n3. Strain the stock through a sieve without pressing the flakes — pressed flakes turn it bitter. [Source step duration: 2 min]\n4. Soak the wakame in cold water for five minutes; it swells several times over. [Source step duration: 5 min]\n5. Warm the dashi, add the tofu and the wakame and hold it at a low heat for a couple of minutes. [Source step duration: 2 min]\n6. Whisk the miso smooth in a ladle of the hot stock, stir it back in and take the pan off the heat immediately. Scatter over the spring onion. [Source step duration: 2 min]",
+        "Recipe: Miso soup\noverview: A soup of dashi and miso that takes ten minutes. Miso must never boil: boiling takes out both the aroma and the point of it. Publisher lists prep 5 minutes and cook 15 minutes, total 20 minutes. Serves 4. Serves 4.",
+        "Recipe: Miso soup\ningredients: [{\"name\": \"Water\", \"quantity\": 800, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Kombu\", \"quantity\": 10, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"wiped, not washed\"}, {\"name\": \"Bonito flakes\", \"quantity\": 15, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Miso paste\", \"quantity\": 4, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tofu\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cubed\"}, {\"name\": \"Dried wakame\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Spring onion\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}]"
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 114,
+          "output_tokens": 17,
+          "seconds": 0.286
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1215,
+          "output_tokens": 99,
+          "seconds": 1.361
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "seconds": 1.985
+    },
+    {
+      "id": "Q04",
+      "question": "What are the ingredients for Dal tadka?",
+      "expected_route": "retrieve",
+      "reference": "Ingredients: 200 g Toor dal, 0.5 tsp Turmeric, 3 tbsp Ghee, 1 tsp Cumin seeds, 0.5 tsp Mustard seeds, 4 clove Garlic, 1 piece Onion, 2 piece Tomato, 2 piece Dried red chillies, 1 pinch Asafoetida, to taste: Salt.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The ingredients for Dal tadka are:\n- 200 grams of rinsed toor dal\n- 0.5 teaspoon of turmeric\n- 3 tablespoons of ghee\n- 1 teaspoon of cumin seeds\n- 0.5 teaspoon of mustard seeds\n- 4 cloves of garlic, thinly sliced\n- 1 onion\n- 2 tomatoes\n- 2 dried red chillies\n- 1 pinch of asafoetida\n- Salt to taste\n\nNote that the tool did not provide a quantity for salt, so it is listed as \"to taste.\"",
+      "contexts": [
+        "Recipe: Dal tadka\ndietary: Source tags: vegetarian, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Dal tadka\ningredient_notes: Toor dal: rinsed\nGarlic: thinly sliced",
+        "Recipe: Dal tadka\ninstructions: 1. Cover the lentils with three cups of water, add the turmeric and simmer covered for thirty minutes, until the grains collapse into a soft mass. [Source step duration: 30 min]\n2. Mash some of the lentils against the side of the pot and season. The consistency should be that of a thick soup. [Source step duration: 3 min]\n3. Separately fry the onion until golden, add the tomatoes and cook until they break down into a sauce. Stir that into the lentils. [Source step duration: 10 min]\n4. Heat the ghee in a small pan until it is just short of smoking. Add the mustard seeds; they should crackle within seconds. [Source step duration: 2 min]\n5. Add the cumin at once, the garlic and chillies ten seconds later, the asafoetida twenty seconds after that. The whole thing takes under a minute and cannot be left alone. [Source step duration: 1 min]\n6. Pour the sizzling tadka straight into the lentils — it should hiss. Stir once and serve with rice or flatbread. [Source step duration: 1 min]",
+        "Recipe: Dal tadka\noverview: A lentil stew finished by pouring sizzling spiced fat over it. That step is the dish. Publisher lists prep 10 minutes and cook 35 minutes, total 45 minutes. Serves 4. Serves 4.",
+        "Recipe: Dal tadka\ningredients: [{\"name\": \"Toor dal\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"rinsed\"}, {\"name\": \"Turmeric\", \"quantity\": 0.5, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Ghee\", \"quantity\": 3, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Cumin seeds\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Mustard seeds\", \"quantity\": 0.5, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 4, \"unit\": \"clove\", \"scaling\": \"damped\", \"note\": \"thinly sliced\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Dried red chillies\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Asafoetida\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Dal tadka",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 114,
+          "output_tokens": 18,
+          "seconds": 0.307
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1353,
+          "output_tokens": 124,
+          "seconds": 1.699
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "seconds": 2.384
+    },
+    {
+      "id": "Q05",
+      "question": "What are the ingredients for Borscht?",
+      "expected_route": "retrieve",
+      "reference": "Ingredients: 700 g Beef on the bone, 2 piece Beetroot, 300 g Cabbage, 4 piece Potatoes, 1 piece Carrot, 1 piece Onion, 2 tbsp Tomato paste, 1 tbsp Vinegar, 9%, 3 clove Garlic, 2 piece Bay leaf, to taste: Sour cream, to taste: Salt and pepper.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The ingredients for Borscht are as follows:\n\n- 700 g Beef on the bone\n- 2 pieces Beetroot, coarsely grated\n- 300 g Cabbage, shredded\n- 4 pieces Potatoes\n- 1 piece Carrot\n- 1 piece Onion\n- 2 tbsp Tomato paste\n- 1 tbsp Vinegar, 9%\n- 3 cloves Garlic\n- 2 pieces Bay leaf\n- Sour cream, to taste\n- Salt and pepper, to taste\n\nNote that the quantity for sour cream and the exact amount of salt and pepper are left to the taste of the cook.",
+      "contexts": [
+        "Recipe: Borscht\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Borscht\ningredient_notes: Beetroot: coarsely grated\nCabbage: shredded",
+        "Recipe: Borscht\noverview: A beetroot soup on beef stock where acid holds both the colour and the flavour. The beetroot is braised separately, never boiled in the pot. Publisher lists prep 30 minutes and cook 120 minutes, total 150 minutes. Serves 6. Serves 6.",
+        "Recipe: Borscht\ninstructions: 1. Cover the meat with cold water, bring it to the boil and skim. Simmer for an hour and a half at a bare tremble — a rolling boil turns the stock cloudy. [Source step duration: 90 min]\n2. Braise the beetroot in a pan with a spoon of oil, the tomato paste and the vinegar, covered, for about twenty minutes. The vinegar is what keeps the colour. [Source step duration: 20 min]\n3. Separately fry the onion and carrot until soft and golden. [Source step duration: 8 min]\n4. Lift the meat out, pull it into pieces and return it to the stock. Add the potatoes and give them ten minutes — before any acid reaches the pot. [Source step duration: 10 min]\n5. Add the cabbage, then after five minutes the beetroot and the fried vegetables. Give it five minutes more, add the bay and garlic and take it straight off the heat. [Source step duration: 12 min]\n6. Let it stand covered for at least twenty minutes. Serve with sour cream, which softens the acid and pulls the flavours together. [Source step duration: 20 min]",
+        "Recipe: Borscht\ningredients: [{\"name\": \"Beef on the bone\", \"quantity\": 700, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Beetroot\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"coarsely grated\"}, {\"name\": \"Cabbage\", \"quantity\": 300, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"shredded\"}, {\"name\": \"Potatoes\", \"quantity\": 4, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Carrot\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomato paste\", \"quantity\": 2, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Vinegar, 9%\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Bay leaf\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Sour cream\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Borscht",
+          "section": "dietary",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredient_notes",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "overview",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "instructions",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredients",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 114,
+          "output_tokens": 18,
+          "seconds": 0.297
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1399,
+          "output_tokens": 134,
+          "seconds": 1.818
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "seconds": 2.487
+    },
+    {
+      "id": "Q06",
+      "question": "Is Ratatouille tagged vegan in the source?",
+      "expected_route": "retrieve",
+      "reference": "Ratatouille is tagged vegan by the source; verify ingredients and cross-contact independently.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "Ratatouille is vegan in the source's tags. Source tags are not independently verified; check ingredients, labels and cross-contact.",
+      "contexts": [
+        "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+        "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+        "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Rinderrouladen\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact."
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Rinderrouladen",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 116,
+          "output_tokens": 22,
+          "seconds": 0.347
+        },
+        {
+          "step": "answer",
+          "input_tokens": 822,
+          "output_tokens": 27,
+          "seconds": 0.367
+        }
+      ],
+      "safety": {
+        "stage": "verified_source_template",
+        "category": "allow"
+      },
+      "seconds": 0.89
+    },
+    {
+      "id": "Q07",
+      "question": "Is Guacamole tagged gluten-free in the source?",
+      "expected_route": "retrieve",
+      "reference": "Guacamole is tagged gluten-free by the source; verify ingredients and cross-contact independently.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "Guacamole is gluten-free in the source's tags. Source tags are not independently verified; check ingredients, labels and cross-contact.",
+      "contexts": [
+        "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+        "Recipe: Spanish tortilla\ndietary: Source tags: vegetarian, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Butter chicken\ndietary: Source tags: gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Gazpacho\ndietary: Source tags: vegetarian, vegan. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact."
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Butter chicken",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 116,
+          "output_tokens": 24,
+          "seconds": 0.38
+        },
+        {
+          "step": "answer",
+          "input_tokens": 797,
+          "output_tokens": 45,
+          "seconds": 0.634
+        }
+      ],
+      "safety": {
+        "stage": "verified_source_template",
+        "category": "allow"
+      },
+      "seconds": 1.218
+    },
+    {
+      "id": "Q08",
+      "question": "Is Miso soup tagged pescatarian in the source?",
+      "expected_route": "retrieve",
+      "reference": "Miso soup is tagged pescatarian by the source; verify ingredients and cross-contact independently.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "Miso soup is pescatarian in the source's tags. Source tags are not independently verified; check ingredients, labels and cross-contact.",
+      "contexts": [
+        "Recipe: Miso soup\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Tom yum goong\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+        "Recipe: French onion soup\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Risotto alla milanese\ndietary: Source tags: vegetarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact."
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Tom yum goong",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "French onion soup",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Risotto alla milanese",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 118,
+          "output_tokens": 26,
+          "seconds": 0.394
+        },
+        {
+          "step": "answer",
+          "input_tokens": 787,
+          "output_tokens": 42,
+          "seconds": 0.616
+        }
+      ],
+      "safety": {
+        "stage": "verified_source_template",
+        "category": "allow"
+      },
+      "seconds": 1.192
+    },
+    {
+      "id": "Q09",
+      "question": "What are the source preparation and cooking times for Ratatouille?",
+      "expected_route": "retrieve",
+      "reference": "The source lists 20 minutes preparation and 45 minutes cooking for Ratatouille.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The source's structured fields list 20 minutes preparation and 45 minutes cooking for Ratatouille. Source descriptions or step timings may differ; these values have not been independently verified.",
+      "contexts": [
+        "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+        "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+        "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+        "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Coq au vin\ninstructions: 1. Cover the chicken with the wine, carrot, garlic and herbs and leave it in the fridge overnight. In the morning lift the meat out and dry it, keeping the wine. [Source step duration: 480 min]\n2. Render the bacon in a casserole and lift it out. In that fat, brown the chicken hard on all sides, in batches. [Source step duration: 15 min]\n3. Dust with the flour, stir and cook for two minutes. Pour in the marinade with its vegetables and the stock, bring to the boil and skim. [Source step duration: 6 min]\n4. Braise covered over a low flame or at 160 °C for an hour. The sauce should barely tremble. [Source step duration: 60 min]\n5. While it braises, fry the onions in butter until golden, and separately the mushrooms over a high flame until they colour. [Source step duration: 15 min]\n6. Add the onions, mushrooms and bacon to the pot, give it ten minutes over a low flame and check the sauce for salt. [Source step duration: 10 min]"
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 119,
+          "output_tokens": 21,
+          "seconds": 0.329
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1269,
+          "output_tokens": 131,
+          "seconds": 1.766
+        }
+      ],
+      "safety": {
+        "stage": "verified_source_template",
+        "category": "allow"
+      },
+      "seconds": 2.282
+    },
+    {
+      "id": "Q10",
+      "question": "What are the source preparation and cooking times for Miso soup?",
+      "expected_route": "retrieve",
+      "reference": "The source lists 5 minutes preparation and 15 minutes cooking for Miso soup.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The source's structured fields list 5 minutes preparation and 15 minutes cooking for Miso soup. Source descriptions or step timings may differ; these values have not been independently verified.",
+      "contexts": [
+        "Recipe: Miso soup\noverview: A soup of dashi and miso that takes ten minutes. Miso must never boil: boiling takes out both the aroma and the point of it. Publisher lists prep 5 minutes and cook 15 minutes, total 20 minutes. Serves 4. Serves 4.",
+        "Recipe: Miso soup\ninstructions: 1. Cover the kombu with cold water and set it over low heat. Bring it to the edge of a boil over about ten minutes and lift the seaweed out before bubbles appear. [Source step duration: 10 min]\n2. Bring the water to the boil, add the bonito flakes, take it off the heat at once and let it stand for two minutes until the flakes sink. [Source step duration: 2 min]\n3. Strain the stock through a sieve without pressing the flakes — pressed flakes turn it bitter. [Source step duration: 2 min]\n4. Soak the wakame in cold water for five minutes; it swells several times over. [Source step duration: 5 min]\n5. Warm the dashi, add the tofu and the wakame and hold it at a low heat for a couple of minutes. [Source step duration: 2 min]\n6. Whisk the miso smooth in a ladle of the hot stock, stir it back in and take the pan off the heat immediately. Scatter over the spring onion. [Source step duration: 2 min]",
+        "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+        "Recipe: Miso soup\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Miso soup\ningredients: [{\"name\": \"Water\", \"quantity\": 800, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Kombu\", \"quantity\": 10, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"wiped, not washed\"}, {\"name\": \"Bonito flakes\", \"quantity\": 15, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Miso paste\", \"quantity\": 4, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tofu\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cubed\"}, {\"name\": \"Dried wakame\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Spring onion\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}]"
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Miso soup",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 118,
+          "output_tokens": 20,
+          "seconds": 0.31
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1220,
+          "output_tokens": 106,
+          "seconds": 1.43
+        }
+      ],
+      "safety": {
+        "stage": "verified_source_template",
+        "category": "allow"
+      },
+      "seconds": 1.923
+    },
+    {
+      "id": "Q11",
+      "question": "What are the source preparation and cooking times for Borscht?",
+      "expected_route": "retrieve",
+      "reference": "The source lists 30 minutes preparation and 120 minutes cooking for Borscht.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The source's structured fields list 30 minutes preparation and 120 minutes cooking for Borscht. Source descriptions or step timings may differ; these values have not been independently verified.",
+      "contexts": [
+        "Recipe: Borscht\noverview: A beetroot soup on beef stock where acid holds both the colour and the flavour. The beetroot is braised separately, never boiled in the pot. Publisher lists prep 30 minutes and cook 120 minutes, total 150 minutes. Serves 6. Serves 6.",
+        "Recipe: Borscht\ninstructions: 1. Cover the meat with cold water, bring it to the boil and skim. Simmer for an hour and a half at a bare tremble — a rolling boil turns the stock cloudy. [Source step duration: 90 min]\n2. Braise the beetroot in a pan with a spoon of oil, the tomato paste and the vinegar, covered, for about twenty minutes. The vinegar is what keeps the colour. [Source step duration: 20 min]\n3. Separately fry the onion and carrot until soft and golden. [Source step duration: 8 min]\n4. Lift the meat out, pull it into pieces and return it to the stock. Add the potatoes and give them ten minutes — before any acid reaches the pot. [Source step duration: 10 min]\n5. Add the cabbage, then after five minutes the beetroot and the fried vegetables. Give it five minutes more, add the bay and garlic and take it straight off the heat. [Source step duration: 12 min]\n6. Let it stand covered for at least twenty minutes. Serve with sour cream, which softens the acid and pulls the flavours together. [Source step duration: 20 min]",
+        "Recipe: Borscht\ningredient_notes: Beetroot: coarsely grated\nCabbage: shredded",
+        "Recipe: Borscht\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Phở bò\noverview: A clear beef broth with charred ginger and whole spices, rice noodles, and beef that finishes cooking in the bowl. Publisher lists prep 30 minutes and cook 240 minutes, total 270 minutes. Serves 4. Serves 4."
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Borscht",
+          "section": "overview",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "instructions",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredient_notes",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "dietary",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Phở bò",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 118,
+          "output_tokens": 22,
+          "seconds": 0.337
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1045,
+          "output_tokens": 40,
+          "seconds": 0.539
+        }
+      ],
+      "safety": {
+        "stage": "verified_source_template",
+        "category": "allow"
+      },
+      "seconds": 1.059
+    },
+    {
+      "id": "Q12",
+      "question": "How does the source say to prepare Spanish tortilla?",
+      "expected_route": "retrieve",
+      "reference": "1. Heat the oil in a deep pan until it is warm rather than hot — a slice of potato dropped in should sigh, not crackle. Add the potato and onion and salt them. [Source step duration: 3 min]\n2. Poach for twenty minutes, turning gently now and then. It is ready when a slice breaks easily against the side of the pan. Drain through a colander, keeping the potato. [Source step duration: 20 min]\n3. Beat the eggs with a pinch of salt and fold the warm potato through them. Let it sit for ten minutes: the potato gives up starch and the tortilla holds together for it. [Source step duration: 10 min]\n4. In a 24 cm pan with a spoon of oil, pour the mixture in and cook over medium heat for four minutes, easing the edges towards the middle with a spatula. [Source step duration: 4 min]\n5. Cover with a plate, flip in one movement and slide it back raw side down. Three minutes more leaves the centre slightly loose, which is how it should be. [Source step duration: 3 min]",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "safety_block",
+      "route_correct": false,
+      "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+      "contexts": [],
+      "context_metadata": [],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 116,
+          "output_tokens": 18,
+          "seconds": 0.326
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1165,
+          "output_tokens": 216,
+          "seconds": 2.887
+        }
+      ],
+      "safety": {
+        "stage": "output",
+        "category": "uncertain"
+      },
+      "seconds": 3.676
+    },
+    {
+      "id": "Q13",
+      "question": "What substitute does the source suggest for rabbit in Paella valenciana?",
+      "expected_route": "retrieve",
+      "reference": "The ingredient note says chicken can be used instead of rabbit.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "retrieve",
+      "route_correct": true,
+      "answer": "The source suggests that chicken can be used as a substitute for rabbit in the Paella valenciana recipe.",
+      "contexts": [
+        "Recipe: Paella valenciana\ningredient_notes: Rabbit, in pieces: chicken will do instead\nLarge white beans: cooked\nTomato: grated",
+        "Recipe: Paella valenciana\ninstructions: 1. Heat the oil in a wide pan and brown the chicken and rabbit on every side. This is not a five-minute job: it takes a good quarter of an hour, and there is no point rushing it — the flavour of the whole dish is laid down here. [Source step duration: 15 min]\n2. Push the meat to the edges, put the green beans in the middle and fry them for a couple of minutes. Add the grated tomato and the paprika and cook until the tomato darkens and stops smelling raw. [Source step duration: 6 min]\n3. Pour in the stock, add the rosemary, saffron and white beans, salt it noticeably harder than feels right and let it boil for ten minutes. This is the last moment you can correct the seasoning. [Source step duration: 10 min]\n4. Scatter the rice in an even layer and level it once with a spoon. After that do not touch the pan again — no stirring, no smoothing.\n5. Cook on a high flame for ten minutes, then drop to medium for another eight, until the stock is gone. The rice should be showing above the surface. [Source step duration: 18 min]\n6. Turn the heat up for half a minute and listen: the moment the sound turns from bubbling to a dry crackle, take it off. That is the socarrat. Cover with a cloth and let it stand for five minutes. [Source step duration: 6 min]",
+        "Recipe: Paella valenciana\noverview: Rice in a wide pan with chicken, rabbit and beans. It is never stirred once, and the crust on the bottom depends on that. Publisher lists prep 25 minutes and cook 45 minutes, total 70 minutes. Serves 4. Serves 4.",
+        "Recipe: Paella valenciana\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Paella valenciana\ningredients: [{\"name\": \"Bomba rice, or another short grain\", \"quantity\": 320, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Chicken, in pieces\", \"quantity\": 400, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Rabbit, in pieces\", \"quantity\": 300, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"chicken will do instead\"}, {\"name\": \"Flat green beans\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Large white beans\", \"quantity\": 100, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cooked\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"grated\"}, {\"name\": \"Olive oil\", \"quantity\": 60, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Sweet paprika\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Saffron\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Rosemary\", \"quantity\": 1, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Chicken stock or water\", \"quantity\": 900, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Paella valenciana",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 120,
+          "output_tokens": 20,
+          "seconds": 0.323
+        },
+        {
+          "step": "answer",
+          "input_tokens": 1500,
+          "output_tokens": 23,
+          "seconds": 0.332
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "seconds": 1.008
+    },
+    {
+      "id": "Q14",
+      "question": "How much is 2 kilograms in grams?",
+      "expected_route": "convert",
+      "reference": "2 kg equals 2000 g.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "expected_tool_result": {
+        "amount": 2000,
+        "unit": "g"
+      },
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "2 kilograms is equal to 2000 grams.",
+      "contexts": [],
+      "context_metadata": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 2.0,
+          "from_unit": "kilograms",
+          "to_unit": "grams"
+        }
+      },
+      "tool_result": "{\"amount\": 2000.0, \"unit\": \"g\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 114,
+          "output_tokens": 17,
+          "seconds": 0.283
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 80,
+          "output_tokens": 22,
+          "seconds": 0.317
+        },
+        {
+          "step": "answer",
+          "input_tokens": 189,
+          "output_tokens": 13,
+          "seconds": 0.21
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "tool_correct": true,
+      "seconds": 2.544
+    },
+    {
+      "id": "Q15",
+      "question": "Convert 500 ml into litres.",
+      "expected_route": "convert",
+      "reference": "500 ml equals 0.5 l.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "expected_tool_result": {
+        "amount": 0.5,
+        "unit": "l"
+      },
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "500 ml is equal to 0.5 litres.",
+      "contexts": [],
+      "context_metadata": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 500.0,
+          "from_unit": "ml",
+          "to_unit": "l"
+        }
+      },
+      "tool_result": "{\"amount\": 0.5, \"unit\": \"l\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 114,
+          "output_tokens": 21,
+          "seconds": 0.313
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 80,
+          "output_tokens": 23,
+          "seconds": 0.319
+        },
+        {
+          "step": "answer",
+          "input_tokens": 186,
+          "output_tokens": 14,
+          "seconds": 0.199
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "tool_correct": true,
+      "seconds": 2.464
+    },
+    {
+      "id": "Q16",
+      "question": "How many millilitres are 3 tablespoons?",
+      "expected_route": "convert",
+      "reference": "3 tablespoons equal 45 ml.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "expected_tool_result": {
+        "amount": 45,
+        "unit": "ml"
+      },
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "3 tablespoons are equivalent to 45.0 millilitres.",
+      "contexts": [],
+      "context_metadata": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 3.0,
+          "from_unit": "tablespoons",
+          "to_unit": "millilitres"
+        }
+      },
+      "tool_result": "{\"amount\": 45.0, \"unit\": \"ml\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 115,
+          "output_tokens": 19,
+          "seconds": 0.279
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 81,
+          "output_tokens": 25,
+          "seconds": 0.327
+        },
+        {
+          "step": "answer",
+          "input_tokens": 188,
+          "output_tokens": 15,
+          "seconds": 0.231
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "tool_correct": true,
+      "seconds": 2.523
+    },
+    {
+      "id": "Q17",
+      "question": "Convert 250 g to kg.",
+      "expected_route": "convert",
+      "reference": "250 g equals 0.25 kg.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "expected_tool_result": {
+        "amount": 0.25,
+        "unit": "kg"
+      },
+      "actual_route": "convert",
+      "route_correct": true,
+      "answer": "250 g is equal to 0.25 kg.",
+      "contexts": [],
+      "context_metadata": [],
+      "tool_call": {
+        "name": "convert_units",
+        "arguments": {
+          "amount": 250.0,
+          "from_unit": "g",
+          "to_unit": "kg"
+        }
+      },
+      "tool_result": "{\"amount\": 0.25, \"unit\": \"kg\"}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 114,
+          "output_tokens": 25,
+          "seconds": 0.389
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 80,
+          "output_tokens": 23,
+          "seconds": 0.347
+        },
+        {
+          "step": "answer",
+          "input_tokens": 187,
+          "output_tokens": 15,
+          "seconds": 0.238
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "tool_correct": true,
+      "seconds": 2.686
+    },
+    {
+      "id": "Q18",
+      "question": "Scale Ratatouille from 4 to 8 servings.",
+      "expected_route": "scale",
+      "reference": "Scale linear quantities from 4 to 8 servings; fixed quantities remain fixed and damped or unspecified amounts require manual adjustment.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "expected_tool_result": {
+        "result": [
+          {
+            "name": "Aubergine",
+            "quantity": 2.0,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Courgette",
+            "quantity": 4.0,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Bell pepper",
+            "quantity": 4.0,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Tomatoes",
+            "quantity": 1200.0,
+            "unit": "g",
+            "status": "linear"
+          },
+          {
+            "name": "Onion",
+            "quantity": 2.0,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Garlic",
+            "quantity": 6.0,
+            "unit": "clove",
+            "status": "linear"
+          },
+          {
+            "name": "Olive oil",
+            "quantity": 12.0,
+            "unit": "tbsp",
+            "status": "linear"
+          },
+          {
+            "name": "Thyme",
+            "quantity": null,
+            "unit": "sprig",
+            "original_quantity": 3.0,
+            "status": "Source requests damped scaling but provides no formula; adjust manually."
+          },
+          {
+            "name": "Basil",
+            "quantity": null,
+            "unit": "pinch",
+            "original_quantity": 1.0,
+            "status": "Source requests damped scaling but provides no formula; adjust manually."
+          },
+          {
+            "name": "Salt and pepper",
+            "quantity": null,
+            "unit": "toTaste",
+            "status": "No numeric source quantity; adjust to taste or follow the recipe."
+          }
+        ]
+      },
+      "actual_route": "scale",
+      "route_correct": true,
+      "answer": "Scaled ingredients for 8 servings:\n- Aubergine: 2 piece (linear)\n- Courgette: 4 piece (linear)\n- Bell pepper: 4 piece (linear)\n- Tomatoes: 1200 g (linear)\n- Onion: 2 piece (linear)\n- Garlic: 6 clove (linear)\n- Olive oil: 12 tbsp (linear)\n- Thyme: adjust manually; source amount was 3 sprig.\n- Basil: adjust manually; source amount was 1 pinch.\n- Salt and pepper: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "contexts": [
+        "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+        "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+        "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+        "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+        "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Aubergine",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "in 2 cm cubes"
+            },
+            {
+              "name": "Courgette",
+              "quantity": 2,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "in cubes"
+            },
+            {
+              "name": "Bell pepper",
+              "quantity": 2,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Tomatoes",
+              "quantity": 600,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "ripe, peeled"
+            },
+            {
+              "name": "Onion",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Garlic",
+              "quantity": 3,
+              "unit": "clove",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Olive oil",
+              "quantity": 6,
+              "unit": "tbsp",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Thyme",
+              "quantity": 3,
+              "unit": "sprig",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Basil",
+              "quantity": 1,
+              "unit": "pinch",
+              "scaling": "damped",
+              "note": "at the end"
+            },
+            {
+              "name": "Salt and pepper",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 8.0
+        },
+        "recipe_name": "Ratatouille"
+      },
+      "tool_result": "{\"result\": [{\"name\": \"Aubergine\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Courgette\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Bell pepper\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Tomatoes\", \"quantity\": 1200.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Onion\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Garlic\", \"quantity\": 6.0, \"unit\": \"clove\", \"status\": \"linear\"}, {\"name\": \"Olive oil\", \"quantity\": 12.0, \"unit\": \"tbsp\", \"status\": \"linear\"}, {\"name\": \"Thyme\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Basil\", \"quantity\": null, \"unit\": \"pinch\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 118,
+          "output_tokens": 25,
+          "seconds": 0.42
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 84,
+          "output_tokens": 11,
+          "seconds": 0.227
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "tool_correct": true,
+      "seconds": 2.723
+    },
+    {
+      "id": "Q19",
+      "question": "Scale Guacamole from 4 to 2 servings.",
+      "expected_route": "scale",
+      "reference": "Scale linear quantities from 4 to 2 servings; fixed quantities remain fixed and damped or unspecified amounts require manual adjustment.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "expected_tool_result": {
+        "result": [
+          {
+            "name": "Avocado",
+            "quantity": 1.5,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Lime",
+            "quantity": 0.5,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Red onion",
+            "quantity": 0.25,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Jalapeño",
+            "quantity": null,
+            "unit": "piece",
+            "original_quantity": 1.0,
+            "status": "Source requests damped scaling but provides no formula; adjust manually."
+          },
+          {
+            "name": "Coriander",
+            "quantity": null,
+            "unit": "sprig",
+            "original_quantity": 3.0,
+            "status": "Source requests damped scaling but provides no formula; adjust manually."
+          },
+          {
+            "name": "Tomato",
+            "quantity": 0.5,
+            "unit": "piece",
+            "status": "linear"
+          },
+          {
+            "name": "Salt",
+            "quantity": null,
+            "unit": "toTaste",
+            "status": "No numeric source quantity; adjust to taste or follow the recipe."
+          }
+        ]
+      },
+      "actual_route": "scale",
+      "route_correct": true,
+      "answer": "Scaled ingredients for 2 servings:\n- Avocado: 1.5 piece (linear)\n- Lime: 0.5 piece (linear)\n- Red onion: 0.25 piece (linear)\n- Jalapeño: adjust manually; source amount was 1 piece.\n- Coriander: adjust manually; source amount was 3 sprig.\n- Tomato: 0.5 piece (linear)\n- Salt: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "contexts": [
+        "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+        "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+        "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+        "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+        "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact."
+      ],
+      "context_metadata": [
+        {
+          "recipe": "Guacamole",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ],
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Avocado",
+              "quantity": 3,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "ripe"
+            },
+            {
+              "name": "Lime",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "juiced"
+            },
+            {
+              "name": "Red onion",
+              "quantity": 0.5,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "finely chopped"
+            },
+            {
+              "name": "Jalapeño",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "damped",
+              "note": "seeds removed"
+            },
+            {
+              "name": "Coriander",
+              "quantity": 3,
+              "unit": "sprig",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Tomato",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "seeded and diced"
+            },
+            {
+              "name": "Salt",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 2.0
+        },
+        "recipe_name": "Guacamole"
+      },
+      "tool_result": "{\"result\": [{\"name\": \"Avocado\", \"quantity\": 1.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Lime\", \"quantity\": 0.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Red onion\", \"quantity\": 0.25, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Jalapeño\", \"quantity\": null, \"unit\": \"piece\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Coriander\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Tomato\", \"quantity\": 0.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 117,
+          "output_tokens": 29,
+          "seconds": 0.463
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 83,
+          "output_tokens": 10,
+          "seconds": 0.222
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "tool_correct": true,
+      "seconds": 2.526
+    },
+    {
+      "id": "Q20",
+      "question": "Hello!",
+      "expected_route": "chat",
+      "reference": "A brief greeting.",
+      "reference_status": "Derived from UniTools source record by code; not independently reviewed.",
+      "actual_route": "chat",
+      "route_correct": true,
+      "answer": "Hello! How can I assist you today?",
+      "contexts": [],
+      "context_metadata": [],
+      "tool_call": null,
+      "tool_result": null,
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 107,
+          "output_tokens": 15,
+          "seconds": 0.282
+        },
+        {
+          "step": "answer",
+          "input_tokens": 165,
+          "output_tokens": 10,
+          "seconds": 0.144
+        }
+      ],
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "seconds": 0.8
+    }
+  ]
+}

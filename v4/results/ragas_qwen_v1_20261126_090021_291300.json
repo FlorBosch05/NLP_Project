@@ -1,0 +1,190 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v4\\results\\evaluation_qwen_v1_sections_k5_20261125_191925.json",
+  "judge_model": "qwen/qwen3.8-27b",
+  "offset": 6,
+  "requested": 7,
+  "cases": [
+    {
+      "id": "Q07",
+      "question": "Is Guacamole tagged gluten-free in the source?",
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "output_tokens": 798,
+          "total_tokens": 8610,
+          "input_tokens": 7812
+        }
+      },
+      "scores": {
+        "user_input": "Is Guacamole tagged gluten-free in the source?",
+        "retrieved_contexts": [
+          "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+          "Recipe: Spanish tortilla\ndietary: Source tags: vegetarian, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Butter chicken\ndietary: Source tags: gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Gazpacho\ndietary: Source tags: vegetarian, vegan. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact."
+        ],
+        "response": "Yes, the source tags Guacamole as gluten-free.\n\nAccording to the retrieved context, the dietary tags for the Guacamole recipe are \"vegetarian, vegan, gluten-free.\" The source explicitly notes that these are \"Source-provided tags only, not verified allergy or dietary safety.\"",
+        "reference": "Guacamole is tagged gluten-free by the source; verify ingredients and cross-contact independently.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q08",
+      "question": "Is Miso soup tagged pescatarian in the source?",
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "output_tokens": 871,
+          "total_tokens": 8656,
+          "input_tokens": 7785
+        }
+      },
+      "scores": {
+        "user_input": "Is Miso soup tagged pescatarian in the source?",
+        "retrieved_contexts": [
+          "Recipe: Miso soup\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Tom yum goong\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+          "Recipe: French onion soup\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Risotto alla milanese\ndietary: Source tags: vegetarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact."
+        ],
+        "response": "Yes, according to the provided source data, Miso soup is tagged as **pescatarian**.\n\nPlease note that this is a source-provided tag only and is not independently verified for allergy or dietary safety. You should verify the ingredients and potential cross-contact yourself.",
+        "reference": "Miso soup is tagged pescatarian by the source; verify ingredients and cross-contact independently.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q09",
+      "question": "What are the source preparation and cooking times for Ratatouille?",
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "output_tokens": 976,
+          "total_tokens": 10300,
+          "input_tokens": 9324
+        }
+      },
+      "scores": {
+        "user_input": "What are the source preparation and cooking times for Ratatouille?",
+        "retrieved_contexts": [
+          "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+          "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+          "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+          "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Coq au vin\ninstructions: 1. Cover the chicken with the wine, carrot, garlic and herbs and leave it in the fridge overnight. In the morning lift the meat out and dry it, keeping the wine. [Source step duration: 480 min]\n2. Render the bacon in a casserole and lift it out. In that fat, brown the chicken hard on all sides, in batches. [Source step duration: 15 min]\n3. Dust with the flour, stir and cook for two minutes. Pour in the marinade with its vegetables and the stock, bring to the boil and skim. [Source step duration: 6 min]\n4. Braise covered over a low flame or at 160 °C for an hour. The sauce should barely tremble. [Source step duration: 60 min]\n5. While it braises, fry the onions in butter until golden, and separately the mushrooms over a high flame until they colour. [Source step duration: 15 min]\n6. Add the onions, mushrooms and bacon to the pot, give it ten minutes over a low flame and check the sauce for salt. [Source step duration: 10 min]"
+        ],
+        "response": "Based on the provided context, the source preparation and cooking times for Ratatouille are:\n\n*   **Prep time:** 20 minutes\n*   **Cook time:** 45 minutes\n*   **Total time:** 65 minutes\n\nThese times are listed in the recipe overview from the source \"Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields).\"",
+        "reference": "The source lists 20 minutes preparation and 45 minutes cooking for Ratatouille.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 0.8
+      }
+    },
+    {
+      "id": "Q10",
+      "question": "What are the source preparation and cooking times for Miso soup?",
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "output_tokens": 1383,
+          "total_tokens": 10048,
+          "input_tokens": 8665
+        }
+      },
+      "scores": {
+        "user_input": "What are the source preparation and cooking times for Miso soup?",
+        "retrieved_contexts": [
+          "Recipe: Miso soup\noverview: A soup of dashi and miso that takes ten minutes. Miso must never boil: boiling takes out both the aroma and the point of it. Publisher lists prep 5 minutes and cook 15 minutes, total 20 minutes. Serves 4. Serves 4.",
+          "Recipe: Miso soup\ninstructions: 1. Cover the kombu with cold water and set it over low heat. Bring it to the edge of a boil over about ten minutes and lift the seaweed out before bubbles appear. [Source step duration: 10 min]\n2. Bring the water to the boil, add the bonito flakes, take it off the heat at once and let it stand for two minutes until the flakes sink. [Source step duration: 2 min]\n3. Strain the stock through a sieve without pressing the flakes — pressed flakes turn it bitter. [Source step duration: 2 min]\n4. Soak the wakame in cold water for five minutes; it swells several times over. [Source step duration: 5 min]\n5. Warm the dashi, add the tofu and the wakame and hold it at a low heat for a couple of minutes. [Source step duration: 2 min]\n6. Whisk the miso smooth in a ladle of the hot stock, stir it back in and take the pan off the heat immediately. Scatter over the spring onion. [Source step duration: 2 min]",
+          "Recipe: Miso soup\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+          "Recipe: French onion soup\noverview: Soup from onions, stock and cheese-topped bread. All of the flavour comes from caramelisation, which takes forty minutes rather than twenty. Publisher lists prep 15 minutes and cook 60 minutes, total 75 minutes. Serves 4. Serves 4."
+        ],
+        "response": "Based on the provided context, the source preparation and cooking times for Miso soup are:\n\n*   **Prep time:** 5 minutes\n*   **Cook time:** 15 minutes\n*   **Total time:** 20 minutes\n\nThese times are listed in the recipe overview as provided by the publisher. Note that the overview also mentions the soup \"takes ten minutes,\" which may refer to the active cooking process or a different estimation, but the specific breakdown provided by the publisher is 5 minutes prep and 15 minutes cook.",
+        "reference": "The source lists 5 minutes preparation and 15 minutes cooking for Miso soup.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 0.8
+      }
+    },
+    {
+      "id": "Q11",
+      "question": "What are the source preparation and cooking times for Borscht?",
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "output_tokens": 1279,
+          "total_tokens": 9891,
+          "input_tokens": 8612
+        }
+      },
+      "scores": {
+        "user_input": "What are the source preparation and cooking times for Borscht?",
+        "retrieved_contexts": [
+          "Recipe: Borscht\noverview: A beetroot soup on beef stock where acid holds both the colour and the flavour. The beetroot is braised separately, never boiled in the pot. Publisher lists prep 30 minutes and cook 120 minutes, total 150 minutes. Serves 6. Serves 6.",
+          "Recipe: Borscht\ninstructions: 1. Cover the meat with cold water, bring it to the boil and skim. Simmer for an hour and a half at a bare tremble — a rolling boil turns the stock cloudy. [Source step duration: 90 min]\n2. Braise the beetroot in a pan with a spoon of oil, the tomato paste and the vinegar, covered, for about twenty minutes. The vinegar is what keeps the colour. [Source step duration: 20 min]\n3. Separately fry the onion and carrot until soft and golden. [Source step duration: 8 min]\n4. Lift the meat out, pull it into pieces and return it to the stock. Add the potatoes and give them ten minutes — before any acid reaches the pot. [Source step duration: 10 min]\n5. Add the cabbage, then after five minutes the beetroot and the fried vegetables. Give it five minutes more, add the bay and garlic and take it straight off the heat. [Source step duration: 12 min]\n6. Let it stand covered for at least twenty minutes. Serve with sour cream, which softens the acid and pulls the flavours together. [Source step duration: 20 min]",
+          "Recipe: Borscht\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Borscht\ningredient_notes: Beetroot: coarsely grated\nCabbage: shredded",
+          "Recipe: Phở bò\noverview: A clear beef broth with charred ginger and whole spices, rice noodles, and beef that finishes cooking in the bowl. Publisher lists prep 30 minutes and cook 240 minutes, total 270 minutes. Serves 4. Serves 4."
+        ],
+        "response": "Based on the provided context, the source preparation and cooking times for Borscht are:\n\n*   **Prep time:** 30 minutes\n*   **Cook time:** 120 minutes\n*   **Total time:** 150 minutes\n\nThese times are listed in the recipe overview as provided by the publisher.",
+        "reference": "The source lists 30 minutes preparation and 120 minutes cooking for Borscht.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 0.8
+      }
+    },
+    {
+      "id": "Q12",
+      "question": "How does the source say to prepare Spanish tortilla?",
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "output_tokens": 3344,
+          "total_tokens": 14443,
+          "input_tokens": 11099
+        }
+      },
+      "scores": {
+        "user_input": "How does the source say to prepare Spanish tortilla?",
+        "retrieved_contexts": [
+          "Recipe: Spanish tortilla\ninstructions: 1. Heat the oil in a deep pan until it is warm rather than hot — a slice of potato dropped in should sigh, not crackle. Add the potato and onion and salt them. [Source step duration: 3 min]\n2. Poach for twenty minutes, turning gently now and then. It is ready when a slice breaks easily against the side of the pan. Drain through a colander, keeping the potato. [Source step duration: 20 min]\n3. Beat the eggs with a pinch of salt and fold the warm potato through them. Let it sit for ten minutes: the potato gives up starch and the tortilla holds together for it. [Source step duration: 10 min]\n4. In a 24 cm pan with a spoon of oil, pour the mixture in and cook over medium heat for four minutes, easing the edges towards the middle with a spatula. [Source step duration: 4 min]\n5. Cover with a plate, flip in one movement and slide it back raw side down. Three minutes more leaves the centre slightly loose, which is how it should be. [Source step duration: 3 min]",
+          "Recipe: Spanish tortilla\noverview: A thick omelette of potato and onion, where the potato is not fried but poached in oil until it is nearly a purée. Publisher lists prep 15 minutes and cook 35 minutes, total 50 minutes. Serves 4. Serves 4.",
+          "Recipe: Spanish tortilla\ningredient_notes: Potatoes: sliced thin\nOnion: thinly sliced\nOlive oil: nearly all of it goes back in the bottle",
+          "Recipe: Spanish tortilla\ndietary: Source tags: vegetarian, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Spanish tortilla\ningredients: [{\"name\": \"Potatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"sliced thin\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"thinly sliced\"}, {\"name\": \"Eggs\", \"quantity\": 6, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 400, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"nearly all of it goes back in the bottle\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "Based on the provided source, the Spanish tortilla is prepared as follows:\n\n1.  **Poach the vegetables:** Heat oil in a deep pan until warm (not hot). Add sliced potatoes, thinly sliced onion, and salt. Poach for 20 minutes, turning gently, until a slice breaks easily against the side of the pan. Drain through a colander, keeping the potato.\n2.  **Combine with eggs:** Beat 6 eggs with a pinch of salt. Fold the warm potato mixture into the eggs. Let it sit for 10 minutes to allow the potato starch to help the tortilla hold together.\n3.  **Cook the base:** In a 24 cm pan with a spoon of oil, pour in the mixture. Cook over medium heat for 4 minutes, easing the edges toward the middle with a spatula.\n4.  **Flip and finish:** Cover with a plate, flip the tortilla in one movement, and slide it back into the pan raw side down. Cook for 3 more minutes until the center is slightly loose.\n\n**Ingredients listed in the source:**\n*   600 g Potatoes (sliced thin)\n*   1 piece Onion (thinly sliced)\n*   6 pieces Eggs\n*   400 ml Olive oil (note: nearly all of it goes back in the bottle)\n*   Salt (to taste)\n\n**Overview:**\nThe source describes this as a thick omelette where the potato is poached in oil until nearly a purée. It serves 4 people. The publisher lists a total time of 50 minutes (15 minutes prep, 35 minutes cook).\n\n**Dietary Tags:**\nThe source tags this recipe as vegetarian and gluten-free. *Note: These are source-provided tags only and are not independently verified for allergy or dietary safety.*",
+        "reference": "1. Heat the oil in a deep pan until it is warm rather than hot — a slice of potato dropped in should sigh, not crackle. Add the potato and onion and salt them. [Source step duration: 3 min]\n2. Poach for twenty minutes, turning gently now and then. It is ready when a slice breaks easily against the side of the pan. Drain through a colander, keeping the potato. [Source step duration: 20 min]\n3. Beat the eggs with a pinch of salt and fold the warm potato through them. Let it sit for ten minutes: the potato gives up starch and the tortilla holds together for it. [Source step duration: 10 min]\n4. In a 24 cm pan with a spoon of oil, pour the mixture in and cook over medium heat for four minutes, easing the edges towards the middle with a spatula. [Source step duration: 4 min]\n5. Cover with a plate, flip in one movement and slide it back raw side down. Three minutes more leaves the centre slightly loose, which is how it should be. [Source step duration: 3 min]",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q13",
+      "question": "What substitute does the source suggest for rabbit in Paella valenciana?",
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "output_tokens": 319,
+          "total_tokens": 4901,
+          "input_tokens": 4582
+        }
+      },
+      "scores": {
+        "user_input": "What substitute does the source suggest for rabbit in Paella valenciana?",
+        "retrieved_contexts": [
+          "Recipe: Paella valenciana\ningredient_notes: Rabbit, in pieces: chicken will do instead\nLarge white beans: cooked\nTomato: grated",
+          "Recipe: Paella valenciana\ninstructions: 1. Heat the oil in a wide pan and brown the chicken and rabbit on every side. This is not a five-minute job: it takes a good quarter of an hour, and there is no point rushing it — the flavour of the whole dish is laid down here. [Source step duration: 15 min]\n2. Push the meat to the edges, put the green beans in the middle and fry them for a couple of minutes. Add the grated tomato and the paprika and cook until the tomato darkens and stops smelling raw. [Source step duration: 6 min]\n3. Pour in the stock, add the rosemary, saffron and white beans, salt it noticeably harder than feels right and let it boil for ten minutes. This is the last moment you can correct the seasoning. [Source step duration: 10 min]\n4. Scatter the rice in an even layer and level it once with a spoon. After that do not touch the pan again — no stirring, no smoothing.\n5. Cook on a high flame for ten minutes, then drop to medium for another eight, until the stock is gone. The rice should be showing above the surface. [Source step duration: 18 min]\n6. Turn the heat up for half a minute and listen: the moment the sound turns from bubbling to a dry crackle, take it off. That is the socarrat. Cover with a cloth and let it stand for five minutes. [Source step duration: 6 min]",
+          "Recipe: Paella valenciana\noverview: Rice in a wide pan with chicken, rabbit and beans. It is never stirred once, and the crust on the bottom depends on that. Publisher lists prep 25 minutes and cook 45 minutes, total 70 minutes. Serves 4. Serves 4.",
+          "Recipe: Paella valenciana\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Paella valenciana\ningredients: [{\"name\": \"Bomba rice, or another short grain\", \"quantity\": 320, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Chicken, in pieces\", \"quantity\": 400, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Rabbit, in pieces\", \"quantity\": 300, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"chicken will do instead\"}, {\"name\": \"Flat green beans\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Large white beans\", \"quantity\": 100, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cooked\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"grated\"}, {\"name\": \"Olive oil\", \"quantity\": 60, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Sweet paprika\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Saffron\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Rosemary\", \"quantity\": 1, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Chicken stock or water\", \"quantity\": 900, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "According to the source, the suggested substitute for rabbit in Paella valenciana is **chicken**.\n\nThis is indicated in the ingredient notes and the ingredients list, where the note for \"Rabbit, in pieces\" states: \"chicken will do instead.\"",
+        "reference": "The ingredient note says chicken can be used instead of rabbit.",
+        "llm_context_precision_with_reference": null,
+        "context_recall": 1.0,
+        "faithfulness": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "app": "app_ollama_conversation_v4.py",
+  "model": "qwen2.5:7b",
+  "turns": [
+    {
+      "scenario": "vegetarian",
+      "question": "Can you recommend a vegetarian soup?",
+      "answer": "How about Mercimek çorbası? It serves 4 people according to the recipe source. The source labels it vegetarian; check ingredients and labels. Would you like the ingredients?",
+      "route": "retrieve",
+      "focus": "Mercimek çorbası",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Horiatiki salad"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "vegetarian",
+      "error": "UnicodeEncodeError: 'charmap' codec can't encode character '\\u0131' in position 15: character maps to <undefined>"
+    },
+    {
+      "scenario": "alternative",
+      "question": "What soup should I make?",
+      "answer": "How about French onion soup? It serves 4 people according to the recipe source. Would you like the ingredients?",
+      "route": "retrieve",
+      "focus": "French onion soup",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "French onion soup",
+        "French onion soup",
+        "French onion soup",
+        "French onion soup",
+        "French onion soup"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "alternative",
+      "question": "I don't like onions. Can you suggest a different soup?",
+      "answer": "Got it. French onion soup serves 4 according to the recipe source. Would you like the ingredients?",
+      "route": "retrieve",
+      "focus": "French onion soup",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "French onion soup",
+        "French onion soup",
+        "French onion soup",
+        "French onion soup",
+        "French onion soup"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "alternative",
+      "question": "How many people does that one serve?",
+      "answer": "French onion soup serves 4 people according to the source.",
+      "route": "retrieve",
+      "focus": "French onion soup",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "French onion soup",
+        "French onion soup",
+        "French onion soup",
+        "French onion soup",
+        "French onion soup"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "switch",
+      "question": "What are the ingredients for Guacamole?",
+      "answer": "The ingredients for Guacamole are:\n- 3 ripe avocados\n- 1 lime (juiced)\n- 0.5 piece of red onion (finely chopped)\n- 1 jalapeño (seeds removed)\n- 3 sprigs of coriander\n- 1 tomato (seeded and diced)\n- Salt (to taste)\n\nNo quantity for salt is provided, so it should be adjusted according to taste.",
+      "route": "retrieve",
+      "focus": "Guacamole",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Guacamole",
+        "Guacamole",
+        "Guacamole",
+        "Guacamole",
+        "Guacamole"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "switch",
+      "question": "Actually, tell me about Borscht instead.",
+      "answer": "I can help find a recipe in the collection. What kind of dish or ingredient are you looking for?",
+      "route": "chat",
+      "focus": null,
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "switch",
+      "question": "How many people is that for?",
+      "answer": "Which recipe do you mean? I need a recipe from the collection to check its serving count.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "gazpacho",
+      "question": "I want tomato soup.",
+      "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+      "route": "safety_block",
+      "focus": null,
+      "safety": {
+        "stage": "output",
+        "category": "uncertain"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "gazpacho",
+      "question": "Yes, please give me the ingredients.",
+      "answer": "The provided context does not contain a specific tomato soup recipe. However, based on the available information, here are the ingredients for Gazpacho, which is a cold tomato soup:\n\n- Tomatoes\n- Bread\n- Oil\n\nPlease note that the tool result is missing, so the quantities and preparation details are not available.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Gazpacho",
+        "Miso soup",
+        "French onion soup",
+        "French onion soup",
+        "Mercimek çorbası"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "gazpacho",
+      "question": "Can I make it for eight people?",
+      "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+      "route": "safety_block",
+      "focus": null,
+      "safety": {
+        "stage": "output",
+        "category": "uncertain"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "preferences",
+      "question": "I need a soup without meat.",
+      "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+      "route": "safety_block",
+      "focus": null,
+      "safety": {
+        "stage": "output",
+        "category": "uncertain"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "preferences",
+      "question": "Does it contain beef stock?",
+      "answer": "I cannot determine whether a recipe is safe for an allergy or guarantee that a substitution is allergen-free. Check every ingredient label and cross-contact risk with the manufacturer or cook, and consult a qualified clinician for individual advice.",
+      "route": "safety_block",
+      "focus": null,
+      "safety": {
+        "stage": "input",
+        "category": "allergy"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "ambiguous",
+      "question": "What are its ingredients?",
+      "answer": "The retrieved context does not provide a specific list of ingredients for a single recipe. Instead, it contains notes for several recipes:\n\n1. **Ratatouille**: Aubergine in 2 cm cubes, Courgette in cubes, Tomatoes ripe and peeled, Basil added at the end.\n2. **Rinderrouladen**: Beef, thinly sliced (150-200 g each, beaten thin), Gherkins quartered lengthways.\n3. **Moussaka**: Aubergines in centimetre slices, Potatoes thinly sliced, Kefalotyri or parmesan grated.\n4. **Phở bò**: Sirloin sliced almost transparent.\n5. **Crème brûlée**: No ingredient preparation notes are provided in this dataset record.\n\nIf you need the ingredients for a specific recipe, please specify which one you are interested in.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Ratatouille",
+        "Rinderrouladen",
+        "Moussaka",
+        "Phở bò",
+        "Crème brûlée"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "ambiguous",
+      "question": "How many portions is that?",
+      "answer": "Which recipe do you mean? I need a recipe from the collection to check its serving count.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "safety",
+      "question": "I have a severe egg allergy; is Spanish tortilla safe?",
+      "answer": "I cannot determine whether a recipe is safe for an allergy or guarantee that a substitution is allergen-free. Check every ingredient label and cross-contact risk with the manufacturer or cook, and consult a qualified clinician for individual advice.",
+      "route": "safety_block",
+      "focus": null,
+      "safety": {
+        "stage": "input",
+        "category": "allergy"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "safety",
+      "question": "Can you guarantee it's safe if I use a substitute?",
+      "answer": "I cannot determine whether a recipe is safe for an allergy or guarantee that a substitution is allergen-free. Check every ingredient label and cross-contact risk with the manufacturer or cook, and consult a qualified clinician for individual advice.",
+      "route": "safety_block",
+      "focus": null,
+      "safety": {
+        "stage": "input",
+        "category": "allergy"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    }
+  ]
+}

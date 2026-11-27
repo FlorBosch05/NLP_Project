@@ -1,0 +1,196 @@
+[
+  {
+    "id": "Q01",
+    "question": "What are the ingredients for tomato pasta?",
+    "expected_route": "retrieve",
+    "reference": "Tomato pasta contains 200 g pasta, 300 g tomatoes, and 15 ml olive oil.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q02",
+    "question": "What ingredients are in mushroom pasta?",
+    "expected_route": "retrieve",
+    "reference": "Mushroom pasta contains 200 g pasta, 250 g mushrooms, and 15 ml olive oil.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q03",
+    "question": "How do I prepare lentil soup?",
+    "expected_route": "retrieve",
+    "reference": "Simmer lentils and chopped carrots in water until tender.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q04",
+    "question": "What ingredients are in chickpea salad?",
+    "expected_route": "retrieve",
+    "reference": "Chickpea salad contains 240 g chickpeas, 150 g cucumber and 150 g tomatoes.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q05",
+    "question": "What are the ingredients for carrot soup?",
+    "expected_route": "retrieve",
+    "reference": "Carrot soup contains 400 g carrots, 100 g onion and 500 ml water.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q06",
+    "question": "How many servings does tofu stir fry make?",
+    "expected_route": "retrieve",
+    "reference": "Tofu stir fry serves two.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q07",
+    "question": "What is the estimated preparation time for baked potatoes?",
+    "expected_route": "retrieve",
+    "reference": "The estimated preparation time for baked potatoes is 45 minutes.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q08",
+    "question": "How is pea soup prepared?",
+    "expected_route": "retrieve",
+    "reference": "Simmer peas and onion in water until tender and blend.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q09",
+    "question": "What ingredients are used in chicken rice bowl?",
+    "expected_route": "retrieve",
+    "reference": "Chicken rice bowl contains 250 g chicken breast, 150 g rice and 150 g carrots.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q10",
+    "question": "Is lentil soup tagged vegan?",
+    "expected_route": "retrieve",
+    "reference": "Lentil soup is tagged vegan based on its listed ingredients.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q11",
+    "question": "What can replace chickpeas in chickpea salad according to the recipe?",
+    "expected_route": "retrieve",
+    "reference": "The provided recipe does not specify a chickpea substitution.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q12",
+    "question": "Does the tomato pasta recipe specify a substitute for pasta?",
+    "expected_route": "retrieve",
+    "reference": "The provided tomato pasta recipe does not specify a pasta substitute.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q13",
+    "question": "What can I substitute for milk in oat porridge according to the recipe?",
+    "expected_route": "retrieve",
+    "reference": "The provided oat porridge recipe does not specify a substitute for milk.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  },
+  {
+    "id": "Q14",
+    "question": "How much is 2 kilograms in grams?",
+    "expected_route": "convert",
+    "reference": "2 kg equals 2000 g.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+    "expected_tool_result": {
+      "amount": 2000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "Q15",
+    "question": "Convert 500 ml into litres.",
+    "expected_route": "convert",
+    "reference": "500 ml equals 0.5 l.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+    "expected_tool_result": {
+      "amount": 0.5,
+      "unit": "l"
+    }
+  },
+  {
+    "id": "Q16",
+    "question": "How many millilitres are 3 tablespoons?",
+    "expected_route": "convert",
+    "reference": "3 tablespoons equal 45 ml.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+    "expected_tool_result": {
+      "amount": 45,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "Q17",
+    "question": "Convert 250 g to kg.",
+    "expected_route": "convert",
+    "reference": "250 g equals 0.25 kg.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+    "expected_tool_result": {
+      "amount": 0.25,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "Q18",
+    "question": "Scale tomato pasta from 2 to 5 servings.",
+    "expected_route": "scale",
+    "reference": "For five servings use 500 g pasta, 750 g tomatoes and 37.5 ml olive oil.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+    "expected_tool_result": {
+      "result": [
+        {
+          "name": "pasta",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "name": "tomatoes",
+          "quantity": 750,
+          "unit": "g"
+        },
+        {
+          "name": "olive oil",
+          "quantity": 37.5,
+          "unit": "ml"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Q19",
+    "question": "Scale mushroom pasta from 2 to 4 servings.",
+    "expected_route": "scale",
+    "reference": "For four servings use 400 g pasta, 500 g mushrooms and 30 ml olive oil.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review.",
+    "expected_tool_result": {
+      "result": [
+        {
+          "name": "pasta",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "name": "mushrooms",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "name": "olive oil",
+          "quantity": 30,
+          "unit": "ml"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Q20",
+    "question": "Hello!",
+    "expected_route": "chat",
+    "reference": "A brief greeting.",
+    "reference_status": "Manually authored from the synthetic teaching corpus; awaiting independent review."
+  }
+]

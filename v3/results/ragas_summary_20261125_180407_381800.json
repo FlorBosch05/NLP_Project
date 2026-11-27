@@ -1,0 +1,287 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v3\\results\\evaluation_qwen_sections_k5_20261125_135121.json",
+  "judge_model": "qwen/qwen3.8-27b",
+  "note": "Means use only available values and are not comparable to complete benchmarks. Most recent batch wins for each case.",
+  "summary": {
+    "llm_context_precision_with_reference": {
+      "scored": 13,
+      "expected": 13,
+      "mean_available": 0.9512820512153846,
+      "missing_ids": []
+    },
+    "context_recall": {
+      "scored": 13,
+      "expected": 13,
+      "mean_available": 1.0,
+      "missing_ids": []
+    },
+    "faithfulness": {
+      "scored": 13,
+      "expected": 13,
+      "mean_available": 0.8949405295615385,
+      "missing_ids": []
+    }
+  },
+  "cases": [
+    {
+      "id": "Q01",
+      "scores": {
+        "user_input": "What are the ingredients for tomato pasta?",
+        "retrieved_contexts": [
+          "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+          "Recipe: Tomato pasta\ninstructions: Cook the pasta in water according to the package. Simmer chopped tomatoes in the olive oil and combine with the drained pasta.",
+          "Recipe: Tomato pasta\nsubstitutions: Optional untested suggestion: replace the pasta with the same weight of another pasta; follow its package directions and check its ingredient label.",
+          "Recipe: Mushroom pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"mushrooms\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+          "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2."
+        ],
+        "response": "Based on the provided context, the ingredients for the Tomato pasta recipe are:\n\n*   **Pasta:** 200 g\n*   **Tomatoes:** 300 g\n*   **Olive oil:** 15 ml\n\nThis recipe serves 2 people.",
+        "reference": "Tomato pasta contains 200 g pasta, 300 g tomatoes, and 15 ml olive oil.",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q02",
+      "scores": {
+        "user_input": "What ingredients are in mushroom pasta?",
+        "retrieved_contexts": [
+          "Recipe: Mushroom pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"mushrooms\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+          "Recipe: Mushroom pasta\ninstructions: Cook the pasta in water according to the package. Sauté the mushrooms in the olive oil and combine with the drained pasta.",
+          "Recipe: Mushroom pasta\noverview: Mushroom pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+          "Recipe: Mushroom pasta\ndietary: Tags: vegetarian. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+          "Recipe: Mushroom pasta\nsubstitutions: No substitution is specified in this teaching recipe."
+        ],
+        "response": "Based on the provided context, the ingredients for the mushroom pasta recipe are:\n\n*   **Pasta**: 200 g\n*   **Mushrooms**: 250 g\n*   **Olive oil**: 15 ml\n\nThis recipe serves 2 people.",
+        "reference": "Mushroom pasta contains 200 g pasta, 250 g mushrooms, and 15 ml olive oil.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q03",
+      "scores": {
+        "user_input": "How do I prepare lentil soup?",
+        "retrieved_contexts": [
+          "Recipe: Lentil soup\ninstructions: Rinse dry lentils. Simmer lentils and chopped carrots in the listed water until tender; check the lentil package for the cooking time.",
+          "Recipe: Lentil soup\noverview: Lentil soup is a simple two-serving recipe. Estimated total preparation time: 40 minutes; actual time varies. Serves 2.",
+          "Recipe: Lentil soup\ningredients: [{\"name\": \"lentils\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"carrots\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 700, \"unit\": \"ml\"}]",
+          "Recipe: Lentil tomato stew\ninstructions: Rinse the dry lentils. Simmer lentils, tomatoes and onion with water as needed until the lentils are tender; check the package.",
+          "Recipe: Lentil tomato stew\noverview: Lentil tomato stew is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies. Serves 2."
+        ],
+        "response": "Based on the provided context, here is how to prepare **Lentil soup**:\n\n**Ingredients (Serves 2):**\n*   150 g lentils\n*   150 g carrots\n*   700 ml water\n\n**Instructions:**\n1.  Rinse the dry lentils.\n2.  Simmer the lentils and chopped carrots in the 700 ml of water until the lentils are tender.\n3.  Check the lentil package for the specific cooking time, as it is not specified in the recipe text.\n\n**Estimated Time:**\n*   The estimated total preparation time is 40 minutes, though actual time may vary.\n\n*Note: This recipe is an AI-created teaching recipe reviewed for internal consistency but has not been kitchen-tested or independently verified.*",
+        "reference": "Simmer lentils and chopped carrots in water until tender.",
+        "llm_context_precision_with_reference": 0.8333333333,
+        "context_recall": 1.0,
+        "faithfulness": 0.75
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q04",
+      "scores": {
+        "user_input": "What ingredients are in chickpea salad?",
+        "retrieved_contexts": [
+          "Recipe: Chickpea salad\ningredients: [{\"name\": \"chickpeas\", \"quantity\": 240, \"unit\": \"g\"}, {\"name\": \"cucumber\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 150, \"unit\": \"g\"}]",
+          "Recipe: Chickpea salad\ninstructions: Use canned or fully cooked chickpeas. Drain them, chop the cucumber and tomatoes, and combine.",
+          "Recipe: Chickpea salad\nsubstitutions: Optional untested suggestion: replace cooked chickpeas with the same weight of fully cooked white beans; check packaging and individual dietary needs.",
+          "Recipe: Chickpea salad\noverview: Chickpea salad is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies. Serves 2.",
+          "Recipe: Chickpea salad\ndietary: Tags: vegan. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety."
+        ],
+        "response": "Based on the provided context, the ingredients for the Chickpea salad are:\n\n*   **Chickpeas:** 240 g\n*   **Cucumber:** 150 g\n*   **Tomatoes:** 150 g\n\nThe recipe notes that you should use canned or fully cooked chickpeas.",
+        "reference": "Chickpea salad contains 240 g chickpeas, 150 g cucumber and 150 g tomatoes.",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q05",
+      "scores": {
+        "user_input": "What are the ingredients for carrot soup?",
+        "retrieved_contexts": [
+          "Recipe: Carrot soup\ningredients: [{\"name\": \"carrots\", \"quantity\": 400, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 500, \"unit\": \"ml\"}]",
+          "Recipe: Carrot soup\ninstructions: Chop the carrots and onion. Simmer in the listed water until tender, then blend carefully.",
+          "Recipe: Carrot soup\noverview: Carrot soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+          "Recipe: Carrot soup\ndietary: Tags: vegan. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+          "Recipe: Carrot soup\nsubstitutions: No substitution is specified in this teaching recipe."
+        ],
+        "response": "Based on the provided context, the ingredients for the carrot soup recipe are:\n\n*   **Carrots:** 400 g\n*   **Onion:** 100 g\n*   **Water:** 500 ml\n\nThis recipe serves 2 people.",
+        "reference": "Carrot soup contains 400 g carrots, 100 g onion and 500 ml water.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q06",
+      "scores": {
+        "user_input": "How many servings does tofu stir fry make?",
+        "retrieved_contexts": [
+          "Recipe: Tofu stir fry\noverview: Tofu stir fry is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+          "Recipe: Tofu stir fry\ningredients: [{\"name\": \"tofu\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"broccoli\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}]",
+          "Recipe: Tofu tomato rice\noverview: Tofu tomato rice is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+          "Recipe: Tofu stir fry\ninstructions: Cook rice in water according to the package. Sauté the tofu and broccoli until the broccoli is tender; serve with the rice.",
+          "Recipe: Tofu tomato rice\ningredients: [{\"name\": \"tofu\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}]"
+        ],
+        "response": "Tofu stir fry makes 2 servings.",
+        "reference": "Tofu stir fry serves two.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q07",
+      "scores": {
+        "user_input": "What is the estimated preparation time for baked potatoes?",
+        "retrieved_contexts": [
+          "Recipe: Baked potatoes\noverview: Baked potatoes is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies. Serves 2.",
+          "Recipe: Baked potatoes\ninstructions: Cut the potatoes, coat them with olive oil and rosemary, and bake until tender. The time is an estimate and depends on the pieces and oven.",
+          "Recipe: Potato omelette\noverview: Potato omelette is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies. Serves 2.",
+          "Recipe: Sweet potato beans\noverview: Sweet potato beans is a simple two-serving recipe. Estimated total preparation time: 50 minutes; actual time varies. Serves 2.",
+          "Recipe: Baked potatoes\ningredients: [{\"name\": \"potatoes\", \"quantity\": 500, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}, {\"name\": \"rosemary\", \"quantity\": 2, \"unit\": \"g\"}]"
+        ],
+        "response": "Based on the provided context, the estimated total preparation time for baked potatoes is **45 minutes**.\n\nPlease note that this is an estimate and the actual time may vary depending on the size of the potato pieces and your oven.",
+        "reference": "The estimated preparation time for baked potatoes is 45 minutes.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q08",
+      "scores": {
+        "user_input": "How is pea soup prepared?",
+        "retrieved_contexts": [
+          "Recipe: Pea soup\ninstructions: Simmer the peas and onion in the listed water until tender, then blend carefully.",
+          "Recipe: Pea soup\noverview: Pea soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+          "Recipe: Pea soup\ningredients: [{\"name\": \"peas\", \"quantity\": 350, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 500, \"unit\": \"ml\"}]",
+          "Recipe: Tomato soup\ninstructions: Chop the tomatoes and onion. Cook in the listed water until soft, then blend carefully.",
+          "Recipe: Pea soup\ndietary: Tags: vegan. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety."
+        ],
+        "response": "Based on the provided context, pea soup is prepared by simmering the peas and onion in the listed water until tender, then blending carefully.\n\n**Ingredients:**\n*   350 g peas\n*   100 g onion\n*   500 ml water\n\n**Estimated Time:**\n*   Total preparation time is estimated at 30 minutes, though actual time may vary.\n\n**Note:**\nThis is an AI-created teaching recipe that has been reviewed for internal consistency but is not kitchen-tested or independently verified. The recipe is tagged as vegan, reflecting only the listed ingredients.",
+        "reference": "Simmer peas and onion in water until tender and blend.",
+        "llm_context_precision_with_reference": 0.8333333333,
+        "context_recall": 1.0,
+        "faithfulness": 0.6923076923
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q09",
+      "scores": {
+        "user_input": "What ingredients are used in chicken rice bowl?",
+        "retrieved_contexts": [
+          "Recipe: Chicken rice bowl\ningredients: [{\"name\": \"chicken breast\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"carrots\", \"quantity\": 150, \"unit\": \"g\"}]",
+          "Recipe: Salmon rice bowl\ningredients: [{\"name\": \"salmon\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"broccoli\", \"quantity\": 200, \"unit\": \"g\"}]",
+          "Recipe: Chicken rice bowl\ndietary: Tags: contains meat. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+          "Recipe: Egg fried rice\ningredients: [{\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"eggs\", \"quantity\": 2, \"unit\": \"pieces\"}, {\"name\": \"peas\", \"quantity\": 150, \"unit\": \"g\"}]",
+          "Recipe: Chicken rice bowl\noverview: Chicken rice bowl is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies. Serves 2."
+        ],
+        "response": "Based on the provided context, the ingredients used in the **Chicken rice bowl** are:\n\n*   **Chicken breast**: 250 g\n*   **Rice**: 150 g\n*   **Carrots**: 150 g\n\nThis recipe serves 2 people.",
+        "reference": "Chicken rice bowl contains 250 g chicken breast, 150 g rice and 150 g carrots.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q10",
+      "scores": {
+        "user_input": "Is lentil soup tagged vegan?",
+        "retrieved_contexts": [
+          "Recipe: Lentil soup\ndietary: Tags: vegan. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+          "Recipe: Lentil tomato stew\ndietary: Tags: vegan. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+          "Recipe: Pea soup\ndietary: Tags: vegan. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+          "Recipe: Tomato soup\ndietary: Tags: vegan. Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+          "Recipe: Lentil soup\ningredients: [{\"name\": \"lentils\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"carrots\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 700, \"unit\": \"ml\"}]"
+        ],
+        "response": "Yes, lentil soup is tagged as vegan.\n\nAccording to the provided context, the dietary tags for the \"Lentil soup\" recipe explicitly list \"vegan.\" The context notes that these dietary tags reflect the listed ingredients only. The listed ingredients for this recipe are lentils, carrots, and water.\n\n*Note: The source indicates this is an AI-created teaching recipe that has been reviewed for internal consistency but is not kitchen-tested or independently verified. Additionally, dietary tags concern listed ingredients only and do not guarantee allergy safety or account for cross-contact.*",
+        "reference": "Lentil soup is tagged vegan based on its listed ingredients.",
+        "llm_context_precision_with_reference": 0.7,
+        "context_recall": 1.0,
+        "faithfulness": 0.6363636364
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q11",
+      "scores": {
+        "user_input": "What can replace chickpeas in chickpea salad according to the recipe?",
+        "retrieved_contexts": [
+          "Recipe: Chickpea salad\nsubstitutions: Optional untested suggestion: replace cooked chickpeas with the same weight of fully cooked white beans; check packaging and individual dietary needs.",
+          "Recipe: Chickpea curry\nsubstitutions: No substitution is specified in this teaching recipe.",
+          "Recipe: Chickpea salad\ningredients: [{\"name\": \"chickpeas\", \"quantity\": 240, \"unit\": \"g\"}, {\"name\": \"cucumber\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 150, \"unit\": \"g\"}]",
+          "Recipe: Chickpea salad\ninstructions: Use canned or fully cooked chickpeas. Drain them, chop the cucumber and tomatoes, and combine.",
+          "Recipe: Bean salad\nsubstitutions: No substitution is specified in this teaching recipe."
+        ],
+        "response": "According to the provided recipe context, an optional, untested suggestion is to replace cooked chickpeas with the same weight of fully cooked white beans. The text notes that you should check packaging and individual dietary needs.",
+        "reference": "The recipe suggests replacing cooked chickpeas with the same weight of fully cooked white beans.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_170212_659900.json"
+    },
+    {
+      "id": "Q12",
+      "scores": {
+        "user_input": "Does the tomato pasta recipe specify a substitute for pasta?",
+        "retrieved_contexts": [
+          "Recipe: Tomato pasta\nsubstitutions: Optional untested suggestion: replace the pasta with the same weight of another pasta; follow its package directions and check its ingredient label.",
+          "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+          "Recipe: Tomato soup\nsubstitutions: No substitution is specified in this teaching recipe.",
+          "Recipe: Tomato pasta\ninstructions: Cook the pasta in water according to the package. Simmer chopped tomatoes in the olive oil and combine with the drained pasta.",
+          "Recipe: Mushroom pasta\nsubstitutions: No substitution is specified in this teaching recipe."
+        ],
+        "response": "Yes, the tomato pasta recipe specifies an optional, untested substitution for the pasta. It suggests replacing the pasta with the same weight of another pasta, while following that new pasta's package directions and checking its ingredient label.",
+        "reference": "The recipe suggests replacing the pasta with the same weight of another pasta and following its package directions.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_180243_250500.json"
+    },
+    {
+      "id": "Q13",
+      "scores": {
+        "user_input": "What can I substitute for milk in oat porridge according to the recipe?",
+        "retrieved_contexts": [
+          "Recipe: Oat porridge\nsubstitutions: Optional untested suggestion: replace dairy milk with the same volume of an unsweetened plant-based drink; check its ingredient label.",
+          "Recipe: Oat porridge\ningredients: [{\"name\": \"oats\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"milk\", \"quantity\": 400, \"unit\": \"ml\"}, {\"name\": \"banana\", \"quantity\": 1, \"unit\": \"piece\"}]",
+          "Recipe: Oat porridge\ninstructions: Simmer oats in milk until thick. Slice the banana and add it on top.",
+          "Recipe: Apple porridge\ninstructions: Simmer oats in the listed water until thick. Chop the apple and add it on top.",
+          "Recipe: Oat porridge\noverview: Oat porridge is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies. Serves 2."
+        ],
+        "response": "According to the provided recipe context, you can substitute dairy milk with **the same volume of an unsweetened plant-based drink**.\n\nPlease note the following details from the source:\n*   This is listed as an **optional, untested suggestion**.\n*   You should **check the ingredient label** of the plant-based drink.\n*   The recipe itself is an AI-created teaching recipe that has been reviewed for internal consistency but is **not kitchen-tested or independently verified**.",
+        "reference": "The recipe suggests replacing dairy milk with the same volume of an unsweetened plant-based drink.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 0.5555555556
+      },
+      "error": null,
+      "batch_file": "ragas_batch_qwen_20261125_180243_250500.json"
+    }
+  ]
+}

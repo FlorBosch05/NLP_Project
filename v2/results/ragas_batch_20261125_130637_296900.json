@@ -1,0 +1,64 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v2\\results\\evaluation_sections_k5_20261125_130014.json",
+  "offset": 2,
+  "requested": 11,
+  "cases": [
+    {
+      "id": "Q03",
+      "question": "How do I prepare lentil soup?",
+      "scores": {
+        "user_input": "How do I prepare lentil soup?",
+        "retrieved_contexts": [
+          "Recipe: Lentil soup\noverview: Lentil soup is a simple two-serving recipe. Estimated total preparation time: 40 minutes; actual time varies. Serves 2.",
+          "Recipe: Lentil soup\ninstructions: Simmer lentils and chopped carrots in water until tender.",
+          "Recipe: Lentil soup\ningredients: [{\"name\": \"lentils\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"carrots\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 700, \"unit\": \"ml\"}]",
+          "Recipe: Lentil tomato stew\ninstructions: Simmer lentils, tomatoes and onion with water until tender.",
+          "Recipe: Lentil tomato stew\noverview: Lentil tomato stew is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies. Serves 2."
+        ],
+        "response": "**Lentil soup (simple two‑serving recipe)**  \n\n*Estimated total preparation time:* **40 minutes** (actual time may vary).  \n*Serves:* 2  \n\n---\n\n### Ingredients  \n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Lentils | 150 | g |\n| Carrots | 150 | g |\n| Water | 700 | ml |\n\n*(All ingredients are taken directly from the retrieved recipe data.)*\n\n---\n\n### Instructions  \n1. **Prepare the vegetables** – Chop the carrots into bite‑sized pieces.  \n2. **Combine** – In a saucepan, add the lentils, chopped carrots, and water.  \n3. **Simmer** – Bring the mixture to a gentle boil, then reduce heat and let it simmer until the lentils and carrots are tender.  \n4. **Serve** – Once cooked, ladle the soup into bowls and enjoy.\n\n---\n\n**Notes**\n\n- The recipe is described as a “simple two‑serving recipe” with an estimated total prep time of 40 minutes (source: retrieved context).  \n- No additional ingredients or seasonings are listed in the provided data, so they are not included.  \n- The recipe is a synthetic teaching example and has not been independently tested.",
+        "reference": "Simmer lentils and chopped carrots in water until tender.",
+        "llm_context_precision_with_reference": 0.6388888889,
+        "context_recall": 1.0,
+        "faithfulness": null
+      }
+    },
+    {
+      "id": "Q04",
+      "question": "What ingredients are in chickpea salad?",
+      "scores": {
+        "user_input": "What ingredients are in chickpea salad?",
+        "retrieved_contexts": [
+          "Recipe: Chickpea salad\noverview: Chickpea salad is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies. Serves 2.",
+          "Recipe: Chickpea salad\ningredients: [{\"name\": \"chickpeas\", \"quantity\": 240, \"unit\": \"g\"}, {\"name\": \"cucumber\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 150, \"unit\": \"g\"}]",
+          "Recipe: Chickpea salad\ninstructions: Drain chickpeas, chop vegetables and combine.",
+          "Recipe: Chickpea salad\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+          "Recipe: Chickpea curry\ningredients: [{\"name\": \"chickpeas\", \"quantity\": 240, \"unit\": \"g\"}, {\"name\": \"coconut milk\", \"quantity\": 200, \"unit\": \"ml\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}]"
+        ],
+        "response": "**Ingredients in the Chickpea Salad**\n\n- Chickpeas – 240 g  \n- Cucumber – 150 g  \n- Tomatoes – 150 g  \n\nThese ingredients are listed in the retrieved recipe section:\n\n> “Recipe: Chickpea salad  \n>  ingredients: [{\\\"name\\\": \\\"chickpeas\\\", \\\"quantity\\\": 240, \\\"unit\\\": \\\"g\\\"}, {\\\"name\\\": \\\"cucumber\\\", \\\"quantity\\\": 150, \\\"unit\\\": \\\"g\\\"}, {\\\"name\\\": \\\"tomatoes\\\", \\\"quantity\\\": 150, \\\"unit\\\": \\\"g\\\"}]”【2】",
+        "reference": "Chickpea salad contains 240 g chickpeas, 150 g cucumber and 150 g tomatoes.",
+        "llm_context_precision_with_reference": 0.5,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q05",
+      "question": "What are the ingredients for carrot soup?",
+      "scores": {
+        "user_input": "What are the ingredients for carrot soup?",
+        "retrieved_contexts": [
+          "Recipe: Carrot soup\ninstructions: Simmer vegetables until tender and blend.",
+          "Recipe: Carrot soup\noverview: Carrot soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+          "Recipe: Carrot soup\ningredients: [{\"name\": \"carrots\", \"quantity\": 400, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 500, \"unit\": \"ml\"}]",
+          "Recipe: Carrot soup\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+          "Recipe: Lentil soup\ninstructions: Simmer lentils and chopped carrots in water until tender."
+        ],
+        "response": "**Ingredients for Carrot Soup**  \n(According to the retrieved recipe information)\n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Carrots | 400 | g |\n| Onion | 100 | g |\n| Water | 500 | ml |\n\nThese ingredients are listed in the “ingredients” section of the Carrot soup recipe that was retrieved.",
+        "reference": "Carrot soup contains 400 g carrots, 100 g onion and 500 ml water.",
+        "llm_context_precision_with_reference": 0.3333333333,
+        "context_recall": null,
+        "faithfulness": 0.6666666667
+      }
+    }
+  ]
+}

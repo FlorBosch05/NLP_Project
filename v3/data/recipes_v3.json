@@ -1,0 +1,932 @@
+[
+  {
+    "name": "Tomato pasta",
+    "servings": 2,
+    "overview": "Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Cook the pasta in water according to the package. Simmer chopped tomatoes in the olive oil and combine with the drained pasta.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "Optional untested suggestion: replace the pasta with the same weight of another pasta; follow its package directions and check its ingredient label."
+  },
+  {
+    "name": "Mushroom pasta",
+    "servings": 2,
+    "overview": "Mushroom pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "mushrooms",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Cook the pasta in water according to the package. Sauté the mushrooms in the olive oil and combine with the drained pasta.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Lentil soup",
+    "servings": 2,
+    "overview": "Lentil soup is a simple two-serving recipe. Estimated total preparation time: 40 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "lentils",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrots",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 700,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Rinse dry lentils. Simmer lentils and chopped carrots in the listed water until tender; check the lentil package for the cooking time.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 40,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Tomato soup",
+    "servings": 2,
+    "overview": "Tomato soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "tomatoes",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 300,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Chop the tomatoes and onion. Cook in the listed water until soft, then blend carefully.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Carrot soup",
+    "servings": 2,
+    "overview": "Carrot soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "carrots",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 500,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Chop the carrots and onion. Simmer in the listed water until tender, then blend carefully.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Chickpea salad",
+    "servings": 2,
+    "overview": "Chickpea salad is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Use canned or fully cooked chickpeas. Drain them, chop the cucumber and tomatoes, and combine.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 15,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "Optional untested suggestion: replace cooked chickpeas with the same weight of fully cooked white beans; check packaging and individual dietary needs."
+  },
+  {
+    "name": "Bean salad",
+    "servings": 2,
+    "overview": "Bean salad is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "kidney beans",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "corn",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Use canned or fully cooked kidney beans and canned or fully cooked corn. Drain them, chop the tomatoes, and combine.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 15,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Rice and vegetables",
+    "servings": 2,
+    "overview": "Rice and vegetables is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrots",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice in water according to the package. Steam the carrots and peas until tender and serve together.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Tofu stir fry",
+    "servings": 2,
+    "overview": "Tofu stir fry is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "tofu",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "broccoli",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice in water according to the package. Sauté the tofu and broccoli until the broccoli is tender; serve with the rice.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Chicken rice bowl",
+    "servings": 2,
+    "overview": "Chicken rice bowl is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrots",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice and carrots. Cook the chicken breast to an internal temperature of at least 74°C, checked with a food thermometer, and serve together.",
+    "dietary_tags": [
+      "contains meat"
+    ],
+    "cooking_time_minutes_estimate": 35,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Salmon rice bowl",
+    "servings": 2,
+    "overview": "Salmon rice bowl is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "salmon",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "broccoli",
+        "quantity": 200,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook the rice and broccoli. Cook the salmon to an internal temperature of at least 63°C, checked with a food thermometer, and serve together.",
+    "dietary_tags": [
+      "contains fish"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Potato omelette",
+    "servings": 2,
+    "overview": "Potato omelette is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "quantity": 4,
+        "unit": "pieces"
+      },
+      {
+        "name": "potatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Cook the potatoes until tender. Heat the olive oil, add the potatoes and beaten eggs, and cook the egg dish to 71°C using a food thermometer.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 35,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Vegetable omelette",
+    "servings": 2,
+    "overview": "Vegetable omelette is a simple two-serving recipe. Estimated total preparation time: 20 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "quantity": 4,
+        "unit": "pieces"
+      },
+      {
+        "name": "bell pepper",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook the chopped bell pepper and onion. Add the beaten eggs and cook the egg dish to 71°C using a food thermometer.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 20,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Oat porridge",
+    "servings": 2,
+    "overview": "Oat porridge is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "oats",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "quantity": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "piece"
+      }
+    ],
+    "instructions": "Simmer oats in milk until thick. Slice the banana and add it on top.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 15,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "Optional untested suggestion: replace dairy milk with the same volume of an unsweetened plant-based drink; check its ingredient label."
+  },
+  {
+    "name": "Apple porridge",
+    "servings": 2,
+    "overview": "Apple porridge is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "oats",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "apple",
+        "quantity": 1,
+        "unit": "piece"
+      }
+    ],
+    "instructions": "Simmer oats in the listed water until thick. Chop the apple and add it on top.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 15,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Couscous vegetables",
+    "servings": 2,
+    "overview": "Couscous vegetables is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "couscous",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "zucchini",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 200,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Prepare couscous in water according to its package. Cook the zucchini and tomatoes until tender and combine.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Quinoa salad",
+    "servings": 2,
+    "overview": "Quinoa salad is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook quinoa in water according to its package. Let it cool; chop the cucumber and tomatoes and combine.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Baked potatoes",
+    "servings": 2,
+    "overview": "Baked potatoes is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "potatoes",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      },
+      {
+        "name": "rosemary",
+        "quantity": 2,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cut the potatoes, coat them with olive oil and rosemary, and bake until tender. The time is an estimate and depends on the pieces and oven.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 45,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Sweet potato beans",
+    "servings": 2,
+    "overview": "Sweet potato beans is a simple two-serving recipe. Estimated total preparation time: 50 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "sweet potato",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "black beans",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Use canned or fully cooked black beans. Bake the sweet potatoes until tender; heat the drained beans and tomatoes and serve together.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 50,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Lentil tomato stew",
+    "servings": 2,
+    "overview": "Lentil tomato stew is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "lentils",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Rinse the dry lentils. Simmer lentils, tomatoes and onion with water as needed until the lentils are tender; check the package.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 45,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Chickpea curry",
+    "servings": 2,
+    "overview": "Chickpea curry is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "coconut milk",
+        "quantity": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Use canned or fully cooked chickpeas. Simmer the drained chickpeas, coconut milk and tomatoes until hot.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Tofu tomato rice",
+    "servings": 2,
+    "overview": "Tofu tomato rice is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "tofu",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice in water according to the package. Sauté the tofu, add the tomatoes and simmer; serve with the rice.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Egg fried rice",
+    "servings": 2,
+    "overview": "Egg fried rice is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "quantity": 2,
+        "unit": "pieces"
+      },
+      {
+        "name": "peas",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook rice in water according to the package. Cook the peas and eggs with the rice; cook the egg dish to 71°C using a food thermometer.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Yogurt fruit bowl",
+    "servings": 2,
+    "overview": "Yogurt fruit bowl is a simple two-serving recipe. Estimated total preparation time: 10 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "plain yogurt",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "piece"
+      },
+      {
+        "name": "apple",
+        "quantity": 1,
+        "unit": "piece"
+      }
+    ],
+    "instructions": "Chop the banana and apple and serve them over the yogurt.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 10,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Cucumber yogurt salad",
+    "servings": 2,
+    "overview": "Cucumber yogurt salad is a simple two-serving recipe. Estimated total preparation time: 10 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "plain yogurt",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "lemon juice",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Chop the cucumber and mix it with yogurt and lemon juice.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "cooking_time_minutes_estimate": 10,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Roasted cauliflower",
+    "servings": 2,
+    "overview": "Roasted cauliflower is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "cauliflower",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      },
+      {
+        "name": "paprika",
+        "quantity": 2,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cut the cauliflower, coat with olive oil and paprika, and roast until tender. Time depends on the size of the pieces and oven.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 35,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Zucchini rice",
+    "servings": 2,
+    "overview": "Zucchini rice is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "zucchini",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Cook rice in water according to the package. Sauté the zucchini in olive oil and serve with rice.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 25,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Pea soup",
+    "servings": 2,
+    "overview": "Pea soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "peas",
+        "quantity": 350,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "quantity": 500,
+        "unit": "ml"
+      }
+    ],
+    "instructions": "Simmer the peas and onion in the listed water until tender, then blend carefully.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "Chicken tomato skillet",
+    "servings": 2,
+    "overview": "Chicken tomato skillet is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook the onion and chicken, add the tomatoes and simmer. Ensure the chicken reaches an internal temperature of at least 74°C using a food thermometer.",
+    "dietary_tags": [
+      "contains meat"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  },
+  {
+    "name": "White bean tomato stew",
+    "servings": 2,
+    "overview": "White bean tomato stew is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies.",
+    "ingredients": [
+      {
+        "name": "white beans",
+        "quantity": 240,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Use canned or fully cooked white beans. Cook the onion, add the drained beans and tomatoes, and simmer until hot.",
+    "dietary_tags": [
+      "vegan"
+    ],
+    "cooking_time_minutes_estimate": 30,
+    "source": "AI-created teaching recipe; reviewed for internal consistency, not kitchen-tested or independently verified.",
+    "dietary_note": "Dietary tags reflect listed ingredients only. Check ingredient labels, variants and cross-contact independently; do not assume allergy safety.",
+    "cooking_time_note": "Unverified illustrative estimate; depends on ingredients, equipment and preparation.",
+    "substitutions": "No substitution is specified in this teaching recipe."
+  }
+]

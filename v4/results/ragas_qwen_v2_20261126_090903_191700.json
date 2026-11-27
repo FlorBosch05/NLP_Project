@@ -1,0 +1,35 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v4\\results\\evaluation_qwen_v1_sections_k5_20261125_191925.json",
+  "judge_model": "qwen/qwen3.8-27b",
+  "judge_max_output_tokens": 900,
+  "offset": 12,
+  "requested": 1,
+  "cases": [
+    {
+      "id": "Q13",
+      "question": "What substitute does the source suggest for rabbit in Paella valenciana?",
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "total_tokens": 10706,
+          "output_tokens": 813,
+          "input_tokens": 9893
+        }
+      },
+      "scores": {
+        "user_input": "What substitute does the source suggest for rabbit in Paella valenciana?",
+        "retrieved_contexts": [
+          "Recipe: Paella valenciana\ningredient_notes: Rabbit, in pieces: chicken will do instead\nLarge white beans: cooked\nTomato: grated",
+          "Recipe: Paella valenciana\ninstructions: 1. Heat the oil in a wide pan and brown the chicken and rabbit on every side. This is not a five-minute job: it takes a good quarter of an hour, and there is no point rushing it — the flavour of the whole dish is laid down here. [Source step duration: 15 min]\n2. Push the meat to the edges, put the green beans in the middle and fry them for a couple of minutes. Add the grated tomato and the paprika and cook until the tomato darkens and stops smelling raw. [Source step duration: 6 min]\n3. Pour in the stock, add the rosemary, saffron and white beans, salt it noticeably harder than feels right and let it boil for ten minutes. This is the last moment you can correct the seasoning. [Source step duration: 10 min]\n4. Scatter the rice in an even layer and level it once with a spoon. After that do not touch the pan again — no stirring, no smoothing.\n5. Cook on a high flame for ten minutes, then drop to medium for another eight, until the stock is gone. The rice should be showing above the surface. [Source step duration: 18 min]\n6. Turn the heat up for half a minute and listen: the moment the sound turns from bubbling to a dry crackle, take it off. That is the socarrat. Cover with a cloth and let it stand for five minutes. [Source step duration: 6 min]",
+          "Recipe: Paella valenciana\noverview: Rice in a wide pan with chicken, rabbit and beans. It is never stirred once, and the crust on the bottom depends on that. Publisher lists prep 25 minutes and cook 45 minutes, total 70 minutes. Serves 4. Serves 4.",
+          "Recipe: Paella valenciana\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Paella valenciana\ningredients: [{\"name\": \"Bomba rice, or another short grain\", \"quantity\": 320, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Chicken, in pieces\", \"quantity\": 400, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Rabbit, in pieces\", \"quantity\": 300, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"chicken will do instead\"}, {\"name\": \"Flat green beans\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Large white beans\", \"quantity\": 100, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cooked\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"grated\"}, {\"name\": \"Olive oil\", \"quantity\": 60, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Sweet paprika\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Saffron\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Rosemary\", \"quantity\": 1, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Chicken stock or water\", \"quantity\": 900, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "According to the source, the suggested substitute for rabbit in Paella valenciana is **chicken**.\n\nThis is indicated in the ingredient notes and the ingredients list, where the note for \"Rabbit, in pieces\" states: \"chicken will do instead.\"",
+        "reference": "The ingredient note says chicken can be used instead of rabbit.",
+        "llm_context_precision_with_reference": 0.7,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "model": "qwen/qwen3.8-27b",
+  "agent": "agent_scale_v2",
+  "cases": [
+    {
+      "case": {
+        "id": "L01",
+        "question": "Scale Miso soup to 6 servings.",
+        "recipe": "Miso soup",
+        "target": 6,
+        "history": []
+      },
+      "route": "scale",
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Water",
+              "quantity": 800,
+              "unit": "ml",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Kombu",
+              "quantity": 10,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "wiped, not washed"
+            },
+            {
+              "name": "Bonito flakes",
+              "quantity": 15,
+              "unit": "g",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Miso paste",
+              "quantity": 4,
+              "unit": "tbsp",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Tofu",
+              "quantity": 200,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "cubed"
+            },
+            {
+              "name": "Dried wakame",
+              "quantity": 1,
+              "unit": "tbsp",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Spring onion",
+              "quantity": 2,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 6.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"Water\", \"quantity\": 1200.0, \"unit\": \"ml\", \"status\": \"linear\"}, {\"name\": \"Kombu\", \"quantity\": 15.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Bonito flakes\", \"quantity\": 22.5, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Miso paste\", \"quantity\": null, \"unit\": \"tbsp\", \"original_quantity\": 4.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Tofu\", \"quantity\": 300.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Dried wakame\", \"quantity\": null, \"unit\": \"tbsp\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Spring onion\", \"quantity\": 3.0, \"unit\": \"piece\", \"status\": \"linear\"}]}",
+      "answer": "Scaled ingredients for 6 servings:\n- Water: 1200 ml (linear)\n- Kombu: 15 g (linear)\n- Bonito flakes: 22.5 g (linear)\n- Miso paste: adjust manually; source amount was 4 tbsp.\n- Tofu: 300 g (linear)\n- Dried wakame: adjust manually; source amount was 1 tbsp.\n- Spring onion: 3 piece (linear)\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 68,
+          "output_tokens": 16,
+          "seconds": 0.44
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 1122,
+          "output_tokens": 9,
+          "seconds": 0.182
+        }
+      ],
+      "problems": []
+    },
+    {
+      "case": {
+        "id": "L02",
+        "question": "Scale Paella valenciana to 2 servings.",
+        "recipe": "Paella valenciana",
+        "target": 2,
+        "history": []
+      },
+      "route": "scale",
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Bomba rice, or another short grain",
+              "quantity": 320,
+              "unit": "g",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Chicken, in pieces",
+              "quantity": 400,
+              "unit": "g",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Rabbit, in pieces",
+              "quantity": 300,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "chicken will do instead"
+            },
+            {
+              "name": "Flat green beans",
+              "quantity": 200,
+              "unit": "g",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Large white beans",
+              "quantity": 100,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "cooked"
+            },
+            {
+              "name": "Tomato",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "grated"
+            },
+            {
+              "name": "Olive oil",
+              "quantity": 60,
+              "unit": "ml",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Sweet paprika",
+              "quantity": 1,
+              "unit": "tsp",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Saffron",
+              "quantity": 1,
+              "unit": "pinch",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Rosemary",
+              "quantity": 1,
+              "unit": "sprig",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Chicken stock or water",
+              "quantity": 900,
+              "unit": "ml",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Salt",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 2.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"Bomba rice, or another short grain\", \"quantity\": 160.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Chicken, in pieces\", \"quantity\": 200.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Rabbit, in pieces\", \"quantity\": 150.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Flat green beans\", \"quantity\": 100.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Large white beans\", \"quantity\": 50.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Tomato\", \"quantity\": 0.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Olive oil\", \"quantity\": 30.0, \"unit\": \"ml\", \"status\": \"linear\"}, {\"name\": \"Sweet paprika\", \"quantity\": null, \"unit\": \"tsp\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Saffron\", \"quantity\": null, \"unit\": \"pinch\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Rosemary\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Chicken stock or water\", \"quantity\": 450.0, \"unit\": \"ml\", \"status\": \"linear\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+      "answer": "Scaled ingredients for 2 servings:\n- Bomba rice, or another short grain: 160 g (linear)\n- Chicken, in pieces: 200 g (linear)\n- Rabbit, in pieces: 150 g (linear)\n- Flat green beans: 100 g (linear)\n- Large white beans: 50 g (linear)\n- Tomato: 0.5 piece (linear)\n- Olive oil: 30 ml (linear)\n- Sweet paprika: adjust manually; source amount was 1 tsp.\n- Saffron: adjust manually; source amount was 1 pinch.\n- Rosemary: adjust manually; source amount was 1 sprig.\n- Chicken stock or water: 450 ml (linear)\n- Salt: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 70,
+          "output_tokens": 18,
+          "seconds": 0.146
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 1410,
+          "output_tokens": 10,
+          "seconds": 0.309
+        }
+      ],
+      "problems": []
+    },
+    {
+      "case": {
+        "id": "L03",
+        "question": "Scale Borscht to 3 servings.",
+        "recipe": "Borscht",
+        "target": 3,
+        "history": []
+      },
+      "route": "scale",
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Beef on the bone",
+              "quantity": 700,
+              "unit": "g",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Beetroot",
+              "quantity": 2,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "coarsely grated"
+            },
+            {
+              "name": "Cabbage",
+              "quantity": 300,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "shredded"
+            },
+            {
+              "name": "Potatoes",
+              "quantity": 4,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Carrot",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Onion",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Tomato paste",
+              "quantity": 2,
+              "unit": "tbsp",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Vinegar, 9%",
+              "quantity": 1,
+              "unit": "tbsp",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Garlic",
+              "quantity": 3,
+              "unit": "clove",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Bay leaf",
+              "quantity": 2,
+              "unit": "piece",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Sour cream",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            },
+            {
+              "name": "Salt and pepper",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 6,
+          "to_servings": 3.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"Beef on the bone\", \"quantity\": 350.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Beetroot\", \"quantity\": 1.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Cabbage\", \"quantity\": 150.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Potatoes\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Carrot\", \"quantity\": 0.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Tomato paste\", \"quantity\": 1.0, \"unit\": \"tbsp\", \"status\": \"linear\"}, {\"name\": \"Vinegar, 9%\", \"quantity\": null, \"unit\": \"tbsp\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Garlic\", \"quantity\": null, \"unit\": \"clove\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Bay leaf\", \"quantity\": null, \"unit\": \"piece\", \"original_quantity\": 2.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Sour cream\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+      "answer": "Scaled ingredients for 3 servings:\n- Beef on the bone: 350 g (linear)\n- Beetroot: 1 piece (linear)\n- Cabbage: 150 g (linear)\n- Potatoes: 2 piece (linear)\n- Carrot: 0.5 piece (linear)\n- Onion: 0.5 piece (linear)\n- Tomato paste: 1 tbsp (linear)\n- Vinegar, 9%: adjust manually; source amount was 1 tbsp.\n- Garlic: adjust manually; source amount was 3 clove.\n- Bay leaf: adjust manually; source amount was 2 piece.\n- Sour cream: no numeric source quantity; follow the source or adjust to taste.\n- Salt and pepper: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 68,
+          "output_tokens": 17,
+          "seconds": 0.122
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 1310,
+          "output_tokens": 9,
+          "seconds": 0.218
+        }
+      ],
+      "problems": []
+    },
+    {
+      "case": {
+        "id": "L04",
+        "question": "Make that for 8 servings.",
+        "recipe": "Guacamole",
+        "target": 8,
+        "history": [
+          {
+            "role": "user",
+            "content": "What is in Guacamole?"
+          },
+          {
+            "role": "assistant",
+            "content": "The Guacamole recipe serves 4 people."
+          }
+        ]
+      },
+      "route": "scale",
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Avocado",
+              "quantity": 3,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "ripe"
+            },
+            {
+              "name": "Lime",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "juiced"
+            },
+            {
+              "name": "Red onion",
+              "quantity": 0.5,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "finely chopped"
+            },
+            {
+              "name": "Jalapeño",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "damped",
+              "note": "seeds removed"
+            },
+            {
+              "name": "Coriander",
+              "quantity": 3,
+              "unit": "sprig",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Tomato",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "seeded and diced"
+            },
+            {
+              "name": "Salt",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 8.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"Avocado\", \"quantity\": 6.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Lime\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Red onion\", \"quantity\": 1.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Jalapeño\", \"quantity\": null, \"unit\": \"piece\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Coriander\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Tomato\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+      "answer": "Scaled ingredients for 8 servings:\n- Avocado: 6 piece (linear)\n- Lime: 2 piece (linear)\n- Red onion: 1 piece (linear)\n- Jalapeño: adjust manually; source amount was 1 piece.\n- Coriander: adjust manually; source amount was 3 sprig.\n- Tomato: 2 piece (linear)\n- Salt: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 104,
+          "output_tokens": 17,
+          "seconds": 0.259
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 1142,
+          "output_tokens": 9,
+          "seconds": 0.294
+        }
+      ],
+      "problems": []
+    },
+    {
+      "case": {
+        "id": "L05",
+        "question": "Scale Ratatouille please.",
+        "recipe": "Ratatouille",
+        "target": null,
+        "history": []
+      },
+      "route": "scale",
+      "tool_call": null,
+      "tool_result": "Missing ingredients or serving counts. Ask the user for the missing information.",
+      "answer": "Missing ingredients or serving counts. Ask the user for the missing information.",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 66,
+          "output_tokens": 17,
+          "seconds": 0.301
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 1276,
+          "output_tokens": 8,
+          "seconds": 0.295
+        }
+      ],
+      "problems": []
+    }
+  ]
+}

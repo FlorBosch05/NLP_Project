@@ -1,0 +1,1536 @@
+{
+  "model": "qwen2.5:7b",
+  "app": "app_ollama_v4.py",
+  "turns": [
+    {
+      "scenario": "followup_and_repeat",
+      "question": "What are the ingredients for Guacamole?",
+      "answer": "The ingredients for Guacamole are:\n- 3 ripe avocados\n- 1 lime (juiced)\n- 0.5 piece of red onion (finely chopped)\n- 1 jalapeño (seeds removed)\n- 3 sprigs of coriander\n- 1 tomato (seeded and diced)\n- Salt (to taste)\n\nNo quantity for salt was provided, so it is adjusted to taste.",
+      "details": {
+        "route": "retrieve",
+        "retrieval_query": "Guacamole ingredients",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.6092916019819234
+          },
+          {
+            "text": "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5411590538156128
+          },
+          {
+            "text": "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.47181491975611467
+          },
+          {
+            "text": "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.43891524162683626
+          },
+          {
+            "text": "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.38938929653767235
+          }
+        ],
+        "mcp_call": null,
+        "mcp_result": null,
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 114,
+            "output_tokens": 17,
+            "seconds": 0.505
+          },
+          {
+            "step": "answer",
+            "input_tokens": 1198,
+            "output_tokens": 90,
+            "seconds": 1.288
+          }
+        ],
+        "total_input_tokens": 1312,
+        "total_output_tokens": 107,
+        "answer_ttft_seconds": 0.041,
+        "total_seconds": 3.11,
+        "other_timings": {
+          "retrieval_seconds": 0.021
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "followup_and_repeat",
+      "question": "Double it.",
+      "answer": "Scaled ingredients for 8 servings (relative to 4 servings):\n- Avocado: 6 piece (linear)\n- Lime: 2 piece (linear)\n- Red onion: 1 piece (linear)\n- Jalapeño: adjust manually; source amount was 1 piece.\n- Coriander: adjust manually; source amount was 3 sprig.\n- Tomato: 2 piece (linear)\n- Salt: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "double guacamole recipe",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5676342911687826
+          },
+          {
+            "text": "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5434463443114369
+          },
+          {
+            "text": "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4886596082969349
+          },
+          {
+            "text": "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.46606655167266964
+          },
+          {
+            "text": "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4071629973107937
+          }
+        ],
+        "mcp_call": {
+          "name": "scale_recipe",
+          "arguments": {
+            "ingredients": [
+              {
+                "name": "Avocado",
+                "quantity": 3,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "ripe"
+              },
+              {
+                "name": "Lime",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "juiced"
+              },
+              {
+                "name": "Red onion",
+                "quantity": 0.5,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "finely chopped"
+              },
+              {
+                "name": "Jalapeño",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "damped",
+                "note": "seeds removed"
+              },
+              {
+                "name": "Coriander",
+                "quantity": 3,
+                "unit": "sprig",
+                "scaling": "damped",
+                "note": ""
+              },
+              {
+                "name": "Tomato",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "seeded and diced"
+              },
+              {
+                "name": "Salt",
+                "quantity": null,
+                "unit": "toTaste",
+                "scaling": "fixed",
+                "note": ""
+              }
+            ],
+            "from_servings": 4,
+            "to_servings": 8.0
+          },
+          "recipe_name": "Guacamole"
+        },
+        "mcp_result": "{\"result\": [{\"name\": \"Avocado\", \"quantity\": 6.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Lime\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Red onion\", \"quantity\": 1.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Jalapeño\", \"quantity\": null, \"unit\": \"piece\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Coriander\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Tomato\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 234,
+            "output_tokens": 23,
+            "seconds": 0.494
+          }
+        ],
+        "total_input_tokens": 234,
+        "total_output_tokens": 23,
+        "answer_ttft_seconds": null,
+        "total_seconds": 1.935,
+        "other_timings": {
+          "retrieval_seconds": 0.015,
+          "mcp_seconds": 1.423
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "followup_and_repeat",
+      "question": "Double it again.",
+      "answer": "Scaled ingredients for 16 servings (relative to 8 servings):\n- Avocado: 12 piece (linear)\n- Lime: 4 piece (linear)\n- Red onion: 2 piece (linear)\n- Jalapeño: adjust manually; source amount was 1 piece.\n- Coriander: adjust manually; source amount was 3 sprig.\n- Tomato: 4 piece (linear)\n- Salt: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "double the guacamole recipe",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5883331865446054
+          },
+          {
+            "text": "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5775178779183183
+          },
+          {
+            "text": "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5025520852777196
+          },
+          {
+            "text": "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4803012854925788
+          },
+          {
+            "text": "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.43399173419898496
+          }
+        ],
+        "mcp_call": {
+          "name": "scale_recipe",
+          "arguments": {
+            "ingredients": [
+              {
+                "name": "Avocado",
+                "quantity": 3,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "ripe"
+              },
+              {
+                "name": "Lime",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "juiced"
+              },
+              {
+                "name": "Red onion",
+                "quantity": 0.5,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "finely chopped"
+              },
+              {
+                "name": "Jalapeño",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "damped",
+                "note": "seeds removed"
+              },
+              {
+                "name": "Coriander",
+                "quantity": 3,
+                "unit": "sprig",
+                "scaling": "damped",
+                "note": ""
+              },
+              {
+                "name": "Tomato",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "seeded and diced"
+              },
+              {
+                "name": "Salt",
+                "quantity": null,
+                "unit": "toTaste",
+                "scaling": "fixed",
+                "note": ""
+              }
+            ],
+            "from_servings": 4,
+            "to_servings": 16.0
+          },
+          "recipe_name": "Guacamole"
+        },
+        "mcp_result": "{\"result\": [{\"name\": \"Avocado\", \"quantity\": 12.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Lime\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Red onion\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Jalapeño\", \"quantity\": null, \"unit\": \"piece\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Coriander\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Tomato\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 385,
+            "output_tokens": 22,
+            "seconds": 0.426
+          }
+        ],
+        "total_input_tokens": 385,
+        "total_output_tokens": 22,
+        "answer_ttft_seconds": null,
+        "total_seconds": 1.791,
+        "other_timings": {
+          "retrieval_seconds": 0.017,
+          "mcp_seconds": 1.345
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "followup_and_repeat",
+      "question": "Halve it.",
+      "answer": "Scaled ingredients for 8 servings (relative to 16 servings):\n- Avocado: 6 piece (linear)\n- Lime: 2 piece (linear)\n- Red onion: 1 piece (linear)\n- Jalapeño: adjust manually; source amount was 1 piece.\n- Coriander: adjust manually; source amount was 3 sprig.\n- Tomato: 2 piece (linear)\n- Salt: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "Halve the doubled guacamole recipe.",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.51164092425779
+          },
+          {
+            "text": "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5073500307339698
+          },
+          {
+            "text": "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4778672074355883
+          },
+          {
+            "text": "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4215154139494374
+          },
+          {
+            "text": "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.41512875930661625
+          }
+        ],
+        "mcp_call": {
+          "name": "scale_recipe",
+          "arguments": {
+            "ingredients": [
+              {
+                "name": "Avocado",
+                "quantity": 3,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "ripe"
+              },
+              {
+                "name": "Lime",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "juiced"
+              },
+              {
+                "name": "Red onion",
+                "quantity": 0.5,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "finely chopped"
+              },
+              {
+                "name": "Jalapeño",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "damped",
+                "note": "seeds removed"
+              },
+              {
+                "name": "Coriander",
+                "quantity": 3,
+                "unit": "sprig",
+                "scaling": "damped",
+                "note": ""
+              },
+              {
+                "name": "Tomato",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "seeded and diced"
+              },
+              {
+                "name": "Salt",
+                "quantity": null,
+                "unit": "toTaste",
+                "scaling": "fixed",
+                "note": ""
+              }
+            ],
+            "from_servings": 4,
+            "to_servings": 8.0
+          },
+          "recipe_name": "Guacamole"
+        },
+        "mcp_result": "{\"result\": [{\"name\": \"Avocado\", \"quantity\": 6.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Lime\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Red onion\", \"quantity\": 1.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Jalapeño\", \"quantity\": null, \"unit\": \"piece\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Coriander\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Tomato\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 538,
+            "output_tokens": 27,
+            "seconds": 0.452
+          }
+        ],
+        "total_input_tokens": 538,
+        "total_output_tokens": 27,
+        "answer_ttft_seconds": null,
+        "total_seconds": 1.796,
+        "other_timings": {
+          "retrieval_seconds": 0.017,
+          "mcp_seconds": 1.323
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "explicit_recipe",
+      "question": "Double the Ratatouille recipe.",
+      "answer": "Scaled ingredients for 8 servings (relative to 4 servings):\n- Aubergine: 2 piece (linear)\n- Courgette: 4 piece (linear)\n- Bell pepper: 4 piece (linear)\n- Tomatoes: 1200 g (linear)\n- Onion: 2 piece (linear)\n- Garlic: 6 clove (linear)\n- Olive oil: 12 tbsp (linear)\n- Thyme: adjust manually; source amount was 3 sprig.\n- Basil: adjust manually; source amount was 1 pinch.\n- Salt and pepper: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "double ratatouille recipe",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5288151963802527
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4913225815857799
+          },
+          {
+            "text": "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4481331254938288
+          },
+          {
+            "text": "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4057169419797862
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.3111198633748271
+          }
+        ],
+        "mcp_call": {
+          "name": "scale_recipe",
+          "arguments": {
+            "ingredients": [
+              {
+                "name": "Aubergine",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "in 2 cm cubes"
+              },
+              {
+                "name": "Courgette",
+                "quantity": 2,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "in cubes"
+              },
+              {
+                "name": "Bell pepper",
+                "quantity": 2,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Tomatoes",
+                "quantity": 600,
+                "unit": "g",
+                "scaling": "linear",
+                "note": "ripe, peeled"
+              },
+              {
+                "name": "Onion",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Garlic",
+                "quantity": 3,
+                "unit": "clove",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Olive oil",
+                "quantity": 6,
+                "unit": "tbsp",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Thyme",
+                "quantity": 3,
+                "unit": "sprig",
+                "scaling": "damped",
+                "note": ""
+              },
+              {
+                "name": "Basil",
+                "quantity": 1,
+                "unit": "pinch",
+                "scaling": "damped",
+                "note": "at the end"
+              },
+              {
+                "name": "Salt and pepper",
+                "quantity": null,
+                "unit": "toTaste",
+                "scaling": "fixed",
+                "note": ""
+              }
+            ],
+            "from_servings": 4,
+            "to_servings": 8.0
+          },
+          "recipe_name": "Ratatouille"
+        },
+        "mcp_result": "{\"result\": [{\"name\": \"Aubergine\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Courgette\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Bell pepper\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Tomatoes\", \"quantity\": 1200.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Onion\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Garlic\", \"quantity\": 6.0, \"unit\": \"clove\", \"status\": \"linear\"}, {\"name\": \"Olive oil\", \"quantity\": 12.0, \"unit\": \"tbsp\", \"status\": \"linear\"}, {\"name\": \"Thyme\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Basil\", \"quantity\": null, \"unit\": \"pinch\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 113,
+            "output_tokens": 22,
+            "seconds": 0.407
+          }
+        ],
+        "total_input_tokens": 113,
+        "total_output_tokens": 22,
+        "answer_ttft_seconds": null,
+        "total_seconds": 1.827,
+        "other_timings": {
+          "retrieval_seconds": 0.016,
+          "mcp_seconds": 1.4
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "half",
+      "question": "Halve the Ratatouille recipe.",
+      "answer": "Scaled ingredients for 2 servings (relative to 4 servings):\n- Aubergine: 0.5 piece (linear)\n- Courgette: 1 piece (linear)\n- Bell pepper: 1 piece (linear)\n- Tomatoes: 300 g (linear)\n- Onion: 0.5 piece (linear)\n- Garlic: 1.5 clove (linear)\n- Olive oil: 3 tbsp (linear)\n- Thyme: adjust manually; source amount was 3 sprig.\n- Basil: adjust manually; source amount was 1 pinch.\n- Salt and pepper: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "halve Ratatouille recipe",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5344834395066301
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5128728341494125
+          },
+          {
+            "text": "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5100205804918245
+          },
+          {
+            "text": "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4235738055273882
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.3436176844114472
+          }
+        ],
+        "mcp_call": {
+          "name": "scale_recipe",
+          "arguments": {
+            "ingredients": [
+              {
+                "name": "Aubergine",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "in 2 cm cubes"
+              },
+              {
+                "name": "Courgette",
+                "quantity": 2,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "in cubes"
+              },
+              {
+                "name": "Bell pepper",
+                "quantity": 2,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Tomatoes",
+                "quantity": 600,
+                "unit": "g",
+                "scaling": "linear",
+                "note": "ripe, peeled"
+              },
+              {
+                "name": "Onion",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Garlic",
+                "quantity": 3,
+                "unit": "clove",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Olive oil",
+                "quantity": 6,
+                "unit": "tbsp",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Thyme",
+                "quantity": 3,
+                "unit": "sprig",
+                "scaling": "damped",
+                "note": ""
+              },
+              {
+                "name": "Basil",
+                "quantity": 1,
+                "unit": "pinch",
+                "scaling": "damped",
+                "note": "at the end"
+              },
+              {
+                "name": "Salt and pepper",
+                "quantity": null,
+                "unit": "toTaste",
+                "scaling": "fixed",
+                "note": ""
+              }
+            ],
+            "from_servings": 4,
+            "to_servings": 2.0
+          },
+          "recipe_name": "Ratatouille"
+        },
+        "mcp_result": "{\"result\": [{\"name\": \"Aubergine\", \"quantity\": 0.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Courgette\", \"quantity\": 1.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Bell pepper\", \"quantity\": 1.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Tomatoes\", \"quantity\": 300.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Garlic\", \"quantity\": 1.5, \"unit\": \"clove\", \"status\": \"linear\"}, {\"name\": \"Olive oil\", \"quantity\": 3.0, \"unit\": \"tbsp\", \"status\": \"linear\"}, {\"name\": \"Thyme\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Basil\", \"quantity\": null, \"unit\": \"pinch\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 114,
+            "output_tokens": 23,
+            "seconds": 0.402
+          }
+        ],
+        "total_input_tokens": 114,
+        "total_output_tokens": 23,
+        "answer_ttft_seconds": null,
+        "total_seconds": 1.823,
+        "other_timings": {
+          "retrieval_seconds": 0.016,
+          "mcp_seconds": 1.401
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "dutch",
+      "question": "Verdubbel Ratatouille.",
+      "answer": "Scaled ingredients for 8 servings (relative to 4 servings):\n- Aubergine: 2 piece (linear)\n- Courgette: 4 piece (linear)\n- Bell pepper: 4 piece (linear)\n- Tomatoes: 1200 g (linear)\n- Onion: 2 piece (linear)\n- Garlic: 6 clove (linear)\n- Olive oil: 12 tbsp (linear)\n- Thyme: adjust manually; source amount was 3 sprig.\n- Basil: adjust manually; source amount was 1 pinch.\n- Salt and pepper: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "verdubbel ratatouille recipe",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.516826737743352
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5020415616785352
+          },
+          {
+            "text": "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.47539663966295587
+          },
+          {
+            "text": "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.43384658769145246
+          },
+          {
+            "text": "Recipe: Rinderrouladen\ninstructions: 1. Beat the beef to five millimetres, season it and spread with mustard. Lay the bacon, strips of onion and a gherkin along the short edge. [Source step duration: 15 min]\n2. Roll them up, tucking the sides in, and secure with a skewer or string. Firm but not tight — the filling expands. [Source step duration: 10 min]\n3. Brown the rolls hard on every side and lift them out. In the same fat fry the remaining onion and the carrot, add the tomato paste and give it a minute. [Source step duration: 12 min]\n4. Pour in the wine, let it reduce by half, add the stock and bay. Return the rolls, cover and braise over a low flame for an hour and a half. [Source step duration: 95 min]\n5. Lift the rolls out and remove the skewers. Blend the gravy in the pot or crush it with a masher, then reduce it to the thickness you want. [Source step duration: 8 min]",
+            "metadata": {
+              "recipe": "Rinderrouladen",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.32658896485674077
+          }
+        ],
+        "mcp_call": {
+          "name": "scale_recipe",
+          "arguments": {
+            "ingredients": [
+              {
+                "name": "Aubergine",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "in 2 cm cubes"
+              },
+              {
+                "name": "Courgette",
+                "quantity": 2,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "in cubes"
+              },
+              {
+                "name": "Bell pepper",
+                "quantity": 2,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Tomatoes",
+                "quantity": 600,
+                "unit": "g",
+                "scaling": "linear",
+                "note": "ripe, peeled"
+              },
+              {
+                "name": "Onion",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Garlic",
+                "quantity": 3,
+                "unit": "clove",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Olive oil",
+                "quantity": 6,
+                "unit": "tbsp",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Thyme",
+                "quantity": 3,
+                "unit": "sprig",
+                "scaling": "damped",
+                "note": ""
+              },
+              {
+                "name": "Basil",
+                "quantity": 1,
+                "unit": "pinch",
+                "scaling": "damped",
+                "note": "at the end"
+              },
+              {
+                "name": "Salt and pepper",
+                "quantity": null,
+                "unit": "toTaste",
+                "scaling": "fixed",
+                "note": ""
+              }
+            ],
+            "from_servings": 4,
+            "to_servings": 8.0
+          },
+          "recipe_name": "Ratatouille"
+        },
+        "mcp_result": "{\"result\": [{\"name\": \"Aubergine\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Courgette\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Bell pepper\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Tomatoes\", \"quantity\": 1200.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Onion\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Garlic\", \"quantity\": 6.0, \"unit\": \"clove\", \"status\": \"linear\"}, {\"name\": \"Olive oil\", \"quantity\": 12.0, \"unit\": \"tbsp\", \"status\": \"linear\"}, {\"name\": \"Thyme\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Basil\", \"quantity\": null, \"unit\": \"pinch\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 114,
+            "output_tokens": 25,
+            "seconds": 0.405
+          }
+        ],
+        "total_input_tokens": 114,
+        "total_output_tokens": 25,
+        "answer_ttft_seconds": null,
+        "total_seconds": 1.723,
+        "other_timings": {
+          "retrieval_seconds": 0.016,
+          "mcp_seconds": 1.299
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "no_recipe",
+      "question": "Double it.",
+      "answer": "Please specify exactly one recipe from the collection and the desired serving count.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "double the recipe",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Menemen\ningredients: [{\"name\": \"Ripe tomatoes\", \"quantity\": 4, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"peeled and chopped\"}, {\"name\": \"Long green peppers\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Eggs\", \"quantity\": 4, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Butter\", \"quantity\": 20, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Pul biber flakes\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Dried oregano\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"White cheese\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Menemen",
+              "section": "ingredients",
+              "servings": 2,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.3642164213751084
+          },
+          {
+            "text": "Recipe: Rinderrouladen\ningredient_notes: Beef, thinly sliced: 150-200 g each, beaten thin\nGherkins: quartered lengthways",
+            "metadata": {
+              "recipe": "Rinderrouladen",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.36401887973446545
+          },
+          {
+            "text": "Recipe: Katsudon\ningredient_notes: Pork loin: 150 g each, beaten flat\nOnion: thinly sliced",
+            "metadata": {
+              "recipe": "Katsudon",
+              "section": "ingredient_notes",
+              "servings": 2,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.3621346400382097
+          },
+          {
+            "text": "Recipe: Kimchi jjigae\ningredients: [{\"name\": \"Over-fermented kimchi\", \"quantity\": 400, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"with its liquid\"}, {\"name\": \"Pork belly\", \"quantity\": 300, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"sliced\"}, {\"name\": \"Tofu\", \"quantity\": 300, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"in thick slabs\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Gochugaru flakes\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Gochujang\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Water or anchovy stock\", \"quantity\": 700, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Spring onion\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Sesame oil\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Kimchi jjigae",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.35693199049772384
+          },
+          {
+            "text": "Recipe: Syrniki\ningredients: [{\"name\": \"Curd cheese, 5-9% fat\", \"quantity\": 500, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"dry, drained\"}, {\"name\": \"Egg\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Plain flour\", \"quantity\": 3, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"plus a little for your hands\"}, {\"name\": \"Sugar\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Vanilla sugar\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Butter for frying\", \"quantity\": 30, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Sour cream and jam\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Syrniki",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.3560667309193881
+          }
+        ],
+        "mcp_call": null,
+        "mcp_result": "Please specify exactly one recipe from the collection and the desired serving count.",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 108,
+            "output_tokens": 19,
+            "seconds": 0.376
+          }
+        ],
+        "total_input_tokens": 108,
+        "total_output_tokens": 19,
+        "answer_ttft_seconds": null,
+        "total_seconds": 0.399,
+        "other_timings": {
+          "retrieval_seconds": 0.019
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "multiple_recipes",
+      "question": "Double Guacamole and Ratatouille.",
+      "answer": "Please specify exactly one recipe from the collection and the desired serving count.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "Double Guacamole and Ratatouille recipe",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.47572612968766165
+          },
+          {
+            "text": "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.45911385684420825
+          },
+          {
+            "text": "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.45604963468600923
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4245146419396374
+          },
+          {
+            "text": "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+            "metadata": {
+              "recipe": "Guacamole",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.40825120605619203
+          }
+        ],
+        "mcp_call": null,
+        "mcp_result": "Please specify exactly one recipe from the collection and the desired serving count.",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 115,
+            "output_tokens": 23,
+            "seconds": 0.349
+          }
+        ],
+        "total_input_tokens": 115,
+        "total_output_tokens": 23,
+        "answer_ttft_seconds": null,
+        "total_seconds": 0.37,
+        "other_timings": {
+          "retrieval_seconds": 0.018
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "conflicting",
+      "question": "Double Ratatouille to 6 servings.",
+      "answer": "Please specify the recipe and the exact number of servings you want.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "Double Ratatouille recipe for 6 servings",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.531060980887937
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4599515062239022
+          },
+          {
+            "text": "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.43515045396544205
+          },
+          {
+            "text": "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.39188575496819933
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.3135009904002386
+          }
+        ],
+        "mcp_call": null,
+        "mcp_result": "Please specify the recipe and the exact number of servings you want.",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 115,
+            "output_tokens": 26,
+            "seconds": 0.408
+          }
+        ],
+        "total_input_tokens": 115,
+        "total_output_tokens": 26,
+        "answer_ttft_seconds": null,
+        "total_seconds": 0.427,
+        "other_timings": {
+          "retrieval_seconds": 0.017
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "missing_target",
+      "question": "Scale Ratatouille please.",
+      "answer": "How many servings would you like?",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "Ratatouille recipe",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.6007196146948651
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5818741770685917
+          },
+          {
+            "text": "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5244531631468246
+          },
+          {
+            "text": "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4970829962210477
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.33189389207244
+          }
+        ],
+        "mcp_call": null,
+        "mcp_result": "How many servings would you like?",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 112,
+            "output_tokens": 18,
+            "seconds": 0.317
+          }
+        ],
+        "total_input_tokens": 112,
+        "total_output_tokens": 18,
+        "answer_ttft_seconds": null,
+        "total_seconds": 0.337,
+        "other_timings": {
+          "retrieval_seconds": 0.017
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "absolute",
+      "question": "Scale Ratatouille from 4 to 8 servings.",
+      "answer": "Scaled ingredients for 8 servings:\n- Aubergine: 2 piece (linear)\n- Courgette: 4 piece (linear)\n- Bell pepper: 4 piece (linear)\n- Tomatoes: 1200 g (linear)\n- Onion: 2 piece (linear)\n- Garlic: 6 clove (linear)\n- Olive oil: 12 tbsp (linear)\n- Thyme: adjust manually; source amount was 3 sprig.\n- Basil: adjust manually; source amount was 1 pinch.\n- Salt and pepper: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "details": {
+        "route": "scale",
+        "retrieval_query": "Ratatouille recipe for 8 servings",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.610722865591947
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.521478473160643
+          },
+          {
+            "text": "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5038428893292273
+          },
+          {
+            "text": "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.4567589740567937
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.33803734586171513
+          }
+        ],
+        "mcp_call": {
+          "name": "scale_recipe",
+          "arguments": {
+            "ingredients": [
+              {
+                "name": "Aubergine",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "in 2 cm cubes"
+              },
+              {
+                "name": "Courgette",
+                "quantity": 2,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": "in cubes"
+              },
+              {
+                "name": "Bell pepper",
+                "quantity": 2,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Tomatoes",
+                "quantity": 600,
+                "unit": "g",
+                "scaling": "linear",
+                "note": "ripe, peeled"
+              },
+              {
+                "name": "Onion",
+                "quantity": 1,
+                "unit": "piece",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Garlic",
+                "quantity": 3,
+                "unit": "clove",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Olive oil",
+                "quantity": 6,
+                "unit": "tbsp",
+                "scaling": "linear",
+                "note": ""
+              },
+              {
+                "name": "Thyme",
+                "quantity": 3,
+                "unit": "sprig",
+                "scaling": "damped",
+                "note": ""
+              },
+              {
+                "name": "Basil",
+                "quantity": 1,
+                "unit": "pinch",
+                "scaling": "damped",
+                "note": "at the end"
+              },
+              {
+                "name": "Salt and pepper",
+                "quantity": null,
+                "unit": "toTaste",
+                "scaling": "fixed",
+                "note": ""
+              }
+            ],
+            "from_servings": 4,
+            "to_servings": 8.0
+          },
+          "recipe_name": "Ratatouille"
+        },
+        "mcp_result": "{\"result\": [{\"name\": \"Aubergine\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Courgette\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Bell pepper\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Tomatoes\", \"quantity\": 1200.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Onion\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Garlic\", \"quantity\": 6.0, \"unit\": \"clove\", \"status\": \"linear\"}, {\"name\": \"Olive oil\", \"quantity\": 12.0, \"unit\": \"tbsp\", \"status\": \"linear\"}, {\"name\": \"Thyme\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Basil\", \"quantity\": null, \"unit\": \"pinch\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 118,
+            "output_tokens": 25,
+            "seconds": 0.407
+          },
+          {
+            "step": "tool_arguments",
+            "input_tokens": 84,
+            "output_tokens": 11,
+            "seconds": 0.21
+          }
+        ],
+        "total_input_tokens": 202,
+        "total_output_tokens": 36,
+        "answer_ttft_seconds": null,
+        "total_seconds": 1.935,
+        "other_timings": {
+          "retrieval_seconds": 0.015,
+          "mcp_seconds": 1.3
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "conversion",
+      "question": "How much is 2 kilograms in grams?",
+      "answer": "2 kilograms is equal to 2000 grams.",
+      "details": {
+        "route": "convert",
+        "retrieval_query": "2 kilograms to grams",
+        "retrieved_chunks": [],
+        "mcp_call": {
+          "name": "convert_units",
+          "arguments": {
+            "amount": 2.0,
+            "from_unit": "kilograms",
+            "to_unit": "grams"
+          }
+        },
+        "mcp_result": "{\"amount\": 2000.0, \"unit\": \"g\"}",
+        "model_calls": [
+          {
+            "step": "routing",
+            "input_tokens": 114,
+            "output_tokens": 17,
+            "seconds": 0.279
+          },
+          {
+            "step": "tool_arguments",
+            "input_tokens": 80,
+            "output_tokens": 22,
+            "seconds": 0.327
+          },
+          {
+            "step": "answer",
+            "input_tokens": 189,
+            "output_tokens": 13,
+            "seconds": 0.189
+          }
+        ],
+        "total_input_tokens": 383,
+        "total_output_tokens": 52,
+        "answer_ttft_seconds": 0.028,
+        "total_seconds": 2.078,
+        "other_timings": {
+          "mcp_seconds": 1.281
+        }
+      },
+      "problems": [],
+      "ui_errors": [],
+      "exceptions": []
+    }
+  ]
+}

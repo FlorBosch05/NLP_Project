@@ -1,0 +1,353 @@
+{
+  "note": "Six project-authored ingredient queries, expected recipe in the V4 corpus; target recipe match is not answer quality, Ragas, or independent review.",
+  "cases": [
+    {
+      "id": "R01",
+      "question": "Which recipe uses kombu, bonito flakes and miso paste?",
+      "expected_recipe": "Miso soup",
+      "strategy": "sections",
+      "rank": 1,
+      "hits": [
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "instructions"
+        },
+        {
+          "recipe": "Phở bò",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients"
+        },
+        {
+          "recipe": "Phở bò",
+          "section": "dietary"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "question": "Which recipe uses avocado, lime and jalapeño?",
+      "expected_recipe": "Guacamole",
+      "strategy": "sections",
+      "rank": 1,
+      "hits": [
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "overview"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "instructions"
+        },
+        {
+          "recipe": "Mapo tofu",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredients"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "question": "Which dish uses rabbit, bomba rice and saffron?",
+      "expected_recipe": "Paella valenciana",
+      "strategy": "sections",
+      "rank": 5,
+      "hits": [
+        {
+          "recipe": "Gong bao chicken",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Chicken biryani",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Gong bao chicken",
+          "section": "dietary"
+        },
+        {
+          "recipe": "Pad thai",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "ingredient_notes"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "question": "Which recipe uses beetroot, cabbage and beef?",
+      "expected_recipe": "Borscht",
+      "strategy": "sections",
+      "rank": 1,
+      "hits": [
+        {
+          "recipe": "Borscht",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "instructions"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "overview"
+        },
+        {
+          "recipe": "Bibimbap",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Souvlaki",
+          "section": "ingredient_notes"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "question": "Which recipe uses potatoes, eggs and onion to make a thick omelette?",
+      "expected_recipe": "Spanish tortilla",
+      "strategy": "sections",
+      "rank": 2,
+      "hits": [
+        {
+          "recipe": "Moussaka",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "overview"
+        },
+        {
+          "recipe": "Katsudon",
+          "section": "instructions"
+        },
+        {
+          "recipe": "Horiatiki salad",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "question": "Which dish uses toor dal, ghee and turmeric?",
+      "expected_recipe": "Dal tadka",
+      "strategy": "sections",
+      "rank": 1,
+      "hits": [
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredient_notes"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "instructions"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "dietary"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredients"
+        },
+        {
+          "recipe": "Tacos al pastor",
+          "section": "ingredient_notes"
+        }
+      ]
+    },
+    {
+      "id": "R01",
+      "question": "Which recipe uses kombu, bonito flakes and miso paste?",
+      "expected_recipe": "Miso soup",
+      "strategy": "recipe",
+      "rank": 1,
+      "hits": [
+        {
+          "recipe": "Miso soup",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Mapo tofu",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Imeretian khachapuri",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Moussaka",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Käsespätzle",
+          "section": "recipe"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "question": "Which recipe uses avocado, lime and jalapeño?",
+      "expected_recipe": "Guacamole",
+      "strategy": "recipe",
+      "rank": 1,
+      "hits": [
+        {
+          "recipe": "Guacamole",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Mapo tofu",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Ham croquetas",
+          "section": "recipe"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "question": "Which dish uses rabbit, bomba rice and saffron?",
+      "expected_recipe": "Paella valenciana",
+      "strategy": "recipe",
+      "rank": 2,
+      "hits": [
+        {
+          "recipe": "Risotto alla milanese",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Gong bao chicken",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Chicken biryani",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Pad thai",
+          "section": "recipe"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "question": "Which recipe uses beetroot, cabbage and beef?",
+      "expected_recipe": "Borscht",
+      "strategy": "recipe",
+      "rank": 1,
+      "hits": [
+        {
+          "recipe": "Borscht",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Moussaka",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Bibimbap",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Kimchi jjigae",
+          "section": "recipe"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "question": "Which recipe uses potatoes, eggs and onion to make a thick omelette?",
+      "expected_recipe": "Spanish tortilla",
+      "strategy": "recipe",
+      "rank": 1,
+      "hits": [
+        {
+          "recipe": "Spanish tortilla",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Moussaka",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Menemen",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Horiatiki salad",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "recipe"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "question": "Which dish uses toor dal, ghee and turmeric?",
+      "expected_recipe": "Dal tadka",
+      "strategy": "recipe",
+      "rank": 1,
+      "hits": [
+        {
+          "recipe": "Dal tadka",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Mapo tofu",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Bánh mì",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "recipe"
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "recipe"
+        }
+      ]
+    }
+  ]
+}

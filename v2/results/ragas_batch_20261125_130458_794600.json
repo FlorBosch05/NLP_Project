@@ -1,0 +1,26 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v2\\results\\evaluation_sections_k5_20261125_130014.json",
+  "offset": 1,
+  "requested": 12,
+  "cases": [
+    {
+      "id": "Q02",
+      "question": "What ingredients are in mushroom pasta?",
+      "scores": {
+        "user_input": "What ingredients are in mushroom pasta?",
+        "retrieved_contexts": [
+          "Recipe: Mushroom pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"mushrooms\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+          "Recipe: Mushroom pasta\noverview: Mushroom pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+          "Recipe: Mushroom pasta\ninstructions: Boil pasta. Sauté mushrooms in oil and combine.",
+          "Recipe: Mushroom pasta\ndietary: Tags: vegetarian. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+          "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]"
+        ],
+        "response": "The mushroom pasta recipe contains the following ingredients:\n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Pasta | 200 | g |\n| Mushrooms | 250 | g |\n| Olive oil | 15 | ml |\n\nThese ingredients are listed in the retrieved recipe text【1†text】.",
+        "reference": "Mushroom pasta contains 200 g pasta, 250 g mushrooms, and 15 ml olive oil.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    }
+  ]
+}

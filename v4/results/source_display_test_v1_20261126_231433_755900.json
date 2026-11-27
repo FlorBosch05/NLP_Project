@@ -1,0 +1,183 @@
+{
+  "app": "app_ollama_conversation_v9.py",
+  "cases": [
+    {
+      "question": "What are the ingredients for Ratatouille?",
+      "answer": "Ingredients for Ratatouille (source recipe; serves 4):\n- Aubergine: 1 piece\n- Courgette: 2 piece\n- Bell pepper: 2 piece\n- Tomatoes: 600 g\n- Onion: 1 piece\n- Garlic: 3 clove\n- Olive oil: 6 tbsp\n- Thyme: 3 sprig\n- Basil: 1 pinch\n- Salt and pepper: amount not specified; follow the source",
+      "problems": [],
+      "raw_trace": {
+        "focus": "Ratatouille",
+        "safety": {
+          "stage": "passed",
+          "category": "allow"
+        },
+        "route": "retrieve",
+        "retrieval_query": "Ratatouille soup recipe ingredients overview",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.533802755781621
+          },
+          {
+            "text": "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5012303494878493
+          },
+          {
+            "text": "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.49197402102239307
+          },
+          {
+            "text": "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.384243560494721
+          },
+          {
+            "text": "Recipe: French onion soup\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "French onion soup",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.38271975853171053
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+              "source_url": "https://theunitools.com/en/data",
+              "dataset_version": "2.0.0",
+              "license": "CC BY-SA 4.0",
+              "evidence_type": "structured_lookup",
+              "data_file": "v4/data/recipes_v4.json"
+            },
+            "score": null
+          }
+        ],
+        "mcp_call": null,
+        "mcp_result": null,
+        "model_calls": [],
+        "total_input_tokens": null,
+        "total_output_tokens": null,
+        "answer_ttft_seconds": null,
+        "total_seconds": 1.94,
+        "other_timings": {}
+      }
+    },
+    {
+      "question": "How many people is that recipe for?",
+      "answer": "Ratatouille serves 4 people according to the source.",
+      "problems": [],
+      "raw_trace": {
+        "focus": "Ratatouille",
+        "safety": {
+          "stage": "passed",
+          "category": "allow"
+        },
+        "route": "retrieve",
+        "retrieval_query": "Ratatouille soup recipe ingredients overview",
+        "retrieved_chunks": [
+          {
+            "text": "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredient_notes",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.533802755781621
+          },
+          {
+            "text": "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "overview",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.5012303494878493
+          },
+          {
+            "text": "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.49197402102239307
+          },
+          {
+            "text": "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "instructions",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.384243560494721
+          },
+          {
+            "text": "Recipe: French onion soup\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+            "metadata": {
+              "recipe": "French onion soup",
+              "section": "dietary",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+            },
+            "score": 0.38271975853171053
+          },
+          {
+            "text": "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+            "metadata": {
+              "recipe": "Ratatouille",
+              "section": "ingredients",
+              "servings": 4,
+              "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+              "source_url": "https://theunitools.com/en/data",
+              "dataset_version": "2.0.0",
+              "license": "CC BY-SA 4.0",
+              "evidence_type": "structured_lookup",
+              "data_file": "v4/data/recipes_v4.json"
+            },
+            "score": null
+          }
+        ],
+        "mcp_call": null,
+        "mcp_result": null,
+        "model_calls": [],
+        "total_input_tokens": null,
+        "total_output_tokens": null,
+        "answer_ttft_seconds": null,
+        "total_seconds": 0.391,
+        "other_timings": {}
+      }
+    }
+  ]
+}

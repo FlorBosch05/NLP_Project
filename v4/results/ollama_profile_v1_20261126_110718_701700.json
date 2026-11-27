@@ -1,0 +1,40 @@
+{
+  "model": "qwen2.5:7b",
+  "prompt": "Give three simple tips for storing fresh tomatoes.",
+  "response": "Certainly! Here are three simple tips for storing fresh tomatoes:\n\n1. **Room Temperature for Ripening**: If your tomatoes are still green, store them at room temperature away from direct sunlight. This allows them to ripen naturally. Once they are fully ripe, you can move them to the refrigerator to slow down the ripening process and extend their shelf life.\n\n2. **Refrigeration for Preservation**: Once your tomatoes are ripe, store them in the refrigerator to slow down the ripening process. Place them in a plastic bag or a container with a lid to maintain humidity and prevent them from drying out. However, keep in mind",
+  "wall_seconds": 1.794,
+  "ollama": {
+    "total_duration": 1772565000,
+    "load_duration": 3206900,
+    "prompt_eval_count": 38,
+    "prompt_eval_duration": 244434000,
+    "eval_count": 128,
+    "eval_duration": 1514077000
+  },
+  "output_tokens_per_second": 84.54,
+  "running_models": {
+    "models": [
+      {
+        "name": "qwen2.5:7b",
+        "model": "qwen2.5:7b",
+        "size": 5148633988,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "7.6B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-26T11:12:17.9898434+01:00",
+        "size_vram": 5148633988,
+        "context_length": 8192,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "nvidia_smi_csv": "NVIDIA GeForce RTX 5070 Ti Laptop GPU, 12227, 5096"
+}

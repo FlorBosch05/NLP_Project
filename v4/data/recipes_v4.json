@@ -1,0 +1,3374 @@
+[
+  {
+    "name": "Risotto alla milanese",
+    "slug": "risotto-alla-milanese",
+    "country": "IT",
+    "servings": 4,
+    "prep_minutes": 10,
+    "cook_minutes": 25,
+    "overview": "A saffron risotto built on stock and near-constant stirring, which is what pulls the starch out of the rice and makes it creamy. Publisher lists prep 10 minutes and cook 25 minutes, total 35 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Carnaroli rice",
+        "quantity": 320,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Stock",
+        "quantity": 1.2,
+        "unit": "l",
+        "scaling": "linear",
+        "note": "kept hot"
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "finely chopped"
+      },
+      {
+        "name": "Dry white wine",
+        "quantity": 120,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Butter",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "cold"
+      },
+      {
+        "name": "Parmesan",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "grated"
+      },
+      {
+        "name": "Saffron",
+        "quantity": 1,
+        "unit": "pinch",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Steep the saffron in a ladle of hot stock and set it aside. Keep the rest of the stock at a bare simmer — cold stock stops the cooking. [Source step duration: 2 min]\n2. Melt half the butter and sweat the onion over low heat until soft and translucent without letting it colour, about eight minutes. [Source step duration: 8 min]\n3. Add the rice and stir for a couple of minutes until the grains are translucent at the edges and milky in the centre. This is the tostatura, and it keeps the grains intact. [Source step duration: 2 min]\n4. Pour in the wine and let it evaporate completely — the smell of alcohol has to go. [Source step duration: 2 min]\n5. Add the stock a ladle at a time, stirring, waiting until the rice has nearly absorbed it before the next. Around eighteen minutes, until the grain is soft outside with a slight bite in the middle. [Source step duration: 18 min]\n6. Stir in the saffron infusion, take the pan off the heat and beat in the cold butter and parmesan, shaking the pan hard. The risotto should spread slowly across the plate. [Source step duration: 2 min]",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Stock: kept hot\nOnion: finely chopped\nButter: cold\nParmesan: grated",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Ratatouille",
+    "slug": "ratatouille",
+    "country": "FR",
+    "servings": 4,
+    "prep_minutes": 20,
+    "cook_minutes": 45,
+    "overview": "A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Aubergine",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in 2 cm cubes"
+      },
+      {
+        "name": "Courgette",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in cubes"
+      },
+      {
+        "name": "Bell pepper",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 600,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "ripe, peeled"
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "quantity": 6,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Thyme",
+        "quantity": 3,
+        "unit": "sprig",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Basil",
+        "quantity": 1,
+        "unit": "pinch",
+        "scaling": "damped",
+        "note": "at the end"
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+    "dietary_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "French onion soup",
+    "slug": "french-onion-soup",
+    "country": "FR",
+    "servings": 4,
+    "prep_minutes": 15,
+    "cook_minutes": 60,
+    "overview": "Soup from onions, stock and cheese-topped bread. All of the flavour comes from caramelisation, which takes forty minutes rather than twenty. Publisher lists prep 15 minutes and cook 60 minutes, total 75 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Onions",
+        "quantity": 1,
+        "unit": "kg",
+        "scaling": "linear",
+        "note": "thinly sliced"
+      },
+      {
+        "name": "Butter",
+        "quantity": 50,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Flour",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Dry white wine",
+        "quantity": 150,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Beef stock",
+        "quantity": 1.2,
+        "unit": "l",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Baguette",
+        "quantity": 8,
+        "unit": "slice",
+        "scaling": "linear",
+        "note": "toasted"
+      },
+      {
+        "name": "Gruyère",
+        "quantity": 150,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "grated"
+      },
+      {
+        "name": "Thyme",
+        "quantity": 2,
+        "unit": "sprig",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Melt the butter in a heavy pot, add the onions and a pinch of salt, and keep them over medium heat, stirring every few minutes. For the first twenty minutes the onions give up water. [Source step duration: 20 min]\n2. Then the caramelisation proper begins: another twenty-five minutes to take the onions to the colour of strong tea. If they catch, lower the heat and add a spoonful of water. [Source step duration: 25 min]\n3. Stir in the flour and cook it out for a couple of minutes so it loses its raw taste. [Source step duration: 2 min]\n4. Pour in the wine and scrape everything stuck to the bottom back into the pot. Let it reduce by half. [Source step duration: 4 min]\n5. Add the stock and thyme, bring to the boil and simmer for twenty minutes. Season at the end, since the stock may already be salty. [Source step duration: 20 min]\n6. Ladle into ovenproof bowls, top each with a slice of baguette, cover with cheese and put them under the grill until bubbling and browned, about three minutes. [Source step duration: 3 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Onions: thinly sliced\nBaguette: toasted\nGruyère: grated",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Borscht",
+    "slug": "borscht",
+    "country": "RU",
+    "servings": 6,
+    "prep_minutes": 30,
+    "cook_minutes": 120,
+    "overview": "A beetroot soup on beef stock where acid holds both the colour and the flavour. The beetroot is braised separately, never boiled in the pot. Publisher lists prep 30 minutes and cook 120 minutes, total 150 minutes. Serves 6.",
+    "ingredients": [
+      {
+        "name": "Beef on the bone",
+        "quantity": 700,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Beetroot",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "coarsely grated"
+      },
+      {
+        "name": "Cabbage",
+        "quantity": 300,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "shredded"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Carrot",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Tomato paste",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Vinegar, 9%",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Bay leaf",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sour cream",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Cover the meat with cold water, bring it to the boil and skim. Simmer for an hour and a half at a bare tremble — a rolling boil turns the stock cloudy. [Source step duration: 90 min]\n2. Braise the beetroot in a pan with a spoon of oil, the tomato paste and the vinegar, covered, for about twenty minutes. The vinegar is what keeps the colour. [Source step duration: 20 min]\n3. Separately fry the onion and carrot until soft and golden. [Source step duration: 8 min]\n4. Lift the meat out, pull it into pieces and return it to the stock. Add the potatoes and give them ten minutes — before any acid reaches the pot. [Source step duration: 10 min]\n5. Add the cabbage, then after five minutes the beetroot and the fried vegetables. Give it five minutes more, add the bay and garlic and take it straight off the heat. [Source step duration: 12 min]\n6. Let it stand covered for at least twenty minutes. Serve with sour cream, which softens the acid and pulls the flavours together. [Source step duration: 20 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Beetroot: coarsely grated\nCabbage: shredded",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Imeretian khachapuri",
+    "slug": "khachapuri-imeruli",
+    "country": "GE",
+    "servings": 4,
+    "prep_minutes": 90,
+    "cook_minutes": 20,
+    "overview": "A round flatbread with the cheese inside rather than on top. The dough is made on matsoni, and there is as much filling as there is dough. Publisher lists prep 90 minutes and cook 20 minutes, total 110 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Matsoni or kefir",
+        "quantity": 200,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": "at room temperature"
+      },
+      {
+        "name": "Egg",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Butter",
+        "quantity": 40,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "melted"
+      },
+      {
+        "name": "Dry yeast",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sugar",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Suluguni",
+        "quantity": 250,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "grated"
+      },
+      {
+        "name": "Fresh curd cheese",
+        "quantity": 250,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Stir the yeast and sugar into the warm matsoni and leave it ten minutes to foam. No foam means dead yeast, so start again. [Source step duration: 10 min]\n2. Add the egg, the melted butter, the salt and the flour. Knead a soft dough: it should stay slightly tacky, and no more flour goes in. [Source step duration: 10 min]\n3. Cover it and leave it somewhere warm for an hour, until it has doubled. [Source step duration: 60 min]\n4. Mix both cheeses together by hand until even and divide into four balls. Divide the dough into four as well. [Source step duration: 5 min]\n5. Roll each piece of dough into a disc, set a ball of cheese in the middle, gather the edges to the centre and pinch them shut. Turn it seam down and roll it gently to about a centimetre thick. [Source step duration: 10 min]\n6. Cook in a dry pan over medium heat for about four minutes a side, until dark spots appear. Brush the finished bread with butter. [Source step duration: 16 min]",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Matsoni or kefir: at room temperature\nButter: melted\nSuluguni: grated",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Miso soup",
+    "slug": "miso-soup",
+    "country": "JP",
+    "servings": 4,
+    "prep_minutes": 5,
+    "cook_minutes": 15,
+    "overview": "A soup of dashi and miso that takes ten minutes. Miso must never boil: boiling takes out both the aroma and the point of it. Publisher lists prep 5 minutes and cook 15 minutes, total 20 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Water",
+        "quantity": 800,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Kombu",
+        "quantity": 10,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "wiped, not washed"
+      },
+      {
+        "name": "Bonito flakes",
+        "quantity": 15,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Miso paste",
+        "quantity": 4,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Tofu",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "cubed"
+      },
+      {
+        "name": "Dried wakame",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Spring onion",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Cover the kombu with cold water and set it over low heat. Bring it to the edge of a boil over about ten minutes and lift the seaweed out before bubbles appear. [Source step duration: 10 min]\n2. Bring the water to the boil, add the bonito flakes, take it off the heat at once and let it stand for two minutes until the flakes sink. [Source step duration: 2 min]\n3. Strain the stock through a sieve without pressing the flakes — pressed flakes turn it bitter. [Source step duration: 2 min]\n4. Soak the wakame in cold water for five minutes; it swells several times over. [Source step duration: 5 min]\n5. Warm the dashi, add the tofu and the wakame and hold it at a low heat for a couple of minutes. [Source step duration: 2 min]\n6. Whisk the miso smooth in a ladle of the hot stock, stir it back in and take the pan off the heat immediately. Scatter over the spring onion. [Source step duration: 2 min]",
+    "dietary_tags": [
+      "pescatarian"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Kombu: wiped, not washed\nTofu: cubed",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Guacamole",
+    "slug": "guacamole",
+    "country": "MX",
+    "servings": 4,
+    "prep_minutes": 15,
+    "cook_minutes": 0,
+    "overview": "Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Avocado",
+        "quantity": 3,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "ripe"
+      },
+      {
+        "name": "Lime",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "juiced"
+      },
+      {
+        "name": "Red onion",
+        "quantity": 0.5,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "finely chopped"
+      },
+      {
+        "name": "Jalapeño",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": "seeds removed"
+      },
+      {
+        "name": "Coriander",
+        "quantity": 3,
+        "unit": "sprig",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Tomato",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "seeded and diced"
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+    "dietary_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Tom yum goong",
+    "slug": "tom-yum-goong",
+    "country": "TH",
+    "servings": 4,
+    "prep_minutes": 15,
+    "cook_minutes": 20,
+    "overview": "A hot and sour prawn soup where the balance is set at the end: fish sauce, lime and sugar go in to taste rather than by the recipe. Publisher lists prep 15 minutes and cook 20 minutes, total 35 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Prawns",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "heads on, keep the shells"
+      },
+      {
+        "name": "Water or stock",
+        "quantity": 1,
+        "unit": "l",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Lemongrass",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": "bruised and cut"
+      },
+      {
+        "name": "Galangal",
+        "quantity": 5,
+        "unit": "slice",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Kaffir lime leaves",
+        "quantity": 5,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Mushrooms",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Chillies",
+        "quantity": 3,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Fish sauce",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Lime juice",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Palm sugar",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Coriander",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Peel the prawns, leaving the tails on. Keep the shells and heads: the broth is built on them. [Source step duration: 8 min]\n2. Fry the shells in the pot for a couple of minutes until bright orange, cover with the water and simmer fifteen minutes. Strain. [Source step duration: 17 min]\n3. Return the broth to the heat, add the lemongrass, galangal and lime leaves and let them steep at a low simmer for five minutes. [Source step duration: 5 min]\n4. Add the mushrooms and the crushed chillies, then after two minutes the prawns. They are done the moment they curl into a C — beyond that they turn rubbery. [Source step duration: 4 min]\n5. Take the pot off the heat. Add the fish sauce, lime juice and sugar, stir and taste. Adjust a spoon at a time until sour, salty and hot sit where you want them. [Source step duration: 2 min]\n6. Ladle into bowls and scatter over the coriander. Leave the lemongrass and galangal in the pot, or warn people not to eat them. [Source step duration: 1 min]",
+    "dietary_tags": [
+      "pescatarian"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Prawns: heads on, keep the shells\nLemongrass: bruised and cut",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Dal tadka",
+    "slug": "dal-tadka",
+    "country": "IN",
+    "servings": 4,
+    "prep_minutes": 10,
+    "cook_minutes": 35,
+    "overview": "A lentil stew finished by pouring sizzling spiced fat over it. That step is the dish. Publisher lists prep 10 minutes and cook 35 minutes, total 45 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Toor dal",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "rinsed"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Ghee",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 4,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": "thinly sliced"
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Tomato",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Dried red chillies",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Asafoetida",
+        "quantity": 1,
+        "unit": "pinch",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Cover the lentils with three cups of water, add the turmeric and simmer covered for thirty minutes, until the grains collapse into a soft mass. [Source step duration: 30 min]\n2. Mash some of the lentils against the side of the pot and season. The consistency should be that of a thick soup. [Source step duration: 3 min]\n3. Separately fry the onion until golden, add the tomatoes and cook until they break down into a sauce. Stir that into the lentils. [Source step duration: 10 min]\n4. Heat the ghee in a small pan until it is just short of smoking. Add the mustard seeds; they should crackle within seconds. [Source step duration: 2 min]\n5. Add the cumin at once, the garlic and chillies ten seconds later, the asafoetida twenty seconds after that. The whole thing takes under a minute and cannot be left alone. [Source step duration: 1 min]\n6. Pour the sizzling tadka straight into the lentils — it should hiss. Stir once and serve with rice or flatbread. [Source step duration: 1 min]",
+    "dietary_tags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Toor dal: rinsed\nGarlic: thinly sliced",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Paella valenciana",
+    "slug": "paella-valenciana",
+    "country": "ES",
+    "servings": 4,
+    "prep_minutes": 25,
+    "cook_minutes": 45,
+    "overview": "Rice in a wide pan with chicken, rabbit and beans. It is never stirred once, and the crust on the bottom depends on that. Publisher lists prep 25 minutes and cook 45 minutes, total 70 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Bomba rice, or another short grain",
+        "quantity": 320,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Chicken, in pieces",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Rabbit, in pieces",
+        "quantity": 300,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "chicken will do instead"
+      },
+      {
+        "name": "Flat green beans",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Large white beans",
+        "quantity": 100,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "cooked"
+      },
+      {
+        "name": "Tomato",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "grated"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": 60,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Sweet paprika",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Saffron",
+        "quantity": 1,
+        "unit": "pinch",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Rosemary",
+        "quantity": 1,
+        "unit": "sprig",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Chicken stock or water",
+        "quantity": 900,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Heat the oil in a wide pan and brown the chicken and rabbit on every side. This is not a five-minute job: it takes a good quarter of an hour, and there is no point rushing it — the flavour of the whole dish is laid down here. [Source step duration: 15 min]\n2. Push the meat to the edges, put the green beans in the middle and fry them for a couple of minutes. Add the grated tomato and the paprika and cook until the tomato darkens and stops smelling raw. [Source step duration: 6 min]\n3. Pour in the stock, add the rosemary, saffron and white beans, salt it noticeably harder than feels right and let it boil for ten minutes. This is the last moment you can correct the seasoning. [Source step duration: 10 min]\n4. Scatter the rice in an even layer and level it once with a spoon. After that do not touch the pan again — no stirring, no smoothing.\n5. Cook on a high flame for ten minutes, then drop to medium for another eight, until the stock is gone. The rice should be showing above the surface. [Source step duration: 18 min]\n6. Turn the heat up for half a minute and listen: the moment the sound turns from bubbling to a dry crackle, take it off. That is the socarrat. Cover with a cloth and let it stand for five minutes. [Source step duration: 6 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Rabbit, in pieces: chicken will do instead\nLarge white beans: cooked\nTomato: grated",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Spanish tortilla",
+    "slug": "tortilla-espanola",
+    "country": "ES",
+    "servings": 4,
+    "prep_minutes": 15,
+    "cook_minutes": 35,
+    "overview": "A thick omelette of potato and onion, where the potato is not fried but poached in oil until it is nearly a purée. Publisher lists prep 15 minutes and cook 35 minutes, total 50 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "quantity": 600,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "sliced thin"
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "thinly sliced"
+      },
+      {
+        "name": "Eggs",
+        "quantity": 6,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "quantity": 400,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": "nearly all of it goes back in the bottle"
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Heat the oil in a deep pan until it is warm rather than hot — a slice of potato dropped in should sigh, not crackle. Add the potato and onion and salt them. [Source step duration: 3 min]\n2. Poach for twenty minutes, turning gently now and then. It is ready when a slice breaks easily against the side of the pan. Drain through a colander, keeping the potato. [Source step duration: 20 min]\n3. Beat the eggs with a pinch of salt and fold the warm potato through them. Let it sit for ten minutes: the potato gives up starch and the tortilla holds together for it. [Source step duration: 10 min]\n4. In a 24 cm pan with a spoon of oil, pour the mixture in and cook over medium heat for four minutes, easing the edges towards the middle with a spatula. [Source step duration: 4 min]\n5. Cover with a plate, flip in one movement and slide it back raw side down. Three minutes more leaves the centre slightly loose, which is how it should be. [Source step duration: 3 min]",
+    "dietary_tags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Potatoes: sliced thin\nOnion: thinly sliced\nOlive oil: nearly all of it goes back in the bottle",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Moussaka",
+    "slug": "moussaka",
+    "country": "GR",
+    "servings": 6,
+    "prep_minutes": 40,
+    "cook_minutes": 75,
+    "overview": "Aubergine, a meat sauce with cinnamon and a thick layer of béchamel, baked until it sets firm enough to cut. Publisher lists prep 40 minutes and cook 75 minutes, total 115 minutes. Serves 6.",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "quantity": 3,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in centimetre slices"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "thinly sliced"
+      },
+      {
+        "name": "Minced lamb or beef",
+        "quantity": 600,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Tinned tomatoes",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Dry red wine",
+        "quantity": 120,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Cinnamon",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Butter",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Plain flour",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Milk",
+        "quantity": 700,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Egg yolks",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Kefalotyri or parmesan",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "grated"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": 60,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Salt, pepper, nutmeg",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Salt the aubergine slices and leave them in a colander for half an hour, then pat them dry. Brush with oil and roast at 200 °C for twenty minutes until soft and golden. [Source step duration: 50 min]\n2. Fry the onion until soft, add the mince and cook, breaking up the lumps, until every drop of water has gone and the meat starts to brown. Pour in the wine and let it cook away. [Source step duration: 15 min]\n3. Add the garlic, tomatoes and cinnamon and simmer for twenty minutes. The sauce is right when a spoon drawn across the bottom leaves a track behind it. [Source step duration: 20 min]\n4. Melt the butter, whisk in the flour and cook for a minute. Pour in warm milk in a thin stream, whisking without stopping, and cook to the thickness of soured cream. Off the heat, add nutmeg, the yolks and half the cheese. [Source step duration: 12 min]\n5. Layer it up: potato, aubergine, meat sauce, aubergine again. Pour the béchamel over and scatter the rest of the cheese.\n6. Bake at 180 °C for forty-five minutes until the top is golden. Let it stand for half an hour before cutting: hot moussaka does not slice, it slumps. [Source step duration: 75 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Aubergines: in centimetre slices\nPotatoes: thinly sliced\nKefalotyri or parmesan: grated",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Horiatiki salad",
+    "slug": "horiatiki-salata",
+    "country": "GR",
+    "servings": 4,
+    "prep_minutes": 15,
+    "cook_minutes": 0,
+    "overview": "The village salad, with no leaves in it: tomato, cucumber, onion, olives and a whole slab of feta on top. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Ripe tomatoes",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in large wedges"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in thick half-moons"
+      },
+      {
+        "name": "Red onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in thin rings"
+      },
+      {
+        "name": "Green pepper",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Feta",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "in one piece"
+      },
+      {
+        "name": "Kalamata olives",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "quantity": 60,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Dried oregano",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Cut the tomatoes into large wedges and salt them straight in the bowl. Leave them five minutes: the juice they give up becomes the base of the dressing. [Source step duration: 5 min]\n2. Add the cucumber, pepper and onion. Mix with your hands rather than a spoon — nothing breaks that way.\n3. Scatter the olives over, lay the slab of feta on top and pour the oil over everything at once. Sprinkle the oregano straight onto the feta, where the oil will open it up.",
+    "dietary_tags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Ripe tomatoes: in large wedges\nCucumber: in thick half-moons\nRed onion: in thin rings\nFeta: in one piece",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Phở bò",
+    "slug": "pho-bo",
+    "country": "VN",
+    "servings": 4,
+    "prep_minutes": 30,
+    "cook_minutes": 240,
+    "overview": "A clear beef broth with charred ginger and whole spices, rice noodles, and beef that finishes cooking in the bowl. Publisher lists prep 30 minutes and cook 240 minutes, total 270 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Beef marrow bones",
+        "quantity": 1.5,
+        "unit": "kg",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Brisket",
+        "quantity": 500,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Sirloin",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "sliced almost transparent"
+      },
+      {
+        "name": "Onion",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Ginger",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Star anise",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Cinnamon stick",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Cloves",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Coriander seeds",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Fish sauce",
+        "quantity": 60,
+        "unit": "ml",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sugar",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Flat rice noodles",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Coriander, spring onion, Thai basil",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      },
+      {
+        "name": "Lime and chilli",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Cover the bones with cold water, bring to the boil and let them go for ten minutes. Throw the water away, rinse the bones under the tap and wash the pot. This step is what buys you a clear broth. [Source step duration: 15 min]\n2. Halve the onion and ginger and char the cut faces in a dry pan or straight over the flame until they blacken in patches. [Source step duration: 8 min]\n3. Toast the spices in a dry pan until they smell, then tie them in muslin. Return the bones to the clean pot with the brisket, onion, ginger and spices, and cover with water three fingers above. [Source step duration: 5 min]\n4. Simmer for three hours at the barest tremble. Skim for the first half hour. Lift the brisket out after ninety minutes and let it cool. [Source step duration: 180 min]\n5. Strain the broth through a fine sieve and season with fish sauce and sugar. Taste it: it should be slightly saltier than pleasant to drink on its own, because the noodles will take their share. [Source step duration: 10 min]\n6. Cook the noodles and divide them between bowls. Lay the sliced brisket and the raw sirloin on top. Ladle boiling broth over so it covers the meat, and serve the herbs, lime and chilli alongside. [Source step duration: 10 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Sirloin: sliced almost transparent",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Bánh mì",
+    "slug": "banh-mi",
+    "country": "VN",
+    "servings": 4,
+    "prep_minutes": 25,
+    "cook_minutes": 15,
+    "overview": "A French baguette with Vietnamese filling: pâté, pork, pickled vegetables and coriander in one sandwich. Publisher lists prep 25 minutes and cook 15 minutes, total 40 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Baguettes",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "short, about 20 cm"
+      },
+      {
+        "name": "Pork shoulder",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "thinly sliced"
+      },
+      {
+        "name": "Chicken liver pâté",
+        "quantity": 120,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Mayonnaise",
+        "quantity": 4,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Carrot",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "julienned"
+      },
+      {
+        "name": "Daikon",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "julienned"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": 100,
+        "unit": "ml",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sugar",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Fish sauce",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Cucumber",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in long strips"
+      },
+      {
+        "name": "Coriander",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      },
+      {
+        "name": "Fresh chilli",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Stir the vinegar, sugar and a pinch of salt into 100 ml of warm water until dissolved. Pour it over the carrot and daikon and leave for an hour at room temperature. [Source step duration: 60 min]\n2. Marinate the pork in fish sauce with a spoon of sugar for twenty minutes, then sear it over a high flame for three minutes a side, until the edges caramelise. [Source step duration: 26 min]\n3. Warm the baguettes at 200 °C for five minutes so the crust crisps again. Split them lengthways, not all the way through. [Source step duration: 5 min]\n4. Spread pâté on one half and mayonnaise on the other. Layer in the pork, the drained pickles, cucumber, coriander and chilli. Press it shut with your palm and serve at once.",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Baguettes: short, about 20 cm\nPork shoulder: thinly sliced\nCarrot: julienned\nDaikon: julienned\nCucumber: in long strips",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Tacos al pastor",
+    "slug": "tacos-al-pastor",
+    "country": "MX",
+    "servings": 4,
+    "prep_minutes": 30,
+    "cook_minutes": 20,
+    "overview": "Pork in a marinade of dried chillies and pineapple, seared to caramelised edges, in a corn tortilla. Publisher lists prep 30 minutes and cook 20 minutes, total 50 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Pork shoulder",
+        "quantity": 700,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "sliced thin"
+      },
+      {
+        "name": "Dried guajillo chillies",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Dried ancho chillies",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Pineapple",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Achiote paste",
+        "quantity": 30,
+        "unit": "g",
+        "scaling": "damped",
+        "note": "or a teaspoon of ground annatto"
+      },
+      {
+        "name": "White vinegar",
+        "quantity": 60,
+        "unit": "ml",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 4,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Ground cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Mexican oregano",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Corn tortillas",
+        "quantity": 12,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Onion and coriander",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      },
+      {
+        "name": "Lime",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Seed the chillies and toast them in a dry pan until they smell — twenty seconds a side, no longer, or they turn bitter. Cover with boiling water for fifteen minutes. [Source step duration: 18 min]\n2. Blend the softened chillies with half the pineapple, the achiote, vinegar, garlic, cumin and oregano to a smooth paste. Season it. [Source step duration: 5 min]\n3. Coat the pork in the marinade and leave it at least two hours, ideally overnight. Do not go past a day: the pineapple will soften the meat to mush. [Source step duration: 120 min]\n4. Get a pan searing hot and cook the meat in batches, two minutes a side. Do not stir until dark edges appear. [Source step duration: 15 min]\n5. Sear the rest of the pineapple in the same pan and dice it. Chop the meat roughly, warm the tortillas twenty seconds a side and build: meat, pineapple, onion, coriander, lime. [Source step duration: 8 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Pork shoulder: sliced thin\nAchiote paste: or a teaspoon of ground annatto",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Menemen",
+    "slug": "menemen",
+    "country": "TR",
+    "servings": 2,
+    "prep_minutes": 10,
+    "cook_minutes": 20,
+    "overview": "Eggs cooked into tomatoes and green pepper. They are never beaten and rarely stirred, or you end up with ordinary scrambled eggs. Publisher lists prep 10 minutes and cook 20 minutes, total 30 minutes. Serves 2.",
+    "ingredients": [
+      {
+        "name": "Ripe tomatoes",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "peeled and chopped"
+      },
+      {
+        "name": "Long green peppers",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Eggs",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Butter",
+        "quantity": 20,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Pul biber flakes",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Dried oregano",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "White cheese",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Slice the peppers into rings and fry them in the two fats for three or four minutes, until the edges start to darken. [Source step duration: 4 min]\n2. Add the tomatoes, salt them and cook over medium heat for ten minutes. Wait for the oil to separate and glisten at the edges — that is the sign the water has gone. [Source step duration: 10 min]\n3. Lower the heat, break the eggs straight into the sauce and scatter the pepper flakes. Stir slowly and only two or three times, leaving streaks of yolk. [Source step duration: 4 min]\n4. Take it off when the white has set and the yolk is still loose: the pan finishes the job. Scatter over the oregano and the cheese. [Source step duration: 2 min]",
+    "dietary_tags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Ripe tomatoes: peeled and chopped",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Mercimek çorbası",
+    "slug": "mercimek-corbasi",
+    "country": "TR",
+    "servings": 4,
+    "prep_minutes": 10,
+    "cook_minutes": 35,
+    "overview": "A red lentil soup blended smooth and finished with lemon and paprika butter. Publisher lists prep 10 minutes and cook 35 minutes, total 45 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Red lentils",
+        "quantity": 250,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "rinsed"
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Carrot",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Potato",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Tomato paste",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Water or stock",
+        "quantity": 1.4,
+        "unit": "l",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Butter",
+        "quantity": 40,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Dried mint",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sweet paprika",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Lemon",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Fry the onion and carrot in a spoon of butter until soft, add the tomato paste and give it another minute, until it darkens. [Source step duration: 8 min]\n2. Add the lentils, potato and water, bring to the boil and simmer for twenty-five minutes, until the lentils have collapsed completely. [Source step duration: 25 min]\n3. Blend until entirely smooth. The soup should be thick but still pourable; loosen it with boiling water if it is not. [Source step duration: 3 min]\n4. Melt the rest of the butter, take it off the heat and stir in the mint and paprika. Ladle out the soup, spoon the butter over and serve with a wedge of lemon. [Source step duration: 3 min]",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Red lentils: rinsed",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Khinkali",
+    "slug": "khinkali",
+    "country": "GE",
+    "servings": 4,
+    "prep_minutes": 60,
+    "cook_minutes": 15,
+    "overview": "Purses of stiff dough holding chopped meat and broth. The broth appears on its own, from water worked into the filling. Publisher lists prep 60 minutes and cook 15 minutes, total 75 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Plain flour",
+        "quantity": 500,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Water for the dough",
+        "quantity": 220,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Beef",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "chopped by hand"
+      },
+      {
+        "name": "Pork",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "chopped by hand"
+      },
+      {
+        "name": "Onion",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "very finely chopped"
+      },
+      {
+        "name": "Iced water for the filling",
+        "quantity": 200,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Coriander",
+        "quantity": 1,
+        "unit": "sprig",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Ground cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Black pepper",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Knead a dough from the flour, water and a pinch of salt. It should come out noticeably stiffer than a dumpling dough — hard work to knead. Wrap it and rest it for forty minutes. [Source step duration: 50 min]\n2. Chop the meat by hand into pieces a few millimetres across. Mix it with the onion, coriander, cumin, salt and pepper. [Source step duration: 25 min]\n3. Work the iced water into the filling a little at a time until the mixture turns sticky and stops taking any more. Chill it for twenty minutes. [Source step duration: 25 min]\n4. Roll out discs 12 cm across and about two millimetres thick. Put a tablespoon of filling in the middle and gather the edge in pleats all the way round — eighteen at the least. Twist the top and pinch it shut. [Source step duration: 30 min]\n5. Drop them into a large pot of salted boiling water, swirling the water with a slotted spoon first so they do not stick. Boil for seven or eight minutes after they float. [Source step duration: 10 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Beef: chopped by hand\nPork: chopped by hand\nOnion: very finely chopped",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Butter chicken",
+    "slug": "murgh-makhani",
+    "country": "IN",
+    "servings": 4,
+    "prep_minutes": 30,
+    "cook_minutes": 40,
+    "overview": "Yoghurt-marinated chicken, roasted, in a tomato and cream sauce finished with fenugreek. Publisher lists prep 30 minutes and cook 40 minutes, total 70 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Boneless chicken thigh",
+        "quantity": 700,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Thick yoghurt",
+        "quantity": 150,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Ginger",
+        "quantity": 20,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "grated"
+      },
+      {
+        "name": "Garlic",
+        "quantity": 4,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garam masala",
+        "quantity": 2,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Kashmiri chilli powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Turmeric",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Tinned tomatoes",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Butter",
+        "quantity": 60,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Double cream",
+        "quantity": 120,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Cashews",
+        "quantity": 40,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "soaked in boiling water"
+      },
+      {
+        "name": "Kasuri methi",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Mix the yoghurt with half the ginger, garlic and spices, season it and marinate the chicken for at least an hour, better overnight. [Source step duration: 60 min]\n2. Roast the chicken at 220 °C for twenty minutes, or sear it in a screaming-hot pan until it takes dark scorch marks. It can stay slightly underdone inside — the sauce will finish it. [Source step duration: 20 min]\n3. Melt the butter and fry the onion with the rest of the ginger and garlic until golden. Add the tomatoes and the spices and cook for fifteen minutes. [Source step duration: 20 min]\n4. Blend the sauce with the soaked cashews until completely smooth and return it to the pan. It is the cashews, not flour, that give the sauce its body. [Source step duration: 5 min]\n5. Return the chicken to the sauce, pour in the cream and warm it through for five minutes without letting it boil. Crush the kasuri methi between your palms, stir it in and take the pan off. [Source step duration: 6 min]",
+    "dietary_tags": [
+      "gluten-free"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Ginger: grated\nCashews: soaked in boiling water",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Katsudon",
+    "slug": "katsudon",
+    "country": "JP",
+    "servings": 2,
+    "prep_minutes": 20,
+    "cook_minutes": 20,
+    "overview": "A breaded pork cutlet finished in sweet-salt broth with egg and slid onto rice. Publisher lists prep 20 minutes and cook 20 minutes, total 40 minutes. Serves 2.",
+    "ingredients": [
+      {
+        "name": "Pork loin",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "150 g each, beaten flat"
+      },
+      {
+        "name": "Plain flour",
+        "quantity": 40,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Egg for coating",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Panko breadcrumbs",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "thinly sliced"
+      },
+      {
+        "name": "Dashi",
+        "quantity": 200,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Mirin",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sugar",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Eggs for the broth",
+        "quantity": 3,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Cooked rice",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": 500,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Nick the fat rim of each cutlet in a few places so they do not curl, season them and coat in flour, then egg, then panko. [Source step duration: 8 min]\n2. Deep-fry at 170 °C for three minutes a side until golden. Drain on a rack rather than paper, so the underside stays crisp. [Source step duration: 6 min]\n3. Cut the cutlets into strips a centimetre and a half wide without moving them apart — the shape matters when you serve.\n4. In a small pan bring the dashi, soy, mirin and sugar to the boil, add the onion and cook for three minutes until soft. [Source step duration: 4 min]\n5. Slide the cutlet into the broth, pour two thirds of the loosely beaten egg around it and cover for a minute. Add the rest, cover for twenty seconds more and take it off — the top layer of egg should stay loose. [Source step duration: 3 min]\n6. Slide everything in the pan onto the rice in one movement, sauce and all.",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Pork loin: 150 g each, beaten flat\nOnion: thinly sliced",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Syrniki",
+    "slug": "syrniki",
+    "country": "RU",
+    "servings": 4,
+    "prep_minutes": 15,
+    "cook_minutes": 15,
+    "overview": "Curd cheese fritters with as much curd as possible and exactly enough flour to keep them together. Publisher lists prep 15 minutes and cook 15 minutes, total 30 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Curd cheese, 5-9% fat",
+        "quantity": 500,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "dry, drained"
+      },
+      {
+        "name": "Egg",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Plain flour",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": "plus a little for your hands"
+      },
+      {
+        "name": "Sugar",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Vanilla sugar",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": 1,
+        "unit": "pinch",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Butter for frying",
+        "quantity": 30,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Sour cream and jam",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Push the curd through a sieve or blitz it. Grainy curd makes grainy syrniki; this step is not optional. [Source step duration: 5 min]\n2. Work in the egg, sugar, vanilla and salt, then the flour. The mixture stays sticky; that is correct. [Source step duration: 3 min]\n3. With wet or lightly floured hands shape discs about a centimetre and a half thick. Thicker and the middle stays raw, thinner and they dry out. [Source step duration: 7 min]\n4. Fry over medium heat with a lid on, three or four minutes a side. The lid matters more than the butter: it steams the middle through. [Source step duration: 8 min]",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Curd cheese, 5-9% fat: dry, drained\nPlain flour: plus a little for your hands",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Pad thai",
+    "slug": "pad-thai",
+    "country": "TH",
+    "servings": 2,
+    "prep_minutes": 30,
+    "cook_minutes": 10,
+    "overview": "Rice noodles fried with tamarind, fish sauce and palm sugar. The whole thing takes four minutes. Publisher lists prep 30 minutes and cook 10 minutes, total 40 minutes. Serves 2.",
+    "ingredients": [
+      {
+        "name": "Rice noodles, 5 mm",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Prawns",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Firm tofu",
+        "quantity": 100,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "diced"
+      },
+      {
+        "name": "Eggs",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Tamarind paste",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Fish sauce",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Palm sugar",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Shallot",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Bean sprouts",
+        "quantity": 150,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Garlic chives",
+        "quantity": 50,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Peanuts",
+        "quantity": 50,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "roughly chopped"
+      },
+      {
+        "name": "Lime",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      },
+      {
+        "name": "Neutral oil",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Soak the noodles in warm water for twenty minutes. They should bend but still feel firm when you bite one. [Source step duration: 20 min]\n2. Dissolve the palm sugar in the tamarind and fish sauce, warming them together for a minute. Taste it: sour, salty and sweet should all land equally. [Source step duration: 3 min]\n3. Get the wok hot, fry the tofu until crisp, add the garlic and shallot, then after half a minute the prawns. Cook until pink and push them to the side. [Source step duration: 3 min]\n4. Break the eggs into the cleared space, let them set and break them up with the spatula. Add the drained noodles and pour in the sauce. [Source step duration: 2 min]\n5. Fry, tossing constantly, for two minutes until the noodles drink the sauce and soften. Add the sprouts and chives, toss once and take it off. [Source step duration: 2 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Firm tofu: diced\nPeanuts: roughly chopped",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Gazpacho",
+    "slug": "gazpacho",
+    "country": "ES",
+    "servings": 4,
+    "prep_minutes": 20,
+    "cook_minutes": 0,
+    "overview": "A cold tomato soup blended with bread and oil into an emulsion — that is what makes it thick rather than watery. Publisher lists prep 20 minutes and cook 0 minutes, total 20 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Ripe tomatoes",
+        "quantity": 1,
+        "unit": "kg",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Cucumber",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "peeled"
+      },
+      {
+        "name": "Green pepper",
+        "quantity": 0.5,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 1,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Stale white bread",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "crumb only, soaked"
+      },
+      {
+        "name": "Extra virgin olive oil",
+        "quantity": 80,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Sherry vinegar",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Soak the bread crumb in cold water for ten minutes and squeeze it dry. [Source step duration: 10 min]\n2. Blend the tomatoes, cucumber, pepper, garlic and bread until completely smooth. It takes longer than you expect — a good two minutes at full speed. [Source step duration: 3 min]\n3. With the blender still running, pour the oil in a thin stream. The soup pales and thickens: that is the emulsion. [Source step duration: 2 min]\n4. Add the vinegar and salt, taste and season again. Pass it through a sieve for a silkier texture and chill for at least two hours. [Source step duration: 5 min]",
+    "dietary_tags": [
+      "vegetarian",
+      "vegan"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Cucumber: peeled\nStale white bread: crumb only, soaked",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Ham croquetas",
+    "slug": "croquetas-de-jamon",
+    "country": "ES",
+    "servings": 4,
+    "prep_minutes": 30,
+    "cook_minutes": 25,
+    "overview": "A thick béchamel with ham, chilled until firm, breadcrumbed and deep-fried. Publisher lists prep 30 minutes and cook 25 minutes, total 55 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Serrano ham",
+        "quantity": 150,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "finely diced"
+      },
+      {
+        "name": "Butter",
+        "quantity": 60,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Onion",
+        "quantity": 0.5,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "very finely chopped"
+      },
+      {
+        "name": "Plain flour",
+        "quantity": 100,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Milk",
+        "quantity": 700,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": "warm"
+      },
+      {
+        "name": "Nutmeg",
+        "quantity": 1,
+        "unit": "pinch",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Eggs for coating",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Breadcrumbs",
+        "quantity": 150,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": 700,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Melt the butter with the olive oil, soften the onion until translucent, add the ham and warm it for a minute so the fat renders into the pan. [Source step duration: 6 min]\n2. Add the flour and cook, stirring, for four or five minutes, until it smells nutty and just begins to colour. [Source step duration: 5 min]\n3. Add the warm milk a ladle at a time, stirring smooth before the next goes in. Cook for ten minutes more, until the mixture pulls away from the sides. [Source step duration: 15 min]\n4. Season with nutmeg and salt, spread into a dish two centimetres deep, press cling film onto the surface and chill for at least four hours. [Source step duration: 240 min]\n5. Shape cylinders with wet hands and coat in egg then breadcrumbs. For a sturdier shell, do the coating twice. [Source step duration: 20 min]\n6. Deep-fry at 180 °C for two minutes in small batches. A crowded pan drops the temperature and the croquetas drink oil instead of crisping. [Source step duration: 10 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Serrano ham: finely diced\nOnion: very finely chopped\nMilk: warm",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Lomo saltado",
+    "slug": "lomo-saltado",
+    "country": "PE",
+    "servings": 4,
+    "prep_minutes": 20,
+    "cook_minutes": 20,
+    "overview": "Beef seared in a wok with onion and tomato, served with both chips and rice at once. Publisher lists prep 20 minutes and cook 20 minutes, total 40 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Beef sirloin",
+        "quantity": 600,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "in strips"
+      },
+      {
+        "name": "Red onion",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in thick wedges"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 3,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in wedges"
+      },
+      {
+        "name": "Ají amarillo",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": 4,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Red wine vinegar",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Chips",
+        "quantity": 600,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Cooked rice",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Coriander",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      },
+      {
+        "name": "Neutral oil",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Marinate the beef in the soy, vinegar and garlic for fifteen minutes, then pat it dry: a wet surface will not scorch. [Source step duration: 15 min]\n2. Heat the pan until it smokes and sear the beef in two batches, ninety seconds each, leaving it alone for the first forty seconds. Set it aside. [Source step duration: 5 min]\n3. In the same pan fry the onion and ají for ninety seconds — the onion should stay crisp inside. [Source step duration: 2 min]\n4. Return the beef, pour in what is left of the marinade, add the tomatoes and warm through for half a minute. Take it off and stir in the coriander. [Source step duration: 2 min]\n5. Serve with hot chips — some tossed into the pan so they take up the sauce — and a separate helping of rice.",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Beef sirloin: in strips\nRed onion: in thick wedges\nTomatoes: in wedges",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Mapo tofu",
+    "slug": "mapo-tofu",
+    "country": "CN",
+    "servings": 4,
+    "prep_minutes": 15,
+    "cook_minutes": 15,
+    "overview": "Tofu in a hot doubanjiang sauce with Sichuan pepper, which numbs rather than burns. Publisher lists prep 15 minutes and cook 15 minutes, total 30 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Soft tofu",
+        "quantity": 500,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "in 2 cm cubes"
+      },
+      {
+        "name": "Minced pork",
+        "quantity": 150,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Doubanjiang",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Fermented black beans",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": "chopped"
+      },
+      {
+        "name": "Sichuan peppercorns",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": "ground"
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Ginger",
+        "quantity": 15,
+        "unit": "g",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Chicken stock",
+        "quantity": 250,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Cornflour",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Spring onion",
+        "quantity": 3,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Neutral oil",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Slip the tofu into barely simmering salted water for three minutes and drain it gently. [Source step duration: 5 min]\n2. Fry the pork until browned and its fat has rendered, then push it aside. Add the doubanjiang and fry for a minute, until the oil turns red. [Source step duration: 6 min]\n3. Add the garlic, ginger and black beans, warm for half a minute and pour in the stock. Bring it to the boil. [Source step duration: 2 min]\n4. Slide the tofu in and simmer for three minutes without stirring — swirl the pan instead, or the cubes break up. [Source step duration: 3 min]\n5. Slake the cornflour in cold water and add it in two goes, letting the sauce come back to the boil each time. Off the heat, scatter over the ground Sichuan pepper and spring onion. [Source step duration: 3 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Soft tofu: in 2 cm cubes\nFermented black beans: chopped\nSichuan peppercorns: ground",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Gong bao chicken",
+    "slug": "gong-bao-chicken",
+    "country": "CN",
+    "servings": 4,
+    "prep_minutes": 25,
+    "cook_minutes": 10,
+    "overview": "Diced chicken with peanuts and dried chillies in a sauce where the vinegar matters more than the sugar. Publisher lists prep 25 minutes and cook 10 minutes, total 35 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Chicken breast",
+        "quantity": 500,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "in 2 cm dice"
+      },
+      {
+        "name": "Egg white",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Cornflour",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Roasted peanuts",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Whole dried chillies",
+        "quantity": 8,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sichuan peppercorns",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Chinkiang black vinegar",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sugar",
+        "quantity": 2,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Ginger",
+        "quantity": 15,
+        "unit": "g",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Spring onion",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Neutral oil",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Mix the chicken with the egg white, a spoon of cornflour, a spoon of soy and a pinch of salt, and leave it twenty minutes. [Source step duration: 20 min]\n2. Mix the sauce in advance: vinegar, the rest of the soy, the sugar and the rest of the cornflour with two spoons of water. Keep it within reach — there is no time to mix it later. [Source step duration: 3 min]\n3. Heat the oil and fry the chillies with the Sichuan pepper for twenty seconds, until dark but not black. Burnt chilli turns bitter. [Source step duration: 1 min]\n4. Add the chicken and leave it alone for a minute, then toss and cook through — two minutes more. [Source step duration: 3 min]\n5. Throw in the garlic, ginger and the white of the spring onion, then after half a minute pour in the sauce. It thickens in seconds. Off the heat, add the peanuts and the green of the onion. [Source step duration: 2 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Chicken breast: in 2 cm dice",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Coq au vin",
+    "slug": "coq-au-vin",
+    "country": "FR",
+    "servings": 4,
+    "prep_minutes": 30,
+    "cook_minutes": 90,
+    "overview": "Chicken braised in red wine with bacon, mushrooms and small onions. Marinating the day before does half the work. Publisher lists prep 30 minutes and cook 90 minutes, total 120 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Chicken, jointed",
+        "quantity": 1.5,
+        "unit": "kg",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Dry red wine",
+        "quantity": 750,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Smoked bacon",
+        "quantity": 150,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "in lardons"
+      },
+      {
+        "name": "Button mushrooms",
+        "quantity": 300,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Small onions",
+        "quantity": 250,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Carrot",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 4,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Plain flour",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Chicken stock",
+        "quantity": 300,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Thyme and bay",
+        "quantity": 3,
+        "unit": "sprig",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Butter",
+        "quantity": 40,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Cover the chicken with the wine, carrot, garlic and herbs and leave it in the fridge overnight. In the morning lift the meat out and dry it, keeping the wine. [Source step duration: 480 min]\n2. Render the bacon in a casserole and lift it out. In that fat, brown the chicken hard on all sides, in batches. [Source step duration: 15 min]\n3. Dust with the flour, stir and cook for two minutes. Pour in the marinade with its vegetables and the stock, bring to the boil and skim. [Source step duration: 6 min]\n4. Braise covered over a low flame or at 160 °C for an hour. The sauce should barely tremble. [Source step duration: 60 min]\n5. While it braises, fry the onions in butter until golden, and separately the mushrooms over a high flame until they colour. [Source step duration: 15 min]\n6. Add the onions, mushrooms and bacon to the pot, give it ten minutes over a low flame and check the sauce for salt. [Source step duration: 10 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Smoked bacon: in lardons",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Crème brûlée",
+    "slug": "creme-brulee",
+    "country": "FR",
+    "servings": 4,
+    "prep_minutes": 20,
+    "cook_minutes": 45,
+    "overview": "A yolk custard baked in a water bath under a lid of burnt sugar. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Double cream",
+        "quantity": 500,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Egg yolks",
+        "quantity": 5,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Sugar for the custard",
+        "quantity": 80,
+        "unit": "g",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Vanilla pod",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sugar for the top",
+        "quantity": 4,
+        "unit": "tsp",
+        "scaling": "linear",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Split the vanilla, scrape the seeds into the cream and heat it to just below boiling. Take it off and let it infuse for fifteen minutes. [Source step duration: 20 min]\n2. Work the yolks and sugar together without whipping air in — foam is not wanted here. Pour the warm cream in a thin stream, stirring all the while. [Source step duration: 5 min]\n3. Strain through a sieve and skim any foam off the surface. Divide between ramekins and stand them in a deep tray. [Source step duration: 5 min]\n4. Pour boiling water into the tray to halfway up the ramekins and bake at 150 °C for forty minutes. The centre should wobble. [Source step duration: 45 min]\n5. Cool completely and refrigerate for at least four hours. Only then dust with sugar and burn it with a blowtorch. [Source step duration: 240 min]",
+    "dietary_tags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "No ingredient preparation notes are provided in this dataset record.",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Käsespätzle",
+    "slug": "kaesespaetzle",
+    "country": "DE",
+    "servings": 4,
+    "prep_minutes": 25,
+    "cook_minutes": 30,
+    "overview": "Swabian egg noodles layered with cheese and buried under fried onion. Publisher lists prep 25 minutes and cook 30 minutes, total 55 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Plain flour",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Eggs",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Water or milk",
+        "quantity": 150,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Emmental or Bergkäse",
+        "quantity": 250,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "grated"
+      },
+      {
+        "name": "Onions",
+        "quantity": 3,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "in thin rings"
+      },
+      {
+        "name": "Butter",
+        "quantity": 60,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Nutmeg",
+        "quantity": 1,
+        "unit": "pinch",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Mix the flour, eggs, water, salt and nutmeg and beat the dough with a spoon for a good five minutes, until bubbles rise and it starts to string off the spoon. [Source step duration: 8 min]\n2. While the dough rests, fry the onion in butter over medium heat until deep gold. That is twenty minutes, not five — the sugars need the time to caramelise. [Source step duration: 20 min]\n3. Press the dough into boiling salted water through a spätzle grater or a wide-holed colander. They float within a minute; lift them out with a slotted spoon. [Source step duration: 10 min]\n4. Layer them into a warm dish: spätzle, cheese, spätzle, cheese. The heat of the noodles melts it; no oven is needed. [Source step duration: 3 min]\n5. Bury it under the fried onion and serve at once. The classic side is a green salad with a vinegar dressing, and it is a counterweight rather than a garnish.",
+    "dietary_tags": [
+      "vegetarian"
+    ],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Emmental or Bergkäse: grated\nOnions: in thin rings",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Rinderrouladen",
+    "slug": "rinderrouladen",
+    "country": "DE",
+    "servings": 4,
+    "prep_minutes": 30,
+    "cook_minutes": 100,
+    "overview": "Thin slices of beef rolled around mustard, bacon and gherkin and braised until they give way. Publisher lists prep 30 minutes and cook 100 minutes, total 130 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Beef, thinly sliced",
+        "quantity": 800,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "150-200 g each, beaten thin"
+      },
+      {
+        "name": "Medium mustard",
+        "quantity": 4,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Smoked bacon",
+        "quantity": 120,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Gherkins",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "quartered lengthways"
+      },
+      {
+        "name": "Onions",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Carrot",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Tomato paste",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Dry red wine",
+        "quantity": 200,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Beef stock",
+        "quantity": 500,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Bay leaves",
+        "quantity": 2,
+        "unit": "piece",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Beat the beef to five millimetres, season it and spread with mustard. Lay the bacon, strips of onion and a gherkin along the short edge. [Source step duration: 15 min]\n2. Roll them up, tucking the sides in, and secure with a skewer or string. Firm but not tight — the filling expands. [Source step duration: 10 min]\n3. Brown the rolls hard on every side and lift them out. In the same fat fry the remaining onion and the carrot, add the tomato paste and give it a minute. [Source step duration: 12 min]\n4. Pour in the wine, let it reduce by half, add the stock and bay. Return the rolls, cover and braise over a low flame for an hour and a half. [Source step duration: 95 min]\n5. Lift the rolls out and remove the skewers. Blend the gravy in the pot or crush it with a masher, then reduce it to the thickness you want. [Source step duration: 8 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Beef, thinly sliced: 150-200 g each, beaten thin\nGherkins: quartered lengthways",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Bibimbap",
+    "slug": "bibimbap",
+    "country": "KR",
+    "servings": 4,
+    "prep_minutes": 40,
+    "cook_minutes": 20,
+    "overview": "Rice under separately cooked vegetables, meat and an egg, mixed with gochujang right before eating. Publisher lists prep 40 minutes and cook 20 minutes, total 60 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Cooked short-grain rice",
+        "quantity": 600,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Beef",
+        "quantity": 250,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "in thin strips"
+      },
+      {
+        "name": "Spinach",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Soybean sprouts",
+        "quantity": 150,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Carrot",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "julienned"
+      },
+      {
+        "name": "Shiitake mushrooms",
+        "quantity": 150,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Eggs",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Gochujang",
+        "quantity": 4,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": 3,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": 2,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Marinate the beef in soy, garlic and a spoon of sesame oil for twenty minutes. [Source step duration: 20 min]\n2. Blanch the spinach for thirty seconds, squeeze it dry and dress with sesame oil and a pinch of salt. Boil the sprouts three minutes and dress them the same way, with garlic. [Source step duration: 8 min]\n3. Fry the carrot and the mushrooms separately, a couple of minutes each, seasoning each on its own. No need to wash the pan in between. [Source step duration: 6 min]\n4. Sear the beef over a high flame for two minutes. Fry the eggs separately, leaving the yolks runny. [Source step duration: 2 min]\n5. Divide the hot rice between bowls, arrange the vegetables and beef in sections, and top with an egg and a spoon of gochujang. Each person does the mixing.",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Beef: in thin strips\nCarrot: julienned",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Kimchi jjigae",
+    "slug": "kimchi-jjigae",
+    "country": "KR",
+    "servings": 4,
+    "prep_minutes": 10,
+    "cook_minutes": 30,
+    "overview": "A stew of over-fermented kimchi with pork and tofu. The older the kimchi, the better it works. Publisher lists prep 10 minutes and cook 30 minutes, total 40 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Over-fermented kimchi",
+        "quantity": 400,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "with its liquid"
+      },
+      {
+        "name": "Pork belly",
+        "quantity": 300,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "sliced"
+      },
+      {
+        "name": "Tofu",
+        "quantity": 300,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "in thick slabs"
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Gochugaru flakes",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Gochujang",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Water or anchovy stock",
+        "quantity": 700,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Spring onion",
+        "quantity": 3,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Fry the pork in the sesame oil over medium heat until the fat has rendered and the meat has colour, about five minutes. [Source step duration: 5 min]\n2. Add the kimchi and fry for five minutes, until the edges darken. This step takes the raw edge off the acidity and rounds the flavour out. [Source step duration: 5 min]\n3. Stir in the gochugaru, gochujang and garlic, pour in the kimchi liquid and the water, and bring it to the boil. [Source step duration: 3 min]\n4. Simmer for twenty minutes, add the onion and tofu and give it five more. Do not stir the tofu; it falls apart. [Source step duration: 20 min]\n5. Off the heat, scatter over the spring onion and serve it in the pot, with a separate bowl of rice.",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Over-fermented kimchi: with its liquid\nPork belly: sliced\nTofu: in thick slabs",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Souvlaki",
+    "slug": "souvlaki",
+    "country": "GR",
+    "servings": 4,
+    "prep_minutes": 20,
+    "cook_minutes": 15,
+    "overview": "Pork on skewers in lemon, oregano and olive oil, cooked fast over a fierce heat. Publisher lists prep 20 minutes and cook 15 minutes, total 35 minutes. Serves 4.",
+    "ingredients": [
+      {
+        "name": "Pork shoulder",
+        "quantity": 800,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "in 3 cm cubes"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": 80,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Lemon",
+        "quantity": 1,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "juice and zest"
+      },
+      {
+        "name": "Dried oregano",
+        "quantity": 2,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Pita breads",
+        "quantity": 4,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Thick yoghurt",
+        "quantity": 200,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Cucumber",
+        "quantity": 0.5,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "grated and squeezed"
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Mix the oil, lemon juice and zest, oregano, crushed garlic, salt and pepper. Coat the meat and leave it two hours, and no more than four. [Source step duration: 120 min]\n2. While it marinates, make the tzatziki: yoghurt with the squeezed cucumber, a clove of garlic, a spoon of oil and salt. [Source step duration: 10 min]\n3. Thread the meat onto skewers loosely — the heat has to get between the pieces. A tightly packed skewer stays raw in the middle. [Source step duration: 8 min]\n4. Cook on a hot grill or griddle, three minutes on each of the four sides. The meat should darken rather than pale. [Source step duration: 12 min]\n5. Rest the meat for five minutes, warm the pitas thirty seconds a side, and serve with the tzatziki and lemon. [Source step duration: 6 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Pork shoulder: in 3 cm cubes\nLemon: juice and zest\nCucumber: grated and squeezed",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "name": "Chicken biryani",
+    "slug": "chicken-biryani",
+    "country": "IN",
+    "servings": 6,
+    "prep_minutes": 45,
+    "cook_minutes": 60,
+    "overview": "Rice and marinated chicken finished together under a lid: the layers cook in steam rather than by stirring. Publisher lists prep 45 minutes and cook 60 minutes, total 105 minutes. Serves 6.",
+    "ingredients": [
+      {
+        "name": "Basmati rice",
+        "quantity": 500,
+        "unit": "g",
+        "scaling": "linear",
+        "note": "soaked 30 minutes"
+      },
+      {
+        "name": "Chicken on the bone",
+        "quantity": 1,
+        "unit": "kg",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Thick yoghurt",
+        "quantity": 250,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Onions",
+        "quantity": 3,
+        "unit": "piece",
+        "scaling": "linear",
+        "note": "thinly sliced"
+      },
+      {
+        "name": "Ginger",
+        "quantity": 30,
+        "unit": "g",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garlic",
+        "quantity": 6,
+        "unit": "clove",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Garam masala",
+        "quantity": 2,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Chilli powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Turmeric",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Cardamom, cloves, cinnamon, bay",
+        "quantity": 1,
+        "unit": "tbsp",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Saffron",
+        "quantity": 1,
+        "unit": "pinch",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Warm milk",
+        "quantity": 60,
+        "unit": "ml",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Mint and coriander",
+        "quantity": 1,
+        "unit": "sprig",
+        "scaling": "damped",
+        "note": ""
+      },
+      {
+        "name": "Ghee or butter",
+        "quantity": 60,
+        "unit": "g",
+        "scaling": "linear",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "quantity": null,
+        "unit": "toTaste",
+        "scaling": "fixed",
+        "note": ""
+      }
+    ],
+    "instructions": "1. Fry the onions in ghee to a deep gold — twenty minutes over medium heat. Set half aside: that is the birista, and the main flavour of the dish. [Source step duration: 20 min]\n2. Marinate the chicken in the yoghurt with the ginger, garlic, spices, half the fried onion, mint and salt. Give it an hour, better three. [Source step duration: 60 min]\n3. Boil the rice in plenty of salted water with the whole spices for exactly five minutes and drain. A grain should snap but stay white in the middle. [Source step duration: 5 min]\n4. Spread the marinated chicken over the bottom of a heavy pot and the rice over it in an even layer. Pour the saffron milk over in patches and scatter the rest of the onion and the herbs. [Source step duration: 8 min]\n5. Cover as tightly as you can, sealing the rim with foil if you like. Five minutes on a high flame, then forty on the lowest. Do not lift the lid once. [Source step duration: 45 min]\n6. Let it stand for ten minutes, then fold once from the bottom up, lifting the chicken into the rice rather than stirring everything to a mush. [Source step duration: 12 min]",
+    "dietary_tags": [],
+    "dietary_note": "Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+    "ingredient_notes": "Basmati rice: soaked 30 minutes\nOnions: thinly sliced",
+    "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+    "source_url": "https://theunitools.com/en/data",
+    "dataset_version": "2.0.0",
+    "license": "CC BY-SA 4.0"
+  }
+]

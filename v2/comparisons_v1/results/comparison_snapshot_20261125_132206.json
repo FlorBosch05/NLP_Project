@@ -1,0 +1,1183 @@
+{
+  "chunking": {
+    "summary": [
+      {
+        "strategy": "sentence",
+        "chunks": 32,
+        "recipe_hit_at_5": 1.0,
+        "mean_returned_characters": 1942.4,
+        "build_seconds": 0.11,
+        "mean_search_ms": 0.011
+      },
+      {
+        "strategy": "token",
+        "chunks": 38,
+        "recipe_hit_at_5": 1.0,
+        "mean_returned_characters": 1877.7,
+        "build_seconds": 0.13,
+        "mean_search_ms": 0.005
+      },
+      {
+        "strategy": "semantic",
+        "chunks": 60,
+        "recipe_hit_at_5": 1.0,
+        "mean_returned_characters": 1167.7,
+        "build_seconds": 0.6,
+        "mean_search_ms": 0.006
+      },
+      {
+        "strategy": "sections",
+        "chunks": 120,
+        "recipe_hit_at_5": 1.0,
+        "mean_returned_characters": 707.0,
+        "build_seconds": 0.41,
+        "mean_search_ms": 0.008
+      },
+      {
+        "strategy": "parent_child",
+        "chunks": 120,
+        "recipe_hit_at_5": 1.0,
+        "mean_returned_characters": 1988.9,
+        "build_seconds": 0.44,
+        "mean_search_ms": 0.006
+      },
+      {
+        "strategy": "recipe",
+        "chunks": 30,
+        "recipe_hit_at_5": 1.0,
+        "mean_returned_characters": 2002.7,
+        "build_seconds": 0.11,
+        "mean_search_ms": 0.004
+      }
+    ],
+    "details": [
+      {
+        "strategy": "sentence",
+        "id": "Q01",
+        "expected_recipe": "Tomato pasta",
+        "retrieved_recipes": [
+          "Tomato pasta",
+          "Mushroom pasta",
+          "Tomato soup",
+          "Chicken tomato skillet",
+          "White bean tomato stew"
+        ],
+        "hit": true,
+        "returned_characters": 2033
+      },
+      {
+        "strategy": "sentence",
+        "id": "Q02",
+        "expected_recipe": "Mushroom pasta",
+        "retrieved_recipes": [
+          "Mushroom pasta",
+          "Tomato pasta",
+          "Potato omelette",
+          "Vegetable omelette",
+          "White bean tomato stew"
+        ],
+        "hit": true,
+        "returned_characters": 2046
+      },
+      {
+        "strategy": "sentence",
+        "id": "Q03",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup"
+        ],
+        "hit": true,
+        "returned_characters": 1955
+      },
+      {
+        "strategy": "sentence",
+        "id": "Q04",
+        "expected_recipe": "Chickpea salad",
+        "retrieved_recipes": [
+          "Chickpea salad",
+          "Bean salad",
+          "Chickpea curry",
+          "Quinoa salad",
+          "Cucumber yogurt salad"
+        ],
+        "hit": true,
+        "returned_characters": 1906
+      },
+      {
+        "strategy": "sentence",
+        "id": "Q05",
+        "expected_recipe": "Carrot soup",
+        "retrieved_recipes": [
+          "Carrot soup",
+          "Pea soup",
+          "Tomato soup",
+          "Lentil soup",
+          "Vegetable omelette"
+        ],
+        "hit": true,
+        "returned_characters": 1964
+      },
+      {
+        "strategy": "sentence",
+        "id": "Q06",
+        "expected_recipe": "Tofu stir fry",
+        "retrieved_recipes": [
+          "Tofu stir fry",
+          "Tofu tomato rice",
+          "Lentil tomato stew",
+          "Egg fried rice",
+          "Chicken tomato skillet"
+        ],
+        "hit": true,
+        "returned_characters": 2025
+      },
+      {
+        "strategy": "sentence",
+        "id": "Q07",
+        "expected_recipe": "Baked potatoes",
+        "retrieved_recipes": [
+          "Baked potatoes",
+          "Potato omelette",
+          "Sweet potato beans",
+          "Rice and vegetables",
+          "Zucchini rice"
+        ],
+        "hit": true,
+        "returned_characters": 2052
+      },
+      {
+        "strategy": "sentence",
+        "id": "Q08",
+        "expected_recipe": "Pea soup",
+        "retrieved_recipes": [
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup",
+          "Lentil soup",
+          "Chickpea salad"
+        ],
+        "hit": true,
+        "returned_characters": 1938
+      },
+      {
+        "strategy": "sentence",
+        "id": "Q09",
+        "expected_recipe": "Chicken rice bowl",
+        "retrieved_recipes": [
+          "Chicken rice bowl",
+          "Salmon rice bowl",
+          "Egg fried rice",
+          "Rice and vegetables",
+          "Chickpea salad"
+        ],
+        "hit": true,
+        "returned_characters": 2042
+      },
+      {
+        "strategy": "sentence",
+        "id": "Q10",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Chickpea curry",
+          "Couscous vegetables",
+          "Lentil tomato stew",
+          "Pea soup"
+        ],
+        "hit": true,
+        "returned_characters": 1463
+      },
+      {
+        "strategy": "token",
+        "id": "Q01",
+        "expected_recipe": "Tomato pasta",
+        "retrieved_recipes": [
+          "Tomato pasta",
+          "Mushroom pasta",
+          "Tomato soup",
+          "Chicken tomato skillet",
+          "White bean tomato stew"
+        ],
+        "hit": true,
+        "returned_characters": 2033
+      },
+      {
+        "strategy": "token",
+        "id": "Q02",
+        "expected_recipe": "Mushroom pasta",
+        "retrieved_recipes": [
+          "Mushroom pasta",
+          "Tomato pasta",
+          "Potato omelette",
+          "Vegetable omelette",
+          "White bean tomato stew"
+        ],
+        "hit": true,
+        "returned_characters": 2031
+      },
+      {
+        "strategy": "token",
+        "id": "Q03",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup"
+        ],
+        "hit": true,
+        "returned_characters": 1940
+      },
+      {
+        "strategy": "token",
+        "id": "Q04",
+        "expected_recipe": "Chickpea salad",
+        "retrieved_recipes": [
+          "Chickpea salad",
+          "Chickpea curry",
+          "Bean salad",
+          "Quinoa salad",
+          "Cucumber yogurt salad"
+        ],
+        "hit": true,
+        "returned_characters": 1988
+      },
+      {
+        "strategy": "token",
+        "id": "Q05",
+        "expected_recipe": "Carrot soup",
+        "retrieved_recipes": [
+          "Carrot soup",
+          "Pea soup",
+          "Tomato soup",
+          "Lentil soup",
+          "Vegetable omelette"
+        ],
+        "hit": true,
+        "returned_characters": 1964
+      },
+      {
+        "strategy": "token",
+        "id": "Q06",
+        "expected_recipe": "Tofu stir fry",
+        "retrieved_recipes": [
+          "Tofu stir fry",
+          "Tofu tomato rice",
+          "Lentil tomato stew",
+          "Egg fried rice",
+          "Chicken tomato skillet"
+        ],
+        "hit": true,
+        "returned_characters": 1980
+      },
+      {
+        "strategy": "token",
+        "id": "Q07",
+        "expected_recipe": "Baked potatoes",
+        "retrieved_recipes": [
+          "Baked potatoes",
+          "Potato omelette",
+          "Sweet potato beans",
+          "Rice and vegetables",
+          "Zucchini rice"
+        ],
+        "hit": true,
+        "returned_characters": 2022
+      },
+      {
+        "strategy": "token",
+        "id": "Q08",
+        "expected_recipe": "Pea soup",
+        "retrieved_recipes": [
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup",
+          "Lentil soup",
+          "Chickpea salad"
+        ],
+        "hit": true,
+        "returned_characters": 1938
+      },
+      {
+        "strategy": "token",
+        "id": "Q09",
+        "expected_recipe": "Chicken rice bowl",
+        "retrieved_recipes": [
+          "Chicken rice bowl",
+          "Salmon rice bowl",
+          "Egg fried rice",
+          "Rice and vegetables",
+          "Chickpea salad"
+        ],
+        "hit": true,
+        "returned_characters": 2042
+      },
+      {
+        "strategy": "token",
+        "id": "Q10",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Tofu stir fry",
+          "Lentil tomato stew",
+          "Baked potatoes",
+          "Tofu tomato rice"
+        ],
+        "hit": true,
+        "returned_characters": 839
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q01",
+        "expected_recipe": "Tomato pasta",
+        "retrieved_recipes": [
+          "Tomato pasta",
+          "Mushroom pasta",
+          "Tomato pasta",
+          "Tomato soup",
+          "Chicken tomato skillet"
+        ],
+        "hit": true,
+        "returned_characters": 1209
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q02",
+        "expected_recipe": "Mushroom pasta",
+        "retrieved_recipes": [
+          "Mushroom pasta",
+          "Mushroom pasta",
+          "Tomato pasta",
+          "Zucchini rice",
+          "Potato omelette"
+        ],
+        "hit": true,
+        "returned_characters": 1155
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q03",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Carrot soup",
+          "Tomato soup"
+        ],
+        "hit": true,
+        "returned_characters": 1228
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q04",
+        "expected_recipe": "Chickpea salad",
+        "retrieved_recipes": [
+          "Chickpea salad",
+          "Vegetable omelette",
+          "Chickpea curry",
+          "White bean tomato stew",
+          "Chicken rice bowl"
+        ],
+        "hit": true,
+        "returned_characters": 1387
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q05",
+        "expected_recipe": "Carrot soup",
+        "retrieved_recipes": [
+          "Carrot soup",
+          "Pea soup",
+          "Vegetable omelette",
+          "Chicken rice bowl",
+          "Lentil soup"
+        ],
+        "hit": true,
+        "returned_characters": 1343
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q06",
+        "expected_recipe": "Tofu stir fry",
+        "retrieved_recipes": [
+          "Tofu stir fry",
+          "Tofu tomato rice",
+          "Tofu tomato rice",
+          "Tofu stir fry",
+          "Lentil tomato stew"
+        ],
+        "hit": true,
+        "returned_characters": 1061
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q07",
+        "expected_recipe": "Baked potatoes",
+        "retrieved_recipes": [
+          "Baked potatoes",
+          "Potato omelette",
+          "Sweet potato beans",
+          "Rice and vegetables",
+          "Zucchini rice"
+        ],
+        "hit": true,
+        "returned_characters": 1104
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q08",
+        "expected_recipe": "Pea soup",
+        "retrieved_recipes": [
+          "Pea soup",
+          "Tomato soup",
+          "Lentil soup",
+          "Carrot soup",
+          "Chickpea salad"
+        ],
+        "hit": true,
+        "returned_characters": 1211
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q09",
+        "expected_recipe": "Chicken rice bowl",
+        "retrieved_recipes": [
+          "Chicken rice bowl",
+          "Egg fried rice",
+          "Chicken rice bowl",
+          "Tofu stir fry",
+          "Salmon rice bowl"
+        ],
+        "hit": true,
+        "returned_characters": 1199
+      },
+      {
+        "strategy": "semantic",
+        "id": "Q10",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Carrot soup",
+          "Couscous vegetables",
+          "Apple porridge",
+          "Sweet potato beans"
+        ],
+        "hit": true,
+        "returned_characters": 780
+      },
+      {
+        "strategy": "sections",
+        "id": "Q01",
+        "expected_recipe": "Tomato pasta",
+        "retrieved_recipes": [
+          "Tomato pasta",
+          "Tomato pasta",
+          "Tomato pasta",
+          "Tomato pasta",
+          "Mushroom pasta"
+        ],
+        "hit": true,
+        "returned_characters": 760
+      },
+      {
+        "strategy": "sections",
+        "id": "Q02",
+        "expected_recipe": "Mushroom pasta",
+        "retrieved_recipes": [
+          "Mushroom pasta",
+          "Mushroom pasta",
+          "Mushroom pasta",
+          "Mushroom pasta",
+          "Tomato pasta"
+        ],
+        "hit": true,
+        "returned_characters": 772
+      },
+      {
+        "strategy": "sections",
+        "id": "Q03",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Lentil soup",
+          "Lentil tomato stew"
+        ],
+        "hit": true,
+        "returned_characters": 688
+      },
+      {
+        "strategy": "sections",
+        "id": "Q04",
+        "expected_recipe": "Chickpea salad",
+        "retrieved_recipes": [
+          "Chickpea salad",
+          "Chickpea salad",
+          "Chickpea salad",
+          "Chickpea salad",
+          "Chickpea curry"
+        ],
+        "hit": true,
+        "returned_characters": 681
+      },
+      {
+        "strategy": "sections",
+        "id": "Q05",
+        "expected_recipe": "Carrot soup",
+        "retrieved_recipes": [
+          "Carrot soup",
+          "Carrot soup",
+          "Carrot soup",
+          "Lentil soup",
+          "Carrot soup"
+        ],
+        "hit": true,
+        "returned_characters": 644
+      },
+      {
+        "strategy": "sections",
+        "id": "Q06",
+        "expected_recipe": "Tofu stir fry",
+        "retrieved_recipes": [
+          "Tofu stir fry",
+          "Tofu stir fry",
+          "Tofu stir fry",
+          "Tofu tomato rice",
+          "Tofu stir fry"
+        ],
+        "hit": true,
+        "returned_characters": 727
+      },
+      {
+        "strategy": "sections",
+        "id": "Q07",
+        "expected_recipe": "Baked potatoes",
+        "retrieved_recipes": [
+          "Baked potatoes",
+          "Potato omelette",
+          "Baked potatoes",
+          "Sweet potato beans",
+          "Sweet potato beans"
+        ],
+        "hit": true,
+        "returned_characters": 685
+      },
+      {
+        "strategy": "sections",
+        "id": "Q08",
+        "expected_recipe": "Pea soup",
+        "retrieved_recipes": [
+          "Pea soup",
+          "Pea soup",
+          "Tomato soup",
+          "Pea soup",
+          "Carrot soup"
+        ],
+        "hit": true,
+        "returned_characters": 568
+      },
+      {
+        "strategy": "sections",
+        "id": "Q09",
+        "expected_recipe": "Chicken rice bowl",
+        "retrieved_recipes": [
+          "Chicken rice bowl",
+          "Chicken rice bowl",
+          "Chicken rice bowl",
+          "Chicken rice bowl",
+          "Salmon rice bowl"
+        ],
+        "hit": true,
+        "returned_characters": 811
+      },
+      {
+        "strategy": "sections",
+        "id": "Q10",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup"
+        ],
+        "hit": true,
+        "returned_characters": 734
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q01",
+        "expected_recipe": "Tomato pasta",
+        "retrieved_recipes": [
+          "Tomato pasta",
+          "Tomato pasta",
+          "Tomato pasta",
+          "Tomato pasta",
+          "Mushroom pasta"
+        ],
+        "hit": true,
+        "returned_characters": 1959
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q02",
+        "expected_recipe": "Mushroom pasta",
+        "retrieved_recipes": [
+          "Mushroom pasta",
+          "Mushroom pasta",
+          "Mushroom pasta",
+          "Mushroom pasta",
+          "Tomato pasta"
+        ],
+        "hit": true,
+        "returned_characters": 1986
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q03",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Lentil soup",
+          "Lentil tomato stew"
+        ],
+        "hit": true,
+        "returned_characters": 2007
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q04",
+        "expected_recipe": "Chickpea salad",
+        "retrieved_recipes": [
+          "Chickpea salad",
+          "Chickpea salad",
+          "Chickpea salad",
+          "Chickpea salad",
+          "Chickpea curry"
+        ],
+        "hit": true,
+        "returned_characters": 1995
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q05",
+        "expected_recipe": "Carrot soup",
+        "retrieved_recipes": [
+          "Carrot soup",
+          "Carrot soup",
+          "Carrot soup",
+          "Lentil soup",
+          "Carrot soup"
+        ],
+        "hit": true,
+        "returned_characters": 1903
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q06",
+        "expected_recipe": "Tofu stir fry",
+        "retrieved_recipes": [
+          "Tofu stir fry",
+          "Tofu stir fry",
+          "Tofu stir fry",
+          "Tofu tomato rice",
+          "Tofu stir fry"
+        ],
+        "hit": true,
+        "returned_characters": 1935
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q07",
+        "expected_recipe": "Baked potatoes",
+        "retrieved_recipes": [
+          "Baked potatoes",
+          "Potato omelette",
+          "Baked potatoes",
+          "Sweet potato beans",
+          "Sweet potato beans"
+        ],
+        "hit": true,
+        "returned_characters": 2102
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q08",
+        "expected_recipe": "Pea soup",
+        "retrieved_recipes": [
+          "Pea soup",
+          "Pea soup",
+          "Tomato soup",
+          "Pea soup",
+          "Carrot soup"
+        ],
+        "hit": true,
+        "returned_characters": 1911
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q09",
+        "expected_recipe": "Chicken rice bowl",
+        "retrieved_recipes": [
+          "Chicken rice bowl",
+          "Chicken rice bowl",
+          "Chicken rice bowl",
+          "Chicken rice bowl",
+          "Salmon rice bowl"
+        ],
+        "hit": true,
+        "returned_characters": 2136
+      },
+      {
+        "strategy": "parent_child",
+        "id": "Q10",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup"
+        ],
+        "hit": true,
+        "returned_characters": 1955
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q01",
+        "expected_recipe": "Tomato pasta",
+        "retrieved_recipes": [
+          "Tomato pasta",
+          "Mushroom pasta",
+          "Tomato soup",
+          "Chicken tomato skillet",
+          "White bean tomato stew"
+        ],
+        "hit": true,
+        "returned_characters": 2033
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q02",
+        "expected_recipe": "Mushroom pasta",
+        "retrieved_recipes": [
+          "Mushroom pasta",
+          "Tomato pasta",
+          "Potato omelette",
+          "Vegetable omelette",
+          "White bean tomato stew"
+        ],
+        "hit": true,
+        "returned_characters": 2046
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q03",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup"
+        ],
+        "hit": true,
+        "returned_characters": 1955
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q04",
+        "expected_recipe": "Chickpea salad",
+        "retrieved_recipes": [
+          "Chickpea salad",
+          "Chickpea curry",
+          "Bean salad",
+          "Quinoa salad",
+          "Cucumber yogurt salad"
+        ],
+        "hit": true,
+        "returned_characters": 2017
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q05",
+        "expected_recipe": "Carrot soup",
+        "retrieved_recipes": [
+          "Carrot soup",
+          "Pea soup",
+          "Tomato soup",
+          "Lentil soup",
+          "Vegetable omelette"
+        ],
+        "hit": true,
+        "returned_characters": 1964
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q06",
+        "expected_recipe": "Tofu stir fry",
+        "retrieved_recipes": [
+          "Tofu stir fry",
+          "Tofu tomato rice",
+          "Lentil tomato stew",
+          "Egg fried rice",
+          "Chicken tomato skillet"
+        ],
+        "hit": true,
+        "returned_characters": 2025
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q07",
+        "expected_recipe": "Baked potatoes",
+        "retrieved_recipes": [
+          "Baked potatoes",
+          "Potato omelette",
+          "Sweet potato beans",
+          "Rice and vegetables",
+          "Zucchini rice"
+        ],
+        "hit": true,
+        "returned_characters": 2052
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q08",
+        "expected_recipe": "Pea soup",
+        "retrieved_recipes": [
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup",
+          "Lentil soup",
+          "Chickpea salad"
+        ],
+        "hit": true,
+        "returned_characters": 1938
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q09",
+        "expected_recipe": "Chicken rice bowl",
+        "retrieved_recipes": [
+          "Chicken rice bowl",
+          "Salmon rice bowl",
+          "Egg fried rice",
+          "Rice and vegetables",
+          "Chickpea salad"
+        ],
+        "hit": true,
+        "returned_characters": 2042
+      },
+      {
+        "strategy": "recipe",
+        "id": "Q10",
+        "expected_recipe": "Lentil soup",
+        "retrieved_recipes": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Carrot soup",
+          "Tomato soup"
+        ],
+        "hit": true,
+        "returned_characters": 1955
+      }
+    ]
+  },
+  "vector_stores": {
+    "summary": [
+      {
+        "backend": "Chroma",
+        "recipe_hit_at_5": 1.0,
+        "index_build_ms": 46.9,
+        "mean_query_ms": 0.58
+      },
+      {
+        "backend": "Qdrant",
+        "recipe_hit_at_5": 1.0,
+        "index_build_ms": 6.23,
+        "mean_query_ms": 0.274
+      },
+      {
+        "backend": "FAISS",
+        "recipe_hit_at_5": 1.0,
+        "index_build_ms": 0.06,
+        "mean_query_ms": 0.112
+      }
+    ],
+    "details": [
+      {
+        "id": "Q01",
+        "expected": "Tomato pasta",
+        "Chroma": [
+          "Tomato pasta",
+          "Mushroom pasta",
+          "Tomato soup",
+          "Chicken tomato skillet",
+          "White bean tomato stew"
+        ],
+        "Qdrant": [
+          "Tomato pasta",
+          "Mushroom pasta",
+          "Tomato soup",
+          "Chicken tomato skillet",
+          "White bean tomato stew"
+        ],
+        "FAISS": [
+          "Tomato pasta",
+          "Mushroom pasta",
+          "Tomato soup",
+          "Chicken tomato skillet",
+          "White bean tomato stew"
+        ]
+      },
+      {
+        "id": "Q02",
+        "expected": "Mushroom pasta",
+        "Chroma": [
+          "Mushroom pasta",
+          "Tomato pasta",
+          "Potato omelette",
+          "Zucchini rice",
+          "Vegetable omelette"
+        ],
+        "Qdrant": [
+          "Mushroom pasta",
+          "Tomato pasta",
+          "Potato omelette",
+          "Zucchini rice",
+          "Vegetable omelette"
+        ],
+        "FAISS": [
+          "Mushroom pasta",
+          "Tomato pasta",
+          "Potato omelette",
+          "Zucchini rice",
+          "Vegetable omelette"
+        ]
+      },
+      {
+        "id": "Q03",
+        "expected": "Lentil soup",
+        "Chroma": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup"
+        ],
+        "Qdrant": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup"
+        ],
+        "FAISS": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup"
+        ]
+      },
+      {
+        "id": "Q04",
+        "expected": "Chickpea salad",
+        "Chroma": [
+          "Chickpea salad",
+          "Bean salad",
+          "Chickpea curry",
+          "Quinoa salad",
+          "Cucumber yogurt salad"
+        ],
+        "Qdrant": [
+          "Chickpea salad",
+          "Bean salad",
+          "Chickpea curry",
+          "Quinoa salad",
+          "Cucumber yogurt salad"
+        ],
+        "FAISS": [
+          "Chickpea salad",
+          "Bean salad",
+          "Chickpea curry",
+          "Quinoa salad",
+          "Cucumber yogurt salad"
+        ]
+      },
+      {
+        "id": "Q05",
+        "expected": "Carrot soup",
+        "Chroma": [
+          "Carrot soup",
+          "Pea soup",
+          "Tomato soup",
+          "Lentil soup",
+          "Vegetable omelette"
+        ],
+        "Qdrant": [
+          "Carrot soup",
+          "Pea soup",
+          "Tomato soup",
+          "Lentil soup",
+          "Vegetable omelette"
+        ],
+        "FAISS": [
+          "Carrot soup",
+          "Pea soup",
+          "Tomato soup",
+          "Lentil soup",
+          "Vegetable omelette"
+        ]
+      },
+      {
+        "id": "Q06",
+        "expected": "Tofu stir fry",
+        "Chroma": [
+          "Tofu stir fry",
+          "Tofu tomato rice",
+          "Lentil tomato stew",
+          "Egg fried rice",
+          "Chickpea curry"
+        ],
+        "Qdrant": [
+          "Tofu stir fry",
+          "Tofu tomato rice",
+          "Lentil tomato stew",
+          "Egg fried rice",
+          "Chickpea curry"
+        ],
+        "FAISS": [
+          "Tofu stir fry",
+          "Tofu tomato rice",
+          "Lentil tomato stew",
+          "Egg fried rice",
+          "Chickpea curry"
+        ]
+      },
+      {
+        "id": "Q07",
+        "expected": "Baked potatoes",
+        "Chroma": [
+          "Baked potatoes",
+          "Potato omelette",
+          "Sweet potato beans",
+          "Rice and vegetables",
+          "Zucchini rice"
+        ],
+        "Qdrant": [
+          "Baked potatoes",
+          "Potato omelette",
+          "Sweet potato beans",
+          "Rice and vegetables",
+          "Zucchini rice"
+        ],
+        "FAISS": [
+          "Baked potatoes",
+          "Potato omelette",
+          "Sweet potato beans",
+          "Rice and vegetables",
+          "Zucchini rice"
+        ]
+      },
+      {
+        "id": "Q08",
+        "expected": "Pea soup",
+        "Chroma": [
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup",
+          "Lentil soup",
+          "Chickpea salad"
+        ],
+        "Qdrant": [
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup",
+          "Lentil soup",
+          "Chickpea salad"
+        ],
+        "FAISS": [
+          "Pea soup",
+          "Tomato soup",
+          "Carrot soup",
+          "Lentil soup",
+          "Chickpea salad"
+        ]
+      },
+      {
+        "id": "Q09",
+        "expected": "Chicken rice bowl",
+        "Chroma": [
+          "Chicken rice bowl",
+          "Salmon rice bowl",
+          "Rice and vegetables",
+          "Egg fried rice",
+          "Chickpea salad"
+        ],
+        "Qdrant": [
+          "Chicken rice bowl",
+          "Salmon rice bowl",
+          "Rice and vegetables",
+          "Egg fried rice",
+          "Chickpea salad"
+        ],
+        "FAISS": [
+          "Chicken rice bowl",
+          "Salmon rice bowl",
+          "Rice and vegetables",
+          "Egg fried rice",
+          "Chickpea salad"
+        ]
+      },
+      {
+        "id": "Q10",
+        "expected": "Lentil soup",
+        "Chroma": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Carrot soup",
+          "Tomato soup"
+        ],
+        "Qdrant": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Carrot soup",
+          "Tomato soup"
+        ],
+        "FAISS": [
+          "Lentil soup",
+          "Lentil tomato stew",
+          "Pea soup",
+          "Carrot soup",
+          "Tomato soup"
+        ]
+      }
+    ]
+  },
+  "context": {
+    "time_local": "2026-11-25T13:22:06",
+    "python": "3.12.14",
+    "versions": {
+      "chromadb": "1.5.9",
+      "qdrant-client": "1.20.0",
+      "faiss-cpu": "1.16.0",
+      "llama-index-core": "0.14.26"
+    },
+    "questions": 10,
+    "corpus": "30 synthetic recipes",
+    "warning": "Small in-memory demonstration; hit@5 is a recipe identity proxy, not Ragas. Timings do not include query embeddings."
+  }
+}

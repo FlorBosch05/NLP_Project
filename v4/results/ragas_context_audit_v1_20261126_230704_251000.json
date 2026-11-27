@@ -1,0 +1,555 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v4\\results\\diagnostic_evidence_v1_20261126_230614_515800.json",
+  "note": "Project-authored section labels; presence of a section does not prove all claims are supported.",
+  "cases": [
+    {
+      "id": "Q01",
+      "recipe": "Ratatouille",
+      "expected_section": "ingredients",
+      "rank": 6,
+      "chunks": [
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "French onion soup",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+          "source_url": "https://theunitools.com/en/data",
+          "dataset_version": "2.0.0",
+          "license": "CC BY-SA 4.0",
+          "evidence_type": "structured_lookup",
+          "data_file": "v4/data/recipes_v4.json"
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "recipe": "Guacamole",
+      "expected_section": "ingredients",
+      "rank": 4,
+      "chunks": [
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+          "source_url": "https://theunitools.com/en/data",
+          "dataset_version": "2.0.0",
+          "license": "CC BY-SA 4.0",
+          "evidence_type": "structured_lookup",
+          "data_file": "v4/data/recipes_v4.json"
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "recipe": "Miso soup",
+      "expected_section": "ingredients",
+      "rank": 5,
+      "chunks": [
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+          "source_url": "https://theunitools.com/en/data",
+          "dataset_version": "2.0.0",
+          "license": "CC BY-SA 4.0",
+          "evidence_type": "structured_lookup",
+          "data_file": "v4/data/recipes_v4.json"
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "recipe": "Dal tadka",
+      "expected_section": "ingredients",
+      "rank": 6,
+      "chunks": [
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Dal tadka",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+          "source_url": "https://theunitools.com/en/data",
+          "dataset_version": "2.0.0",
+          "license": "CC BY-SA 4.0",
+          "evidence_type": "structured_lookup",
+          "data_file": "v4/data/recipes_v4.json"
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "recipe": "Borscht",
+      "expected_section": "ingredients",
+      "rank": 6,
+      "chunks": [
+        {
+          "recipe": "Borscht",
+          "section": "dietary",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "overview",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredient_notes",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "instructions",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredients",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+          "source_url": "https://theunitools.com/en/data",
+          "dataset_version": "2.0.0",
+          "license": "CC BY-SA 4.0",
+          "evidence_type": "structured_lookup",
+          "data_file": "v4/data/recipes_v4.json"
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "recipe": "Ratatouille",
+      "expected_section": "dietary",
+      "rank": 1,
+      "chunks": [
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Rinderrouladen",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "recipe": "Guacamole",
+      "expected_section": "dietary",
+      "rank": 1,
+      "chunks": [
+        {
+          "recipe": "Guacamole",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Guacamole",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Butter chicken",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Gazpacho",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "recipe": "Miso soup",
+      "expected_section": "dietary",
+      "rank": 1,
+      "chunks": [
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Tom yum goong",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "French onion soup",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Risotto alla milanese",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "recipe": "Ratatouille",
+      "expected_section": "overview",
+      "rank": 1,
+      "chunks": [
+        {
+          "recipe": "Ratatouille",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Ratatouille",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Coq au vin",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ]
+    },
+    {
+      "id": "Q10",
+      "recipe": "Miso soup",
+      "expected_section": "overview",
+      "rank": 1,
+      "chunks": [
+        {
+          "recipe": "Miso soup",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Miso soup",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ]
+    },
+    {
+      "id": "Q11",
+      "recipe": "Borscht",
+      "expected_section": "overview",
+      "rank": 1,
+      "chunks": [
+        {
+          "recipe": "Borscht",
+          "section": "overview",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "instructions",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "ingredient_notes",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Borscht",
+          "section": "dietary",
+          "servings": 6,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Phở bò",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ]
+    },
+    {
+      "id": "Q12",
+      "recipe": "Spanish tortilla",
+      "expected_section": "instructions",
+      "rank": 1,
+      "chunks": [
+        {
+          "recipe": "Spanish tortilla",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Spanish tortilla",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ]
+    },
+    {
+      "id": "Q13",
+      "recipe": "Paella valenciana",
+      "expected_section": "ingredient_notes",
+      "rank": 1,
+      "chunks": [
+        {
+          "recipe": "Paella valenciana",
+          "section": "ingredient_notes",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "instructions",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "overview",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "dietary",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        },
+        {
+          "recipe": "Paella valenciana",
+          "section": "ingredients",
+          "servings": 4,
+          "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+        }
+      ]
+    }
+  ]
+}

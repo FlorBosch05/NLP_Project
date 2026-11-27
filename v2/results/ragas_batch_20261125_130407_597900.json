@@ -1,0 +1,26 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v2\\results\\evaluation_sections_k5_20261125_130014.json",
+  "offset": 0,
+  "requested": 1,
+  "cases": [
+    {
+      "id": "Q01",
+      "question": "What are the ingredients for tomato pasta?",
+      "scores": {
+        "user_input": "What are the ingredients for tomato pasta?",
+        "retrieved_contexts": [
+          "Recipe: Tomato pasta\ninstructions: Boil pasta. Simmer tomatoes in oil and mix.",
+          "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+          "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+          "Recipe: Chicken tomato skillet\ninstructions: Cook onion and chicken thoroughly, add tomatoes and simmer.",
+          "Recipe: Chicken tomato skillet\ningredients: [{\"name\": \"chicken breast\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}]"
+        ],
+        "response": "**Ingredients for Tomato Pasta (serves 2)**  \n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Pasta | 200 | g |\n| Tomatoes | 300 | g |\n| Olive oil | 15 | ml |\n\nThese amounts come directly from the retrieved recipe data:\n\n- “Recipe: Tomato pasta … ingredients: [{\\\"name\\\": \\\"pasta\\\", \\\"quantity\\\": 200, \\\"unit\\\": \\\"g\\\"}, {\\\"name\\\": \\\"tomatoes\\\", \\\"quantity\\\": 300, \\\"unit\\\": \\\"g\\\"}, {\\\"name\\\": \\\"olive oil\\\", \\\"quantity\\\": 15, \\\"unit\\\": \\\"ml\\\"}]”【3】.\n\nNo additional ingredients are listed in the provided context.",
+        "reference": "Tomato pasta contains 200 g pasta, 300 g tomatoes, and 15 ml olive oil.",
+        "llm_context_precision_with_reference": 0.3333333333,
+        "context_recall": 1.0,
+        "faithfulness": 0.8571428571
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v3\\results\\evaluation_qwen_sections_k5_20261125_135121.json",
+  "judge_model": "qwen/qwen3.8-27b",
+  "offset": 11,
+  "requested": 2,
+  "cases": [
+    {
+      "id": "Q12",
+      "question": "Does the tomato pasta recipe specify a substitute for pasta?",
+      "scores": {
+        "user_input": "Does the tomato pasta recipe specify a substitute for pasta?",
+        "retrieved_contexts": [
+          "Recipe: Tomato pasta\nsubstitutions: Optional untested suggestion: replace the pasta with the same weight of another pasta; follow its package directions and check its ingredient label.",
+          "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+          "Recipe: Tomato soup\nsubstitutions: No substitution is specified in this teaching recipe.",
+          "Recipe: Tomato pasta\ninstructions: Cook the pasta in water according to the package. Simmer chopped tomatoes in the olive oil and combine with the drained pasta.",
+          "Recipe: Mushroom pasta\nsubstitutions: No substitution is specified in this teaching recipe."
+        ],
+        "response": "Yes, the tomato pasta recipe specifies an optional, untested substitution for the pasta. It suggests replacing the pasta with the same weight of another pasta, while following that new pasta's package directions and checking its ingredient label.",
+        "reference": "The recipe suggests replacing the pasta with the same weight of another pasta and following its package directions.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q13",
+      "question": "What can I substitute for milk in oat porridge according to the recipe?",
+      "scores": {
+        "user_input": "What can I substitute for milk in oat porridge according to the recipe?",
+        "retrieved_contexts": [
+          "Recipe: Oat porridge\nsubstitutions: Optional untested suggestion: replace dairy milk with the same volume of an unsweetened plant-based drink; check its ingredient label.",
+          "Recipe: Oat porridge\ningredients: [{\"name\": \"oats\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"milk\", \"quantity\": 400, \"unit\": \"ml\"}, {\"name\": \"banana\", \"quantity\": 1, \"unit\": \"piece\"}]",
+          "Recipe: Oat porridge\ninstructions: Simmer oats in milk until thick. Slice the banana and add it on top.",
+          "Recipe: Apple porridge\ninstructions: Simmer oats in the listed water until thick. Chop the apple and add it on top.",
+          "Recipe: Oat porridge\noverview: Oat porridge is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies. Serves 2."
+        ],
+        "response": "According to the provided recipe context, you can substitute dairy milk with **the same volume of an unsweetened plant-based drink**.\n\nPlease note the following details from the source:\n*   This is listed as an **optional, untested suggestion**.\n*   You should **check the ingredient label** of the plant-based drink.\n*   The recipe itself is an AI-created teaching recipe that has been reviewed for internal consistency but is **not kitchen-tested or independently verified**.",
+        "reference": "The recipe suggests replacing dairy milk with the same volume of an unsweetened plant-based drink.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 0.5555555556
+      }
+    }
+  ]
+}

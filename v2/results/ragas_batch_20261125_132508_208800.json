@@ -1,0 +1,159 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v2\\results\\evaluation_sections_k5_20261125_130014.json",
+  "offset": 5,
+  "requested": 8,
+  "cases": [
+    {
+      "id": "Q06",
+      "question": "How many servings does tofu stir fry make?",
+      "scores": {
+        "user_input": "How many servings does tofu stir fry make?",
+        "retrieved_contexts": [
+          "Recipe: Tofu stir fry\noverview: Tofu stir fry is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+          "Recipe: Tofu stir fry\ningredients: [{\"name\": \"tofu\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"broccoli\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}]",
+          "Recipe: Tofu stir fry\ninstructions: Cook rice. Sauté tofu and broccoli until cooked.",
+          "Recipe: Tofu tomato rice\noverview: Tofu tomato rice is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+          "Recipe: Tofu stir fry\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+        ],
+        "response": "The tofu stir‑fry recipe is written for **2 servings**【1†text】.",
+        "reference": "Tofu stir fry serves two.",
+        "llm_context_precision_with_reference": 0.75,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q07",
+      "question": "What is the estimated preparation time for baked potatoes?",
+      "scores": {
+        "user_input": "What is the estimated preparation time for baked potatoes?",
+        "retrieved_contexts": [
+          "Recipe: Baked potatoes\noverview: Baked potatoes is a simple two-serving recipe. Estimated total preparation time: 45 minutes; actual time varies. Serves 2.",
+          "Recipe: Potato omelette\noverview: Potato omelette is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies. Serves 2.",
+          "Recipe: Baked potatoes\ninstructions: Cut potatoes, coat with oil and rosemary, and bake until tender.",
+          "Recipe: Sweet potato beans\noverview: Sweet potato beans is a simple two-serving recipe. Estimated total preparation time: 50 minutes; actual time varies. Serves 2.",
+          "Recipe: Potato omelette\ninstructions: Cook potatoes until tender. Add beaten eggs and cook until set."
+        ],
+        "response": "The recipe for baked potatoes lists an **estimated total preparation time of 45 minutes** (actual time may vary).  \n\n*Source: “Estimated total preparation time: 45 minutes” from the baked‑potatoes overview.*",
+        "reference": "The estimated preparation time for baked potatoes is 45 minutes.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q08",
+      "question": "How is pea soup prepared?",
+      "scores": {
+        "user_input": "How is pea soup prepared?",
+        "retrieved_contexts": [
+          "Recipe: Pea soup\noverview: Pea soup is a simple two-serving recipe. Estimated total preparation time: 30 minutes; actual time varies. Serves 2.",
+          "Recipe: Pea soup\ninstructions: Simmer peas and onion in water until tender and blend.",
+          "Recipe: Pea soup\ningredients: [{\"name\": \"peas\", \"quantity\": 350, \"unit\": \"g\"}, {\"name\": \"onion\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 500, \"unit\": \"ml\"}]",
+          "Recipe: Tomato soup\ninstructions: Cook chopped vegetables in water until soft and blend.",
+          "Recipe: Pea soup\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+        ],
+        "response": "**Pea soup – how it’s prepared**\n\n1. **Gather the ingredients**  \n   * 350 g peas  \n   * 100 g onion  \n   * 500 ml water  \n\n   *(These amounts are taken directly from the recipe’s ingredient list.)*  \n\n2. **Cook the base**  \n   * Place the peas, onion, and water in a saucepan.  \n   * Bring to a simmer and cook until the peas are tender.  \n   * The recipe states that the peas and onion should be “simmer[ed] … until tender.”  \n\n3. **Blend**  \n   * Once the peas are soft, blend the mixture until smooth.  \n   * The instructions say to “blend” after simmering.  \n\n4. **Serve**  \n   * The recipe is for two servings.  \n\n**Estimated time**  \n* The overview notes an estimated total preparation time of **30 minutes**.  \n  * This is an estimate; actual time may vary depending on stove and equipment.  \n\n**Dietary note**  \n* The recipe is tagged **vegan**.  \n  * This tag is based solely on the listed ingredients (peas, onion, water) and does not account for cross‑contact or ingredient labeling beyond what is provided.  \n\n---\n\n**Sources**\n\n* Overview: “Estimated total preparation time: 30 minutes; actual time varies. Serves 2.”  \n* Instructions: “Simmer peas and onion in water until tender and blend.”  \n* Ingredients: 350 g peas, 100 g onion, 500 ml water.  \n* Dietary: “Tags: vegan.”  \n\nAll information is taken from the retrieved context; no additional ingredients or steps have been invented.",
+        "reference": "Simmer peas and onion in water until tender and blend.",
+        "llm_context_precision_with_reference": null,
+        "context_recall": null,
+        "faithfulness": null
+      }
+    },
+    {
+      "id": "Q09",
+      "question": "What ingredients are used in chicken rice bowl?",
+      "scores": {
+        "user_input": "What ingredients are used in chicken rice bowl?",
+        "retrieved_contexts": [
+          "Recipe: Chicken rice bowl\ningredients: [{\"name\": \"chicken breast\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"carrots\", \"quantity\": 150, \"unit\": \"g\"}]",
+          "Recipe: Chicken rice bowl\noverview: Chicken rice bowl is a simple two-serving recipe. Estimated total preparation time: 35 minutes; actual time varies. Serves 2.",
+          "Recipe: Chicken rice bowl\ndietary: Tags: contains meat. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+          "Recipe: Salmon rice bowl\ningredients: [{\"name\": \"salmon\", \"quantity\": 250, \"unit\": \"g\"}, {\"name\": \"rice\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"broccoli\", \"quantity\": 200, \"unit\": \"g\"}]",
+          "Recipe: Chicken rice bowl\ninstructions: Cook rice and carrots. Cook chicken thoroughly and serve together."
+        ],
+        "response": "The recipe lists the following ingredients for a chicken rice bowl:\n\n| Ingredient | Quantity | Unit |\n|------------|----------|------|\n| Chicken breast | 250 | g |\n| Rice | 150 | g |\n| Carrots | 150 | g |\n\nThese items are taken directly from the retrieved recipe text.",
+        "reference": "Chicken rice bowl contains 250 g chicken breast, 150 g rice and 150 g carrots.",
+        "llm_context_precision_with_reference": null,
+        "context_recall": null,
+        "faithfulness": null
+      }
+    },
+    {
+      "id": "Q10",
+      "question": "Is lentil soup tagged vegan?",
+      "scores": {
+        "user_input": "Is lentil soup tagged vegan?",
+        "retrieved_contexts": [
+          "Recipe: Lentil soup\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+          "Recipe: Lentil soup\ningredients: [{\"name\": \"lentils\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"carrots\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"water\", \"quantity\": 700, \"unit\": \"ml\"}]",
+          "Recipe: Lentil tomato stew\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+          "Recipe: Lentil soup\ninstructions: Simmer lentils and chopped carrots in water until tender.",
+          "Recipe: Lentil soup\noverview: Lentil soup is a simple two-serving recipe. Estimated total preparation time: 40 minutes; actual time varies. Serves 2."
+        ],
+        "response": "Yes.  \nThe retrieved context lists the dietary tags for **Lentil soup** as:\n\n> “Recipe: Lentil soup … dietary: Tags: vegan.”  \n\nThis indicates that the recipe is marked as vegan.  \n(As noted in the context, dietary tags describe the listed ingredients only; you should verify ingredient labels and cross‑contact if you need confirmation for allergy or dietary restrictions.)",
+        "reference": "Lentil soup is tagged vegan based on its listed ingredients.",
+        "llm_context_precision_with_reference": null,
+        "context_recall": null,
+        "faithfulness": null
+      }
+    },
+    {
+      "id": "Q11",
+      "question": "What can replace chickpeas in chickpea salad according to the recipe?",
+      "scores": {
+        "user_input": "What can replace chickpeas in chickpea salad according to the recipe?",
+        "retrieved_contexts": [
+          "Recipe: Chickpea salad\noverview: Chickpea salad is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies. Serves 2.",
+          "Recipe: Chickpea salad\ninstructions: Drain chickpeas, chop vegetables and combine.",
+          "Recipe: Chickpea salad\ningredients: [{\"name\": \"chickpeas\", \"quantity\": 240, \"unit\": \"g\"}, {\"name\": \"cucumber\", \"quantity\": 150, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 150, \"unit\": \"g\"}]",
+          "Recipe: Chickpea salad\ndietary: Tags: vegan. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently.",
+          "Recipe: Chickpea curry\ninstructions: Simmer chickpeas, coconut milk and tomatoes until heated through."
+        ],
+        "response": "The recipe you provided lists chickpeas as a required ingredient, but it does not mention any alternative or substitute for them. The ingredients section reads:\n\n> “Ingredients: [{\\\"name\\\": \\\"chickpeas\\\", \\\"quantity\\\": 240, \\\"unit\\\": \\\"g\\\"}, …]”\n\nSince no replacement is specified in the recipe text, there is no documented substitute to use in place of chickpeas.",
+        "reference": "The provided recipe does not specify a chickpea substitution.",
+        "llm_context_precision_with_reference": null,
+        "context_recall": null,
+        "faithfulness": null
+      }
+    },
+    {
+      "id": "Q12",
+      "question": "Does the tomato pasta recipe specify a substitute for pasta?",
+      "scores": {
+        "user_input": "Does the tomato pasta recipe specify a substitute for pasta?",
+        "retrieved_contexts": [
+          "Recipe: Tomato pasta\ninstructions: Boil pasta. Simmer tomatoes in oil and mix.",
+          "Recipe: Tomato pasta\noverview: Tomato pasta is a simple two-serving recipe. Estimated total preparation time: 25 minutes; actual time varies. Serves 2.",
+          "Recipe: Tomato pasta\ningredients: [{\"name\": \"pasta\", \"quantity\": 200, \"unit\": \"g\"}, {\"name\": \"tomatoes\", \"quantity\": 300, \"unit\": \"g\"}, {\"name\": \"olive oil\", \"quantity\": 15, \"unit\": \"ml\"}]",
+          "Recipe: Chicken tomato skillet\ninstructions: Cook onion and chicken thoroughly, add tomatoes and simmer.",
+          "Recipe: Tomato pasta\ndietary: Tags: vegetarian. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+        ],
+        "response": "No.  \nThe recipe text and ingredient list for **Tomato pasta** do not mention any alternative to the listed pasta. The instructions simply say “Boil pasta,” and the ingredients list contains only pasta, tomatoes, and olive oil. No substitute is provided in the retrieved information.",
+        "reference": "The provided tomato pasta recipe does not specify a pasta substitute.",
+        "llm_context_precision_with_reference": null,
+        "context_recall": null,
+        "faithfulness": null
+      }
+    },
+    {
+      "id": "Q13",
+      "question": "What can I substitute for milk in oat porridge according to the recipe?",
+      "scores": {
+        "user_input": "What can I substitute for milk in oat porridge according to the recipe?",
+        "retrieved_contexts": [
+          "Recipe: Oat porridge\ninstructions: Simmer oats in milk until thick. Slice banana on top.",
+          "Recipe: Oat porridge\ningredients: [{\"name\": \"oats\", \"quantity\": 100, \"unit\": \"g\"}, {\"name\": \"milk\", \"quantity\": 400, \"unit\": \"ml\"}, {\"name\": \"banana\", \"quantity\": 1, \"unit\": \"piece\"}]",
+          "Recipe: Apple porridge\ninstructions: Simmer oats in water until thick. Add chopped apple.",
+          "Recipe: Oat porridge\noverview: Oat porridge is a simple two-serving recipe. Estimated total preparation time: 15 minutes; actual time varies. Serves 2.",
+          "Recipe: Oat porridge\ndietary: Tags: vegetarian. Dietary tags describe listed ingredients only; verify ingredient labels and cross-contact independently."
+        ],
+        "response": "The recipe you provided lists only **milk** as the liquid for simmering the oats. It does not mention any alternative or substitute for milk. Therefore, based on the information in the recipe, there is no specified substitute for milk.",
+        "reference": "The provided oat porridge recipe does not specify a substitute for milk.",
+        "llm_context_precision_with_reference": null,
+        "context_recall": null,
+        "faithfulness": null
+      }
+    }
+  ]
+}

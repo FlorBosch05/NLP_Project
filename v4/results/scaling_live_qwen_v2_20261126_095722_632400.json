@@ -1,0 +1,140 @@
+{
+  "model": "qwen/qwen3.8-27b",
+  "agent": "agent_scale_v3",
+  "cases": [
+    {
+      "case": {
+        "id": "L01",
+        "question": "Scale Ratatouille from 4 to 8 servings.",
+        "recipe": "Ratatouille",
+        "target": 8,
+        "history": []
+      },
+      "route": "scale",
+      "tool_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Aubergine",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "in 2 cm cubes"
+            },
+            {
+              "name": "Courgette",
+              "quantity": 2,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "in cubes"
+            },
+            {
+              "name": "Bell pepper",
+              "quantity": 2,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Tomatoes",
+              "quantity": 600,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "ripe, peeled"
+            },
+            {
+              "name": "Onion",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Garlic",
+              "quantity": 3,
+              "unit": "clove",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Olive oil",
+              "quantity": 6,
+              "unit": "tbsp",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Thyme",
+              "quantity": 3,
+              "unit": "sprig",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Basil",
+              "quantity": 1,
+              "unit": "pinch",
+              "scaling": "damped",
+              "note": "at the end"
+            },
+            {
+              "name": "Salt and pepper",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 8.0
+        }
+      },
+      "tool_result": "{\"result\": [{\"name\": \"Aubergine\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Courgette\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Bell pepper\", \"quantity\": 4.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Tomatoes\", \"quantity\": 1200.0, \"unit\": \"g\", \"status\": \"linear\"}, {\"name\": \"Onion\", \"quantity\": 2.0, \"unit\": \"piece\", \"status\": \"linear\"}, {\"name\": \"Garlic\", \"quantity\": 6.0, \"unit\": \"clove\", \"status\": \"linear\"}, {\"name\": \"Olive oil\", \"quantity\": 12.0, \"unit\": \"tbsp\", \"status\": \"linear\"}, {\"name\": \"Thyme\", \"quantity\": null, \"unit\": \"sprig\", \"original_quantity\": 3.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Basil\", \"quantity\": null, \"unit\": \"pinch\", \"original_quantity\": 1.0, \"status\": \"Source requests damped scaling but provides no formula; adjust manually.\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"status\": \"No numeric source quantity; adjust to taste or follow the recipe.\"}]}",
+      "answer": "Scaled ingredients for 8 servings:\n- Aubergine: 2 piece (linear)\n- Courgette: 4 piece (linear)\n- Bell pepper: 4 piece (linear)\n- Tomatoes: 1200 g (linear)\n- Onion: 2 piece (linear)\n- Garlic: 6 clove (linear)\n- Olive oil: 12 tbsp (linear)\n- Thyme: adjust manually; source amount was 3 sprig.\n- Basil: adjust manually; source amount was 1 pinch.\n- Salt and pepper: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 72,
+          "output_tokens": 19,
+          "seconds": 0.359
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 1277,
+          "output_tokens": 9,
+          "seconds": 0.347
+        }
+      ],
+      "problems": []
+    },
+    {
+      "case": {
+        "id": "L02",
+        "question": "Scale Ratatouille please.",
+        "recipe": "Ratatouille",
+        "target": null,
+        "history": []
+      },
+      "route": "scale",
+      "tool_call": null,
+      "tool_result": "How many servings would you like?",
+      "answer": "How many servings would you like?",
+      "calls": [
+        {
+          "step": "routing",
+          "input_tokens": 66,
+          "output_tokens": 17,
+          "seconds": 0.26
+        },
+        {
+          "step": "tool_arguments",
+          "input_tokens": 1276,
+          "output_tokens": 8,
+          "seconds": 0.282
+        }
+      ],
+      "problems": []
+    }
+  ]
+}

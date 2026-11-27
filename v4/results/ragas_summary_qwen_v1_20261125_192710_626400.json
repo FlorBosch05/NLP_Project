@@ -1,0 +1,204 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v4\\results\\evaluation_qwen_v1_sections_k5_20261125_191925.json",
+  "judge_model": "qwen/qwen3.8-27b",
+  "note": "Means use only available values and are not comparable to complete benchmarks. Most recent batch wins for each case. Judge token totals only include reported usage for selected case records, not failed attempts or earlier retries.",
+  "reported_judge_tokens": 45814,
+  "judge_usage_cases": 4,
+  "scored_cases": 4,
+  "summary": {
+    "llm_context_precision_with_reference": {
+      "scored": 4,
+      "expected": 13,
+      "mean_available": 0.739930555525,
+      "missing_ids": [
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13"
+      ]
+    },
+    "context_recall": {
+      "scored": 4,
+      "expected": 13,
+      "mean_available": 1.0,
+      "missing_ids": [
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13"
+      ]
+    },
+    "faithfulness": {
+      "scored": 4,
+      "expected": 13,
+      "mean_available": 0.9423076923,
+      "missing_ids": [
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "id": "Q01",
+      "scores": {
+        "user_input": "What are the ingredients for Ratatouille?",
+        "retrieved_contexts": [
+          "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+          "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+          "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+          "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "Based on the provided context, the ingredients for Ratatouille (serves 4) are:\n\n*   **Aubergine**: 1 piece (in 2 cm cubes)\n*   **Courgette**: 2 pieces (in cubes)\n*   **Bell pepper**: 2 pieces\n*   **Tomatoes**: 600 g (ripe, peeled)\n*   **Onion**: 1 piece\n*   **Garlic**: 3 cloves\n*   **Olive oil**: 6 tbsp\n*   **Thyme**: 3 sprigs\n*   **Basil**: 1 pinch (added at the end)\n*   **Salt and pepper**: To taste\n\n*Note: The source indicates that salt and pepper are to taste, and no specific quantity is provided.*",
+        "reference": "Ingredients: 1 piece Aubergine, 2 piece Courgette, 2 piece Bell pepper, 600 g Tomatoes, 1 piece Onion, 3 clove Garlic, 6 tbsp Olive oil, 3 sprig Thyme, 1 pinch Basil, to taste: Salt and pepper.",
+        "llm_context_precision_with_reference": 0.7,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "total_tokens": 11749,
+          "output_tokens": 1682,
+          "input_tokens": 10067
+        }
+      },
+      "error": null,
+      "batch_file": "ragas_qwen_v1_20261125_192005_072400.json"
+    },
+    {
+      "id": "Q02",
+      "scores": {
+        "user_input": "What are the ingredients for Guacamole?",
+        "retrieved_contexts": [
+          "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+          "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+          "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+          "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "Based on the provided recipe data for Guacamole (serves 4), the ingredients are:\n\n*   **Avocado**: 3 pieces (ripe)\n*   **Lime**: 1 piece (juiced)\n*   **Red onion**: 0.5 piece (finely chopped)\n*   **Jalapeño**: 1 piece (seeds removed)\n*   **Coriander**: 3 sprigs\n*   **Tomato**: 1 piece (seeded and diced)\n*   **Salt**: To taste\n\n*Note: The source data indicates that salt is added \"to taste\" and does not specify a fixed quantity.*",
+        "reference": "Ingredients: 3 piece Avocado, 1 piece Lime, 0.5 piece Red onion, 1 piece Jalapeño, 3 sprig Coriander, 1 piece Tomato, to taste: Salt.",
+        "llm_context_precision_with_reference": 0.8041666666,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "total_tokens": 11257,
+          "output_tokens": 1822,
+          "input_tokens": 9435
+        }
+      },
+      "error": null,
+      "batch_file": "ragas_qwen_v1_20261125_192005_072400.json"
+    },
+    {
+      "id": "Q03",
+      "scores": {
+        "user_input": "What are the ingredients for Miso soup?",
+        "retrieved_contexts": [
+          "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+          "Recipe: Miso soup\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Miso soup\ninstructions: 1. Cover the kombu with cold water and set it over low heat. Bring it to the edge of a boil over about ten minutes and lift the seaweed out before bubbles appear. [Source step duration: 10 min]\n2. Bring the water to the boil, add the bonito flakes, take it off the heat at once and let it stand for two minutes until the flakes sink. [Source step duration: 2 min]\n3. Strain the stock through a sieve without pressing the flakes — pressed flakes turn it bitter. [Source step duration: 2 min]\n4. Soak the wakame in cold water for five minutes; it swells several times over. [Source step duration: 5 min]\n5. Warm the dashi, add the tofu and the wakame and hold it at a low heat for a couple of minutes. [Source step duration: 2 min]\n6. Whisk the miso smooth in a ladle of the hot stock, stir it back in and take the pan off the heat immediately. Scatter over the spring onion. [Source step duration: 2 min]",
+          "Recipe: Miso soup\noverview: A soup of dashi and miso that takes ten minutes. Miso must never boil: boiling takes out both the aroma and the point of it. Publisher lists prep 5 minutes and cook 15 minutes, total 20 minutes. Serves 4. Serves 4.",
+          "Recipe: Miso soup\ningredients: [{\"name\": \"Water\", \"quantity\": 800, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Kombu\", \"quantity\": 10, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"wiped, not washed\"}, {\"name\": \"Bonito flakes\", \"quantity\": 15, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Miso paste\", \"quantity\": 4, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tofu\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cubed\"}, {\"name\": \"Dried wakame\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Spring onion\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}]"
+        ],
+        "response": "Based on the provided context, the ingredients for Miso soup (serves 4) are:\n\n*   **Water**: 800 ml\n*   **Kombu**: 10 g (note: wiped, not washed)\n*   **Bonito flakes**: 15 g\n*   **Miso paste**: 4 tbsp\n*   **Tofu**: 200 g (note: cubed)\n*   **Dried wakame**: 1 tbsp\n*   **Spring onion**: 2 pieces\n\nSource: Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields).",
+        "reference": "Ingredients: 800 ml Water, 10 g Kombu, 15 g Bonito flakes, 4 tbsp Miso paste, 200 g Tofu, 1 tbsp Dried wakame, 2 piece Spring onion.",
+        "llm_context_precision_with_reference": 0.7555555555,
+        "context_recall": 1.0,
+        "faithfulness": 0.7692307692
+      },
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "total_tokens": 11052,
+          "output_tokens": 1539,
+          "input_tokens": 9513
+        }
+      },
+      "error": null,
+      "batch_file": "ragas_qwen_v1_20261125_192005_072400.json"
+    },
+    {
+      "id": "Q04",
+      "scores": {
+        "user_input": "What are the ingredients for Dal tadka?",
+        "retrieved_contexts": [
+          "Recipe: Dal tadka\ningredient_notes: Toor dal: rinsed\nGarlic: thinly sliced",
+          "Recipe: Dal tadka\ndietary: Source tags: vegetarian, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Dal tadka\noverview: A lentil stew finished by pouring sizzling spiced fat over it. That step is the dish. Publisher lists prep 10 minutes and cook 35 minutes, total 45 minutes. Serves 4. Serves 4.",
+          "Recipe: Dal tadka\ninstructions: 1. Cover the lentils with three cups of water, add the turmeric and simmer covered for thirty minutes, until the grains collapse into a soft mass. [Source step duration: 30 min]\n2. Mash some of the lentils against the side of the pot and season. The consistency should be that of a thick soup. [Source step duration: 3 min]\n3. Separately fry the onion until golden, add the tomatoes and cook until they break down into a sauce. Stir that into the lentils. [Source step duration: 10 min]\n4. Heat the ghee in a small pan until it is just short of smoking. Add the mustard seeds; they should crackle within seconds. [Source step duration: 2 min]\n5. Add the cumin at once, the garlic and chillies ten seconds later, the asafoetida twenty seconds after that. The whole thing takes under a minute and cannot be left alone. [Source step duration: 1 min]\n6. Pour the sizzling tadka straight into the lentils — it should hiss. Stir once and serve with rice or flatbread. [Source step duration: 1 min]",
+          "Recipe: Dal tadka\ningredients: [{\"name\": \"Toor dal\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"rinsed\"}, {\"name\": \"Turmeric\", \"quantity\": 0.5, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Ghee\", \"quantity\": 3, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Cumin seeds\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Mustard seeds\", \"quantity\": 0.5, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 4, \"unit\": \"clove\", \"scaling\": \"damped\", \"note\": \"thinly sliced\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Dried red chillies\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Asafoetida\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "Based on the provided context, the ingredients for Dal tadka (serves 4) are:\n\n*   **Toor dal**: 200 g (rinsed)\n*   **Turmeric**: 0.5 tsp\n*   **Ghee**: 3 tbsp\n*   **Cumin seeds**: 1 tsp\n*   **Mustard seeds**: 0.5 tsp\n*   **Garlic**: 4 cloves (thinly sliced)\n*   **Onion**: 1 piece\n*   **Tomato**: 2 pieces\n*   **Dried red chillies**: 2 pieces\n*   **Asafoetida**: 1 pinch\n*   **Salt**: To taste\n\n*Note: The source data indicates that salt is \"to taste\" and does not provide a specific quantity.*",
+        "reference": "Ingredients: 200 g Toor dal, 0.5 tsp Turmeric, 3 tbsp Ghee, 1 tsp Cumin seeds, 0.5 tsp Mustard seeds, 4 clove Garlic, 1 piece Onion, 2 piece Tomato, 2 piece Dried red chillies, 1 pinch Asafoetida, to taste: Salt.",
+        "llm_context_precision_with_reference": 0.7,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "judge_usage": {
+        "qwen/qwen3.8-27b": {
+          "total_tokens": 11756,
+          "output_tokens": 1607,
+          "input_tokens": 10149
+        }
+      },
+      "error": null,
+      "batch_file": "ragas_qwen_v1_20261125_192005_072400.json"
+    },
+    {
+      "id": "Q05",
+      "status": "not scored"
+    },
+    {
+      "id": "Q06",
+      "status": "not scored"
+    },
+    {
+      "id": "Q07",
+      "status": "not scored"
+    },
+    {
+      "id": "Q08",
+      "status": "not scored"
+    },
+    {
+      "id": "Q09",
+      "status": "not scored"
+    },
+    {
+      "id": "Q10",
+      "status": "not scored"
+    },
+    {
+      "id": "Q11",
+      "status": "not scored"
+    },
+    {
+      "id": "Q12",
+      "status": "not scored"
+    },
+    {
+      "id": "Q13",
+      "status": "not scored"
+    }
+  ]
+}
