@@ -1,0 +1,200 @@
+[
+  {
+    "question": "geef me een recept met wortel",
+    "answer": "Borsjt bevat wortel.\n\nIngrediënten voor Borscht (bronrecept; 6 personen):\n- Rundvlees met bot: 700 g\n- Rode biet: 2 stuk\n- Kool: 300 g\n- Aardappelen: 4 stuk\n- Wortel: 1 stuk\n- Ui: 1 stuk\n- Tomatenpuree: 2 eetlepel\n- Azijn, 9%: 1 eetlepel\n- Knoflook: 3 clove\n- Laurierblad: 2 stuk\n- Zure room: naar smaak\n- Zout en peper: naar smaak\n\nBereiding (aangepast op basis van de bron):\n1. Zet het rundvlees onder koud water, breng aan de kook, schuim af en laat ongeveer 90 minuten zachtjes sudderen tot het gaar is.\n2. Stoof de rode biet ongeveer 20 minuten met olie, tomatenpuree en azijn.\n3. Bak de ui en wortel tot ze zacht zijn.\n4. Haal het vlees uit de bouillon, trek het in stukken en doe het terug. Voeg de aardappelen toe en kook 10 minuten.\n5. Voeg de kool toe. Voeg na 5 minuten de biet en de gebakken groenten toe. Kook nog 5 minuten, voeg laurier en knoflook toe en haal de pan van het vuur.\n6. Laat minstens 20 minuten afgedekt staan en serveer met zure room.",
+    "route": "retrieve",
+    "focus": "Borscht",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "details": {
+      "focus": "Borscht",
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "route": "retrieve",
+      "retrieval_query": "Borscht soup recipe ingredients overview",
+      "retrieved_chunks": [
+        {
+          "text": "Recipe: Borscht\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "metadata": {
+            "recipe": "Borscht",
+            "section": "dietary",
+            "servings": 6,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.5422628030891395
+        },
+        {
+          "text": "Recipe: Borscht\noverview: A beetroot soup on beef stock where acid holds both the colour and the flavour. The beetroot is braised separately, never boiled in the pot. Publisher lists prep 30 minutes and cook 120 minutes, total 150 minutes. Serves 6. Serves 6.",
+          "metadata": {
+            "recipe": "Borscht",
+            "section": "overview",
+            "servings": 6,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.5346187881317759
+        },
+        {
+          "text": "Recipe: Borscht\ningredient_notes: Beetroot: coarsely grated\nCabbage: shredded",
+          "metadata": {
+            "recipe": "Borscht",
+            "section": "ingredient_notes",
+            "servings": 6,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.5031062781460618
+        },
+        {
+          "text": "Recipe: Borscht\ninstructions: 1. Cover the meat with cold water, bring it to the boil and skim. Simmer for an hour and a half at a bare tremble — a rolling boil turns the stock cloudy. [Source step duration: 90 min]\n2. Braise the beetroot in a pan with a spoon of oil, the tomato paste and the vinegar, covered, for about twenty minutes. The vinegar is what keeps the colour. [Source step duration: 20 min]\n3. Separately fry the onion and carrot until soft and golden. [Source step duration: 8 min]\n4. Lift the meat out, pull it into pieces and return it to the stock. Add the potatoes and give them ten minutes — before any acid reaches the pot. [Source step duration: 10 min]\n5. Add the cabbage, then after five minutes the beetroot and the fried vegetables. Give it five minutes more, add the bay and garlic and take it straight off the heat. [Source step duration: 12 min]\n6. Let it stand covered for at least twenty minutes. Serve with sour cream, which softens the acid and pulls the flavours together. [Source step duration: 20 min]",
+          "metadata": {
+            "recipe": "Borscht",
+            "section": "instructions",
+            "servings": 6,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.4094454451241049
+        },
+        {
+          "text": "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+          "metadata": {
+            "recipe": "Miso soup",
+            "section": "ingredient_notes",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.3781265873445869
+        },
+        {
+          "text": "Recipe: Borscht\ningredients: [{\"name\": \"Beef on the bone\", \"quantity\": 700, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Beetroot\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"coarsely grated\"}, {\"name\": \"Cabbage\", \"quantity\": 300, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"shredded\"}, {\"name\": \"Potatoes\", \"quantity\": 4, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Carrot\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomato paste\", \"quantity\": 2, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Vinegar, 9%\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Bay leaf\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Sour cream\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+          "metadata": {
+            "recipe": "Borscht",
+            "section": "ingredients",
+            "servings": 6,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+            "source_url": "https://theunitools.com/en/data",
+            "dataset_version": "2.0.0",
+            "license": "CC BY-SA 4.0",
+            "evidence_type": "structured_lookup",
+            "data_file": "v4/data/recipes_v4.json"
+          },
+          "score": null
+        }
+      ],
+      "mcp_call": null,
+      "mcp_result": null,
+      "model_calls": [],
+      "total_input_tokens": null,
+      "total_output_tokens": null,
+      "answer_ttft_seconds": null,
+      "total_seconds": 2.672,
+      "other_timings": {}
+    },
+    "errors": []
+  },
+  {
+    "question": "give me a recipe that uses onion",
+    "answer": "Risotto alla milanese contains onion.\n\nIngredients for Risotto alla milanese (source recipe; serves 4):\n- Carnaroli rice: 320 g\n- Stock: 1.2 l\n- Onion: 1 piece\n- Dry white wine: 120 ml\n- Butter: 80 g\n- Parmesan: 80 g\n- Saffron: 1 pinch\n- Salt: amount not specified; follow the source\n\nThe source contains preparation steps; ask if you would like them.",
+    "route": "retrieve",
+    "focus": "Risotto alla milanese",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "details": {
+      "focus": "Risotto alla milanese",
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "route": "retrieve",
+      "retrieval_query": "Risotto alla milanese soup recipe ingredients overview",
+      "retrieved_chunks": [
+        {
+          "text": "Recipe: Risotto alla milanese\ningredient_notes: Stock: kept hot\nOnion: finely chopped\nButter: cold\nParmesan: grated",
+          "metadata": {
+            "recipe": "Risotto alla milanese",
+            "section": "ingredient_notes",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.7034862471111859
+        },
+        {
+          "text": "Recipe: Risotto alla milanese\ndietary: Source tags: vegetarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "metadata": {
+            "recipe": "Risotto alla milanese",
+            "section": "dietary",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.5727014716876776
+        },
+        {
+          "text": "Recipe: Risotto alla milanese\noverview: A saffron risotto built on stock and near-constant stirring, which is what pulls the starch out of the rice and makes it creamy. Publisher lists prep 10 minutes and cook 25 minutes, total 35 minutes. Serves 4. Serves 4.",
+          "metadata": {
+            "recipe": "Risotto alla milanese",
+            "section": "overview",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.5656390836371629
+        },
+        {
+          "text": "Recipe: Risotto alla milanese\ninstructions: 1. Steep the saffron in a ladle of hot stock and set it aside. Keep the rest of the stock at a bare simmer — cold stock stops the cooking. [Source step duration: 2 min]\n2. Melt half the butter and sweat the onion over low heat until soft and translucent without letting it colour, about eight minutes. [Source step duration: 8 min]\n3. Add the rice and stir for a couple of minutes until the grains are translucent at the edges and milky in the centre. This is the tostatura, and it keeps the grains intact. [Source step duration: 2 min]\n4. Pour in the wine and let it evaporate completely — the smell of alcohol has to go. [Source step duration: 2 min]\n5. Add the stock a ladle at a time, stirring, waiting until the rice has nearly absorbed it before the next. Around eighteen minutes, until the grain is soft outside with a slight bite in the middle. [Source step duration: 18 min]\n6. Stir in the saffron infusion, take the pan off the heat and beat in the cold butter and parmesan, shaking the pan hard. The risotto should spread slowly across the plate. [Source step duration: 2 min]",
+          "metadata": {
+            "recipe": "Risotto alla milanese",
+            "section": "instructions",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.5506556644159049
+        },
+        {
+          "text": "Recipe: Risotto alla milanese\ningredients: [{\"name\": \"Carnaroli rice\", \"quantity\": 320, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Stock\", \"quantity\": 1.2, \"unit\": \"l\", \"scaling\": \"linear\", \"note\": \"kept hot\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Dry white wine\", \"quantity\": 120, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Butter\", \"quantity\": 80, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cold\"}, {\"name\": \"Parmesan\", \"quantity\": 80, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"grated\"}, {\"name\": \"Saffron\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+          "metadata": {
+            "recipe": "Risotto alla milanese",
+            "section": "ingredients",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)"
+          },
+          "score": 0.43964404824839326
+        },
+        {
+          "text": "Recipe: Risotto alla milanese\ningredients: [{\"name\": \"Carnaroli rice\", \"quantity\": 320, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Stock\", \"quantity\": 1.2, \"unit\": \"l\", \"scaling\": \"linear\", \"note\": \"kept hot\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Dry white wine\", \"quantity\": 120, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Butter\", \"quantity\": 80, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cold\"}, {\"name\": \"Parmesan\", \"quantity\": 80, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"grated\"}, {\"name\": \"Saffron\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+          "metadata": {
+            "recipe": "Risotto alla milanese",
+            "section": "ingredients",
+            "servings": 4,
+            "source": "Recipe data: UniTools — theunitools.com, CC BY-SA 4.0 (adapted English fields)",
+            "source_url": "https://theunitools.com/en/data",
+            "dataset_version": "2.0.0",
+            "license": "CC BY-SA 4.0",
+            "evidence_type": "structured_lookup",
+            "data_file": "v4/data/recipes_v4.json"
+          },
+          "score": null
+        }
+      ],
+      "mcp_call": null,
+      "mcp_result": null,
+      "model_calls": [],
+      "total_input_tokens": null,
+      "total_output_tokens": null,
+      "answer_ttft_seconds": null,
+      "total_seconds": 0.382,
+      "other_timings": {}
+    },
+    "errors": []
+  }
+]

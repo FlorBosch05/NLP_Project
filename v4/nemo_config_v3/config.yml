@@ -1,0 +1,17 @@
+models:
+  - type: main
+    engine: ollama
+    model: qwen2.5:7b
+    parameters:
+      base_url: http://127.0.0.1:11434/v1
+      temperature: 0
+
+rails:
+  input:
+    flows:
+      - chef input policy
+      - self check input
+  output:
+    flows:
+      - chef output policy
+      - self check output

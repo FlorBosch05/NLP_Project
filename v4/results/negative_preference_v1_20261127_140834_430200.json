@@ -1,0 +1,66 @@
+[
+  {
+    "question": "I dislike carrots; suggest a recipe.",
+    "answer": "What ingredient would you like the recipe to use?",
+    "route": "retrieve",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 2.31,
+    "details": {
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "route": "retrieve",
+      "retrieval_query": null,
+      "retrieved_chunks": [],
+      "mcp_call": null,
+      "mcp_result": null,
+      "model_calls": [],
+      "total_input_tokens": null,
+      "total_output_tokens": null,
+      "answer_ttft_seconds": null,
+      "total_seconds": 2.3,
+      "other_timings": {}
+    }
+  },
+  {
+    "question": "I would rather have a dish without onions.",
+    "answer": "What ingredient would you like the recipe to use?",
+    "route": "retrieve",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 0.16,
+    "details": {
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "route": "retrieve",
+      "retrieval_query": null,
+      "retrieved_chunks": [],
+      "mcp_call": null,
+      "mcp_result": null,
+      "model_calls": [],
+      "total_input_tokens": null,
+      "total_output_tokens": null,
+      "answer_ttft_seconds": null,
+      "total_seconds": 0.141,
+      "other_timings": {}
+    }
+  }
+]
