@@ -1,0 +1,206 @@
+{
+  "app": "app_ollama_conversation_v10.py",
+  "cases": [
+    {
+      "kind": "record",
+      "recipe": "Risotto alla milanese",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Ratatouille",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "French onion soup",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Borscht",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Imeretian khachapuri",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Miso soup",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Guacamole",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Tom yum goong",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Dal tadka",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Paella valenciana",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Spanish tortilla",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Moussaka",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Horiatiki salad",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Phở bò",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Bánh mì",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Tacos al pastor",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Menemen",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Mercimek çorbası",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Khinkali",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Butter chicken",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Katsudon",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Syrniki",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Pad thai",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Gazpacho",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Ham croquetas",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Lomo saltado",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Mapo tofu",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Gong bao chicken",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Coq au vin",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Crème brûlée",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Käsespätzle",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Rinderrouladen",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Bibimbap",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Kimchi jjigae",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Souvlaki",
+      "problems": []
+    },
+    {
+      "kind": "record",
+      "recipe": "Chicken biryani",
+      "problems": []
+    },
+    {
+      "kind": "live_ui",
+      "recipe": "Ratatouille",
+      "problems": [],
+      "context_count": 6,
+      "answer": "Ingredients for Ratatouille (source recipe; serves 4):\n- Aubergine: 1 piece\n- Courgette: 2 piece\n- Bell pepper: 2 piece\n- Tomatoes: 600 g\n- Onion: 1 piece\n- Garlic: 3 clove\n- Olive oil: 6 tbsp\n- Thyme: 3 sprig\n- Basil: 1 pinch\n- Salt and pepper: amount not specified; follow the source"
+    },
+    {
+      "kind": "live_ui",
+      "recipe": "Dal tadka",
+      "problems": [],
+      "context_count": 6,
+      "answer": "Ingredients for Dal tadka (source recipe; serves 4):\n- Toor dal: 200 g\n- Turmeric: 0.5 tsp\n- Ghee: 3 tbsp\n- Cumin seeds: 1 tsp\n- Mustard seeds: 0.5 tsp\n- Garlic: 4 clove\n- Onion: 1 piece\n- Tomato: 2 piece\n- Dried red chillies: 2 piece\n- Asafoetida: 1 pinch\n- Salt: amount not specified; follow the source"
+    },
+    {
+      "kind": "live_ui",
+      "recipe": "Borscht",
+      "problems": [],
+      "context_count": 6,
+      "answer": "Ingredients for Borscht (source recipe; serves 6):\n- Beef on the bone: 700 g\n- Beetroot: 2 piece\n- Cabbage: 300 g\n- Potatoes: 4 piece\n- Carrot: 1 piece\n- Onion: 1 piece\n- Tomato paste: 2 tbsp\n- Vinegar, 9%: 1 tbsp\n- Garlic: 3 clove\n- Bay leaf: 2 piece\n- Sour cream: amount not specified; follow the source\n- Salt and pepper: amount not specified; follow the source"
+    }
+  ]
+}

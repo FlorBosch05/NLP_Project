@@ -1,0 +1,57 @@
+[
+  {
+    "question": "give me a recipe with tomato",
+    "answer": "Here is a recipe that includes tomatoes:\n\n**Menemen**\n\n- **Ingredients:**\n  - Ripe tomatoes: peeled and chopped\n  - Peppers\n  - Salt\n  - Oil or fats\n  - Eggs\n  - Pepper flakes\n  - Oregano\n  - Cheese\n\n- **Instructions:**\n  1. Slice the peppers into rings and fry them in the two fats for three or four minutes, until the edges start to darken.\n  2. Add the tomatoes, salt them, and cook over medium heat for ten minutes. Wait for the oil to separate and glisten at the edges.\n  3. Lower the heat, break the eggs straight into the sauce and scatter the pepper flakes. Stir slowly and only two or three times, leaving streaks of yolk.\n  4. Take it off when the white has set and the yolk is still loose: the pan finishes the job. Scatter over the oregano and the cheese.\n\nThis recipe uses tomatoes in the preparation of Menemen, a traditional Turkish dish.",
+    "route": "retrieve",
+    "focus": null,
+    "safety": {
+      "stage": "passed",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "any other recipes?",
+    "answer": "Here are a couple of recipes that include tomatoes:\n\n1. **Horiatiki Salad**\n   - **Ingredients:**\n     - Ripe tomatoes: in large wedges\n     - Cucumber: in thick half-moons\n     - Red onion: in thin rings\n     - Feta: in one piece\n\n2. **Menemen**\n   - **Ingredients:**\n     - Ripe tomatoes: peeled and chopped\n   - **Instructions:**\n     1. Slice the peppers into rings and fry them in the fats for three or four minutes, until the edges start to darken.\n     2. Add the tomatoes, salt them, and cook over medium heat for ten minutes. Wait for the oil to separate and glisten at the edges.\n     3. Lower the heat, break the eggs straight into the sauce and scatter the pepper flakes. Stir slowly and only two or three times, leaving streaks of yolk.\n     4. Take it off when the white has set and the yolk is still loose: the pan finishes the job. Scatter over the oregano and the cheese.\n\nThese recipes use tomatoes in different ways, from a salad to a main dish.",
+    "route": "retrieve",
+    "focus": null,
+    "safety": {
+      "stage": "passed",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "what about cionide",
+    "answer": "I cannot recommend consuming hazardous or unidentified substances, or provide unsafe food-handling instructions. Use verified food-safe ingredients and follow trusted food-safety guidance.",
+    "route": "safety_block",
+    "focus": null,
+    "safety": {
+      "stage": "input",
+      "category": "hazard"
+    },
+    "errors": []
+  },
+  {
+    "question": "okay eggs",
+    "answer": "I cannot recommend consuming hazardous or unidentified substances, or provide unsafe food-handling instructions. Use verified food-safe ingredients and follow trusted food-safety guidance.",
+    "route": "safety_block",
+    "focus": null,
+    "safety": {
+      "stage": "input",
+      "category": "hazard"
+    },
+    "errors": []
+  },
+  {
+    "question": "give me a recipe with eggs bro",
+    "answer": "I cannot recommend consuming hazardous or unidentified substances, or provide unsafe food-handling instructions. Use verified food-safe ingredients and follow trusted food-safety guidance.",
+    "route": "safety_block",
+    "focus": null,
+    "safety": {
+      "stage": "input",
+      "category": "hazard"
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "source_run": "v4\\results\\realistic_conversations_v4_20261127_095315_137800.json",
+  "checks": [
+    {
+      "check": "vegetarian_complete",
+      "pass": true
+    },
+    {
+      "check": "alternative_complete",
+      "pass": true
+    },
+    {
+      "check": "switch_complete",
+      "pass": true
+    },
+    {
+      "check": "gazpacho_complete",
+      "pass": true
+    },
+    {
+      "check": "preferences_complete",
+      "pass": true
+    },
+    {
+      "check": "ambiguous_complete",
+      "pass": true
+    },
+    {
+      "check": "safety_complete",
+      "pass": true
+    },
+    {
+      "check": "vegetarian_source_tag",
+      "pass": true
+    },
+    {
+      "check": "vegetarian_focus_and_ingredients",
+      "pass": true
+    },
+    {
+      "check": "vegetarian_servings",
+      "pass": true
+    },
+    {
+      "check": "vegetarian_doubled",
+      "pass": true
+    },
+    {
+      "check": "different_onion_free",
+      "pass": true
+    },
+    {
+      "check": "different_focus_retained",
+      "pass": true
+    },
+    {
+      "check": "recipe_switch_to_borscht",
+      "pass": true
+    },
+    {
+      "check": "tomato_soup_cold",
+      "pass": true
+    },
+    {
+      "check": "gazpacho_ingredients",
+      "pass": true
+    },
+    {
+      "check": "gazpacho_eight",
+      "pass": true
+    },
+    {
+      "check": "meatless_source_vegan",
+      "pass": true
+    },
+    {
+      "check": "stock_answer_is_grounded",
+      "pass": true
+    },
+    {
+      "check": "ambiguous_requests_clarify",
+      "pass": true
+    },
+    {
+      "check": "allergy_blocks",
+      "pass": true
+    }
+  ]
+}

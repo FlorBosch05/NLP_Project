@@ -1,0 +1,4 @@
+# A fresh environment also needs the base project dependencies.
+-r ../requirements.txt
+langchain-ollama==1.2.0
+nemoguardrails==0.25.0

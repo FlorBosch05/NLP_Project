@@ -1,0 +1,161 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v4\\results\\diagnostic_final_v1_20261127_084527_655900.json",
+  "ragas_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v4\\results\\ragas_ollama_diagnostic_v2_20261127_084609_619000.json",
+  "generation_model": "qwen2.5:7b",
+  "judge": "qwen2.5:7b",
+  "expected_retrieval_cases": [
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13"
+  ],
+  "summary": {
+    "llm_context_precision_with_reference": {
+      "scored": 13,
+      "expected": 13,
+      "mean_available": 0.8379273504076923,
+      "missing_ids": []
+    },
+    "context_recall": {
+      "scored": 13,
+      "expected": 13,
+      "mean_available": 0.8846153846153846,
+      "missing_ids": []
+    },
+    "faithfulness": {
+      "scored": 13,
+      "expected": 13,
+      "mean_available": 0.8765567765615385,
+      "missing_ids": []
+    }
+  },
+  "excluded_or_missing": [],
+  "case_scores": [
+    {
+      "id": "Q01",
+      "scores": {
+        "llm_context_precision_with_reference": 0.5,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null
+    },
+    {
+      "id": "Q02",
+      "scores": {
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null
+    },
+    {
+      "id": "Q03",
+      "scores": {
+        "llm_context_precision_with_reference": 0.525,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null
+    },
+    {
+      "id": "Q04",
+      "scores": {
+        "llm_context_precision_with_reference": 0.4166666666,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null
+    },
+    {
+      "id": "Q05",
+      "scores": {
+        "llm_context_precision_with_reference": 0.6458333333,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null
+    },
+    {
+      "id": "Q06",
+      "scores": {
+        "llm_context_precision_with_reference": 0.8055555555,
+        "context_recall": 0.5,
+        "faithfulness": 1.0
+      },
+      "error": null
+    },
+    {
+      "id": "Q07",
+      "scores": {
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 0.5,
+        "faithfulness": 0.8
+      },
+      "error": null
+    },
+    {
+      "id": "Q08",
+      "scores": {
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 0.5,
+        "faithfulness": 1.0
+      },
+      "error": null
+    },
+    {
+      "id": "Q09",
+      "scores": {
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 0.5
+      },
+      "error": null
+    },
+    {
+      "id": "Q10",
+      "scores": {
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 0.6666666667
+      },
+      "error": null
+    },
+    {
+      "id": "Q11",
+      "scores": {
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null
+    },
+    {
+      "id": "Q12",
+      "scores": {
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 0.4285714286
+      },
+      "error": null
+    },
+    {
+      "id": "Q13",
+      "scores": {
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      },
+      "error": null
+    }
+  ]
+}

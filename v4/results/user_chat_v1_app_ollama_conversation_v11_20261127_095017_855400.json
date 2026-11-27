@@ -1,0 +1,62 @@
+[
+  {
+    "question": "spagettie",
+    "answer": "I couldn't find a spaghetti recipe in the current collection. Would you like another kind of dish?",
+    "route": "retrieve",
+    "focus": null,
+    "safety": {
+      "stage": "input_checked_fixed_source_reply",
+      "category": "allow"
+    }
+  },
+  {
+    "question": "spaghetti",
+    "answer": "I couldn't find a spaghetti recipe in the current collection. Would you like another kind of dish?",
+    "route": "retrieve",
+    "focus": null,
+    "safety": {
+      "stage": "input_checked_fixed_source_reply",
+      "category": "allow"
+    }
+  },
+  {
+    "question": "what soup should i eat today",
+    "answer": "How about French onion soup? It serves 4 people according to the source. Would you like the ingredients?",
+    "route": "retrieve",
+    "focus": "French onion soup",
+    "safety": {
+      "stage": "passed",
+      "category": "allow"
+    }
+  },
+  {
+    "question": "ok onino soup",
+    "answer": "Here is French onion soup from the collection. Ingredients for French onion soup (source recipe; serves 4):\n- Onions: 1 kg\n- Butter: 50 g\n- Flour: 1 tbsp\n- Dry white wine: 150 ml\n- Beef stock: 1.2 l\n- Baguette: 8 slice\n- Gruyère: 150 g\n- Thyme: 2 sprig\n- Salt and pepper: amount not specified; follow the source\n\nWould you like the preparation steps?",
+    "route": "retrieve",
+    "focus": "French onion soup",
+    "safety": {
+      "stage": "input_checked_fixed_source_reply",
+      "category": "allow"
+    }
+  },
+  {
+    "question": "onion soup",
+    "answer": "Here is French onion soup from the collection. Ingredients for French onion soup (source recipe; serves 4):\n- Onions: 1 kg\n- Butter: 50 g\n- Flour: 1 tbsp\n- Dry white wine: 150 ml\n- Beef stock: 1.2 l\n- Baguette: 8 slice\n- Gruyère: 150 g\n- Thyme: 2 sprig\n- Salt and pepper: amount not specified; follow the source\n\nWould you like the preparation steps?",
+    "route": "retrieve",
+    "focus": "French onion soup",
+    "safety": {
+      "stage": "input_checked_fixed_source_reply",
+      "category": "allow"
+    }
+  },
+  {
+    "question": "i want something with carrots give me a recipe",
+    "answer": "Borscht contains carrot. Ingredients for Borscht (source recipe; serves 6):\n- Beef on the bone: 700 g\n- Beetroot: 2 piece\n- Cabbage: 300 g\n- Potatoes: 4 piece\n- Carrot: 1 piece\n- Onion: 1 piece\n- Tomato paste: 2 tbsp\n- Vinegar, 9%: 1 tbsp\n- Garlic: 3 clove\n- Bay leaf: 2 piece\n- Sour cream: amount not specified; follow the source\n- Salt and pepper: amount not specified; follow the source\n\nWould you like the preparation steps?",
+    "route": "retrieve",
+    "focus": "Borscht",
+    "safety": {
+      "stage": "input_checked_fixed_source_reply",
+      "category": "allow"
+    }
+  }
+]

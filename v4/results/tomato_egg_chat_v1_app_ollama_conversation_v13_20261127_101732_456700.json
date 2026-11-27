@@ -1,0 +1,57 @@
+[
+  {
+    "question": "give me a recipe with tomato",
+    "answer": "Ratatouille contains tomato.\n\nIngredients for Ratatouille (source recipe; serves 4):\n- Aubergine: 1 piece\n- Courgette: 2 piece\n- Bell pepper: 2 piece\n- Tomatoes: 600 g\n- Onion: 1 piece\n- Garlic: 3 clove\n- Olive oil: 6 tbsp\n- Thyme: 3 sprig\n- Basil: 1 pinch\n- Salt and pepper: amount not specified; follow the source\n\nPreparation (adapted from the source):\n1. Fry the aubergine in oil until browned; set aside. Fry the courgette and then the pepper separately.\n2. Soften the onion in the remaining oil; add garlic and thyme briefly. Add the tomatoes and cook down for about 20 minutes.\n3. Return the vegetables to the pan, season and warm together over low heat for 10 minutes. Add basil and let stand before serving.",
+    "route": "retrieve",
+    "focus": "Ratatouille",
+    "safety": {
+      "stage": "input_checked_structured_selection",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "any other recipes?",
+    "answer": "Guacamole contains tomato.\n\nIngredients for Guacamole (source recipe; serves 4):\n- Avocado: 3 piece\n- Lime: 1 piece\n- Red onion: 0.5 piece\n- Jalapeño: 1 piece\n- Coriander: 3 sprig\n- Tomato: 1 piece\n- Salt: amount not specified; follow the source\n\nThe source contains preparation steps; ask if you would like them.",
+    "route": "retrieve",
+    "focus": "Guacamole",
+    "safety": {
+      "stage": "input_checked_structured_selection",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "what about cionide",
+    "answer": "I cannot recommend consuming hazardous or unidentified substances, or provide unsafe food-handling instructions. Use verified food-safe ingredients and follow trusted food-safety guidance.",
+    "route": "safety_block",
+    "focus": "Guacamole",
+    "safety": {
+      "stage": "input",
+      "category": "hazard"
+    },
+    "errors": []
+  },
+  {
+    "question": "okay eggs",
+    "answer": "Would you like a recipe that uses egg?",
+    "route": "retrieve",
+    "focus": "Guacamole",
+    "safety": {
+      "stage": "input_checked_clarification",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "give me a recipe with eggs bro",
+    "answer": "Menemen contains egg.\n\nIngredients for Menemen (source recipe; serves 2):\n- Ripe tomatoes: 4 piece\n- Long green peppers: 2 piece\n- Eggs: 4 piece\n- Butter: 20 g\n- Olive oil: 1 tbsp\n- Pul biber flakes: 1 tsp\n- Dried oregano: 1 tsp\n- White cheese: amount not specified; follow the source\n- Salt: amount not specified; follow the source\n\nPreparation (adapted from the source):\n1. Slice the peppers and fry them in the butter and olive oil for 3–4 minutes.\n2. Add the chopped tomatoes and salt, and cook for about 10 minutes.\n3. Lower the heat, add the eggs and pepper flakes, and stir. Continue cooking until the egg dish reaches 71°C (160°F), measured with a food thermometer.\n4. Add oregano and cheese. The temperature step is a food-safety adaptation; the source calls for a loose yolk. [FDA egg safety guidance](https://www.fda.gov/food/buy-store-serve-safe-food/what-you-need-know-about-egg-safety).",
+    "route": "retrieve",
+    "focus": "Menemen",
+    "safety": {
+      "stage": "input_checked_structured_selection",
+      "category": "allow"
+    },
+    "errors": []
+  }
+]

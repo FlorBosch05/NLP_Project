@@ -1,0 +1,62 @@
+[
+  {
+    "question": "spagettie",
+    "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+    "route": "safety_block",
+    "focus": null,
+    "safety": {
+      "stage": "output",
+      "category": "uncertain"
+    }
+  },
+  {
+    "question": "spaghetti",
+    "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+    "route": "safety_block",
+    "focus": null,
+    "safety": {
+      "stage": "output",
+      "category": "uncertain"
+    }
+  },
+  {
+    "question": "what soup should i eat today",
+    "answer": "How about French onion soup? It serves 4 people according to the source. Would you like the ingredients?",
+    "route": "retrieve",
+    "focus": "French onion soup",
+    "safety": {
+      "stage": "passed",
+      "category": "allow"
+    }
+  },
+  {
+    "question": "ok onino soup",
+    "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+    "route": "safety_block",
+    "focus": "French onion soup",
+    "safety": {
+      "stage": "output",
+      "category": "uncertain"
+    }
+  },
+  {
+    "question": "onion soup",
+    "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+    "route": "safety_block",
+    "focus": "French onion soup",
+    "safety": {
+      "stage": "output",
+      "category": "uncertain"
+    }
+  },
+  {
+    "question": "i want something with carrots give me a recipe",
+    "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+    "route": "safety_block",
+    "focus": "French onion soup",
+    "safety": {
+      "stage": "output",
+      "category": "uncertain"
+    }
+  }
+]

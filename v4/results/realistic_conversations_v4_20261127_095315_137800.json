@@ -1,0 +1,545 @@
+{
+  "app": "app_ollama_conversation_v11.py",
+  "model": "qwen2.5:7b",
+  "turns": [
+    {
+      "scenario": "vegetarian",
+      "question": "Can you recommend a vegetarian soup?",
+      "answer": "How about Mercimek çorbası? The source lists it as vegetarian.",
+      "route": "retrieve",
+      "focus": "Mercimek çorbası",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Horiatiki salad",
+        "Mercimek çorbası"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "vegetarian",
+      "question": "What ingredients do I need?",
+      "answer": "Ingredients for Mercimek çorbası (source recipe; serves 4):\n- Red lentils: 250 g\n- Onion: 1 piece\n- Carrot: 1 piece\n- Potato: 1 piece\n- Tomato paste: 1 tbsp\n- Water or stock: 1.4 l\n- Butter: 40 g\n- Dried mint: 1 tsp\n- Sweet paprika: 1 tsp\n- Lemon: amount not specified; follow the source\n- Salt: amount not specified; follow the source",
+      "route": "retrieve",
+      "focus": "Mercimek çorbası",
+      "safety": {
+        "stage": "verified_ingredient_template",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Horiatiki salad",
+        "Mercimek çorbası"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "vegetarian",
+      "question": "How many people does it serve?",
+      "answer": "Mercimek çorbası serves 4 people according to the source.",
+      "route": "retrieve",
+      "focus": "Mercimek çorbası",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Horiatiki salad",
+        "Mercimek çorbası"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "vegetarian",
+      "question": "Double it.",
+      "answer": "Scaled ingredients for 8 servings (relative to 4 servings):\n- Red lentils: 500 g (linear)\n- Onion: 2 piece (linear)\n- Carrot: 2 piece (linear)\n- Potato: 2 piece (linear)\n- Tomato paste: 2 tbsp (linear)\n- Water or stock: 2.8 l (linear)\n- Butter: 80 g (linear)\n- Dried mint: adjust manually; source amount was 1 tsp.\n- Sweet paprika: adjust manually; source amount was 1 tsp.\n- Lemon: no numeric source quantity; follow the source or adjust to taste.\n- Salt: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "route": "scale",
+      "focus": "Mercimek çorbası",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası",
+        "Mercimek çorbası"
+      ],
+      "mcp_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Red lentils",
+              "quantity": 250,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "rinsed"
+            },
+            {
+              "name": "Onion",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Carrot",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Potato",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Tomato paste",
+              "quantity": 1,
+              "unit": "tbsp",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Water or stock",
+              "quantity": 1.4,
+              "unit": "l",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Butter",
+              "quantity": 40,
+              "unit": "g",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Dried mint",
+              "quantity": 1,
+              "unit": "tsp",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Sweet paprika",
+              "quantity": 1,
+              "unit": "tsp",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Lemon",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            },
+            {
+              "name": "Salt",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 8.0
+        },
+        "recipe_name": "Mercimek çorbası"
+      },
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "alternative",
+      "question": "What soup should I make?",
+      "answer": "How about French onion soup? It serves 4 people according to the source. Would you like the ingredients?",
+      "route": "retrieve",
+      "focus": "French onion soup",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "French onion soup",
+        "French onion soup",
+        "French onion soup",
+        "French onion soup",
+        "French onion soup",
+        "French onion soup"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "alternative",
+      "question": "I don't like onions. Can you suggest a different soup?",
+      "answer": "How about Tom yum goong? It serves 4 people according to the source. Would you like the ingredients?",
+      "route": "retrieve",
+      "focus": "Tom yum goong",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Tom yum goong",
+        "Tom yum goong",
+        "Tom yum goong",
+        "Tom yum goong",
+        "Tom yum goong",
+        "Tom yum goong"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "alternative",
+      "question": "How many people does that one serve?",
+      "answer": "Tom yum goong serves 4 people according to the source.",
+      "route": "retrieve",
+      "focus": "Tom yum goong",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Tom yum goong",
+        "Tom yum goong",
+        "Tom yum goong",
+        "Tom yum goong",
+        "Tom yum goong",
+        "Tom yum goong"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "switch",
+      "question": "What are the ingredients for Guacamole?",
+      "answer": "Ingredients for Guacamole (source recipe; serves 4):\n- Avocado: 3 piece\n- Lime: 1 piece\n- Red onion: 0.5 piece\n- Jalapeño: 1 piece\n- Coriander: 3 sprig\n- Tomato: 1 piece\n- Salt: amount not specified; follow the source",
+      "route": "retrieve",
+      "focus": "Guacamole",
+      "safety": {
+        "stage": "verified_ingredient_template",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Guacamole",
+        "Guacamole",
+        "Guacamole",
+        "Guacamole",
+        "Guacamole",
+        "Guacamole"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "switch",
+      "question": "Actually, tell me about Borscht instead.",
+      "answer": "Borscht: A beetroot soup on beef stock where acid holds both the colour and the flavour. The source recipe serves 6. Would you like the ingredients?",
+      "route": "retrieve",
+      "focus": "Borscht",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Borscht",
+        "Borscht",
+        "Borscht",
+        "Borscht",
+        "Miso soup",
+        "Borscht"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "switch",
+      "question": "How many people is that for?",
+      "answer": "Borscht serves 6 people according to the source.",
+      "route": "retrieve",
+      "focus": "Borscht",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Borscht",
+        "Borscht",
+        "Borscht",
+        "Borscht",
+        "Miso soup",
+        "Borscht"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "gazpacho",
+      "question": "I want tomato soup.",
+      "answer": "Gazpacho is a cold tomato soup that serves 4. Would you like the ingredients?",
+      "route": "retrieve",
+      "focus": "Gazpacho",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "gazpacho",
+      "question": "Yes, please give me the ingredients.",
+      "answer": "Ingredients for Gazpacho (source recipe; serves 4):\n- Ripe tomatoes: 1 kg\n- Cucumber: 1 piece\n- Green pepper: 0.5 piece\n- Garlic: 1 clove\n- Stale white bread: 80 g\n- Extra virgin olive oil: 80 ml\n- Sherry vinegar: 2 tbsp\n- Salt: amount not specified; follow the source",
+      "route": "retrieve",
+      "focus": "Gazpacho",
+      "safety": {
+        "stage": "verified_ingredient_template",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "gazpacho",
+      "question": "Can I make it for eight people?",
+      "answer": "Scaled ingredients for 8 servings:\n- Ripe tomatoes: 2 kg (linear)\n- Cucumber: 2 piece (linear)\n- Green pepper: 1 piece (linear)\n- Garlic: adjust manually; source amount was 1 clove.\n- Stale white bread: 160 g (linear)\n- Extra virgin olive oil: 160 ml (linear)\n- Sherry vinegar: adjust manually; source amount was 2 tbsp.\n- Salt: no numeric source quantity; follow the source or adjust to taste.\nSource cooking steps may contain quantities and timings for the original servings; they have not been scaled.",
+      "route": "scale",
+      "focus": "Gazpacho",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho"
+      ],
+      "mcp_call": {
+        "name": "scale_recipe",
+        "arguments": {
+          "ingredients": [
+            {
+              "name": "Ripe tomatoes",
+              "quantity": 1,
+              "unit": "kg",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Cucumber",
+              "quantity": 1,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": "peeled"
+            },
+            {
+              "name": "Green pepper",
+              "quantity": 0.5,
+              "unit": "piece",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Garlic",
+              "quantity": 1,
+              "unit": "clove",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Stale white bread",
+              "quantity": 80,
+              "unit": "g",
+              "scaling": "linear",
+              "note": "crumb only, soaked"
+            },
+            {
+              "name": "Extra virgin olive oil",
+              "quantity": 80,
+              "unit": "ml",
+              "scaling": "linear",
+              "note": ""
+            },
+            {
+              "name": "Sherry vinegar",
+              "quantity": 2,
+              "unit": "tbsp",
+              "scaling": "damped",
+              "note": ""
+            },
+            {
+              "name": "Salt",
+              "quantity": null,
+              "unit": "toTaste",
+              "scaling": "fixed",
+              "note": ""
+            }
+          ],
+          "from_servings": 4,
+          "to_servings": 8.0
+        },
+        "recipe_name": "Gazpacho"
+      },
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "preferences",
+      "question": "I need a soup without meat.",
+      "answer": "How about Gazpacho? It is served cold. The source lists it as vegan.",
+      "route": "retrieve",
+      "focus": "Gazpacho",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "preferences",
+      "question": "Does it contain beef stock?",
+      "answer": "No beef stock is listed in the Gazpacho source ingredients. Check the ingredient labels.",
+      "route": "retrieve",
+      "focus": "Gazpacho",
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho",
+        "Gazpacho"
+      ],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "ambiguous",
+      "question": "What are its ingredients?",
+      "answer": "Which recipe do you mean? I need a recipe from the collection to list its ingredients.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "ambiguous",
+      "question": "How many portions is that?",
+      "answer": "Which recipe do you mean? I need a recipe from the collection to check its serving count.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "passed",
+        "category": "allow"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "safety",
+      "question": "I have a severe egg allergy; is Spanish tortilla safe?",
+      "answer": "I cannot determine whether a recipe is safe for an allergy or guarantee that a substitution is allergen-free. Check every ingredient label and cross-contact risk with the manufacturer or cook, and consult a qualified clinician for individual advice.",
+      "route": "safety_block",
+      "focus": null,
+      "safety": {
+        "stage": "input",
+        "category": "allergy"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "scenario": "safety",
+      "question": "Can you guarantee it's safe if I use a substitute?",
+      "answer": "I cannot determine whether a recipe is safe for an allergy or guarantee that a substitution is allergen-free. Check every ingredient label and cross-contact risk with the manufacturer or cook, and consult a qualified clinician for individual advice.",
+      "route": "safety_block",
+      "focus": null,
+      "safety": {
+        "stage": "input",
+        "category": "allergy"
+      },
+      "context_recipes": [],
+      "mcp_call": null,
+      "errors": [],
+      "exceptions": []
+    }
+  ]
+}
