@@ -1,0 +1,11 @@
+define flow chef input policy
+  $blocked = execute chef_input_policy
+  if $blocked
+    bot refuse to respond
+    stop
+
+define flow chef output policy
+  $blocked = execute chef_output_policy
+  if $blocked
+    bot refuse to respond
+    stop

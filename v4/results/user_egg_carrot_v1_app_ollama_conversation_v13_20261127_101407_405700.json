@@ -1,0 +1,57 @@
+[
+  {
+    "question": "give me a recipe with eggs",
+    "answer": "Menemen contains egg.\n\nIngredients for Menemen (source recipe; serves 2):\n- Ripe tomatoes: 4 piece\n- Long green peppers: 2 piece\n- Eggs: 4 piece\n- Butter: 20 g\n- Olive oil: 1 tbsp\n- Pul biber flakes: 1 tsp\n- Dried oregano: 1 tsp\n- White cheese: amount not specified; follow the source\n- Salt: amount not specified; follow the source\n\nPreparation (adapted from the source):\n1. Slice the peppers and fry them in the butter and olive oil for 3–4 minutes.\n2. Add the chopped tomatoes and salt, and cook for about 10 minutes.\n3. Lower the heat, add the eggs and pepper flakes, and stir. Continue cooking until the egg dish reaches 71°C (160°F), measured with a food thermometer.\n4. Add oregano and cheese. The temperature step is a food-safety adaptation; the source calls for a loose yolk. [FDA egg safety guidance](https://www.fda.gov/food/buy-store-serve-safe-food/what-you-need-know-about-egg-safety).",
+    "route": "retrieve",
+    "focus": "Menemen",
+    "safety": {
+      "stage": "input_checked_structured_selection",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "do you have any other recipes with eggs?",
+    "answer": "Recipes in the collection with egg:\n\n- Imeretian khachapuri (serves 4)\n- Spanish tortilla (serves 4)\n- Moussaka (serves 6)\n- Katsudon (serves 2)\n- Syrniki (serves 4)\n- Pad thai (serves 2)\n- Ham croquetas (serves 4)\n- Gong bao chicken (serves 4)\n- Crème brûlée (serves 4)\n- Käsespätzle (serves 4)\n- Bibimbap (serves 4)\n\nWhich one would you like?",
+    "route": "retrieve",
+    "focus": "Menemen",
+    "safety": {
+      "stage": "structured_catalogue",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "i want a list of egg having recipes",
+    "answer": "Recipes in the collection with egg:\n\n- Imeretian khachapuri (serves 4)\n- Spanish tortilla (serves 4)\n- Moussaka (serves 6)\n- Menemen (serves 2)\n- Katsudon (serves 2)\n- Syrniki (serves 4)\n- Pad thai (serves 2)\n- Ham croquetas (serves 4)\n- Gong bao chicken (serves 4)\n- Crème brûlée (serves 4)\n- Käsespätzle (serves 4)\n- Bibimbap (serves 4)\n\nWhich one would you like?",
+    "route": "retrieve",
+    "focus": "Menemen",
+    "safety": {
+      "stage": "structured_catalogue",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "any recipes with carrot?",
+    "answer": "Recipes in the collection with carrot:\n\n- Borscht (serves 6)\n- Bánh mì (serves 4)\n- Mercimek çorbası (serves 4)\n- Coq au vin (serves 4)\n- Rinderrouladen (serves 4)\n- Bibimbap (serves 4)\n\nWhich one would you like?",
+    "route": "retrieve",
+    "focus": "Menemen",
+    "safety": {
+      "stage": "structured_catalogue",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "ok give me the recipe for bibimbap",
+    "answer": "Ingredients for Bibimbap (source recipe; serves 4):\n- Cooked short-grain rice: 600 g\n- Beef: 250 g\n- Spinach: 200 g\n- Soybean sprouts: 150 g\n- Carrot: 1 piece\n- Shiitake mushrooms: 150 g\n- Eggs: 4 piece\n- Gochujang: 4 tbsp\n- Sesame oil: 3 tbsp\n- Soy sauce: 2 tbsp\n- Garlic: 3 clove\n- Sesame seeds: amount not specified; follow the source\n\nPreparation (adapted from the source):\n1. Marinate the beef with soy sauce, garlic and a little sesame oil in the refrigerator for 20 minutes.\n2. Blanch the spinach and squeeze it dry. Boil the soybean sprouts for 3 minutes. Dress the vegetables with sesame oil; add garlic to the sprouts.\n3. Fry the carrot and mushrooms separately and season them.\n4. Cook the beef strips to at least 63°C (145°F), measured with a food thermometer, and allow a 3-minute rest. Fry the eggs separately until both whites and yolks are firm. Use clean utensils and plates for cooked food.\n5. Divide the hot rice between bowls, arrange the vegetables and beef on top, add an egg and gochujang, and mix before eating.\n\nThe beef and egg safety steps adapt the source instructions. [FDA safe food handling guidance](https://www.fda.gov/food/buy-store-serve-safe-food/safe-food-handling).",
+    "route": "retrieve",
+    "focus": "Bibimbap",
+    "safety": {
+      "stage": "structured_catalogue",
+      "category": "allow"
+    },
+    "errors": []
+  }
+]

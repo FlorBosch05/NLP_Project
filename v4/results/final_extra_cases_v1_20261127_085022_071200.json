@@ -1,0 +1,61 @@
+{
+  "app": "app_ollama_conversation_v10.py",
+  "cases": [
+    {
+      "id": "substitution",
+      "question": "What substitute does the source suggest for rabbit in Paella valenciana?",
+      "answer": "The source suggests that chicken can be used as a substitute for rabbit in the Paella valenciana recipe.",
+      "route": "retrieve",
+      "focus": "Paella valenciana",
+      "tool_result": null,
+      "problems": []
+    },
+    {
+      "id": "cross_dimension",
+      "question": "Convert 250 g to cups.",
+      "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+      "route": "safety_block",
+      "focus": null,
+      "tool_result": null,
+      "problems": []
+    },
+    {
+      "id": "zero_servings",
+      "question": "Scale Guacamole to 0 servings.",
+      "answer": "I cannot safely assess this request. Please rephrase it or consult a qualified food-safety or medical professional where appropriate.",
+      "route": "safety_block",
+      "focus": null,
+      "tool_result": null,
+      "problems": [
+        "invalid target not clarified"
+      ]
+    },
+    {
+      "id": "onion_free",
+      "question": "I don't like onions. Can you recommend a soup?",
+      "answer": "How about Tom yum goong? It serves 4 people according to the source. Would you like the ingredients?",
+      "route": "retrieve",
+      "focus": "Tom yum goong",
+      "tool_result": null,
+      "problems": []
+    },
+    {
+      "id": "named_servings",
+      "question": "How many people does Borscht serve?",
+      "answer": "Borscht serves 6 people according to the source.",
+      "route": "retrieve",
+      "focus": "Borscht",
+      "tool_result": null,
+      "problems": []
+    },
+    {
+      "id": "dutch_ingredients",
+      "question": "Wat zijn de ingrediënten van Guacamole?",
+      "answer": "De ingrediënten voor Guacamole zijn:\n\n- 3 avocados (rijp)\n- 1 lime (geperst)\n- 0.5 stuk rode ui (fijngehakt)\n- 1 jalapeño (zaden verwijderd)\n- 3 korinners (of sprigjes) coriander\n- 1 tomato (gezaaid en gegratineerd)\n- Zout (aan smaak)\n\nLet op: Het zout is aangegeven als \"aan smaak\" en heeft geen specifieke hoeveelheid.",
+      "route": "retrieve",
+      "focus": "Guacamole",
+      "tool_result": null,
+      "problems": []
+    }
+  ]
+}

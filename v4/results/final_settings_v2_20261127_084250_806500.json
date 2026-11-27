@@ -1,0 +1,33 @@
+{
+  "app": "app_ollama_conversation_v10.py",
+  "cases": [
+    {
+      "strategy": "sections",
+      "top_k": 1,
+      "vector_count": 1,
+      "structured_count": 1,
+      "problems": []
+    },
+    {
+      "strategy": "sections",
+      "top_k": 5,
+      "vector_count": 5,
+      "structured_count": 1,
+      "problems": []
+    },
+    {
+      "strategy": "recipe",
+      "top_k": 1,
+      "vector_count": 1,
+      "structured_count": 1,
+      "problems": []
+    },
+    {
+      "strategy": "recipe",
+      "top_k": 5,
+      "vector_count": 5,
+      "structured_count": 1,
+      "problems": []
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "question": "give me a recipe with tomato",
+    "answer": "Ratatouille contains tomato.\n\nIngredients for Ratatouille (source recipe; serves 4):\n- Aubergine: 1 piece\n- Courgette: 2 piece\n- Bell pepper: 2 piece\n- Tomatoes: 600 g\n- Onion: 1 piece\n- Garlic: 3 clove\n- Olive oil: 6 tbsp\n- Thyme: 3 sprig\n- Basil: 1 pinch\n- Salt and pepper: amount not specified; follow the source\n\nPreparation (adapted from the source):\n1. Fry the aubergine in oil until browned; set aside. Fry the courgette and then the pepper separately.\n2. Soften the onion in the remaining oil; add garlic and thyme briefly. Add the tomatoes and cook down for about 20 minutes.\n3. Return the vegetables to the pan, season and warm together over low heat for 10 minutes. Add basil and let stand before serving.",
+    "route": "retrieve",
+    "focus": "Ratatouille",
+    "safety": {
+      "stage": "input_checked_structured_selection",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "any other recipes?",
+    "answer": "Guacamole contains tomato.\n\nIngredients for Guacamole (source recipe; serves 4):\n- Avocado: 3 piece\n- Lime: 1 piece\n- Red onion: 0.5 piece\n- Jalapeño: 1 piece\n- Coriander: 3 sprig\n- Tomato: 1 piece\n- Salt: amount not specified; follow the source\n\nThe source contains preparation steps; ask if you would like them.",
+    "route": "retrieve",
+    "focus": "Guacamole",
+    "safety": {
+      "stage": "input_checked_structured_selection",
+      "category": "allow"
+    },
+    "errors": []
+  },
+  {
+    "question": "what about cionide",
+    "answer": "I cannot recommend consuming hazardous or unidentified substances, or provide unsafe food-handling instructions. Use verified food-safe ingredients and follow trusted food-safety guidance.",
+    "route": "safety_block",
+    "focus": "Guacamole",
+    "safety": {
+      "stage": "input",
+      "category": "hazard"
+    },
+    "errors": []
+  },
+  {
+    "question": "okay eggs",
+    "answer": "I cannot recommend consuming hazardous or unidentified substances, or provide unsafe food-handling instructions. Use verified food-safe ingredients and follow trusted food-safety guidance.",
+    "route": "safety_block",
+    "focus": "Guacamole",
+    "safety": {
+      "stage": "input",
+      "category": "hazard"
+    },
+    "errors": []
+  },
+  {
+    "question": "give me a recipe with eggs bro",
+    "answer": "I cannot recommend consuming hazardous or unidentified substances, or provide unsafe food-handling instructions. Use verified food-safe ingredients and follow trusted food-safety guidance.",
+    "route": "safety_block",
+    "focus": "Guacamole",
+    "safety": {
+      "stage": "input",
+      "category": "hazard"
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "factor": 2,
+  "test": "Real local MCP tool, no LLM; compares each output with stored source scaling rule",
+  "recipes": [
+    {
+      "recipe": "Risotto alla milanese",
+      "errors": []
+    },
+    {
+      "recipe": "Ratatouille",
+      "errors": []
+    },
+    {
+      "recipe": "French onion soup",
+      "errors": []
+    },
+    {
+      "recipe": "Borscht",
+      "errors": []
+    },
+    {
+      "recipe": "Imeretian khachapuri",
+      "errors": []
+    },
+    {
+      "recipe": "Miso soup",
+      "errors": []
+    },
+    {
+      "recipe": "Guacamole",
+      "errors": []
+    },
+    {
+      "recipe": "Tom yum goong",
+      "errors": []
+    },
+    {
+      "recipe": "Dal tadka",
+      "errors": []
+    },
+    {
+      "recipe": "Paella valenciana",
+      "errors": []
+    },
+    {
+      "recipe": "Spanish tortilla",
+      "errors": []
+    },
+    {
+      "recipe": "Moussaka",
+      "errors": []
+    },
+    {
+      "recipe": "Horiatiki salad",
+      "errors": []
+    },
+    {
+      "recipe": "Phở bò",
+      "errors": []
+    },
+    {
+      "recipe": "Bánh mì",
+      "errors": []
+    },
+    {
+      "recipe": "Tacos al pastor",
+      "errors": []
+    },
+    {
+      "recipe": "Menemen",
+      "errors": []
+    },
+    {
+      "recipe": "Mercimek çorbası",
+      "errors": []
+    },
+    {
+      "recipe": "Khinkali",
+      "errors": []
+    },
+    {
+      "recipe": "Butter chicken",
+      "errors": []
+    },
+    {
+      "recipe": "Katsudon",
+      "errors": []
+    },
+    {
+      "recipe": "Syrniki",
+      "errors": []
+    },
+    {
+      "recipe": "Pad thai",
+      "errors": []
+    },
+    {
+      "recipe": "Gazpacho",
+      "errors": []
+    },
+    {
+      "recipe": "Ham croquetas",
+      "errors": []
+    },
+    {
+      "recipe": "Lomo saltado",
+      "errors": []
+    },
+    {
+      "recipe": "Mapo tofu",
+      "errors": []
+    },
+    {
+      "recipe": "Gong bao chicken",
+      "errors": []
+    },
+    {
+      "recipe": "Coq au vin",
+      "errors": []
+    },
+    {
+      "recipe": "Crème brûlée",
+      "errors": []
+    },
+    {
+      "recipe": "Käsespätzle",
+      "errors": []
+    },
+    {
+      "recipe": "Rinderrouladen",
+      "errors": []
+    },
+    {
+      "recipe": "Bibimbap",
+      "errors": []
+    },
+    {
+      "recipe": "Kimchi jjigae",
+      "errors": []
+    },
+    {
+      "recipe": "Souvlaki",
+      "errors": []
+    },
+    {
+      "recipe": "Chicken biryani",
+      "errors": []
+    }
+  ]
+}

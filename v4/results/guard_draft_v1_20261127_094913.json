@@ -1,0 +1,23 @@
+[
+  {
+    "question": "spaghetti",
+    "answer": "The provided context does not contain any recipe claims related to spaghetti. The closest recipes are Käsespätzle, Risotto alla milanese, Mercimek çorbası, Horiatiki salad, and Chicken biryani. None of these recipes mention spaghetti.",
+    "route": "retrieve",
+    "input": "allow",
+    "output": "allow"
+  },
+  {
+    "question": "onion soup",
+    "answer": "The provided context contains information about French onion soup. Here are the claims and their grounding:\n\n1. **Onion preparation**: The onions are thinly sliced and cooked with a pinch of salt over medium heat for 20 minutes to release water. This is supported by the context.\n2. **Caramelization**: The onions are then caramelized for 25 minutes until they reach the color of strong tea. This is also supported by the context.\n3. **Flour addition**: After caramelization, the flour is stirred in and cooked for 2 minutes to remove its raw taste. This is supported.\n4. **Wine addition**: Wine is added and cooked down by half. This is supported.\n5. **Stock and thyme**: Stock and thyme are added, brought to a boil, and simmered for 20 minutes. This is supported.\n6. **Bread and cheese topping**: Each bowl is topped with a slice of toasted baguette and grated Gruyère cheese, then grilled until bubbly and browned. This is supported.\n7. **Total cooking time**: The total cooking time is 75 minutes, including 15 minutes of preparation. This is supported by the overview section.\n8. **Serving size**: The recipe serves 4 people. This is supported.\n9. **Dietary information**: No specific dietary tags are provided, and the source notes that the tags are not verified for allergy or dietary safety. This is supported.\n\nThe context does not provide any information about Mercimek çorbası, so no claims can be made about that recipe. The tool result is missing, so no additional claims can be made based on that.",
+    "route": "retrieve",
+    "input": "allow",
+    "output": "uncertain"
+  },
+  {
+    "question": "i want something with carrots give me a recipe",
+    "answer": "The Bibimbap recipe includes carrots, specifically julienned carrots. Here are the details:\n\n- **Carrot**: julienned\n- **Tool Status**: None specified in the provided context\n\nThis recipe does not include detailed preparation steps for the carrots, only noting that they should be fried separately for a couple of minutes and seasoned individually.",
+    "route": "retrieve",
+    "input": "allow",
+    "output": "uncertain"
+  }
+]

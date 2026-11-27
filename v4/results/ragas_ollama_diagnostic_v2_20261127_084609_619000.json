@@ -1,0 +1,246 @@
+{
+  "source_run": "C:\\3AcsAI\\DeepLearning\\Leerstof\\NaturalLanguageProcessing\\NLPproject\\v4\\results\\diagnostic_final_v1_20261127_084527_655900.json",
+  "judge": "qwen2.5:7b",
+  "note": "Local generator and judge use the same model. Blocked cases are excluded, not treated as passes. References are not independently verified.",
+  "cases": [
+    {
+      "id": "Q01",
+      "scores": {
+        "user_input": "What are the ingredients for Ratatouille?",
+        "retrieved_contexts": [
+          "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+          "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+          "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+          "Recipe: French onion soup\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Ratatouille\ningredients: [{\"name\": \"Aubergine\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in 2 cm cubes\"}, {\"name\": \"Courgette\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"in cubes\"}, {\"name\": \"Bell pepper\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"ripe, peeled\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 6, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Thyme\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Basil\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"at the end\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "Ingredients for Ratatouille (source recipe; serves 4):\n- Aubergine: 1 piece\n- Courgette: 2 piece\n- Bell pepper: 2 piece\n- Tomatoes: 600 g\n- Onion: 1 piece\n- Garlic: 3 clove\n- Olive oil: 6 tbsp\n- Thyme: 3 sprig\n- Basil: 1 pinch\n- Salt and pepper: amount not specified; follow the source",
+        "reference": "Ingredients: 1 piece Aubergine, 2 piece Courgette, 2 piece Bell pepper, 600 g Tomatoes, 1 piece Onion, 3 clove Garlic, 6 tbsp Olive oil, 3 sprig Thyme, 1 pinch Basil, to taste: Salt and pepper.",
+        "llm_context_precision_with_reference": 0.5,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q02",
+      "scores": {
+        "user_input": "What are the ingredients for Guacamole?",
+        "retrieved_contexts": [
+          "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+          "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+          "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]",
+          "Recipe: Guacamole\ninstructions: 1. Halve the avocados, remove the stones and scoop the flesh into a bowl. A ripe avocado gives under a finger without collapsing. [Source step duration: 5 min]\n2. Add the lime juice and the salt straight away. The acid needs to reach the flesh before it starts to brown. [Source step duration: 1 min]\n3. Crush with a fork to a coarse, uneven mass. Lumps of avocado should remain — that is the texture you want. [Source step duration: 3 min]\n4. Fold in the onion, the jalapeño and the coriander, taste, and adjust the salt or lime. The tomato goes in last and gently, so it does not water everything down. [Source step duration: 4 min]\n5. Serve at once. If it has to wait, press cling film directly onto the surface — air is what darkens it. [Source step duration: 1 min]",
+          "Recipe: Guacamole\ningredients: [{\"name\": \"Avocado\", \"quantity\": 3, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"ripe\"}, {\"name\": \"Lime\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"juiced\"}, {\"name\": \"Red onion\", \"quantity\": 0.5, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"finely chopped\"}, {\"name\": \"Jalapeño\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"seeds removed\"}, {\"name\": \"Coriander\", \"quantity\": 3, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"seeded and diced\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "Ingredients for Guacamole (source recipe; serves 4):\n- Avocado: 3 piece\n- Lime: 1 piece\n- Red onion: 0.5 piece\n- Jalapeño: 1 piece\n- Coriander: 3 sprig\n- Tomato: 1 piece\n- Salt: amount not specified; follow the source",
+        "reference": "Ingredients: 3 piece Avocado, 1 piece Lime, 0.5 piece Red onion, 1 piece Jalapeño, 3 sprig Coriander, 1 piece Tomato, to taste: Salt.",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q03",
+      "scores": {
+        "user_input": "What are the ingredients for Miso soup?",
+        "retrieved_contexts": [
+          "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+          "Recipe: Miso soup\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Miso soup\noverview: A soup of dashi and miso that takes ten minutes. Miso must never boil: boiling takes out both the aroma and the point of it. Publisher lists prep 5 minutes and cook 15 minutes, total 20 minutes. Serves 4. Serves 4.",
+          "Recipe: Miso soup\ninstructions: 1. Cover the kombu with cold water and set it over low heat. Bring it to the edge of a boil over about ten minutes and lift the seaweed out before bubbles appear. [Source step duration: 10 min]\n2. Bring the water to the boil, add the bonito flakes, take it off the heat at once and let it stand for two minutes until the flakes sink. [Source step duration: 2 min]\n3. Strain the stock through a sieve without pressing the flakes — pressed flakes turn it bitter. [Source step duration: 2 min]\n4. Soak the wakame in cold water for five minutes; it swells several times over. [Source step duration: 5 min]\n5. Warm the dashi, add the tofu and the wakame and hold it at a low heat for a couple of minutes. [Source step duration: 2 min]\n6. Whisk the miso smooth in a ladle of the hot stock, stir it back in and take the pan off the heat immediately. Scatter over the spring onion. [Source step duration: 2 min]",
+          "Recipe: Miso soup\ningredients: [{\"name\": \"Water\", \"quantity\": 800, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Kombu\", \"quantity\": 10, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"wiped, not washed\"}, {\"name\": \"Bonito flakes\", \"quantity\": 15, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Miso paste\", \"quantity\": 4, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tofu\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cubed\"}, {\"name\": \"Dried wakame\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Spring onion\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}]",
+          "Recipe: Miso soup\ningredients: [{\"name\": \"Water\", \"quantity\": 800, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Kombu\", \"quantity\": 10, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"wiped, not washed\"}, {\"name\": \"Bonito flakes\", \"quantity\": 15, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Miso paste\", \"quantity\": 4, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tofu\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cubed\"}, {\"name\": \"Dried wakame\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Spring onion\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}]"
+        ],
+        "response": "Ingredients for Miso soup (source recipe; serves 4):\n- Water: 800 ml\n- Kombu: 10 g\n- Bonito flakes: 15 g\n- Miso paste: 4 tbsp\n- Tofu: 200 g\n- Dried wakame: 1 tbsp\n- Spring onion: 2 piece",
+        "reference": "Ingredients: 800 ml Water, 10 g Kombu, 15 g Bonito flakes, 4 tbsp Miso paste, 200 g Tofu, 1 tbsp Dried wakame, 2 piece Spring onion.",
+        "llm_context_precision_with_reference": 0.525,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q04",
+      "scores": {
+        "user_input": "What are the ingredients for Dal tadka?",
+        "retrieved_contexts": [
+          "Recipe: Dal tadka\ningredient_notes: Toor dal: rinsed\nGarlic: thinly sliced",
+          "Recipe: Dal tadka\ninstructions: 1. Cover the lentils with three cups of water, add the turmeric and simmer covered for thirty minutes, until the grains collapse into a soft mass. [Source step duration: 30 min]\n2. Mash some of the lentils against the side of the pot and season. The consistency should be that of a thick soup. [Source step duration: 3 min]\n3. Separately fry the onion until golden, add the tomatoes and cook until they break down into a sauce. Stir that into the lentils. [Source step duration: 10 min]\n4. Heat the ghee in a small pan until it is just short of smoking. Add the mustard seeds; they should crackle within seconds. [Source step duration: 2 min]\n5. Add the cumin at once, the garlic and chillies ten seconds later, the asafoetida twenty seconds after that. The whole thing takes under a minute and cannot be left alone. [Source step duration: 1 min]\n6. Pour the sizzling tadka straight into the lentils — it should hiss. Stir once and serve with rice or flatbread. [Source step duration: 1 min]",
+          "Recipe: Dal tadka\noverview: A lentil stew finished by pouring sizzling spiced fat over it. That step is the dish. Publisher lists prep 10 minutes and cook 35 minutes, total 45 minutes. Serves 4. Serves 4.",
+          "Recipe: Dal tadka\ndietary: Source tags: vegetarian, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+          "Recipe: Dal tadka\ningredients: [{\"name\": \"Toor dal\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"rinsed\"}, {\"name\": \"Turmeric\", \"quantity\": 0.5, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Ghee\", \"quantity\": 3, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Cumin seeds\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Mustard seeds\", \"quantity\": 0.5, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 4, \"unit\": \"clove\", \"scaling\": \"damped\", \"note\": \"thinly sliced\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomato\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Dried red chillies\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Asafoetida\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "Ingredients for Dal tadka (source recipe; serves 4):\n- Toor dal: 200 g\n- Turmeric: 0.5 tsp\n- Ghee: 3 tbsp\n- Cumin seeds: 1 tsp\n- Mustard seeds: 0.5 tsp\n- Garlic: 4 clove\n- Onion: 1 piece\n- Tomato: 2 piece\n- Dried red chillies: 2 piece\n- Asafoetida: 1 pinch\n- Salt: amount not specified; follow the source",
+        "reference": "Ingredients: 200 g Toor dal, 0.5 tsp Turmeric, 3 tbsp Ghee, 1 tsp Cumin seeds, 0.5 tsp Mustard seeds, 4 clove Garlic, 1 piece Onion, 2 piece Tomato, 2 piece Dried red chillies, 1 pinch Asafoetida, to taste: Salt.",
+        "llm_context_precision_with_reference": 0.4166666666,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q05",
+      "scores": {
+        "user_input": "What are the ingredients for Borscht?",
+        "retrieved_contexts": [
+          "Recipe: Borscht\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Borscht\noverview: A beetroot soup on beef stock where acid holds both the colour and the flavour. The beetroot is braised separately, never boiled in the pot. Publisher lists prep 30 minutes and cook 120 minutes, total 150 minutes. Serves 6. Serves 6.",
+          "Recipe: Borscht\ningredient_notes: Beetroot: coarsely grated\nCabbage: shredded",
+          "Recipe: Borscht\ninstructions: 1. Cover the meat with cold water, bring it to the boil and skim. Simmer for an hour and a half at a bare tremble — a rolling boil turns the stock cloudy. [Source step duration: 90 min]\n2. Braise the beetroot in a pan with a spoon of oil, the tomato paste and the vinegar, covered, for about twenty minutes. The vinegar is what keeps the colour. [Source step duration: 20 min]\n3. Separately fry the onion and carrot until soft and golden. [Source step duration: 8 min]\n4. Lift the meat out, pull it into pieces and return it to the stock. Add the potatoes and give them ten minutes — before any acid reaches the pot. [Source step duration: 10 min]\n5. Add the cabbage, then after five minutes the beetroot and the fried vegetables. Give it five minutes more, add the bay and garlic and take it straight off the heat. [Source step duration: 12 min]\n6. Let it stand covered for at least twenty minutes. Serve with sour cream, which softens the acid and pulls the flavours together. [Source step duration: 20 min]",
+          "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+          "Recipe: Borscht\ningredients: [{\"name\": \"Beef on the bone\", \"quantity\": 700, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Beetroot\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"coarsely grated\"}, {\"name\": \"Cabbage\", \"quantity\": 300, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"shredded\"}, {\"name\": \"Potatoes\", \"quantity\": 4, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Carrot\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Tomato paste\", \"quantity\": 2, \"unit\": \"tbsp\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Vinegar, 9%\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Garlic\", \"quantity\": 3, \"unit\": \"clove\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Bay leaf\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Sour cream\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}, {\"name\": \"Salt and pepper\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "Ingredients for Borscht (source recipe; serves 6):\n- Beef on the bone: 700 g\n- Beetroot: 2 piece\n- Cabbage: 300 g\n- Potatoes: 4 piece\n- Carrot: 1 piece\n- Onion: 1 piece\n- Tomato paste: 2 tbsp\n- Vinegar, 9%: 1 tbsp\n- Garlic: 3 clove\n- Bay leaf: 2 piece\n- Sour cream: amount not specified; follow the source\n- Salt and pepper: amount not specified; follow the source",
+        "reference": "Ingredients: 700 g Beef on the bone, 2 piece Beetroot, 300 g Cabbage, 4 piece Potatoes, 1 piece Carrot, 1 piece Onion, 2 tbsp Tomato paste, 1 tbsp Vinegar, 9%, 3 clove Garlic, 2 piece Bay leaf, to taste: Sour cream, to taste: Salt and pepper.",
+        "llm_context_precision_with_reference": 0.6458333333,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q06",
+      "scores": {
+        "user_input": "Is Ratatouille tagged vegan in the source?",
+        "retrieved_contexts": [
+          "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+          "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+          "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Rinderrouladen\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact."
+        ],
+        "response": "Ratatouille is vegan in the source's tags. Source tags are not independently verified; check ingredients, labels and cross-contact.",
+        "reference": "Ratatouille is tagged vegan by the source; verify ingredients and cross-contact independently.",
+        "llm_context_precision_with_reference": 0.8055555555,
+        "context_recall": 0.5,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q07",
+      "scores": {
+        "user_input": "Is Guacamole tagged gluten-free in the source?",
+        "retrieved_contexts": [
+          "Recipe: Guacamole\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Guacamole\ningredient_notes: Avocado: ripe\nLime: juiced\nRed onion: finely chopped\nJalapeño: seeds removed\nTomato: seeded and diced",
+          "Recipe: Spanish tortilla\ndietary: Source tags: vegetarian, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Guacamole\noverview: Avocado, lime, onion and chilli crushed with a fork. No blender and no sour cream: both turn it into a dip rather than guacamole. Publisher lists prep 15 minutes and cook 0 minutes, total 15 minutes. Serves 4. Serves 4.",
+          "Recipe: Gazpacho\ndietary: Source tags: vegetarian, vegan. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact."
+        ],
+        "response": "Guacamole is gluten-free in the source's tags. Source tags are not independently verified; check ingredients, labels and cross-contact.",
+        "reference": "Guacamole is tagged gluten-free by the source; verify ingredients and cross-contact independently.",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 0.5,
+        "faithfulness": 0.8
+      }
+    },
+    {
+      "id": "Q08",
+      "scores": {
+        "user_input": "Is Miso soup tagged pescatarian in the source?",
+        "retrieved_contexts": [
+          "Recipe: Miso soup\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Tom yum goong\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+          "Recipe: French onion soup\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Risotto alla milanese\ndietary: Source tags: vegetarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact."
+        ],
+        "response": "Miso soup is pescatarian in the source's tags. Source tags are not independently verified; check ingredients, labels and cross-contact.",
+        "reference": "Miso soup is tagged pescatarian by the source; verify ingredients and cross-contact independently.",
+        "llm_context_precision_with_reference": 0.9999999999,
+        "context_recall": 0.5,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q09",
+      "scores": {
+        "user_input": "What are the source preparation and cooking times for Ratatouille?",
+        "retrieved_contexts": [
+          "Recipe: Ratatouille\noverview: A Provençal vegetable stew where each vegetable is cooked separately before they meet — otherwise it turns to mush. Publisher lists prep 20 minutes and cook 45 minutes, total 65 minutes. Serves 4. Serves 4.",
+          "Recipe: Ratatouille\ninstructions: 1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. [Source step duration: 8 min]\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. [Source step duration: 4 min]\n3. Fry the pepper until soft with a few charred spots and set it aside as well. [Source step duration: 6 min]\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. [Source step duration: 7 min]\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. [Source step duration: 20 min]\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. [Source step duration: 10 min]",
+          "Recipe: Ratatouille\ningredient_notes: Aubergine: in 2 cm cubes\nCourgette: in cubes\nTomatoes: ripe, peeled\nBasil: at the end",
+          "Recipe: Ratatouille\ndietary: Source tags: vegetarian, vegan, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Coq au vin\ninstructions: 1. Cover the chicken with the wine, carrot, garlic and herbs and leave it in the fridge overnight. In the morning lift the meat out and dry it, keeping the wine. [Source step duration: 480 min]\n2. Render the bacon in a casserole and lift it out. In that fat, brown the chicken hard on all sides, in batches. [Source step duration: 15 min]\n3. Dust with the flour, stir and cook for two minutes. Pour in the marinade with its vegetables and the stock, bring to the boil and skim. [Source step duration: 6 min]\n4. Braise covered over a low flame or at 160 °C for an hour. The sauce should barely tremble. [Source step duration: 60 min]\n5. While it braises, fry the onions in butter until golden, and separately the mushrooms over a high flame until they colour. [Source step duration: 15 min]\n6. Add the onions, mushrooms and bacon to the pot, give it ten minutes over a low flame and check the sauce for salt. [Source step duration: 10 min]"
+        ],
+        "response": "The source's structured fields list 20 minutes preparation and 45 minutes cooking for Ratatouille. Source descriptions or step timings may differ; these values have not been independently verified.",
+        "reference": "The source lists 20 minutes preparation and 45 minutes cooking for Ratatouille.",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 0.5
+      }
+    },
+    {
+      "id": "Q10",
+      "scores": {
+        "user_input": "What are the source preparation and cooking times for Miso soup?",
+        "retrieved_contexts": [
+          "Recipe: Miso soup\noverview: A soup of dashi and miso that takes ten minutes. Miso must never boil: boiling takes out both the aroma and the point of it. Publisher lists prep 5 minutes and cook 15 minutes, total 20 minutes. Serves 4. Serves 4.",
+          "Recipe: Miso soup\ninstructions: 1. Cover the kombu with cold water and set it over low heat. Bring it to the edge of a boil over about ten minutes and lift the seaweed out before bubbles appear. [Source step duration: 10 min]\n2. Bring the water to the boil, add the bonito flakes, take it off the heat at once and let it stand for two minutes until the flakes sink. [Source step duration: 2 min]\n3. Strain the stock through a sieve without pressing the flakes — pressed flakes turn it bitter. [Source step duration: 2 min]\n4. Soak the wakame in cold water for five minutes; it swells several times over. [Source step duration: 5 min]\n5. Warm the dashi, add the tofu and the wakame and hold it at a low heat for a couple of minutes. [Source step duration: 2 min]\n6. Whisk the miso smooth in a ladle of the hot stock, stir it back in and take the pan off the heat immediately. Scatter over the spring onion. [Source step duration: 2 min]",
+          "Recipe: Miso soup\ningredient_notes: Kombu: wiped, not washed\nTofu: cubed",
+          "Recipe: Miso soup\ndietary: Source tags: pescatarian. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Miso soup\ningredients: [{\"name\": \"Water\", \"quantity\": 800, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Kombu\", \"quantity\": 10, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"wiped, not washed\"}, {\"name\": \"Bonito flakes\", \"quantity\": 15, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Miso paste\", \"quantity\": 4, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Tofu\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cubed\"}, {\"name\": \"Dried wakame\", \"quantity\": 1, \"unit\": \"tbsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Spring onion\", \"quantity\": 2, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}]"
+        ],
+        "response": "The source's structured fields list 5 minutes preparation and 15 minutes cooking for Miso soup. Source descriptions or step timings may differ; these values have not been independently verified.",
+        "reference": "The source lists 5 minutes preparation and 15 minutes cooking for Miso soup.",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 0.6666666667
+      }
+    },
+    {
+      "id": "Q11",
+      "scores": {
+        "user_input": "What are the source preparation and cooking times for Borscht?",
+        "retrieved_contexts": [
+          "Recipe: Borscht\noverview: A beetroot soup on beef stock where acid holds both the colour and the flavour. The beetroot is braised separately, never boiled in the pot. Publisher lists prep 30 minutes and cook 120 minutes, total 150 minutes. Serves 6. Serves 6.",
+          "Recipe: Borscht\ninstructions: 1. Cover the meat with cold water, bring it to the boil and skim. Simmer for an hour and a half at a bare tremble — a rolling boil turns the stock cloudy. [Source step duration: 90 min]\n2. Braise the beetroot in a pan with a spoon of oil, the tomato paste and the vinegar, covered, for about twenty minutes. The vinegar is what keeps the colour. [Source step duration: 20 min]\n3. Separately fry the onion and carrot until soft and golden. [Source step duration: 8 min]\n4. Lift the meat out, pull it into pieces and return it to the stock. Add the potatoes and give them ten minutes — before any acid reaches the pot. [Source step duration: 10 min]\n5. Add the cabbage, then after five minutes the beetroot and the fried vegetables. Give it five minutes more, add the bay and garlic and take it straight off the heat. [Source step duration: 12 min]\n6. Let it stand covered for at least twenty minutes. Serve with sour cream, which softens the acid and pulls the flavours together. [Source step duration: 20 min]",
+          "Recipe: Borscht\ningredient_notes: Beetroot: coarsely grated\nCabbage: shredded",
+          "Recipe: Borscht\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Phở bò\noverview: A clear beef broth with charred ginger and whole spices, rice noodles, and beef that finishes cooking in the bowl. Publisher lists prep 30 minutes and cook 240 minutes, total 270 minutes. Serves 4. Serves 4."
+        ],
+        "response": "The source's structured fields list 30 minutes preparation and 120 minutes cooking for Borscht. Source descriptions or step timings may differ; these values have not been independently verified.",
+        "reference": "The source lists 30 minutes preparation and 120 minutes cooking for Borscht.",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "id": "Q12",
+      "scores": {
+        "user_input": "How does the source say to prepare Spanish tortilla?",
+        "retrieved_contexts": [
+          "Recipe: Spanish tortilla\ninstructions: 1. Heat the oil in a deep pan until it is warm rather than hot — a slice of potato dropped in should sigh, not crackle. Add the potato and onion and salt them. [Source step duration: 3 min]\n2. Poach for twenty minutes, turning gently now and then. It is ready when a slice breaks easily against the side of the pan. Drain through a colander, keeping the potato. [Source step duration: 20 min]\n3. Beat the eggs with a pinch of salt and fold the warm potato through them. Let it sit for ten minutes: the potato gives up starch and the tortilla holds together for it. [Source step duration: 10 min]\n4. In a 24 cm pan with a spoon of oil, pour the mixture in and cook over medium heat for four minutes, easing the edges towards the middle with a spatula. [Source step duration: 4 min]\n5. Cover with a plate, flip in one movement and slide it back raw side down. Three minutes more leaves the centre slightly loose, which is how it should be. [Source step duration: 3 min]",
+          "Recipe: Spanish tortilla\noverview: A thick omelette of potato and onion, where the potato is not fried but poached in oil until it is nearly a purée. Publisher lists prep 15 minutes and cook 35 minutes, total 50 minutes. Serves 4. Serves 4.",
+          "Recipe: Spanish tortilla\ningredient_notes: Potatoes: sliced thin\nOnion: thinly sliced\nOlive oil: nearly all of it goes back in the bottle",
+          "Recipe: Spanish tortilla\ndietary: Source tags: vegetarian, gluten-free. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Spanish tortilla\ningredients: [{\"name\": \"Potatoes\", \"quantity\": 600, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"sliced thin\"}, {\"name\": \"Onion\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"thinly sliced\"}, {\"name\": \"Eggs\", \"quantity\": 6, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Olive oil\", \"quantity\": 400, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"nearly all of it goes back in the bottle\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "Gently cook potatoes and onions in olive oil, drain, then combine with beaten eggs. Cook in a pan, flip and cook until the centre reaches 71°C (160°F), measured with a food thermometer. Recipe adapted from UniTools, CC BY-SA 4.0. The temperature check is a food-safety adaptation based on FoodSafety.gov.",
+        "reference": "1. Heat the oil in a deep pan until it is warm rather than hot — a slice of potato dropped in should sigh, not crackle. Add the potato and onion and salt them. [Source step duration: 3 min]\n2. Poach for twenty minutes, turning gently now and then. It is ready when a slice breaks easily against the side of the pan. Drain through a colander, keeping the potato. [Source step duration: 20 min]\n3. Beat the eggs with a pinch of salt and fold the warm potato through them. Let it sit for ten minutes: the potato gives up starch and the tortilla holds together for it. [Source step duration: 10 min]\n4. In a 24 cm pan with a spoon of oil, pour the mixture in and cook over medium heat for four minutes, easing the edges towards the middle with a spatula. [Source step duration: 4 min]\n5. Cover with a plate, flip in one movement and slide it back raw side down. Three minutes more leaves the centre slightly loose, which is how it should be. [Source step duration: 3 min]",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 0.4285714286
+      }
+    },
+    {
+      "id": "Q13",
+      "scores": {
+        "user_input": "What substitute does the source suggest for rabbit in Paella valenciana?",
+        "retrieved_contexts": [
+          "Recipe: Paella valenciana\ningredient_notes: Rabbit, in pieces: chicken will do instead\nLarge white beans: cooked\nTomato: grated",
+          "Recipe: Paella valenciana\ninstructions: 1. Heat the oil in a wide pan and brown the chicken and rabbit on every side. This is not a five-minute job: it takes a good quarter of an hour, and there is no point rushing it — the flavour of the whole dish is laid down here. [Source step duration: 15 min]\n2. Push the meat to the edges, put the green beans in the middle and fry them for a couple of minutes. Add the grated tomato and the paprika and cook until the tomato darkens and stops smelling raw. [Source step duration: 6 min]\n3. Pour in the stock, add the rosemary, saffron and white beans, salt it noticeably harder than feels right and let it boil for ten minutes. This is the last moment you can correct the seasoning. [Source step duration: 10 min]\n4. Scatter the rice in an even layer and level it once with a spoon. After that do not touch the pan again — no stirring, no smoothing.\n5. Cook on a high flame for ten minutes, then drop to medium for another eight, until the stock is gone. The rice should be showing above the surface. [Source step duration: 18 min]\n6. Turn the heat up for half a minute and listen: the moment the sound turns from bubbling to a dry crackle, take it off. That is the socarrat. Cover with a cloth and let it stand for five minutes. [Source step duration: 6 min]",
+          "Recipe: Paella valenciana\noverview: Rice in a wide pan with chicken, rabbit and beans. It is never stirred once, and the crust on the bottom depends on that. Publisher lists prep 25 minutes and cook 45 minutes, total 70 minutes. Serves 4. Serves 4.",
+          "Recipe: Paella valenciana\ndietary: Source tags: none provided. Source-provided tags only, not verified allergy or dietary safety. Empty tags mean no label supplied; verify ingredients and cross-contact.",
+          "Recipe: Paella valenciana\ningredients: [{\"name\": \"Bomba rice, or another short grain\", \"quantity\": 320, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Chicken, in pieces\", \"quantity\": 400, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Rabbit, in pieces\", \"quantity\": 300, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"chicken will do instead\"}, {\"name\": \"Flat green beans\", \"quantity\": 200, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Large white beans\", \"quantity\": 100, \"unit\": \"g\", \"scaling\": \"linear\", \"note\": \"cooked\"}, {\"name\": \"Tomato\", \"quantity\": 1, \"unit\": \"piece\", \"scaling\": \"linear\", \"note\": \"grated\"}, {\"name\": \"Olive oil\", \"quantity\": 60, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Sweet paprika\", \"quantity\": 1, \"unit\": \"tsp\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Saffron\", \"quantity\": 1, \"unit\": \"pinch\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Rosemary\", \"quantity\": 1, \"unit\": \"sprig\", \"scaling\": \"damped\", \"note\": \"\"}, {\"name\": \"Chicken stock or water\", \"quantity\": 900, \"unit\": \"ml\", \"scaling\": \"linear\", \"note\": \"\"}, {\"name\": \"Salt\", \"quantity\": null, \"unit\": \"toTaste\", \"scaling\": \"fixed\", \"note\": \"\"}]"
+        ],
+        "response": "The source suggests that chicken can be used as a substitute for rabbit in the Paella valenciana recipe.",
+        "reference": "The ingredient note says chicken can be used instead of rabbit.",
+        "llm_context_precision_with_reference": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0
+      }
+    }
+  ]
+}
