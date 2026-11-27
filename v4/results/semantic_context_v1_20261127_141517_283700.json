@@ -1,0 +1,139 @@
+[
+  {
+    "scenario": "positive_then_exclude",
+    "question": "I've got carrots; what dish can I make?",
+    "answer": "How about Borscht? The source recipe serves 6. Would you like the ingredients?",
+    "route": "retrieve",
+    "focus": "Borscht",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 13.07,
+    "problems": []
+  },
+  {
+    "scenario": "positive_then_exclude",
+    "question": "without onions please",
+    "answer": "How about Bánh mì? Its recorded ingredients do not list onion. The source recipe serves 4. Would you like the ingredients?",
+    "route": "retrieve",
+    "focus": "Bánh mì",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 0.19,
+    "problems": []
+  },
+  {
+    "scenario": "persistent_preference",
+    "question": "I dislike onions; suggest a recipe.",
+    "answer": "How about Menemen? Its recorded ingredients do not list onion. The source recipe serves 2. Would you like the ingredients?",
+    "route": "retrieve",
+    "focus": "Menemen",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 0.16,
+    "problems": []
+  },
+  {
+    "scenario": "persistent_preference",
+    "question": "give me a recipe with carrots",
+    "answer": "How about Bánh mì? The source recipe serves 4. Would you like the ingredients?",
+    "route": "retrieve",
+    "focus": "Bánh mì",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 10.03,
+    "problems": []
+  },
+  {
+    "scenario": "conflicting_named",
+    "question": "I dislike onions; suggest a recipe.",
+    "answer": "How about Menemen? Its recorded ingredients do not list onion. The source recipe serves 2. Would you like the ingredients?",
+    "route": "retrieve",
+    "focus": "Menemen",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 0.18,
+    "problems": []
+  },
+  {
+    "scenario": "conflicting_named",
+    "question": "give me the recipe for French onion soup",
+    "answer": "I cannot safely assess this request or response. Please rephrase it.",
+    "route": "safety_block",
+    "focus": "Menemen",
+    "safety": {
+      "stage": "nemo_output",
+      "category": "uncertain",
+      "rail": "self check output",
+      "status": "RailStatus.BLOCKED"
+    },
+    "wall_seconds": 0.17,
+    "problems": [
+      "conflicting named recipe not explained"
+    ]
+  },
+  {
+    "scenario": "soup_context",
+    "question": "hey, I feel like soup tonight. Any ideas?",
+    "answer": "How about French onion soup? It serves 4 people according to the source. Would you like the ingredients?",
+    "route": "retrieve",
+    "focus": "French onion soup",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 0.18,
+    "problems": []
+  },
+  {
+    "scenario": "soup_context",
+    "question": "something without onions please",
+    "answer": "How about Tom yum goong? It serves 4 people according to the source. Would you like the ingredients?",
+    "route": "retrieve",
+    "focus": "Tom yum goong",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 0.23,
+    "problems": []
+  },
+  {
+    "scenario": "soup_context",
+    "question": "sounds good, what do I need?",
+    "answer": "Ingredients for Tom yum goong (source recipe; serves 4):\n- Prawns: 400 g\n- Water or stock: 1 l\n- Lemongrass: 2 piece\n- Galangal: 5 slice\n- Kaffir lime leaves: 5 piece\n- Mushrooms: 200 g\n- Chillies: 3 piece\n- Fish sauce: 3 tbsp\n- Lime juice: 3 tbsp\n- Palm sugar: 1 tsp\n- Coriander: amount not specified; follow the source",
+    "route": "retrieve",
+    "focus": "Tom yum goong",
+    "safety": {
+      "stage": "nemo_input_and_output",
+      "category": "allow",
+      "input_rail_status": "RailStatus.PASSED",
+      "output_rail_status": "RailStatus.PASSED"
+    },
+    "wall_seconds": 0.25,
+    "problems": []
+  }
+]

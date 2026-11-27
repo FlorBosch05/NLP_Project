@@ -1,0 +1,246 @@
+{
+  "app": "app_ollama_conversation_v15.py",
+  "model": "qwen2.5:7b",
+  "turns": [
+    {
+      "question": "Hi, what can you help me cook?",
+      "answer": "I can help find a recipe in the collection. What kind of dish or ingredient are you looking for?",
+      "route": "chat",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 20.74,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "What is an easy dinner idea?",
+      "answer": "An easy dinner idea is a Horiatiki salad. It takes about 15 minutes to prepare and does not require cooking. The salad includes ripe tomatoes in large wedges, cucumber in thick half-moons, red onion in thin rings, and feta in one piece. It serves 4 people.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 29.08,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "Can you recommend something vegetarian?",
+      "answer": "Based on the provided context, the following vegetarian recipes are recommended:\n\n1. **Syrniki** - This traditional Polish dish is vegetarian according to the source.\n2. **Mercimek çorbası** - A Turkish lentil soup that is vegetarian.\n3. **Käsespätzle** - While this dish typically includes cheese, it is marked as vegetarian in the source data. Please verify the ingredients to ensure it meets your dietary needs.\n4. **Gazpacho** - This Spanish cold soup is both vegetarian and vegan according to the source.\n\nThe recipe for **Bibimbap** includes beef, so it is not suitable for a vegetarian diet.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 23.82,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "I have potatoes and onions. What should I make?",
+      "answer": "Based on the provided context, you can make French onion soup. The recipe calls for onions, which you have, and it also mentions baguette and Gruyère, which you can add if you have them. The instructions involve caramelizing the onions, which will take about 45 minutes, and then adding flour, wine, stock, and thyme. The soup simmers for 20 minutes, and you finish by topping it with slices of baguette and cheese, then grilling until bubbly and browned. This recipe serves 4 people.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 14.14,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "How do I make Ratatouille?",
+      "answer": "To make Ratatouille, follow these steps:\n\n1. Fry the aubergine over high heat in two spoons of oil until the edges brown, then set it aside. Aubergine drinks oil instantly — do not add more, it gives it back later. (8 minutes)\n2. In the same pan, fry the courgette until golden, about four minutes, and add it to the aubergine. It should stay firm. (4 minutes)\n3. Fry the pepper until soft with a few charred spots and set it aside as well. (6 minutes)\n4. In the remaining oil, sweat the onion until soft, add the garlic and thyme and give it half a minute, until fragrant. (7 minutes)\n5. Add the tomatoes and cook them down over medium heat into a thick sauce, about twenty minutes. It should hold on a spoon rather than run off it. (20 minutes)\n6. Return the vegetables to the pan, season and warm them through together for ten minutes over low heat. Take it off, add the basil and let it stand — ratatouille is better warm than hot. (10 minutes)\n\nThis recipe serves 4 and takes a total of 65 minutes to prepare and cook. The ingredients are aubergine, courgette, pepper, onion, garlic, thyme, tomatoes, and basil. The recipe is vegetarian, vegan, and gluten-free, but verify ingredients and cross-contact for dietary concerns.",
+      "route": "retrieve",
+      "focus": "Ratatouille",
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 17.2,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "Can you tell me about Bibimbap?",
+      "answer": "I cannot safely assess this request or response. Please rephrase it.",
+      "route": "safety_block",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_output",
+        "category": "uncertain",
+        "rail": "chef output policy",
+        "status": "RailStatus.BLOCKED"
+      },
+      "wall_seconds": 0.25,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "What are the ingredients in Gazpacho?",
+      "answer": "Ingredients for Gazpacho (source recipe; serves 4):\n- Ripe tomatoes: 1 kg\n- Cucumber: 1 piece\n- Green pepper: 0.5 piece\n- Garlic: 1 clove\n- Stale white bread: 80 g\n- Extra virgin olive oil: 80 ml\n- Sherry vinegar: 2 tbsp\n- Salt: amount not specified; follow the source",
+      "route": "retrieve",
+      "focus": "Gazpacho",
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 0.28,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "How many people does Borscht serve?",
+      "answer": "Borscht serves 6 people according to the source.",
+      "route": "retrieve",
+      "focus": "Borscht",
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 0.22,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "Can you suggest a soup without meat?",
+      "answer": "How about Gazpacho? It is served cold. The source lists it as vegan.",
+      "route": "retrieve",
+      "focus": "Gazpacho",
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 0.32,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "Which recipes contain garlic?",
+      "answer": "Recipes whose recorded ingredients include garlic:\n\n- Ratatouille (serves 4)\n- Borscht (serves 6)\n- Dal tadka (serves 4)\n- Moussaka (serves 6)\n- Tacos al pastor (serves 4)\n- Butter chicken (serves 4)\n- Pad thai (serves 2)\n- Gazpacho (serves 4)\n- Lomo saltado (serves 4)\n- Mapo tofu (serves 4)\n- Gong bao chicken (serves 4)\n- Coq au vin (serves 4)\n- Bibimbap (serves 4)\n- Kimchi jjigae (serves 4)\n- Souvlaki (serves 4)\n- Chicken biryani (serves 6)\n\nWhich one would you like?",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 0.25,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "How much is 250 ml in litres?",
+      "answer": "250 ml is equal to 0.25 litres.",
+      "route": "convert",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 14.67,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "What can I substitute for rabbit in Paella valenciana?",
+      "answer": "You can substitute rabbit with chicken in Paella valenciana. The recipe notes that chicken can be used as a replacement for rabbit.",
+      "route": "retrieve",
+      "focus": "Paella valenciana",
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 12.85,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "Is French onion soup served hot or cold?",
+      "answer": "French onion soup is typically served hot. The soup is traditionally slow-cooked to develop the flavors and then served steaming, often with a gratin of bread on top.",
+      "route": "chat",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 27.64,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "I want something spicy, what do you suggest?",
+      "answer": "Based on the provided context, the Mapo tofu recipe seems to be the best suggestion for something spicy. The recipe notes include ground Sichuan peppercorns, which are known for their spicy and numbing qualities. The other recipes, such as Menemen, Gong bao chicken, Risotto alla milanese, and Lomo saltado, do not specifically mention significant spicy ingredients.",
+      "route": "retrieve",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 23.7,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "Hallo, wat kan ik koken met tomaten?",
+      "answer": "Hallo! Met tomaten kun je veel lekkere gerechten koken. Hier zijn enkele ideeën:\n\n1. **Tomatensoep** - Een eenvoudige en smaakvolle soep die perfect is om op koude avonden te serveren.\n2. **Pasta met tomaten** - Geef je pasta een smaakvolle boost door het toe te voegen van tomaten, basilicum, en een beetje kruiden.\n3. **Tomatenlasagne** - Een volledig gerecht met laagjes pasta, tomaten, kaas, en eventueel vlees.\n4. **Tomatenrijst** - Een combinatie van rijst, tomaten, en eventueel groenten of vlees.\n5. **Tomatenpannenkoeken** - Een interessante variant waarbij tomaten in de pannenkoeken worden geperst.\n\nDeze ideeën zijn gebaseerd op de beschikbaarheid van tomaten, maar je kunt ze aanpassen aan je eigen smaak en beschikbare ingrediënten.",
+      "route": "chat",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 12.5,
+      "errors": [],
+      "exceptions": []
+    },
+    {
+      "question": "What is the difference between simmering and boiling?",
+      "answer": "I can help find a recipe in the collection. What kind of dish or ingredient are you looking for?",
+      "route": "chat",
+      "focus": null,
+      "safety": {
+        "stage": "nemo_input_and_output",
+        "category": "allow",
+        "input_rail_status": "RailStatus.PASSED",
+        "output_rail_status": "RailStatus.PASSED"
+      },
+      "wall_seconds": 11.48,
+      "errors": [],
+      "exceptions": []
+    }
+  ]
+}
